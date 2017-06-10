@@ -1,0 +1,2079 @@
+/************ This scss created by author xiexkang 2017-06  Start************/
+.myHead .in .head .tp, .myWxBind .wxBindYes .tp, .myPortrait .faceList li .tp, .myRank .round, .myRank .round > *, .myRank .rankSel .hdTit > i, .shopCarFix .item .num {
+  border-radius: 50%; }
+
+.myHead .in .head .txt .lab, .myBtn, .myAccount .accHd .bot a, .myWithdraw .draw .drawInpCom .inp input, .myWithdraw .draw .drawInpCom .inp .selBank, .myBankEdit .addInpCom .inp input, .myBankEdit .addInpCom .inp select, .myBankEdit .addInpCom .inp.yzmInp .getCode, .myInfor .han .del, .proList .tp {
+  border-radius: .06rem; }
+
+.myHead .in .head .tp {
+  float: left; }
+
+.myHead .in, .myHead .in .head, .myHead .in .head .tp, .myHead .in .list, .myHead .in .list ul, .myList, .myList .in, .myList .in .listUl, .myBasic, .myInpCom, .myInpCom .inp, .myGrade, .myGrade .itemCom, .myGrade .itemCom ul, .myGrade .itemCom ul li, .tab, .myAccount, .myAccount .accHd, .myAccount .accHd .bot, .myAccount .accChg, .myAccount .accChg .list, .myTradeDet, .reList, .myWithdraw, .myWithdraw .draw .drawInpCom, .myWithdraw .draw .drawInpCom .inp, .withRate, .myWithDet, .myBank, .myBank .list, .myBank .list ul, .myAddress, .myAddress .addressList, .myAddress .addressList ul, .myAddress .addressList li, .myAddress .addressList .hd, .myAddress .addressList .th, .myAddEdit, .myBankEdit, .myAddEdit .addInpCom, .myBankEdit .addInpCom, .myAddEdit .addInpCom .inp, .myBankEdit .addInpCom .inp, .myAddEdit .addInpCom .han, .myBankEdit .addInpCom .han, .myCollect, .askList, .collList, .askList ul, .collList ul, .askList ul li, .collList ul li, .askList ul .item .txt .hand, .collList ul .item .txt .hand, .collList .ul02 .tx, .collList .ul02 .bot, .mySetting, .mySetting .setList ul, .mySetting .setList ul li, .myWxBind, .myWxBind .in, .myWxBind .tp, .myPhoneBind, .myEmailBind, .myPhoneBind .in > *, .myEmailBind .in > *, .myInps, .myInps .inp, .myPortrait, .myPortrait .faceList, .myPortrait .faceList li .tp, .myInfor, .myInfor .inList, .myInfor .inList ul, .myInfor .inList li .ico, .myRecharge, .myRecharge .money > *, .myRecharge .paySel, .myRecharge .recStyle, .myRecharge .recStyle ul, .myRecharge .recStyle ul li .tp, .myRecharge .reSuc, .selList, .selList ul, .recDet, .txtExp, .myEnterCourses .courSel, .recSettle, .recSettle .curMoney, .countBot, .countBot .in, .myJoinVideo, .proList, .proList ul, .proList .tp, .proHandle, .addList, .addList ul, .addList ul .item, .addList ul .item .txH, .vidInf, .vidInf .bd, .vidInf .bd ul, .vidInf .bd ul li, .vidInf .bd ul li a, .myRank, .myRank .rankSel .bdTab, .myRank .rankSel .bdTab ul, .myNotes, .myNotes .item, .myNotes .item > *, .myNotes .item .bot .han, .myNotes .item .bot .han .time, .myNotes .txtArea, .myQuestion, .loginReg, .logRegList, .logRegList ul, .logRegList .links, .logRegList .isRead, .logInpCom, .logInpCom .inp, .findPwd, .findPwd .pwdInpCom, .findPwd .sucTip .tp, .protocol {
+  overflow: hidden; }
+
+.withRate .tp, .myRank .rankSel .bdTab {
+  margin: 0 auto; }
+
+.myBasic .remTip, .myInpCom .inp, .myGrade .itemCom .item, .myAccount .accChg .list ul .tit, .myAccount .accChg .list ul .item, .myTradeDet, .myWithdraw .in, .myWithDet, .myAddEdit .addInpCom .inp, .myBankEdit .addInpCom .inp, .mySetting .setList ul li, .myPortrait .faceList, .myInfor .inList li, .myInfor .han, .myRecharge .recStyle, .recSettle, .vidInf, .myRank {
+  padding: 0 .4rem; }
+
+.myAccount .accChg .list ul .ti0, .myBank .ti01, .myBank .ti02, .myBank .ti03, .myBank .ti04, .myAddEdit .addInpCom .inp > *, .myBankEdit .addInpCom .inp > *, .myInfor .inList li .tx {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+
+.myHead .in .head .goJoin a:after, .myList .in .listUl li:after, .myBank .list li .han a:before, .myBankEdit .showTip:before, .myWxBind .wxBindYes .txt .tx p:before, .findPwd .pwdInpCom .hd .tit:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle; }
+
+.myCollect .tab, .myInfor .tab, .myQuestion .tab, .countBot .in, .myBtns a {
+  max-width: 640px; }
+
+.myCollect .tab, .myInfor .tab, .myQuestion .tab {
+  position: fixed;
+  left: auto;
+  top: 0;
+  right: auto;
+  bottom: auto;
+  z-index: 999; }
+
+.countBot .in {
+  position: fixed;
+  left: auto;
+  bottom: 0;
+  right: auto;
+  top: auto;
+  z-index: 999;
+  width: 100%; }
+
+.loginReg .logoCom .logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%); }
+
+.myHead .in .head .goJoin, .myList .in .listUl li:after, .myList .in .listUl li em, .myList .in .listUl li i, .myAddress .addressList .radIco, .mySetting .setList ul li .ico, .mySetting .setList ul .arr, .myInfor .inList li .setChe, .myInfor .inList li .ico, .selList li .radIco, .oChe, .addList ul .arr, .myRank .rankSel .hdTit > i {
+  position: absolute;
+  left: auto;
+  top: 50%;
+  transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%); }
+
+.myHead .in {
+  background-color: #fff; }
+  .myHead .in .head {
+    padding: .4rem;
+    border-bottom: 1px solid #f2f2f2;
+    position: relative; }
+    .myHead .in .head .tp {
+      width: 1.3rem;
+      height: 1.3rem;
+      border: 1px solid #ff741e;
+      box-sizing: border-box;
+      -webkit-box-shadow: 0 0 0.2rem #e55700;
+      -moz-box-shadow: 0 0 0.2rem #e55700;
+      box-shadow: 0 0 0.2rem #e55700; }
+      .myHead .in .head .tp img {
+        width: 100%;
+        height: 100%;
+        display: block; }
+    .myHead .in .head .txt {
+      margin-left: 1.5rem;
+      font-size: .28rem; }
+      .myHead .in .head .txt > * {
+        margin-top: .1rem; }
+      .myHead .in .head .txt .name {
+        font-size: .38rem;
+        margin-top: 0; }
+      .myHead .in .head .txt .lab {
+        color: #fff;
+        background-color: #ff6100;
+        padding: .05rem .1rem;
+        display: inline-block; }
+      .myHead .in .head .txt .money .goRecharge {
+        color: #ff6100;
+        font-size: .28rem;
+        margin-left: .15rem;
+        text-decoration: underline; }
+    .myHead .in .head .goJoin {
+      right: .4rem; }
+      .myHead .in .head .goJoin a {
+        font-size: .28rem;
+        color: #666;
+        vertical-align: top; }
+        .myHead .in .head .goJoin a:after {
+          width: .3rem;
+          height: .3rem;
+          background-image: url("../../public/images/arrIco01.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          margin-left: .1rem; }
+  .myHead .in .list {
+    padding: .5rem 0 .35rem; }
+    .myHead .in .list ul {
+      display: flex;
+      display: -webkit-box;
+      display: -ms-flexbox; }
+      .myHead .in .list ul li {
+        flex: 1;
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        text-align: center; }
+        .myHead .in .list ul li a {
+          display: inline-block; }
+        .myHead .in .list ul li img {
+          width: .9rem;
+          height: .9rem;
+          display: inline-block; }
+        .myHead .in .list ul li span {
+          font-size: .3rem;
+          padding: .15rem 0 .05rem;
+          display: block; }
+
+.myList {
+  margin-top: .3rem; }
+  .myList .in .listUl {
+    width: 100%;
+    margin-bottom: .3rem; }
+    .myList .in .listUl li {
+      height: .96rem;
+      line-height: .96rem;
+      padding: 0 .4rem;
+      border-bottom: 1px solid #f2f2f2;
+      box-sizing: border-box;
+      background-color: #fff;
+      position: relative; }
+      .myList .in .listUl li .item {
+        display: block;
+        font-size: .32rem; }
+        .myList .in .listUl li .item .ti {
+          padding-left: .75rem; }
+      .myList .in .listUl li:nth-of-type(2n) {
+        margin-bottom: .3rem; }
+      .myList .in .listUl li:after {
+        width: .2rem;
+        height: .2rem;
+        background-image: url("../../public/images/arrIco02.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        right: .4rem; }
+      .myList .in .listUl li em {
+        right: .7rem;
+        font-size: .28rem;
+        color: #999; }
+      .myList .in .listUl li .ico {
+        width: .54rem;
+        height: .96rem;
+        background-image: url("../../public/images/myIco.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        left: .4rem; }
+      .myList .in .listUl li:nth-of-type(1) .ico {
+        background-position: 0 0rem; }
+      .myList .in .listUl li:nth-of-type(2) .ico {
+        background-position: 0 -0.96rem; }
+      .myList .in .listUl li:nth-of-type(3) .ico {
+        background-position: 0 -1.92rem; }
+      .myList .in .listUl li:nth-of-type(4) .ico {
+        background-position: 0 -2.88rem; }
+      .myList .in .listUl li:nth-of-type(5) .ico {
+        background-position: 0 -3.84rem; }
+      .myList .in .listUl li:nth-of-type(6) .ico {
+        background-position: 0 -4.8rem; }
+      .myList .in .listUl li:nth-of-type(7) .ico {
+        background-position: 0 -5.76rem; }
+      .myList .in .listUl li:nth-of-type(8) .ico {
+        background-position: 0 -6.72rem; }
+      .myList .in .listUl li:nth-of-type(9) .ico {
+        background-position: 0 -7.68rem; }
+      .myList .in .listUl li:nth-of-type(10) .ico {
+        background-position: 0 -8.64rem; }
+
+.myBasic {
+  width: 100%;
+  padding-bottom: .2rem; }
+  .myBasic .remTip {
+    width: 100%;
+    height: .8rem;
+    line-height: .8rem;
+    box-sizing: border-box;
+    background-color: #fff;
+    margin: .2rem 0;
+    position: relative; }
+    .myBasic .remTip .tx {
+      color: #ff741e;
+      font-size: .28rem; }
+    .myBasic .remTip .close {
+      width: .4rem;
+      height: .8rem;
+      background-image: url("../../public/images/closeIco.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      top: 0;
+      right: .4rem; }
+
+.myInpCom, .myInpCom .inp {
+  width: 100%; }
+  .myInpCom .inp {
+    height: 1rem;
+    line-height: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    background-color: #fff;
+    font-size: .32rem;
+    margin-bottom: .1rem; }
+    .myInpCom .inp .ti {
+      width: 33%;
+      float: left; }
+    .myInpCom .inp input {
+      width: 66%;
+      font-size: .3rem;
+      height: 1rem;
+      line-height: 1rem;
+      background-color: #fff; }
+    .myInpCom .inp em {
+      color: #f00;
+      vertical-align: middle; }
+
+.myBtn {
+  width: 3.6rem;
+  height: .8rem;
+  line-height: .8rem;
+  text-align: center;
+  border: 1px solid #ff6100;
+  margin: .4rem auto 0;
+  box-sizing: border-box; }
+  .myBtn a {
+    color: #ff6100;
+    font-size: .4rem;
+    display: block; }
+
+.myGrade {
+  width: 100%;
+  padding-bottom: .2rem; }
+  .myGrade .itemCom {
+    background-color: #fff;
+    font-size: .32rem;
+    margin-top: .2rem;
+    box-sizing: border-box; }
+    .myGrade .itemCom .item {
+      height: 1rem;
+      line-height: 1rem;
+      box-sizing: border-box;
+      border-bottom: 1px solid #e0e0e0;
+      position: relative; }
+      .myGrade .itemCom .item .ti {
+        /*width: 50%; @extend %ellipsis;*/ }
+      .myGrade .itemCom .item .date {
+        padding-right: .6rem; }
+      .myGrade .itemCom .item .arr {
+        width: .5rem;
+        height: 1rem;
+        background-image: url("../../public/images/arrChg.png");
+        background-position: right top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        right: .3rem;
+        top: 0; }
+    .myGrade .itemCom ul {
+      margin: 0 .4rem;
+      display: none; }
+      .myGrade .itemCom ul li {
+        height: .9rem;
+        line-height: .9rem;
+        border-bottom: 1px solid #e0e0e0; }
+        .myGrade .itemCom ul li a {
+          color: #666;
+          font-size: .3rem; }
+        .myGrade .itemCom ul li:last-of-type {
+          border-bottom: none; }
+    .myGrade .itemCom.open .arr {
+      background-position: left top; }
+    .myGrade .itemCom.open ul {
+      display: block; }
+
+.tab {
+  width: 100%;
+  height: .8rem;
+  background-color: #fff; }
+  .tab ol {
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    height: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e5e5e5; }
+    .tab ol li {
+      flex: 1;
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      border-bottom: 1px solid transparent;
+      text-align: center;
+      height: 100%;
+      line-height: .8rem;
+      box-sizing: border-box; }
+      .tab ol li.cur {
+        border-bottom-color: #ff6100; }
+        .tab ol li.cur a {
+          color: #ff6100; }
+    .tab ol a {
+      display: block;
+      font-size: .3rem;
+      color: #999; }
+
+.myAccount {
+  width: 100%; }
+  .myAccount .accHd {
+    text-align: center;
+    padding-top: 1.15rem;
+    padding-bottom: .5rem; }
+    .myAccount .accHd .tit {
+      font-size: .4rem; }
+    .myAccount .accHd .mm {
+      font-size: .28rem;
+      padding-top: .4rem; }
+      .myAccount .accHd .mm .ico {
+        width: .52rem;
+        height: .52rem;
+        background-image: url("../../public/images/mmIco.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: inline-block;
+        vertical-align: sub; }
+      .myAccount .accHd .mm em {
+        color: #ff6100;
+        font-size: .48rem;
+        font-weight: 700; }
+    .myAccount .accHd .bot {
+      padding-top: .5rem; }
+      .myAccount .accHd .bot a {
+        width: 2rem;
+        height: .8rem;
+        line-height: .8rem;
+        text-align: center;
+        color: #fff;
+        font-size: .4rem;
+        display: inline-block; }
+        .myAccount .accHd .bot a.payBtn {
+          background-color: #ff6100;
+          margin-right: .4rem; }
+        .myAccount .accHd .bot a.joinBtn {
+          background-color: #56aae5; }
+  .myAccount .accChg .tab {
+    height: 1rem; }
+    .myAccount .accChg .tab ol {
+      border-top: 1px solid #e5e5e5; }
+      .myAccount .accChg .tab ol li {
+        line-height: 1rem; }
+  .myAccount .accChg .list ul .tit, .myAccount .accChg .list ul .item {
+    height: .8rem;
+    line-height: .8rem;
+    text-align: center;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e5e5e5; }
+  .myAccount .accChg .list ul .ti0 {
+    float: left; }
+  .myAccount .accChg .list ul .ti01 {
+    width: 30%; }
+  .myAccount .accChg .list ul .ti02 {
+    width: 21%; }
+  .myAccount .accChg .list ul .ti03 {
+    width: 21%; }
+  .myAccount .accChg .list ul .ti04 {
+    width: 28%; }
+  .myAccount .accChg .list ul .btn {
+    font-size: .28rem;
+    display: inline-block;
+    margin-right: .1rem;
+    text-decoration: underline;
+    background-color: transparent; }
+    .myAccount .accChg .list ul .btn.pay {
+      color: #ff6100; }
+    .myAccount .accChg .list ul .btn.cancle {
+      color: #666; }
+  .myAccount .accChg .list ul.ul02 {
+    display: none; }
+    .myAccount .accChg .list ul.ul02 .ti01 {
+      width: 40%; }
+    .myAccount .accChg .list ul.ul02 .ti02 {
+      width: 25%; }
+    .myAccount .accChg .list ul.ul02 .ti03 {
+      width: 35%; }
+
+.myTradeDet .reHd {
+  padding-top: 2rem;
+  padding-bottom: .6rem;
+  text-align: center; }
+  .myTradeDet .reHd .tit em {
+    font-size: .6rem; }
+  .myTradeDet .reHd p {
+    font-size: .28rem;
+    color: #999;
+    margin-top: .2rem; }
+
+.reList li {
+  height: .8rem;
+  padding-top: .25rem;
+  box-sizing: border-box;
+  font-size: .28rem;
+  color: #666; }
+  .reList li .tl {
+    width: 38%;
+    float: left; }
+  .reList li .tr {
+    width: 62%;
+    float: right;
+    text-align: right; }
+
+.myBrokerage .accHd .mm i {
+  background-image: url("../../public/images/mmIco2.png"); }
+.myBrokerage .accChg .list .itemIng .ti04 {
+  color: #ffb133; }
+.myBrokerage .accChg .list .itemFail .ti04 {
+  color: #999; }
+.myBrokerage .accChg .list ul .ti01, .myBrokerage .accChg .list ul .ti02, .myBrokerage .accChg .list ul .ti03, .myBrokerage .accChg .list ul .ti04 {
+  width: 25%; }
+
+.myWithdraw {
+  padding-top: .2rem; }
+  .myWithdraw .draw {
+    font-size: .32rem;
+    padding-top: .2rem; }
+    .myWithdraw .draw .ti {
+      width: 30%;
+      float: left; }
+    .myWithdraw .draw .hd .money {
+      color: #ff6100; }
+    .myWithdraw .draw .drawInpCom .inp {
+      height: .6rem;
+      line-height: .6rem;
+      margin-top: .4rem; }
+      .myWithdraw .draw .drawInpCom .inp input, .myWithdraw .draw .drawInpCom .inp .selBank {
+        width: 50%;
+        height: .6rem;
+        line-height: .6rem;
+        border: 1px solid #f3f3f3;
+        box-sizing: border-box;
+        padding: 0 .1rem;
+        font-size: .3rem;
+        float: left; }
+    .myWithdraw .draw .drawInpCom .bindCard {
+      color: #76bdff;
+      font-size: .3rem; }
+
+.withRate {
+  padding-top: .45rem;
+  padding-bottom: .2rem; }
+  .withRate .tp {
+    width: 86%;
+    height: .46rem; }
+  .withRate .txt {
+    position: relative;
+    height: .8rem;
+    padding-top: .15rem;
+    color: #e5e5e5; }
+    .withRate .txt > * {
+      position: absolute;
+      width: 1.5rem; }
+    .withRate .txt .cur {
+      color: #76bdff; }
+    .withRate .txt span {
+      display: block;
+      text-align: center;
+      margin-bottom: .04rem; }
+    .withRate .txt .tx01 {
+      left: 0; }
+    .withRate .txt .tx02 {
+      left: 40%; }
+    .withRate .txt .tx03 {
+      left: 79%; }
+    @media only screen and (min-width: 640px) {
+      .withRate .txt {
+        padding-top: .2rem; }
+      .withRate .txt .tx01 {
+        left: 2%; }
+      .withRate .txt .tx02 {
+        left: 42%; }
+      .withRate .txt .tx03 {
+        left: 82%; } }
+
+.myWithDet .withHd {
+  font-size: .28rem;
+  text-align: center;
+  padding-top: 1.15rem; }
+  .myWithDet .withHd .tit .money {
+    font-size: .4rem; }
+  .myWithDet .withHd p {
+    color: #999;
+    margin-top: .2rem; }
+.myWithDet .withRate {
+  padding-top: .7rem; }
+
+.myBank {
+  padding-top: .2rem; }
+  .myBank .addHd {
+    height: 1rem;
+    line-height: 1rem;
+    font-size: .28rem;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e5e5e5; }
+  .myBank .ti01, .myBank .ti02, .myBank .ti03, .myBank .ti04 {
+    float: left;
+    text-align: center;
+    box-sizing: border-box;
+    display: inline-block; }
+  .myBank .ti01 {
+    width: 20%; }
+  .myBank .ti02 {
+    width: 52%; }
+  .myBank .ti03 {
+    width: 28%; }
+  .myBank .list {
+    background-color: #fff; }
+    .myBank .list li {
+      height: .8rem;
+      line-height: .8rem;
+      border-bottom: 1px solid #e5e5e5; }
+      .myBank .list li .han a {
+        font-size: .24rem; }
+        .myBank .list li .han a:before {
+          width: .24rem;
+          height: .24rem;
+          background-repeat: no-repeat;
+          background-size: cover;
+          vertical-align: inherit;
+          margin-right: .05rem; }
+        .myBank .list li .han a.del:before {
+          background-image: url("../../public/images/delIco.png"); }
+        .myBank .list li .han a.chg:before {
+          background-image: url("../../public/images/chgIco.png"); }
+  .myBank .myBtn {
+    margin-top: .8rem; }
+
+.myBank .ti01 {
+  width: 20%; }
+.myBank .ti02 {
+  width: 28%; }
+.myBank .ti03 {
+  width: 32%; }
+.myBank .ti04 {
+  width: 20%; }
+
+.myAddress .addressList li {
+  background-color: #fff;
+  font-size: .28rem;
+  margin-bottom: .2rem; }
+.myAddress .addressList .hd {
+  padding: .3rem 0.3rem .3rem .7rem;
+  position: relative; }
+.myAddress .addressList .tPhone {
+  margin-right: .1rem; }
+.myAddress .addressList .radIco {
+  width: .28rem;
+  height: .28rem;
+  background-image: url("../../public/images/radio.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: .2rem; }
+  .myAddress .addressList .radIco.hover {
+    background-image: url("../../public/images/radioHover.png"); }
+.myAddress .addressList .dz {
+  font-size: .24rem;
+  margin-top: .2rem;
+  line-height: 1.2; }
+.myAddress .addressList .han {
+  height: .6rem;
+  line-height: .6rem;
+  border-top: 1px dashed #e9e9e9;
+  padding: 0 .2rem; }
+  .myAddress .addressList .han .setDef > * {
+    vertical-align: middle; }
+  .myAddress .addressList .han .setDef .ti {
+    display: inline-block; }
+  .myAddress .addressList .han .setDef .setDefChe {
+    width: .3rem;
+    height: .3rem; }
+  .myAddress .addressList .han .btnCom .btn {
+    width: 1rem;
+    height: .4rem;
+    line-height: .4rem;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+    font-size: .28rem;
+    color: #666;
+    margin-left: .1rem;
+    display: inline-block;
+    border-radius: 2px; }
+
+.myBtns {
+  width: 100%;
+  height: 1rem;
+  position: relative; }
+  .myBtns a {
+    width: 100%;
+    height: .8rem;
+    line-height: .8rem;
+    text-align: center;
+    background-color: #ff6100;
+    color: #fff;
+    font-size: .3rem;
+    position: fixed;
+    bottom: 0;
+    z-index: 88; }
+
+.select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: url("../../public/images/ico-xiala.png") no-repeat scroll right center transparent; }
+
+.myAddEdit, .myBankEdit {
+  padding-top: .2rem; }
+  .myAddEdit .addInpCom, .myBankEdit .addInpCom {
+    font-size: .32rem; }
+    .myAddEdit .addInpCom .inp, .myBankEdit .addInpCom .inp {
+      height: 1rem;
+      line-height: 1rem;
+      background-color: #fff;
+      border-bottom: 1px solid #e5e5e5; }
+      .myAddEdit .addInpCom .inp .ti, .myBankEdit .addInpCom .inp .ti {
+        width: 23%;
+        float: left; }
+      .myAddEdit .addInpCom .inp em, .myBankEdit .addInpCom .inp em {
+        color: #f00;
+        margin-left: .05rem;
+        vertical-align: middle; }
+      .myAddEdit .addInpCom .inp input, .myBankEdit .addInpCom .inp input {
+        padding: 0 .1rem;
+        box-sizing: border-box; }
+      .myAddEdit .addInpCom .inp input, .myAddEdit .addInpCom .inp .addSel, .myAddEdit .addInpCom .inp .cardSel, .myBankEdit .addInpCom .inp input, .myBankEdit .addInpCom .inp .addSel, .myBankEdit .addInpCom .inp .cardSel {
+        width: 77%;
+        height: 1rem;
+        line-height: 1rem;
+        float: left;
+        font-size: .3rem; }
+      .myAddEdit .addInpCom .inp .addSel select, .myBankEdit .addInpCom .inp .addSel select {
+        width: 30%;
+        height: 1rem;
+        line-height: 1rem;
+        float: left;
+        margin-right: 5%;
+        font-size: .32rem;
+        box-sizing: border-box; }
+        .myAddEdit .addInpCom .inp .addSel select:last-of-type, .myBankEdit .addInpCom .inp .addSel select:last-of-type {
+          margin-right: 0; }
+    .myAddEdit .addInpCom .han, .myBankEdit .addInpCom .han {
+      font-size: .32rem;
+      margin-left: .4rem;
+      line-height: .4rem;
+      margin-top: .1rem; }
+      .myAddEdit .addInpCom .han .setChe, .myBankEdit .addInpCom .han .setChe {
+        width: 0.32rem;
+        height: .32rem; }
+      .myAddEdit .addInpCom .han > *, .myBankEdit .addInpCom .han > * {
+        display: inline-block;
+        vertical-align: middle; }
+
+.myBankEdit .addInpCom .inp {
+  background-color: transparent;
+  height: .8rem;
+  line-height: .8rem;
+  margin-bottom: .2rem; }
+  .myBankEdit .addInpCom .inp .ti {
+    width: 30%; }
+  .myBankEdit .addInpCom .inp input {
+    width: 54%; }
+  .myBankEdit .addInpCom .inp input, .myBankEdit .addInpCom .inp .addSel, .myBankEdit .addInpCom .inp .cardSel {
+    height: .8rem;
+    line-height: .8rem;
+    background-color: transparent;
+    float: left; }
+    .myBankEdit .addInpCom .inp input select, .myBankEdit .addInpCom .inp .addSel select, .myBankEdit .addInpCom .inp .cardSel select {
+      height: .8rem;
+      line-height: .8rem;
+      background-color: transparent;
+      font-size: .3rem;
+      box-sizing: border-box; }
+  .myBankEdit .addInpCom .inp .addSel {
+    width: 68%; }
+  .myBankEdit .addInpCom .inp .cardSel {
+    width: 54%; }
+  .myBankEdit .addInpCom .inp.yzmInp input {
+    width: 40%; }
+  .myBankEdit .addInpCom .inp.yzmInp .getCode {
+    width: 28%;
+    height: .7rem;
+    line-height: .7rem;
+    background-color: #ff6100;
+    color: #fff;
+    font-size: .26rem;
+    float: right; }
+    .myBankEdit .addInpCom .inp.yzmInp .getCode.sended {
+      background-color: #d6d6d6;
+      cursor: no-drop; }
+.myBankEdit .showTip {
+  font-size: .24rem;
+  color: #999;
+  margin-top: .3rem;
+  padding-left: 28%; }
+  .myBankEdit .showTip:before {
+    width: .22rem;
+    height: .22rem;
+    background-image: url("../../public/images/tipIco.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: .1rem; }
+
+.myCollect .tab {
+  height: 1rem; }
+  .myCollect .tab ol li {
+    line-height: 1rem; }
+    .myCollect .tab ol li.cur {
+      border-bottom-color: #56aae5; }
+    .myCollect .tab ol li.cur a {
+      color: #333; }
+
+.askList, .collList {
+  padding-top: 1rem; }
+  .askList ul, .collList ul {
+    margin-top: .4rem;
+    padding: 0 .3rem; }
+    .askList ul .item .tp, .collList ul .item .tp {
+      width: .84rem;
+      height: .84rem;
+      border-radius: .26rem;
+      overflow: hidden;
+      border: 1px solid #e5e5e5;
+      float: left; }
+      .askList ul .item .tp img, .collList ul .item .tp img {
+        width: 100%; }
+    .askList ul .item .txt, .collList ul .item .txt {
+      margin-left: 1.2rem; }
+      .askList ul .item .txt .txIn, .collList ul .item .txt .txIn {
+        padding-top: .05rem; }
+        .askList ul .item .txt .txIn > *, .collList ul .item .txt .txIn > * {
+          margin-bottom: .15rem; }
+      .askList ul .item .txt .tHd i, .collList ul .item .txt .tHd i {
+        width: .4rem;
+        height: .4rem;
+        line-height: .4rem;
+        text-align: center;
+        border: 1px solid transparent;
+        vertical-align: middle;
+        margin-right: .05rem;
+        display: inline-block;
+        color: #fff;
+        border-radius: 2px; }
+      .askList ul .item .txt .tHd .name, .collList ul .item .txt .tHd .name {
+        font-size: .25rem; }
+      .askList ul .item .txt .wz, .collList ul .item .txt .wz {
+        color: #666; }
+      .askList ul .item .txt .origin em, .collList ul .item .txt .origin em {
+        color: #999; }
+      .askList ul .item .txt .origin a, .collList ul .item .txt .origin a {
+        color: #ffa166; }
+      .askList ul .item .txt .hand, .collList ul .item .txt .hand {
+        color: #999; }
+        .askList ul .item .txt .hand .time, .collList ul .item .txt .hand .time {
+          float: left; }
+        .askList ul .item .txt .hand .mesIco, .collList ul .item .txt .hand .mesIco {
+          float: right;
+          color: #999;
+          margin-left: .2rem; }
+        .askList ul .item .txt .hand i, .collList ul .item .txt .hand i {
+          width: .34rem;
+          height: .32rem;
+          background-image: url("../../public/images/mesIco.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: .1rem; }
+    .askList ul .item .anArea, .collList ul .item .anArea {
+      margin-top: .2rem;
+      display: none; }
+      .askList ul .item .anArea textarea, .collList ul .item .anArea textarea {
+        width: 100%;
+        height: 2rem;
+        border: 1px solid #e5e5e5;
+        padding: .1rem;
+        box-sizing: border-box;
+        color: #666;
+        font-size: .28rem; }
+      .askList ul .item .anArea .bot, .collList ul .item .anArea .bot {
+        float: right;
+        margin-top: .1rem; }
+        .askList ul .item .anArea .bot .btn, .collList ul .item .anArea .bot .btn {
+          width: 1rem;
+          height: .5rem;
+          line-height: .5rem;
+          text-align: center;
+          background-color: #6cabf7;
+          color: #fff;
+          margin-left: .1rem;
+          display: inline-block;
+          border-radius: 2px; }
+          .askList ul .item .anArea .bot .btn.cancleBtn, .collList ul .item .anArea .bot .btn.cancleBtn {
+            background-color: #ccc; }
+    .askList ul .itemX, .collList ul .itemX {
+      margin-left: 1.2rem;
+      margin-top: .1rem; }
+      .askList ul .itemX .tp, .collList ul .itemX .tp {
+        width: .62rem;
+        height: .62rem;
+        border-radius: .2rem; }
+      .askList ul .itemX .txt, .collList ul .itemX .txt {
+        margin-left: .9rem; }
+        .askList ul .itemX .txt .tHd i, .collList ul .itemX .txt .tHd i {
+          width: .3rem;
+          height: .3rem;
+          line-height: .3rem; }
+        .askList ul .itemX .txt .ask, .collList ul .itemX .txt .ask {
+          color: #666; }
+    .askList ul .collectIco, .collList ul .collectIco {
+      float: right; }
+      .askList ul .collectIco s, .collList ul .collectIco s {
+        width: .32rem;
+        height: .32rem;
+        background-image: url("../../public/images/xinIco.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: .05rem; }
+
+.collList .ul02 {
+  display: none;
+  margin-top: 0;
+  padding: 0; }
+  .collList .ul02 li {
+    padding: .2rem .3rem;
+    color: #666;
+    border-bottom: 1px solid #e5e5e5;
+    position: relative; }
+  .collList .ul02 .ico {
+    width: .4rem;
+    height: .3rem;
+    background-image: url("../../public/images/spIco.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: .4rem;
+    top: .2rem; }
+  .collList .ul02 .tx {
+    display: inline-block;
+    color: #666;
+    font-size: .28rem;
+    margin-left: .7rem;
+    line-height: 1.3; }
+  .collList .ul02 .bot {
+    text-align: right;
+    color: #999;
+    margin-top: .1rem; }
+    .collList .ul02 .bot .date {
+      float: right;
+      margin-right: .2rem; }
+
+.mySetting {
+  padding-top: .2rem; }
+  .mySetting .setList {
+    width: 100%; }
+    .mySetting .setList ul li {
+      width: 100%;
+      height: 1rem;
+      line-height: 1rem;
+      background-color: #fff;
+      box-sizing: border-box;
+      border-bottom: 1px solid #e5e5e5;
+      margin-bottom: .1rem;
+      position: relative; }
+      .mySetting .setList ul li > a {
+        width: 100%;
+        height: 100%;
+        display: block; }
+      .mySetting .setList ul li .ico {
+        width: .4rem;
+        height: .4rem;
+        background-image: url("../../public/images/setIco.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        left: .4rem; }
+      .mySetting .setList ul li:nth-of-type(1) .ico {
+        background-position: 0 0rem; }
+      .mySetting .setList ul li:nth-of-type(2) .ico {
+        background-position: 0 -0.4rem; }
+      .mySetting .setList ul li:nth-of-type(3) .ico {
+        background-position: 0 -0.8rem; }
+      .mySetting .setList ul li:nth-of-type(4) .ico {
+        background-position: 0 -1.2rem; }
+      .mySetting .setList ul li:nth-of-type(5) .ico {
+        background-position: 0 -1.6rem; }
+      .mySetting .setList ul li:nth-of-type(6) .ico {
+        background-position: 0 -2rem; }
+    .mySetting .setList ul .tl {
+      float: left; }
+    .mySetting .setList ul .ti {
+      font-size: .32rem;
+      padding-left: .6rem; }
+    .mySetting .setList ul .tr {
+      float: right;
+      color: #999; }
+      .mySetting .setList ul .tr span {
+        margin-right: .4rem; }
+    .mySetting .setList ul .arr {
+      width: .3rem;
+      height: .3rem;
+      background-image: url("../../public/images/arrIco01.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      right: .4rem; }
+
+.myWxBind .in {
+  text-align: center; }
+.myWxBind .tp {
+  display: inline-block; }
+  .myWxBind .tp img {
+    width: 100%; }
+.myWxBind .wxBindNo {
+  padding-top: 1rem; }
+  .myWxBind .wxBindNo .tit {
+    font-size: .34rem; }
+  .myWxBind .wxBindNo .tp {
+    width: 53%;
+    margin-top: .2rem; }
+.myWxBind .wxBindYes {
+  padding-top: 2rem; }
+  .myWxBind .wxBindYes .tp {
+    width: 1.3rem;
+    height: 1.3rem;
+    border: 1px solid #ff6100;
+    -webkit-box-shadow: 0 0 0.2rem #e55700;
+    -moz-box-shadow: 0 0 0.2rem #e55700;
+    box-shadow: 0 0 0.2rem #e55700; }
+  .myWxBind .wxBindYes .txt {
+    margin-top: .2rem; }
+    .myWxBind .wxBindYes .txt .name {
+      font-size: .32rem;
+      font-weight: 700; }
+    .myWxBind .wxBindYes .txt .tx {
+      padding-top: .3rem; }
+      .myWxBind .wxBindYes .txt .tx p {
+        font-size: .32rem; }
+        .myWxBind .wxBindYes .txt .tx p:before {
+          width: .4rem;
+          height: .4rem;
+          background-image: url("../../public/images/sucIco.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          vertical-align: sub;
+          margin-right: .15rem; }
+      .myWxBind .wxBindYes .txt .tx .unbind {
+        color: #56aae5;
+        font-size: .3rem;
+        display: inline-block;
+        margin-top: .15rem;
+        text-decoration: underline; }
+
+.myPhoneBind, .myEmailBind {
+  padding-top: .2rem; }
+  .myPhoneBind .pBindYes, .myEmailBind .pBindYes {
+    padding-top: 2.5rem;
+    text-align: center; }
+    .myPhoneBind .pBindYes .tp, .myEmailBind .pBindYes .tp {
+      width: 1.1rem;
+      height: 1.1rem;
+      display: inline-block;
+      overflow: hidden; }
+      .myPhoneBind .pBindYes .tp img, .myEmailBind .pBindYes .tp img {
+        width: 100%; }
+    .myPhoneBind .pBindYes .txt, .myEmailBind .pBindYes .txt {
+      margin-top: .3rem;
+      font-size: .32rem; }
+      .myPhoneBind .pBindYes .txt p, .myEmailBind .pBindYes .txt p {
+        line-height: 1.1; }
+      .myPhoneBind .pBindYes .txt .chg, .myEmailBind .pBindYes .txt .chg {
+        font-size: .3rem;
+        color: #56aae5;
+        display: inline-block;
+        margin-top: .15rem;
+        text-decoration: underline; }
+
+.myInps .inp {
+  height: 1rem;
+  line-height: 1rem;
+  background-color: #fff;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e5e5e5; }
+  .myInps .inp > * {
+    height: 1rem;
+    line-height: 1rem;
+    float: left;
+    font-size: .32rem;
+    box-sizing: border-box; }
+  .myInps .inp .ti {
+    width: 24%;
+    padding-left: .4rem; }
+  .myInps .inp input {
+    width: 76%;
+    padding: 0 .1rem; }
+  .myInps .inp.yzmInp input {
+    width: 42%; }
+  .myInps .inp.yzmInp .getCode {
+    width: 34%;
+    border-left: 1px solid #e5e5e5;
+    color: #fe7d2e;
+    background-color: #fff;
+    font-size: .3rem; }
+    .myInps .inp.yzmInp .getCode.sended {
+      background-color: #d6d6d6;
+      color: #fff;
+      cursor: no-drop; }
+
+.myPassword .myInps .inp .ti {
+  width: 32%; }
+.myPassword .myInps .inp input {
+  width: 68%; }
+.myPassword .myBtn {
+  margin-top: .8rem; }
+
+.myPortrait {
+  padding-top: .2rem; }
+  .myPortrait .faceList li {
+    float: left;
+    width: 25%;
+    margin-bottom: .2rem;
+    text-align: center; }
+    .myPortrait .faceList li .tp {
+      width: .94rem;
+      height: .94rem;
+      border: 1px solid #f0f2ef;
+      display: inline-block; }
+      .myPortrait .faceList li .tp img {
+        width: 100%;
+        display: inline-block; }
+    .myPortrait .faceList li.cur .tp {
+      border-color: #ff6100; }
+
+.myInfor .inList {
+  padding-top: .8rem; }
+  .myInfor .inList li {
+    height: .8rem;
+    line-height: .8rem;
+    border-bottom: 1px solid #e5e5e5;
+    position: relative; }
+    .myInfor .inList li .ico {
+      width: .4rem;
+      height: .4rem;
+      display: inline-block;
+      left: 1.1rem; }
+      .myInfor .inList li .ico img {
+        width: 100%;
+        display: block; }
+    .myInfor .inList li .tx {
+      width: 100%;
+      padding-left: 1.4rem;
+      color: #666;
+      display: inline-block;
+      box-sizing: border-box; }
+.myInfor .han {
+  margin-top: .3rem;
+  height: .4rem;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative; }
+  .myInfor .han > * {
+    vertical-align: middle;
+    display: inline-block; }
+  .myInfor .han .del {
+    width: .8rem;
+    height: .4rem;
+    line-height: .4rem;
+    background-color: #fff;
+    border: 1px solid #ff6100;
+    color: #ff6100;
+    text-align: center;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-left: .15rem;
+    font-size: .24rem; }
+  .myInfor .han .ti {
+    padding-left: .1rem;
+    color: #666; }
+
+.myRecharge {
+  padding-bottom: .4rem; }
+  .myRecharge .withRate .txt {
+    height: .5rem; }
+  .myRecharge .money {
+    text-align: center;
+    padding-bottom: .4rem;
+    border-bottom: 1px solid #e5e5e5; }
+    .myRecharge .money > * {
+      font-size: .28rem; }
+    .myRecharge .money .mm {
+      margin-bottom: .4rem; }
+      .myRecharge .money .mm .ico {
+        width: .52rem;
+        height: .52rem;
+        background-image: url("../../public/images/mmIco.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: inline-block;
+        vertical-align: sub; }
+      .myRecharge .money .mm em {
+        color: #ff6100;
+        font-size: .48rem;
+        font-weight: 700; }
+    .myRecharge .money .bb {
+      height: .66rem;
+      line-height: .66rem; }
+      .myRecharge .money .bb input {
+        width: 2.8rem;
+        height: .65rem;
+        line-height: .66rem;
+        padding: 0 .1rem;
+        font-size: .28rem;
+        border: 1px solid #e5e5e5;
+        box-sizing: border-box;
+        vertical-align: bottom;
+        margin: 0 .1rem; }
+  .myRecharge .paySel {
+    padding: 0 .3rem; }
+    .myRecharge .paySel .payTip {
+      height: 1rem;
+      line-height: 1rem;
+      font-size: .28rem; }
+      .myRecharge .paySel .payTip span {
+        color: #ff6100; }
+  .myRecharge .recStyle .tit {
+    height: 1.1rem;
+    line-height: 1.1rem;
+    font-size: .28rem; }
+  .myRecharge .recStyle ul li {
+    width: 2.6rem;
+    height: .88rem;
+    float: left;
+    position: relative;
+    margin-right: .4rem;
+    border: 1px solid #e9e9e9;
+    box-sizing: border-box; }
+    .myRecharge .recStyle ul li:last-of-type {
+      margin-right: 0; }
+    .myRecharge .recStyle ul li .tp {
+      width: 100%;
+      height: 100%; }
+      .myRecharge .recStyle ul li .tp img {
+        width: 100%; }
+    .myRecharge .recStyle ul li .ico {
+      width: .44rem;
+      height: .44rem;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      right: -1px;
+      bottom: -1px; }
+    .myRecharge .recStyle ul li.cur {
+      border-color: #76bdff; }
+    .myRecharge .recStyle ul li.cur .ico {
+      background-image: url("../../public/images/recCheIco.png"); }
+  .myRecharge .reSuc {
+    margin: 0 .4rem;
+    padding: .4rem 0;
+    border-top: 1px solid #e5e5e5; }
+    .myRecharge .reSuc .tit img {
+      width: .44rem;
+      height: .44rem;
+      display: inline-block;
+      vertical-align: middle; }
+    .myRecharge .reSuc .tit .th {
+      font-size: .36rem;
+      font-weight: 700;
+      display: inline-block;
+      margin-left: .1rem;
+      vertical-align: middle; }
+
+.selList ul {
+  border-top: 1px solid #e5e5e5; }
+.selList li {
+  height: .8rem;
+  line-height: .8rem;
+  padding: 0 .4rem 0 .6rem;
+  border-bottom: 1px solid #e5e5e5;
+  font-size: .28rem;
+  position: relative; }
+  .selList li .tl {
+    float: left; }
+  .selList li .tr {
+    float: right;
+    color: #ff6100; }
+  .selList li .radIco {
+    width: .2rem;
+    height: .2rem;
+    background-image: url("../../public/images/radIco.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: .1rem; }
+  .selList li.cur .radIco {
+    background-image: url("../../public/images/radIcoHover.png"); }
+
+.recDet {
+  font-size: .28rem;
+  padding: .4rem 0;
+  margin: 0 .3rem;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5; }
+  .recDet p {
+    margin-bottom: .4rem; }
+    .recDet p:last-of-type {
+      margin-bottom: 0; }
+  .recDet em {
+    color: #ff6100; }
+
+.recDet2 {
+  border-top: none;
+  padding-top: .1rem;
+  padding-left: .7rem; }
+  .recDet2 p {
+    margin-bottom: .5rem; }
+
+.recDet3 p {
+  margin-bottom: .2rem;
+  line-height: 1.1; }
+
+.txtExp {
+  padding: .4rem .4rem .2rem;
+  font-size: .2rem;
+  color: #666; }
+  .txtExp .tit {
+    font-size: .28rem;
+    color: #333; }
+  .txtExp p {
+    margin-top: .2rem;
+    line-height: 1.3; }
+  .txtExp .goLink {
+    font-size: .2rem;
+    color: #ff6100; }
+
+.myEnterCourses .courSel {
+  padding: 0 .3rem; }
+  .myEnterCourses .courSel .tr {
+    color: #333; }
+  .myEnterCourses .courSel .num {
+    color: #ff6100; }
+.myEnterCourses .link {
+  margin-top: .3rem;
+  text-align: center; }
+  .myEnterCourses .link a {
+    text-decoration: underline;
+    font-size: .24rem; }
+.myEnterCourses .myBtn {
+  margin-top: .6rem; }
+
+.recSettle {
+  font-size: .28rem; }
+  .recSettle .con {
+    padding: .4rem 0;
+    background-color: #fff;
+    border-top: 1px solid #e5e5e5; }
+  .recSettle .cheap .it {
+    height: .4rem;
+    line-height: .4rem;
+    margin-bottom: .2rem; }
+    .recSettle .cheap .it .yy > * {
+      float: left;
+      vertical-align: middle;
+      line-height: .38rem; }
+    .recSettle .cheap .it .yy i {
+      width: .72rem;
+      height: .38rem;
+      background-image: url("../../public/images/switchIco.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-right: .1rem; }
+    .recSettle .cheap .it .yy span {
+      width: 1.5rem; }
+    .recSettle .cheap .it .pp {
+      display: none; }
+      .recSettle .cheap .it .pp input {
+        width: 1.5rem;
+        height: .38rem;
+        line-height: .38rem;
+        padding: 0 .1rem;
+        border: 1px solid #e5e5e5;
+        box-sizing: border-box;
+        vertical-align: text-bottom;
+        font-size: .24rem;
+        margin-left: .1rem; }
+    .recSettle .cheap .it .rr {
+      display: none; }
+    .recSettle .cheap .it.cur .pp, .recSettle .cheap .it.cur .rr {
+      display: block; }
+    .recSettle .cheap .it.cur i {
+      background-position: left bottom; }
+  .recSettle .curMoney {
+    margin-top: .2rem; }
+    .recSettle .curMoney .num {
+      color: #ff6100; }
+    .recSettle .curMoney .aRec {
+      color: #57ade9;
+      font-size: .28rem; }
+
+.countBot {
+  position: relative;
+  height: 1.2rem;
+  width: 100%; }
+  .countBot .in {
+    height: 1rem;
+    line-height: 1rem;
+    border-top: 1px solid #e5e5e5;
+    background-color: #fff;
+    box-sizing: border-box; }
+  .countBot .cou {
+    width: 70%;
+    float: left;
+    font-size: .32rem;
+    box-sizing: border-box;
+    padding-left: .4rem; }
+    .countBot .cou .sp1 {
+      margin-right: .2rem; }
+    .countBot .cou .allCost {
+      color: #ff6100; }
+  .countBot .btn {
+    width: 30%;
+    float: right;
+    height: 1rem;
+    line-height: 1rem;
+    text-align: center;
+    background-color: #ff6100; }
+    .countBot .btn > a {
+      color: #fff;
+      font-size: .32rem;
+      display: block; }
+
+.oChe, .oAllChe {
+  width: .3rem;
+  height: .3rem;
+  background-image: url("../../public/images/che.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: inline-block; }
+  .oChe:checked, .oChe.hover, .oAllChe:checked, .oAllChe.hover {
+    background-image: url("../../public/images/cheHover.png"); }
+  .oChe.cheNo, .oAllChe.cheNo {
+    background-image: url("../../public/images/cheNo.png"); }
+
+.oChe {
+  left: .2rem; }
+
+.myJoinVideo02 .in > * {
+  background-color: #fff; }
+.myJoinVideo02 .txtExp {
+  margin-top: .2rem; }
+
+.proList ul {
+  border-top: 1px solid #e9e9e9; }
+.proList li {
+  height: 2.3rem;
+  max-height: 2.3rem;
+  position: relative;
+  border-bottom: 1px solid #e9e9e9; }
+  .proList li .item {
+    height: 2rem;
+    padding: .15rem; }
+.proList .tp {
+  width: 2.8rem;
+  height: 2rem;
+  float: left;
+  margin-left: .6rem;
+  position: relative; }
+  .proList .tp img {
+    width: 100%; }
+  .proList .tp .lab, .proList .tp .xin {
+    position: absolute;
+    top: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1; }
+  .proList .tp .xin {
+    right: 0;
+    width: .5rem;
+    height: .5rem;
+    background-image: url("../../public/images/collectIco.png"); }
+    .proList .tp .xin.hover {
+      background-position: right top; }
+  .proList .tp .lab {
+    left: 0;
+    width: .9rem;
+    height: .96rem;
+    color: #fff;
+    font-size: .24rem; }
+    .proList .tp .lab em {
+      position: absolute;
+      left: .05rem;
+      top: .18rem;
+      transform: rotate(-50deg);
+      -webkit-transform: rotate(-50deg);
+      -moz-transform: rotate(-50deg);
+      -ms-transform: rotate(-50deg);
+      -o-transform: rotate(-50deg); }
+.proList .txt {
+  margin-left: 3.6rem;
+  margin-right: .3rem;
+  height: 100%;
+  font-size: .24rem;
+  color: #999;
+  position: relative; }
+  .proList .txt .tName {
+    font-size: .28rem;
+    color: #666; }
+  .proList .txt .st {
+    margin-top: .3rem; }
+  .proList .txt .bot {
+    width: 100%;
+    position: absolute;
+    bottom: .15rem;
+    height: .26rem;
+    line-height: .26rem; }
+    .proList .txt .bot .cost {
+      color: #ff6e6e; }
+    .proList .txt .bot .costNo {
+      color: #999;
+      text-decoration: line-through; }
+  .proList .txt .del {
+    color: #666; }
+    .proList .txt .del .ico {
+      width: .24rem;
+      height: .24rem;
+      background-image: url("../../public/images/delIco.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-right: .1rem;
+      display: inline-block;
+      vertical-align: top; }
+.proList .proUnNo .che {
+  background-position: 0 -.35rem; }
+.proList .proUnNo .txt .bot .mm {
+  text-decoration: line-through; }
+  .proList .proUnNo .txt .bot .mm em {
+    color: #999; }
+
+.proHandle {
+  padding: 0 .2rem;
+  height: .4rem;
+  line-height: .4rem;
+  margin-top: .4rem; }
+  .proHandle > * {
+    float: left;
+    margin-right: .4rem;
+    font-size: .28rem;
+    color: #666;
+    line-height: .4rem; }
+  .proHandle .botChe > *, .proHandle .botDel > * {
+    display: inline-block;
+    vertical-align: middle; }
+  .proHandle .ti {
+    padding-left: .1rem; }
+  .proHandle .ico {
+    width: .34rem;
+    height: .34rem;
+    background-image: url("../../public/images/delIcoB.png");
+    background-repeat: no-repeat;
+    background-size: cover; }
+
+.recSettle02 .bot {
+  margin-top: 0; }
+
+.myJoinVideo .withRate .txt {
+  height: .4rem; }
+
+.addList {
+  padding: 0 .3rem;
+  position: relative; }
+  .addList ul {
+    border-top: 1px solid #e9e9e9; }
+    .addList ul li {
+      position: relative;
+      padding: .5rem 0; }
+    .addList ul .arr {
+      width: .3rem;
+      height: .3rem;
+      background-image: url("../../public/images/arrIco01.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      right: 0; }
+    .addList ul .item {
+      font-size: .28rem;
+      position: relative;
+      padding-right: .5rem;
+      display: block; }
+      .addList ul .item .dz {
+        padding-top: .2rem;
+        line-height: 1.3; }
+
+.vidInf {
+  padding-bottom: .4rem;
+  font-size: .28rem; }
+  .vidInf .hd {
+    height: .9rem;
+    line-height: .9rem;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    box-sizing: border-box;
+    text-align: center; }
+  .vidInf .ti0 {
+    display: inline-block; }
+  .vidInf .ti01 {
+    width: 70%;
+    float: left; }
+  .vidInf .ti02 {
+    width: 24%;
+    float: right; }
+  .vidInf .bd {
+    width: 100%;
+    box-sizing: border-box; }
+    .vidInf .bd ul {
+      padding-top: .5rem; }
+      .vidInf .bd ul li {
+        margin-bottom: .4rem; }
+        .vidInf .bd ul li a {
+          font-size: .28rem;
+          display: block; }
+        .vidInf .bd ul li .ti01 {
+          line-height: 1.2; }
+      .vidInf .bd ul .mm {
+        color: #ff6100; }
+      .vidInf .bd ul .ti02 {
+        text-align: right; }
+    .vidInf .bd .tol {
+      text-align: right; }
+      .vidInf .bd .tol .tolMM {
+        color: #ff6100; }
+
+.myRank .round {
+  width: 3.4rem;
+  height: 3.4rem;
+  margin: .9rem auto 0;
+  position: relative; }
+  .myRank .round > * {
+    position: absolute;
+    top: auto; }
+  .myRank .round .roundA {
+    width: 3.4rem;
+    height: 3.4rem;
+    top: 0;
+    left: 0;
+    background-color: #9ed0ff;
+    -webkit-box-shadow: 0 0 0.2rem #9fd2ff;
+    -moz-box-shadow: 0 0 0.2rem #9fd2ff;
+    box-shadow: 0 0 0.2rem #9fd2ff;
+    animation: myChg 3s infinite 0.2s;
+    -webkit-animation: myChg 3s infinite 0.2s;
+    -moz-animation: myChg 3s infinite 0.2s;
+    -ms-animation: myChg 3s infinite 0.2s;
+    -o-transform: myChg 3s infinite 0.2s; }
+  .myRank .round .roundB {
+    width: 3.1rem;
+    height: 3.1rem;
+    top: .15rem;
+    left: .15rem;
+    background-color: #76bdff;
+    -webkit-box-shadow: 0 0 0.1rem #77beff;
+    -moz-box-shadow: 0 0 0.1rem #77beff;
+    box-shadow: 0 0 0.1rem #77beff;
+    animation: myChg 3s infinite 0.2s;
+    -webkit-animation: myChg 3s infinite 0.2s;
+    -moz-animation: myChg 3s infinite 0.2s;
+    -ms-animation: myChg 3s infinite 0.2s;
+    -o-transform: myChg 3s infinite 0.2s; }
+  .myRank .round .roundC {
+    width: 2.8rem;
+    height: 2.8rem;
+    top: .3rem;
+    left: .3rem;
+    background-color: #5a99e5; }
+  .myRank .round .roundD {
+    width: 2.6rem;
+    height: 2.6rem;
+    top: .4rem;
+    left: .4rem;
+    background-color: #fff; }
+    .myRank .round .roundD > * {
+      color: #5a99e5;
+      text-align: center;
+      display: block; }
+    .myRank .round .roundD .ti {
+      font-size: .4rem;
+      margin-top: .7rem; }
+    .myRank .round .roundD .num {
+      font-size: .6rem;
+      margin-top: .2rem; }
+.myRank .rankSel {
+  padding-top: .4rem; }
+  .myRank .rankSel .hdTit {
+    width: 100%;
+    height: .8rem;
+    line-height: .8rem;
+    background-color: #76bdff;
+    border-radius: .1rem;
+    position: relative; }
+    .myRank .rankSel .hdTit .ti {
+      color: #fff;
+      font-size: .38rem;
+      text-align: center;
+      line-height: .8rem; }
+      @media only screen and (min-width: 640px) {
+        .myRank .rankSel .hdTit .ti {
+          font-size: .32rem; } }
+    .myRank .rankSel .hdTit > i {
+      width: .24rem;
+      height: .24rem;
+      background-color: #fff; }
+    .myRank .rankSel .hdTit .i01 {
+      left: .4rem; }
+    .myRank .rankSel .hdTit .i02 {
+      right: .4rem; }
+  .myRank .rankSel .bdTab {
+    width: 90%;
+    height: 3rem;
+    background-color: #f5f5f5;
+    border-radius: 0 0 .1rem .1rem; }
+    .myRank .rankSel .bdTab li {
+      width: 50%;
+      height: 50%;
+      line-height: 1.5rem;
+      text-align: center;
+      float: left; }
+      .myRank .rankSel .bdTab li .item {
+        font-size: .3rem;
+        color: #666;
+        display: block; }
+        .myRank .rankSel .bdTab li .item > * {
+          display: inline-block; }
+        .myRank .rankSel .bdTab li .item img {
+          width: 1rem;
+          height: .74rem; }
+
+@-webkit-keyframes myChg {
+  0% {
+    transform: scale(1); }
+  25% {
+    transform: scale(1.01); }
+  50% {
+    transform: scale(1.02); }
+  75% {
+    transform: scale(1.01); }
+  100% {
+    transform: scale(1); } }
+@-moz-keyframes myChg {
+  0% {
+    transform: scale(1); }
+  25% {
+    transform: scale(1.01); }
+  50% {
+    transform: scale(1.02); }
+  75% {
+    transform: scale(1.01); }
+  100% {
+    transform: scale(1); } }
+@-o-keyframes myChg {
+  0% {
+    transform: scale(1); }
+  25% {
+    transform: scale(1.01); }
+  50% {
+    transform: scale(1.02); }
+  75% {
+    transform: scale(1.01); }
+  100% {
+    transform: scale(1); } }
+@keyframes myChg {
+  0% {
+    transform: scale(1); }
+  25% {
+    transform: scale(1.01); }
+  50% {
+    transform: scale(1.02); }
+  75% {
+    transform: scale(1.01); }
+  100% {
+    transform: scale(1); } }
+.myNotes .in {
+  padding: 0 .2rem; }
+.myNotes .notes {
+  font-size: .22rem;
+  color: #999; }
+.myNotes .item {
+  padding: .4rem 0;
+  border-bottom: 1px solid #e5e5e5; }
+  .myNotes .item .tit {
+    line-height: 1.3;
+    font-size: .26rem; }
+  .myNotes .item .originate {
+    margin-top: .2rem;
+    color: #ffa166; }
+    .myNotes .item .originate > * {
+      line-height: 1.2; }
+    .myNotes .item .originate span {
+      color: #999; }
+    .myNotes .item .originate .link {
+      color: #ffa166;
+      font-size: .24rem;
+      display: inline-block; }
+  .myNotes .item .bot {
+    margin-top: .2rem;
+    height: .34rem;
+    line-height: .34rem; }
+    .myNotes .item .bot .han {
+      font-size: .28rem; }
+      .myNotes .item .bot .han > * {
+        margin-left: .15rem;
+        float: left; }
+      .myNotes .item .bot .han .ti {
+        vertical-align: top;
+        margin-left: .1rem; }
+      .myNotes .item .bot .han .ico {
+        width: .34rem;
+        height: .34rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: inline-block; }
+      .myNotes .item .bot .han .chg .ico {
+        background-image: url("../../public/images/ico-bj.png"); }
+      .myNotes .item .bot .han .del .ico {
+        background-image: url("../../public/images/ico-del.png"); }
+      .myNotes .item .bot .han .time {
+        height: .34rem;
+        color: #999;
+        font-size: .24rem; }
+        .myNotes .item .bot .han .time > * {
+          float: left; }
+        .myNotes .item .bot .han .time .ico {
+          width: .34rem;
+          height: .34rem;
+          background-image: url("../../public/images/ico-bf.png"); }
+        .myNotes .item .bot .han .time .num {
+          line-height: .31rem;
+          border: 1px solid #e5e5e5;
+          border-left: none;
+          padding: 0 .05rem;
+          margin-left: -1px;
+          background-color: #f7f7f7;
+          box-sizing: border-box; }
+.myNotes .txtArea {
+  padding: .4rem 0;
+  border-bottom: 1px solid #e5e5e5;
+  display: none; }
+  .myNotes .txtArea .area {
+    height: 1.7rem;
+    width: 100%;
+    padding: .1rem;
+    box-sizing: border-box;
+    border: 1px solid #e5e5e5;
+    font-size: .24rem;
+    color: #999; }
+  .myNotes .txtArea .btns {
+    float: right;
+    margin-top: .2rem; }
+    .myNotes .txtArea .btns .btn {
+      width: .8rem;
+      height: .4rem;
+      line-height: .4rem;
+      background-color: #ff6100;
+      text-align: center;
+      color: #fff;
+      font-size: .24rem;
+      border-radius: 2px;
+      margin-left: .2rem;
+      display: inline-block; }
+
+.myQuestion .tab {
+  height: 1rem; }
+  .myQuestion .tab ol li {
+    line-height: 1rem; }
+    .myQuestion .tab ol li.cur {
+      border-bottom-color: #56aae5; }
+      .myQuestion .tab ol li.cur a {
+        color: #333; }
+
+.shopCarFix {
+  position: fixed;
+  right: .4rem;
+  bottom: 1rem;
+  z-index: 9999; }
+  .shopCarFix .item {
+    width: .8rem;
+    height: .8rem;
+    text-align: center;
+    display: inline-block;
+    /*@include box-shadow(0 0 .1rem #ffbdbd);*/
+    /*background-color:#ff7575;*/
+    position: relative; }
+    .shopCarFix .item .num {
+      width: .4rem;
+      height: .4rem;
+      line-height: .4rem;
+      background-color: #ff7575;
+      text-align: center;
+      color: #fff;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 88; }
+    .shopCarFix .item .ico {
+      width: .8rem;
+      height: .8rem;
+      background-image: url("../../public/images/carIco.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: inline-block; }
+
+.loginReg {
+  padding-bottom: .2rem; }
+  .loginReg .logoCom {
+    width: 100%;
+    height: 3.6rem;
+    background-color: #fcf6f6;
+    position: relative; }
+    .loginReg .logoCom .backIco {
+      width: 1rem;
+      height: 1rem;
+      background-image: url("../../public/images/backIco.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      left: 0;
+      top: 0; }
+    .loginReg .logoCom .logo {
+      width: 3.82rem; }
+  .loginReg .tab {
+    height: 1.2rem; }
+    .loginReg .tab ol li {
+      line-height: 1.2rem; }
+    .loginReg .tab ol a {
+      font-size: .48rem;
+      color: #666; }
+
+.logRegList {
+  padding: .5rem .2rem 0; }
+  .logRegList ul {
+    color: #999;
+    font-size: .28rem; }
+  .logRegList .links {
+    padding: .5rem .7rem .15rem .7rem; }
+    .logRegList .links .aLink {
+      color: #999;
+      font-size: .28rem;
+      text-decoration: underline;
+      display: inline-block; }
+      .logRegList .links .aLink:first-of-type {
+        padding-left: .2rem; }
+  .logRegList .isRead {
+    font-size: .28rem;
+    padding-left: .5rem;
+    line-height: .4rem;
+    margin-top: .2rem; }
+    .logRegList .isRead > * {
+      vertical-align: middle;
+      display: inline-block; }
+    .logRegList .isRead .aProtocol {
+      font-size: .28rem;
+      color: #76bdff; }
+  .logRegList .myBtn {
+    margin-top: .7rem; }
+
+.setChe, .setDefChe {
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: .1rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: inline-block; }
+
+.setChe {
+  width: .3rem;
+  height: .3rem;
+  background-image: url("../../public/images/logIco.png"); }
+  .setChe:checked, .setChe.hover {
+    background-image: url("../../public/images/logIcoHover.png"); }
+
+.setDefChe {
+  width: .4rem;
+  height: .4rem;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box;
+  background-image: url("../../public/images/defChe.png"); }
+  .setDefChe:checked, .setDefChe.hover {
+    background-image: url("../../public/images/defCheHover.png"); }
+
+.logInpCom {
+  width: 100%; }
+  .logInpCom .inp {
+    width: 100%;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    border-bottom: 1px solid #e5e5e5;
+    box-sizing: border-box;
+    position: relative; }
+    .logInpCom .inp > * {
+      box-sizing: border-box; }
+    .logInpCom .inp input {
+      line-height: 1.1rem;
+      font-size: .36rem;
+      width: 100%;
+      padding: .08rem .2rem 0 1.1rem;
+      box-sizing: border-box; }
+  .logInpCom .phoneInp > * {
+    float: left; }
+  .logInpCom .phoneInp input {
+    width: 70%; }
+  .logInpCom .phoneInp .getCode {
+    width: 30%;
+    height: 1.18rem;
+    font-size: .3rem;
+    color: #666;
+    background-color: #fff;
+    border-left: 1px solid #e5e5e5; }
+    .logInpCom .phoneInp .getCode.sended {
+      background-color: #d6d6d6;
+      color: #fff;
+      cursor: no-drop; }
+  .logInpCom .ico {
+    width: 1.1rem;
+    height: 1.1rem;
+    background-image: url("../../public/images/logRegIco.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    bottom: 0; }
+  .logInpCom .userInp .ico {
+    background-position: left top; }
+  .logInpCom .pwdInp .ico {
+    background-position: left -3.3rem; }
+  .logInpCom .phoneInp .ico {
+    background-position: left -1.1rem; }
+  .logInpCom .yzmInp .ico {
+    background-position: left -2.2rem; }
+  .logInpCom .mesInp .ico {
+    background-position: left bottom; }
+
+.findPwd .pwdInpCom .logInpCom {
+  background-color: #fff;
+  box-sizing: border-box; }
+.findPwd .pwdInpCom .withRate .txt {
+  color: #ccc;
+  height: .6rem; }
+.findPwd .pwdInpCom .hd {
+  padding: 0 .2rem;
+  background-color: #fff;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  text-align: center;
+  font-size: .32rem;
+  color: #999;
+  border-bottom: 1px solid #e5e5e5; }
+  .findPwd .pwdInpCom .hd .tit:before {
+    width: .4rem;
+    height: .4rem;
+    background-image: url("../../public/images/tipIco.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    vertical-align: text-bottom;
+    margin-right: .1rem; }
+.findPwd .pwdInpCom .yzmInp > * {
+  float: left; }
+.findPwd .pwdInpCom .yzmInp input {
+  width: 75%; }
+.findPwd .pwdInpCom .yzmInp .yzm {
+  width: 25%;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: .32rem;
+  border-left: 1px solid #e5e5e5;
+  float: right; }
+.findPwd .myBtn {
+  margin-top: .7rem; }
+.findPwd .botLink {
+  color: #999;
+  font-size: .28rem;
+  text-align: center;
+  margin-top: 1.5rem; }
+  .findPwd .botLink .link {
+    color: #ff6100;
+    font-size: .28rem;
+    text-decoration: underline;
+    display: inline-block; }
+.findPwd .botLink02 {
+  margin-top: 1.2rem;
+  text-align: left;
+  padding-left: .6rem; }
+  .findPwd .botLink02 p {
+    margin-bottom: .12rem; }
+.findPwd .sucTip {
+  margin: .6rem 0 auto;
+  text-align: center; }
+  .findPwd .sucTip .tp {
+    width: 1.3rem;
+    height: 1.3rem;
+    display: inline-block; }
+    .findPwd .sucTip .tp img {
+      width: 100%; }
+  .findPwd .sucTip .ti {
+    font-size: .4rem;
+    margin-top: .3rem; }
+
+.protocol {
+  padding: .4rem;
+  color: #010101; }
+  .protocol h1 {
+    font-size: 0.4rem; }
+  .protocol h2 {
+    font-size: 0.32rem; }
+  .protocol h3 {
+    font-size: 0.3rem; }
+  .protocol h1, .protocol h2, .protocol h3 {
+    font-weight: 700;
+    color: #010101; }
+  .protocol h1 {
+    text-align: center;
+    padding-bottom: .3rem; }
+  .protocol h2, .protocol h3 {
+    padding-bottom: .1rem; }
+  .protocol h2 ~ p {
+    text-indent: 2em; }
+  .protocol p {
+    font-size: .26rem;
+    line-height: 1.4;
+    color: #4e4e4e; }
+  .protocol ul {
+    margin-top: .3rem; }
+    .protocol ul li {
+      margin-bottom: .3rem; }
+      .protocol ul li span {
+        font-weight: 700; }
+
+.trouble {
+  padding-top: 4rem;
+  text-align: center;
+  font-size: .4rem;
+  font-weight: 700; }
+
+/************ This scss created by author xiexkang 2017-06  end************/
+
+/*# sourceMappingURL=style.css.map */

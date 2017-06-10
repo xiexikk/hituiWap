@@ -1,0 +1,1034 @@
+/************ This scss created by author xiexkang 2017-06  Start************/
+@charset "utf-8";
+// style.scss
+$baseFontSize: 100px !default;
+@function pxToRem($px) {
+  @return $px / $baseFontSize * 1rem;
+}
+$imgUrl:"../../public/images";
+$main-color:#ff6100;
+$white:#fff;
+$blue: #56aae5;
+$gray:#e5e5e5;
+$color: #333;
+%borRadio50{ border-radius: 50%;}
+%borRadio6{ border-radius:.06rem;}
+%fl{ float:left;}
+%fr{ float: right;}
+%ovrd { overflow: hidden;}
+%m0a{ margin: 0 auto;}
+%pdLR40{ padding: 0 .4rem;}
+%ellipsis{overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+%pseudo{ content: ""; display: inline-block; vertical-align: middle;}
+%maxWidth{ max-width: 640px;}
+%fixedTop{ position: fixed; left: auto; top: 0; right: auto; bottom: auto; z-index: 999; @extend %maxWidth;}
+%fixedBottom{ position: fixed; left: auto; bottom: 0; right: auto; top: auto; z-index: 999; width: 100%; @extend %maxWidth;}
+@mixin pdLR(){ padding:0 .4rem;}
+@mixin bgPara(){ background-repeat: no-repeat; background-size: cover; }
+@mixin displayFlex(){ display: flex; display: -webkit-box; display: -ms-flexbox; }
+@mixin flex(){ flex:1; -webkit-box-flex:1;  -ms-flex:1; }
+@mixin transform($transform...){
+    transform:$transform;  -webkit-transform:$transform;  -moz-transform:$transform;  -ms-transform:$transform;  -o-transform:$transform;
+}
+%translateXY{ position:absolute; left: 50%; top: 50%; @include transform(translate(-50%,-50%)); }
+%translateX{ position:absolute; left: 50%; top: auto; @include transform(translate(-50%,0));  }
+%translateY{ position:absolute; left: auto; top: 50%; @include transform(translate(0,-50%));  }
+@mixin animation($animation...){
+  animation:$animation;  -webkit-animation:$animation;  -moz-animation:$animation;  -ms-animation:$animation;  -o-transform:$animation;
+}
+@mixin keyframes($animationName) {
+  @-webkit-keyframes #{$animationName} {
+    @content;
+  }
+  @-moz-keyframes #{$animationName} {
+    @content;
+  }
+  @-o-keyframes #{$animationName} {
+    @content;
+  }
+  @keyframes #{$animationName} {
+    @content;
+  }
+}
+@mixin box-shadow($shadow...) {
+  -webkit-box-shadow:$shadow;  -moz-box-shadow:$shadow; box-shadow:$shadow;
+}
+@mixin borderB-line($border-B:1px solid #f2f2f2){
+  border-bottom:$border-B;
+}
+@mixin max-screen($res){
+  @media only screen and ( max-width: $res )
+  {
+    @content;
+  }
+}
+@mixin min-screen($res){
+  @media only screen and ( min-width: $res )
+  {
+    @content;
+  }
+}
+
+//**------------------------------------------------------------------------------------------------------------------------------------------------------------**
+
+//my.html
+.myHead .in{
+  @extend %ovrd; background-color:$white;
+  .head{ padding: .4rem; @extend %ovrd; @include borderB-line(); position: relative;
+    .tp{
+      width:1.3rem; height:1.3rem; border: 1px solid #ff741e; box-sizing: border-box; @extend %borRadio50;
+      @include box-shadow(0 0 .2rem $main-color*.9);@extend %ovrd; @extend %fl;
+      img{
+        width: 100%; height: 100%; display: block;
+      }
+    }
+    .txt{ margin-left: 1.5rem; font-size: .28rem;
+      >*{ margin-top: .1rem;}
+      .name{ font-size: .38rem; margin-top: 0;}
+      .lab{ color: #fff; background-color: $main-color; padding: .05rem .1rem; display: inline-block;@extend %borRadio6;}
+      .money .goRecharge{ color:$main-color; font-size: .28rem; margin-left:.15rem; text-decoration: underline; }
+    }
+    .goJoin{ right: .4rem; @extend %translateY;
+      a{ font-size: .28rem; color: #666; vertical-align: top;
+        &:after{ @extend %pseudo; width: .3rem; height: .3rem; background-image: url("#{$imgUrl}/arrIco01.png"); @include bgPara();  margin-left: .1rem;
+        }
+      }
+    }
+  }
+  .list{ @extend %ovrd; padding: .5rem 0 .35rem; ;
+    ul{ @extend %ovrd; @include displayFlex();
+      li{ @include flex(); text-align: center;
+        a{ display: inline-block;}
+        img{ width: .9rem; height: .9rem; display: inline-block;}
+        span{ font-size: .3rem; padding: .15rem 0 .05rem;display: block; }
+      }
+    }
+  }
+}
+.myList {
+  margin-top: .3rem; @extend %ovrd;
+  .in{ @extend %ovrd;
+    .listUl{ @extend %ovrd; width: 100%; margin-bottom: .3rem;
+      li{ height: .96rem; line-height: .96rem; @include pdLR(); @include borderB-line(); box-sizing: border-box;background-color: $white; position: relative;
+        .item{ display: block; font-size: .32rem;
+          .ti{ padding-left: .75rem;}
+        }
+        &:nth-of-type(2n){ margin-bottom: .3rem;}
+        &:after{ @extend %pseudo; width: .2rem; height: .2rem; background-image: url("#{$imgUrl}/arrIco02.png"); @include bgPara(); right: .4rem;  @extend %translateY;}
+        em,i{ @extend %translateY; }
+        em{ right: .7rem; font-size: .28rem; color:#999;}
+        .ico{ width: .54rem; height: .96rem; background-image: url("#{$imgUrl}/myIco.png"); @include bgPara(); left: .4rem;}
+        @for $i from 1 through 10 {
+          &:nth-of-type(#{$i}) .ico{ background-position:0 -.96rem * ($i - 1); }
+        }
+      }
+    }
+  }
+}
+
+//myBasicInf.html
+.myBasic{ @extend %ovrd; width: 100%; padding-bottom: .2rem;
+  .remTip{ width: 100%; height: .8rem; line-height: .8rem; @extend %pdLR40; box-sizing: border-box; background-color: $white; margin: .2rem 0; position: relative;
+    .tx{ color: #ff741e; font-size: .28rem; }
+    .close{ width: .4rem; height: .8rem; background-image: url("#{$imgUrl}/closeIco.png"); @include bgPara(); position: absolute; top:0; right:.4rem;}
+  }
+}
+.myInpCom{ @extend %ovrd; width: 100%;
+  .inp{ @extend .myInpCom; height: 1rem;line-height: 1rem; @extend %pdLR40;@include borderB-line(1px solid #e0e0e0); box-sizing: border-box; background-color: $white;font-size: .32rem; margin-bottom: .1rem;
+    .ti{ width: 33%; float: left;}
+    input{ width:66%; font-size: .3rem; height: 1rem; line-height: 1rem; background-color: $white;}
+    em{ color: #f00; vertical-align: middle;}
+  }
+}
+.myBtn{ width: 3.6rem; height: .8rem; line-height:.8rem; text-align: center; border:1px solid $main-color;  margin:.4rem auto 0;@extend %borRadio6; box-sizing: border-box;
+  a{ color:$main-color; font-size:.4rem; display: block;}
+}
+
+//myGrade.html
+.myGrade{ @extend %ovrd; width: 100%; padding-bottom: .2rem;
+  .itemCom{ @extend %ovrd; background-color: $white; font-size: .32rem; margin-top: .2rem; box-sizing: border-box;
+    .item{ @extend %pdLR40; height: 1rem; line-height: 1rem;box-sizing: border-box; @include borderB-line(1px solid #e0e0e0);position: relative;
+      .ti{ /*width: 50%; @extend %ellipsis;*/}
+      .date{ padding-right: .6rem;}
+      .arr{ width: .5rem; height: 1rem; background-image: url("#{$imgUrl}/arrChg.png"); background-position: right top; @include bgPara(); position: absolute; right: .3rem; top: 0;}
+    }
+    ul{ margin: 0 .4rem; @extend %ovrd; display: none;
+      li{ height: .9rem; line-height: .9rem;@extend %ovrd; @include borderB-line(1px solid #e0e0e0);
+        a{ color: #666; font-size: .3rem;}
+        &:last-of-type{ border-bottom: none;}
+      }
+    }
+    &.open{
+      .arr{ background-position: left top;}
+      ul{ display: block;}
+    }
+  }
+}
+
+//tab.scss
+.tab{ @extend %ovrd; width: 100%; height: .8rem; background-color: $white;
+  ol{ @include displayFlex();height: 100%; box-sizing:border-box; @include borderB-line(1px solid $gray);
+    li{ @include flex(); border-bottom: 1px solid transparent; text-align: center; height: 100%; line-height: .8rem; box-sizing:border-box;
+      &.cur{ border-bottom-color: $main-color;
+        a{ color: $main-color;}
+      }
+    }
+    a{ display: block; font-size: .3rem; color: #999;}
+  }
+}
+
+//myAccount.html
+.myAccount{ @extend %ovrd; width: 100%;
+  .accHd{ @extend %ovrd; text-align: center;padding-top: 1.15rem; padding-bottom: .5rem;
+    .tit{ font-size: .4rem; }
+    .mm{ font-size: .28rem; padding-top: .4rem;
+      .ico{ width: .52rem; height: .52rem; background-image: url("#{$imgUrl}/mmIco.png"); @include bgPara(); display: inline-block; vertical-align: sub;}
+      em{ color: $main-color; font-size: .48rem; font-weight: 700;}
+    }
+    .bot{ padding-top: .5rem;@extend %ovrd;
+      a{ width: 2rem; height: .8rem; line-height: .8rem; text-align: center; color: #fff; font-size: .4rem; display: inline-block;@extend %borRadio6;
+      &.payBtn{ background-color: $main-color; margin-right: .4rem;}
+      &.joinBtn{ background-color: $blue;}
+      }
+    }
+  }
+  .accChg{ @extend %ovrd;
+    .tab{ height: 1rem;
+      ol{ border-top: 1px solid $gray;
+        li{ line-height: 1rem; }
+      }
+    }
+    .list{ @extend %ovrd;
+      ul{
+        .tit,.item{ @extend %pdLR40; height: .8rem; line-height: .8rem; text-align: center; box-sizing: border-box; @include borderB-line(1px solid $gray);}
+        .ti0{ float: left; @extend %ellipsis;}
+        .ti01{ width: 30%;}
+        .ti02{ width: 21%;}
+        .ti03{ width: 21%;}
+        .ti04{ width: 28%;}
+        .btn{ font-size: .28rem; display: inline-block; margin-right: .1rem; text-decoration: underline; background-color: transparent;
+          &.pay{ color: $main-color;}
+          &.cancle{ color: #666;}
+        }
+        &.ul02{ display: none;
+          .ti01{ width: 40%;}
+          .ti02{ width: 25%;}
+          .ti03{ width: 35%;}
+        }
+      }
+    }
+  }
+}
+
+//myTradeDet.html
+.myTradeDet{ @extend %pdLR40; @extend %ovrd;
+  .reHd{ padding-top: 2rem; padding-bottom: .6rem; text-align: center;
+    .tit{
+      em{ font-size: .6rem;}
+    }
+    p{ font-size: .28rem; color: #999; margin-top: .2rem;}
+  }
+}
+.reList{ @extend %ovrd;
+  li{ height: .8rem; padding-top: .25rem; box-sizing: border-box;font-size: .28rem; color: #666;
+    .tl{ width: 38%; float: left;}
+    .tr{ width: 62%; float: right; text-align: right;}
+  }
+}
+
+//myBrokerage
+.myBrokerage{
+  .accHd{
+    .mm{
+      i{ background-image: url("#{$imgUrl}/mmIco2.png");}
+    }
+  }
+  .accChg{
+    .list{
+      .itemIng .ti04{ color: #ffb133;}
+      .itemFail .ti04{ color: #999;}
+      ul{
+        .ti01,.ti02,.ti03,.ti04{ width: 25%;}
+      }
+    }
+  }
+}
+
+//myWithdraw.html
+.myWithdraw{ @extend %ovrd; padding-top: .2rem;
+  .in{ @extend %pdLR40; }
+  .draw{ font-size: .32rem;padding-top: .2rem;
+    .ti{ width: 30%; float: left;}
+    .hd{
+      .money{ color: $main-color;}
+    }
+    .drawInpCom{ @extend %ovrd;
+      .inp{ height: .6rem; line-height: .6rem; margin-top: .4rem;@extend %ovrd;
+        input,.selBank{ width:50%; height: .6rem; line-height: .6rem; border: 1px solid #f3f3f3; box-sizing: border-box; padding: 0 .1rem; font-size: .3rem;@extend %borRadio6; float: left;}
+      }
+      .bindCard{ color: #76bdff; font-size: .3rem;}
+    }
+  }
+}
+
+//withRate.scss
+.withRate{ padding-top: .45rem; padding-bottom: .2rem; @extend %ovrd;
+  .tp{ width:86%; height: .46rem; @extend %m0a;}
+  .txt{ position: relative; height: .8rem; padding-top: .15rem; color: $gray;
+    >*{ position: absolute; width: 1.5rem;}
+    .cur{ color: #76bdff;}
+    span{ display: block; text-align: center; margin-bottom: .04rem;}
+    .tx01{ left: 0;}
+    .tx02{ left:40%;}
+    .tx03{ left:79%;}
+    @include min-screen(640px) {
+      &{ padding-top: .2rem;}
+      .tx01{ left: 2%;}
+      .tx02{ left:42%;}
+      .tx03{ left:82%;}
+    }
+  }
+}
+
+//myWithdraw.html
+.myWithDet{ @extend %ovrd; @extend %pdLR40;
+  .withHd{ font-size: .28rem; text-align: center; padding-top: 1.15rem;
+    .tit .money{ font-size: .4rem;}
+    p{ color: #999; margin-top: .2rem;}
+  }
+  .withRate{ padding-top: .7rem;}
+}
+
+//myBank.html
+.myBank{ @extend %ovrd; padding-top: .2rem;
+  .addHd{ height: 1rem; line-height: 1rem; font-size: .28rem; width: 100%; box-sizing: border-box; @include borderB-line(1px solid $gray); }
+  .ti01,.ti02,.ti03,.ti04{ float: left; text-align: center; box-sizing: border-box; @extend %ellipsis;display: inline-block; }
+  .ti01{ width: 20%;}
+  .ti02{ width: 52%;}
+  .ti03{ width: 28%;}
+  .list{ @extend %ovrd; background-color: $white;
+    ul{ @extend %ovrd; }
+    li{ height: .8rem; line-height: .8rem; @include borderB-line(1px solid $gray);
+      .han a{ font-size: .24rem;
+        &:before{ @extend %pseudo; width: .24rem; height: .24rem; @include bgPara(); vertical-align: inherit; margin-right: .05rem;}
+        &.del:before{ background-image: url("#{$imgUrl}/delIco.png");}
+        &.chg:before{ background-image: url("#{$imgUrl}/chgIco.png");}
+      }
+    }
+  }
+  .myBtn{ margin-top: .8rem;}
+}
+.myBank{
+  .ti01{ width: 20%;}
+  .ti02{ width: 28%;}
+  .ti03{ width: 32%;}
+  .ti04{ width: 20%;}
+}
+
+//myAddress.html
+.myAddress{ @extend %ovrd;
+    .addressList{ @extend %ovrd;
+      ul{ @extend %ovrd;}
+      li{@extend %ovrd; background-color: #fff; font-size: .28rem; margin-bottom: .2rem;}
+      .hd{ padding: .3rem 0.3rem .3rem .7rem; @extend %ovrd; position: relative; }
+      .tPhone{ margin-right: .1rem;}
+      .radIco{ width: .28rem; height: .28rem; background-image: url("#{$imgUrl}/radio.png"); @include bgPara(); @extend %translateY; left: .2rem;
+        &.hover{ background-image: url("#{$imgUrl}/radioHover.png"); }
+      }
+      .th{ @extend %ovrd;}
+      .dz{ font-size: .24rem; margin-top: .2rem; line-height: 1.2;}
+      .han{ height: .6rem; line-height: .6rem; border-top: 1px dashed $gray*1.02; padding: 0 .2rem;
+        .setDef{
+          >*{vertical-align: middle;}
+          .ti{ display: inline-block; }
+          .setDefChe{ width: .3rem; height: .3rem;}
+        }
+        .btnCom{
+          .btn{ width: 1rem; height: .4rem; line-height: .4rem; text-align: center; border: 1px solid #e0e0e0; font-size: .28rem; color: #666; margin-left: .1rem;
+            display: inline-block; border-radius: 2px;}
+        }
+      }
+    }
+}
+.myBtns{ width: 100%; height: 1rem; position: relative;
+  a{ width: 100%; height: .8rem; line-height: .8rem; text-align: center; background-color: $main-color; color: #fff; font-size: .3rem;
+    position: fixed; bottom: 0; z-index: 88; @extend %maxWidth;
+  }
+}
+
+//select.scss
+.select{ appearance:none; -moz-appearance:none; -webkit-appearance:none;
+  background: url("#{$imgUrl}/ico-xiala.png") no-repeat scroll right center transparent; }
+
+//myAddressEdit.html
+.myAddEdit,.myBankEdit{ @extend %ovrd;  padding-top: .2rem;
+  .addInpCom { @extend %ovrd; font-size: .32rem;
+    .inp { height: 1rem; line-height: 1rem;  @extend %pdLR40;  background-color: $white; @include borderB-line(1px solid $gray);@extend %ovrd;
+      > * { @extend %ellipsis;  }
+      .ti { width: 23%; float: left;  }
+      em { color: #f00; margin-left: .05rem; vertical-align: middle; }
+      input{ padding: 0 .1rem;box-sizing: border-box;}
+      input, .addSel,.cardSel { width: 77%; height: 1rem;  line-height: 1rem; float: left; font-size: .3rem; }
+      .addSel select { width: 30%; height: 1rem;  line-height: 1rem; float: left;  margin-right: 5%; font-size: .32rem;box-sizing: border-box;
+        &:last-of-type { margin-right: 0; }
+      }
+    }
+    .han { @extend %ovrd;  font-size: .32rem;  margin-left: .4rem; line-height: .4rem; margin-top: .1rem;
+      .setChe{ width: .32rem ;height: .32rem;}
+      >*{ display: inline-block; vertical-align: middle;}
+    }
+  }
+}
+
+//myBankEdit.html
+.myBankEdit{
+  .addInpCom .inp{ background-color: transparent; height: .8rem; line-height: .8rem; margin-bottom: .2rem;
+    .ti{ width: 30%;}
+    input{ width: 54%; @extend %borRadio6; }
+    input,select{ @extend %borRadio6; }
+    input,.addSel,.cardSel{  height: .8rem; line-height: .8rem; background-color: transparent; float: left;
+      select{  height: .8rem; line-height: .8rem; background-color: transparent; font-size: .3rem; box-sizing: border-box;}
+    }
+    .addSel{ width: 68%;}
+    .cardSel{ width: 54%;}
+  &.yzmInp{
+    input{ width:40%;}
+    .getCode{ width: 28%; height: .7rem; line-height: .7rem; background-color: $main-color; color: #fff; font-size: .26rem; @extend %borRadio6; float: right;
+      &.sended{ background-color: #d6d6d6;cursor: no-drop;}
+    }
+  }
+  }
+  .showTip{ font-size: .24rem; color: #999; margin-top: .3rem; padding-left: 28%;
+    &:before{ @extend %pseudo; width: .22rem; height: .22rem; background-image: url("#{$imgUrl}/tipIco.png"); @include bgPara(); margin-right: .1rem;}
+  }
+}
+
+//myCollect.html
+.myCollect{ @extend %ovrd;
+  .tab{ height: 1rem; @extend %fixedTop;
+    ol{
+      li{ line-height: 1rem;
+        &.cur{ border-bottom-color: $blue;}
+        &.cur a{ color: #333;}
+      }
+    }
+  }
+}
+.askList,.collList{ @extend %ovrd; padding-top: 1rem;
+  ul{ @extend %ovrd;  margin-top: .4rem; padding: 0 .3rem;
+    li{@extend %ovrd;}
+    .item{
+      .tp{ width: .84rem; height: .84rem; border-radius: .26rem; overflow: hidden; border: 1px solid $gray; float: left;
+        img{ width: 100%;}
+      }
+      .txt{ margin-left: 1.2rem;
+        .txIn{ padding-top: .05rem;
+          >*{ margin-bottom: .15rem;}
+        }
+        .tHd {
+          i{ width: .4rem; height: .4rem; line-height: .4rem; text-align: center; border: 1px solid transparent; vertical-align: middle; margin-right: .05rem;
+          display: inline-block; color: #fff; border-radius: 2px;}
+          .name{ font-size: .25rem;}
+        }
+        .wz{ color: #666; }
+        .origin {
+          em{ color: #999;}
+          a{ color: #ffa166;}
+        }
+        .hand{ color: #999;@extend %ovrd;
+          .time{  float: left;}
+          .mesIco{ float: right; color: #999; margin-left: .2rem;}
+          i{ width: .34rem; height: .32rem; background-image: url("#{$imgUrl}/mesIco.png"); @include bgPara();
+            display: inline-block; vertical-align: middle; margin-right: .1rem;}
+        }
+      }
+      .anArea{ margin-top: .2rem;display: none;
+        textarea{ width: 100%; height: 2rem; border: 1px solid $gray; padding: .1rem; box-sizing: border-box; color: #666; font-size: .28rem;}
+        .bot{ float: right; margin-top: .1rem;
+          .btn{ width:1rem; height: .5rem; line-height: .5rem; text-align: center; background-color: #6cabf7; color: #fff;
+            margin-left: .1rem; display: inline-block; border-radius: 2px;
+          &.cancleBtn{ background-color: #ccc;}
+          }
+        }
+      }
+    }
+    .itemX{ margin-left: 1.2rem; margin-top: .1rem;
+      .tp{ width: .62rem; height: .62rem; border-radius: .2rem;}
+      .txt{ margin-left: .9rem;
+        .tHd i{ width: .3rem; height:.3rem; line-height: .3rem;}
+        .ask{ color: #666;}
+      }
+    }
+    .collectIco{ float: right;
+      s{ width: .32rem; height: .32rem; background-image: url("#{$imgUrl}/xinIco.png"); @include  bgPara(); display: inline-block; vertical-align: middle; margin-right: .05rem;}
+    }
+  }
+}
+.collList .ul02{ display: none; margin-top: 0; padding: 0;
+  li{ padding: .2rem .3rem;  color: #666; @include borderB-line(1px solid $gray);position: relative;}
+  .ico{ width: .4rem; height: .3rem; background-image: url("#{$imgUrl}/spIco.png"); @include bgPara();position: absolute; left: .4rem; top: .2rem;}
+  .tx{ display: inline-block;color: #666; font-size: .28rem;  margin-left: .7rem; @extend %ovrd; line-height: 1.3; }
+  .bot{ @extend %ovrd; text-align: right; color: #999; margin-top: .1rem;
+    .date{float: right; margin-right: .2rem;}
+  }
+}
+
+//mySetting.html
+.mySetting{ @extend %ovrd;  padding-top: .2rem;
+  .setList{ width: 100%;
+    ul{ @extend  %ovrd;
+      li{ width: 100%; height: 1rem; line-height: 1rem; background-color: #fff;@extend %pdLR40; @extend %ovrd;  box-sizing: border-box;
+        >a{ width: 100%; height: 100%; display:block;}
+        @include borderB-line(1px solid $gray); margin-bottom: .1rem; position: relative;
+        .ico{ width: .4rem; height: .4rem; background-image: url("#{$imgUrl}/setIco.png"); @include bgPara();@extend %translateY; left: .4rem;}
+        @for $i from 1 through 6 {
+          &:nth-of-type(#{$i}) .ico{ background-position:0 -.4rem * ($i - 1); }
+        }
+      }
+      .tl{ float: left;}
+      .ti{ font-size: .32rem; padding-left: .6rem;}
+      .tr{ float: right; color: #999;
+        span{ margin-right: .4rem;}
+      }
+      .arr{ width: .3rem; height: .3rem; background-image: url("#{$imgUrl}/arrIco01.png");@include bgPara();@extend %translateY; right: .4rem;}
+    }
+  }
+}
+
+//myWxBind.html
+.myWxBind{ @extend %ovrd;
+  .in{ @extend %ovrd; text-align: center;}
+  .tp{ display: inline-block; @extend %ovrd;
+    img{ width: 100%;}
+  }
+  .wxBindNo{ padding-top: 1rem;
+    .tit{ font-size: .34rem; }
+    .tp{ width: 53%; margin-top: .2rem;  }
+  }
+  .wxBindYes{ padding-top: 2rem;
+    .tp{ width: 1.3rem; height: 1.3rem; @extend %borRadio50; border: 1px solid $main-color;@include box-shadow(0 0 .2rem $main-color*.9);}
+    .txt{ margin-top: .2rem;
+      .name{ font-size: .32rem; font-weight: 700;}
+      .tx{ padding-top: .3rem;
+        p{ font-size: .32rem;
+          &:before{ @extend %pseudo; width: .4rem; height: .4rem; background-image: url("#{$imgUrl}/sucIco.png");@include bgPara();
+            vertical-align:sub; margin-right: .15rem;}
+        }
+        .unbind{ color: $blue; font-size: .3rem; display: inline-block; margin-top: .15rem; text-decoration: underline;}
+      }
+    }
+  }
+}
+
+//myPhoneBind.html,myEmailBind.html
+.myPhoneBind,.myEmailBind{ @extend %ovrd; padding-top: .2rem;
+  .in>*{ @extend %ovrd;}
+  .pBindNo{ }
+  .pBindYes{ padding-top: 2.5rem; text-align: center;
+    .tp{ width: 1.1rem; height: 1.1rem;display: inline-block; overflow: hidden;
+      img{ width: 100%;}
+    }
+    .txt{ margin-top: .3rem; font-size: .32rem;
+      p{ line-height: 1.1;}
+      .chg{ font-size: .3rem; color:$blue; display: inline-block; margin-top: .15rem; text-decoration: underline;}
+    }
+  }
+}
+//myInps.scss
+.myInps{ @extend %ovrd;
+  .inp{ height: 1rem; line-height: 1rem; background-color: $white;@extend %ovrd; box-sizing: border-box; @include borderB-line(1px solid $gray);
+    >*{ height: 1rem; line-height: 1rem; float: left; font-size: .32rem; box-sizing: border-box;}
+    .ti{ width: 24%; padding-left: .4rem;}
+    input{ width: 76%;  padding: 0 .1rem;}
+    &.yzmInp{
+      input{ width:42%;}
+      .getCode{ width: 34%; border-left: 1px solid $gray; color: #fe7d2e; background-color: $white; font-size: .3rem;
+        &.sended{ background-color: #d6d6d6; color: #fff; cursor: no-drop;}
+      }
+    }
+  }
+}
+
+//myPassword.html
+.myPassword{
+  .myInps .inp{
+    .ti{ width: 32%;}
+    input{ width:68%;}
+  }
+  .myBtn{ margin-top: .8rem;}
+}
+
+//myPortrait.html
+.myPortrait{ @extend %ovrd; padding-top: .2rem;
+  .faceList{ @extend %ovrd; @extend %pdLR40;
+    li{ float: left; width: 25%; margin-bottom: .2rem; text-align: center;
+      .tp{ width: .94rem; height: .94rem; border: 1px solid #f0f2ef; @extend %ovrd;  @extend %borRadio50; display: inline-block;
+        img{ width: 100%; display: inline-block;}
+      }
+      &.cur .tp{ border-color: $main-color;}
+    }
+  }
+}
+
+//myInfor.html
+.myInfor{ @extend %ovrd;
+  .tab{ @extend %fixedTop; }
+  .inList{ @extend %ovrd; padding-top: .8rem;
+    ul{ @extend %ovrd;}
+    li{ @extend %pdLR40; height: .8rem; line-height: .8rem; @include borderB-line(1px solid $gray); position: relative;
+      .setChe{ @extend %translateY;}
+      .ico{ width: .4rem; height: .4rem; display: inline-block;@extend %ovrd; @extend %translateY; left: 1.1rem;
+        img{ width: 100%; display: block;}
+      }
+      .tx{ width: 100%; padding-left:1.4rem; color: #666; @extend %ellipsis; display: inline-block;  box-sizing: border-box;}
+    }
+  }
+  .han{ margin-top: .3rem; height: .4rem; width: 100%; @extend %pdLR40; box-sizing:border-box;position: relative;
+    >*{ vertical-align: middle; display: inline-block;}
+    .del{ width: .8rem; height: .4rem; line-height: .4rem; background-color: #fff; border: 1px solid $main-color; color: $main-color; text-align: center;
+      display: inline-block; @extend %borRadio6; box-sizing: border-box; margin-left: .15rem; font-size: .24rem;}
+    .ti{ padding-left: .1rem; color: #666;}
+  }
+}
+
+//myRecharge01.html ,myRecharge02.html，myRecharge03.html
+.myRecharge{ @extend %ovrd; padding-bottom: .4rem;
+  .withRate{
+    .txt{ height:.5rem;}
+  }
+  .money{ text-align: center; padding-bottom: .4rem; @include borderB-line(1px solid $gray);
+    >*{ font-size: .28rem;@extend %ovrd; }
+      .mm{ margin-bottom: .4rem;
+      .ico{ width: .52rem; height: .52rem; background-image: url("#{$imgUrl}/mmIco.png"); @include bgPara(); display: inline-block; vertical-align: sub;}
+      em{ color: $main-color; font-size: .48rem; font-weight: 700;}
+    }
+    .bb{ height: .66rem; line-height: .66rem;
+      input{ width: 2.8rem; height: .65rem; line-height: .66rem;  padding: 0 .1rem; font-size: .28rem; border: 1px solid $gray; box-sizing: border-box;
+        vertical-align: bottom; margin: 0 .1rem;}
+    }
+  }
+  .paySel{ @extend %ovrd;  padding: 0 .3rem;
+    .payTip{ height: 1rem; line-height: 1rem; font-size: .28rem;
+      span{ color: $main-color;}
+    }
+  }
+  .recStyle{ @extend %ovrd; @extend %pdLR40;
+    .tit{ height: 1.1rem; line-height: 1.1rem; font-size: .28rem;}
+    ul{ @extend %ovrd;
+      li{ width: 2.6rem; height: .88rem; float: left; position: relative; margin-right: .4rem; border: 1px solid $gray*1.02; box-sizing: border-box;
+        &:last-of-type{ margin-right: 0;}
+        .tp{ width: 100%; height: 100%;  @extend %ovrd;
+          img{ width: 100%;}
+        }
+        .ico{ width: .44rem; height: .44rem; @include bgPara(); position: absolute; right:-1px; bottom: -1px;}
+        &.cur{ border-color: #76bdff;}
+        &.cur .ico{ background-image: url("#{$imgUrl}/recCheIco.png"); }
+      }
+    }
+  }
+  .reSuc{ @extend %ovrd;  margin: 0 .4rem; padding: .4rem 0;  border-top:1px solid $gray;
+    .tit{
+      img{ width: .44rem; height: .44rem; display: inline-block; vertical-align: middle;}
+      .th{ font-size: .36rem; font-weight: 700; display: inline-block; margin-left: .1rem;vertical-align: middle;}
+    }
+  }
+}
+
+.selList{ @extend %ovrd;
+  ul{ @extend %ovrd; border-top:1px solid $gray; }
+  li{ height: .8rem; line-height: .8rem; padding: 0 .4rem 0 .6rem; @include borderB-line(1px solid $gray); font-size: .28rem; position: relative;
+    .tl{ float: left;}
+    .tr{ float: right; color: $main-color;}
+    .radIco{ width: .2rem; height: .2rem; background-image: url("#{$imgUrl}/radIco.png"); @include bgPara(); @extend %translateY; left: .1rem;}
+    &.cur .radIco{ background-image: url("#{$imgUrl}/radIcoHover.png");}
+  }
+}
+.recDet{ @extend %ovrd; font-size: .28rem; padding:.4rem 0; margin: 0 .3rem; border-top:1px solid $gray;border-bottom:1px solid $gray;
+  p{ margin-bottom: .4rem;
+    &:last-of-type{ margin-bottom: 0;}
+  }
+  em{ color: $main-color;}
+}
+.recDet2{ border-top: none; padding-top: .1rem; padding-left: .7rem;
+  p{ margin-bottom: .5rem;}
+}
+.recDet3{
+  p{ margin-bottom: .2rem; line-height: 1.1; }
+}
+.txtExp{ @extend %ovrd; padding: .4rem .4rem .2rem; font-size: .2rem; color: #666;
+  .tit{ font-size:.28rem; color: #333;}
+  p{ margin-top: .2rem; line-height:1.3;}
+  .goLink{ font-size: .2rem; color: $main-color; }
+}
+
+//myEnterCourses01.html，myEnterCourses02.html，myEnterCourses03.html
+.myEnterCourses{
+  .courSel{ @extend %ovrd; padding: 0 .3rem;
+    .tr{ color: #333;}
+    .num{ color: $main-color;}
+  }
+  .link{ margin-top:.3rem; text-align: center;
+    a{ text-decoration: underline; font-size: .24rem;}
+  }
+  .myBtn{ margin-top: .6rem;}
+}
+.recSettle{ @extend %pdLR40; @extend %ovrd; font-size: .28rem;
+  .con{ padding:.4rem 0; background-color: $white;  border-top: 1px solid $gray;}
+  .cheap{
+    .it{ height: .4rem;line-height: .4rem; margin-bottom:.2rem;
+      .yy{
+        >*{ float: left; vertical-align: middle; line-height: .38rem; }
+        i{ width: .72rem; height: .38rem; background-image: url("#{$imgUrl}/switchIco.png"); @include bgPara(); margin-right: .1rem;
+        }
+        span{ width: 1.5rem;}
+      }
+      .pp{ display: none;
+        input{ width: 1.5rem; height: .38rem; line-height: .38rem; padding: 0 .1rem; border: 1px solid $gray; box-sizing: border-box;vertical-align: text-bottom;
+          font-size: .24rem; margin-left: .1rem;}
+      }
+      .rr{ display: none;}
+      &.cur{
+        .pp,.rr{ display: block;}
+        i{ background-position: left bottom;}
+      }
+    }
+  }
+  .curMoney{ margin-top: .2rem;@extend %ovrd;
+    .num{ color: $main-color;}
+    .aRec{ color: $blue*1.02; font-size: .28rem;}
+  }
+}
+
+.countBot{ @extend %ovrd; position: relative; height: 1.2rem; width: 100%;
+  .in{ @extend %fixedBottom; @extend %ovrd; height: 1rem; line-height: 1rem; border-top: 1px solid $gray; background-color: $white;box-sizing: border-box;  }
+  .cou{ width: 70%; float: left; font-size: .32rem; box-sizing: border-box; padding-left: .4rem;
+    .sp1{ margin-right: .2rem;}
+    .allCost{ color: $main-color;}
+  }
+  .btn{ width: 30%; float: right; height: 1rem; line-height: 1rem; text-align: center; background-color: $main-color;
+    >a{ color: $white; font-size: .32rem; display: block;}
+  }
+}
+
+//myJoinVideo01.html，myJoinVideo02.html，myJoinVideo03.html
+//oChe.scss
+.oChe,.oAllChe{ width: .3rem; height: .3rem; background-image: url("#{$imgUrl}/che.png"); @include bgPara();
+  -webkit-appearance: none;-moz-appearance: none; display: inline-block;
+  &:checked,&.hover{ background-image: url("#{$imgUrl}/cheHover.png");}
+  &.cheNo{ background-image: url("#{$imgUrl}/cheNo.png");}
+}
+.oChe{ @extend %translateY; left: .2rem;}
+
+.myJoinVideo{ @extend %ovrd; }
+.myJoinVideo02{
+  .in>*{background-color: $white;}
+  .txtExp{ margin-top: .2rem;}
+}
+.proList{ @extend %ovrd;
+  ul{ @extend %ovrd; border-top: 1px solid $gray*1.02;}
+  li{ height: 2.3rem; max-height: 2.3rem; position: relative; @include borderB-line(1px solid $gray*1.02);
+    .item{ height: 2rem; padding: .15rem;}
+  }
+  .tp{ width: 2.8rem; height: 2rem; @extend %ovrd;  @extend %borRadio6; float: left; margin-left: .6rem;position: relative;
+    img{ width: 100%;}
+    .lab,.xin{ position: absolute; top: 0; @include bgPara(); z-index: 1;}
+    .xin{ right: 0; width: .5rem; height: .5rem; background-image: url("#{$imgUrl}/collectIco.png");
+      &.hover{ background-position: right top;}
+    }
+    .lab{ left: 0; width: .9rem; height: .96rem; color: #fff; font-size: .24rem;
+      em{ position: absolute; left: .05rem; top: .18rem; @include transform(rotate(-50deg)); }
+    }
+  }
+  .txt{ margin-left: 3.6rem; margin-right: .3rem; height:100%;  font-size: .24rem;color: #999; position: relative;
+    .tName{ font-size: .28rem; color: #666;}
+    .st{ margin-top: .3rem; }
+    .bot{ width: 100%; position: absolute; bottom: .15rem;height: .26rem; line-height: .26rem;
+      .cost{ color: #ff6e6e;}
+      .costNo{ color: #999; text-decoration: line-through;}
+    }
+    .del{ color: #666;
+      .ico{ width: .24rem; height: .24rem; background-image: url("#{$imgUrl}/delIco.png"); @include bgPara();
+        margin-right: .1rem; display: inline-block; vertical-align:top;}
+    }
+  }
+  .proUnNo{
+    .che{  background-position: 0 -.35rem;}
+    .txt .bot .mm{ text-decoration: line-through;
+      em{ color:#999;}
+    }
+  }
+}
+.proHandle{ @extend %ovrd; padding: 0 .2rem; height: .4rem; line-height: .4rem; margin-top: .4rem;
+  >*{ float: left; margin-right: .4rem; font-size: .28rem; color: #666;line-height: .4rem;}
+  .botChe,.botDel{
+    >*{ display: inline-block;vertical-align: middle; }
+  }
+  .ti{ padding-left: .1rem;}
+  .ico{ width: .34rem; height: .34rem; background-image: url("#{$imgUrl}/delIcoB.png"); @include bgPara();}
+}
+.recSettle02 .bot{ margin-top: 0;}
+.myJoinVideo{
+  .withRate{
+    .txt{ height:.4rem;}
+  }
+}
+.addList{ @extend %ovrd; padding: 0 .3rem;position: relative;
+  ul{ @extend %ovrd; border-top: 1px solid $gray*1.02;
+    li{ position: relative; padding: .5rem 0;  }
+    .arr{ width: .3rem; height: .3rem; background-image: url("#{$imgUrl}/arrIco01.png"); @include bgPara(); @extend %translateY; right: 0;}
+    .item{ @extend %ovrd; font-size: .28rem;position: relative; padding-right: .5rem; display: block;
+      .txH{ @extend %ovrd;}
+      .dz{ padding-top: .2rem; line-height: 1.3; }
+    }
+  }
+}
+.vidInf{ @extend %ovrd; @extend %pdLR40; padding-bottom: .4rem; font-size: .28rem;
+  .hd{ height: .9rem; line-height: .9rem; border-top: 1px solid $gray; border-bottom:1px solid $gray; box-sizing: border-box;  text-align: center;  }
+  .ti0{ display: inline-block;}
+  .ti01{ width: 70%; float: left;}
+  .ti02{ width: 24%; float: right; }
+  .bd{ @extend %ovrd; width: 100%; box-sizing: border-box;
+    ul{ padding-top: .5rem; @extend %ovrd;
+      li{ margin-bottom: .4rem; @extend %ovrd;
+        a{ font-size: .28rem; display:block;@extend %ovrd;}
+        .ti01{ line-height: 1.2;}
+      }
+      .mm{ color: $main-color;}
+      .ti02{ text-align: right;}
+    }
+    .tol{ text-align: right;
+      .tolMM{ color: $main-color;}
+    }
+  }
+}
+
+//myRank.html
+.myRank{ @extend %ovrd; @extend %pdLR40;
+  .round{ width: 3.4rem; height: 3.4rem; @extend %borRadio50; margin: .9rem auto 0; position: relative;
+    >*{ @extend %borRadio50;  position: absolute; top: auto;}
+    .roundA{ width: 3.4rem; height: 3.4rem; top: 0; left:0; background-color: #9ed0ff;  @include box-shadow(0 0 .2rem #9ed0ff*1.01);  @include animation( myChg 3s infinite .2s);}
+    .roundB{ width: 3.1rem; height: 3.1rem; top: .15rem; left: .15rem;background-color: #76bdff; @include box-shadow(0 0 .1rem #76bdff*1.01);  @include animation( myChg 3s infinite .2s); }
+    .roundC{ width: 2.8rem; height: 2.8rem; top: .3rem; left: .3rem; background-color: #5a99e5; }
+    .roundD{ width: 2.6rem; height: 2.6rem; top: .4rem; left: .4rem; background-color: $white;
+      >*{color: #5a99e5; text-align: center; display: block;}
+      .ti{ font-size: .4rem; margin-top: .7rem; }
+      .num{ font-size: .6rem; margin-top: .2rem; }
+    }
+  }
+  .rankSel{ padding-top: .4rem;
+    .hdTit{ width: 100%; height: .8rem; line-height: .8rem; background-color:#76bdff; border-radius: .1rem; position: relative;
+      .ti{ color: #fff; font-size: .38rem; text-align: center; line-height: .8rem;
+        @include min-screen(640px) {
+          &{ font-size: .32rem;}
+        }
+      }
+      >i{ width: .24rem; height: .24rem; background-color: $white; @extend %borRadio50; @extend %translateY; }
+      .i01{ left: .4rem;}
+      .i02{ right: .4rem;}
+    }
+    .bdTab{ width: 90%; height: 3rem; background-color: #f5f5f5; @extend %ovrd; @extend %m0a;border-radius: 0 0 .1rem .1rem;
+      ul{ @extend %ovrd;}
+      li{ width: 50%; height: 50%; line-height: 1.5rem; text-align: center; float: left;
+        .item{ font-size: .3rem; color: #666; display: block;
+          >*{ display: inline-block;}
+          img{ width:1rem; height: .74rem; }
+        }
+      }
+    }
+  }
+}
+@include keyframes(myChg){
+  0%{ transform: scale(1);}
+  25%{ transform: scale(1.01); }
+  50%{ transform: scale(1.02); }
+  75%{ transform: scale(1.01); }
+  100%{ transform: scale(1); }
+}
+
+//myNotes.html
+.myNotes{ @extend %ovrd;
+  .in{ padding: 0 .2rem;}
+  .notes{ font-size: .22rem; color: #999;}
+  .item{ @extend %ovrd; padding: .4rem 0; border-bottom: 1px solid $gray;
+    >*{ @extend %ovrd;}
+    .tit{ line-height: 1.3; font-size: .26rem;}
+    .originate{ margin-top: .2rem;color: #ffa166;
+      >*{ line-height: 1.2;}
+      span{ color: #999;}
+      .link{ color: #ffa166; font-size: .24rem; display: inline-block;}
+    }
+    .bot{ margin-top: .2rem; height: .34rem; line-height: .34rem;
+      .han{ font-size: .28rem;@extend %ovrd;
+        >*{  margin-left: .15rem; float: left; }
+        .ti{ vertical-align: top; margin-left: .1rem;}
+        .ico{ width: .34rem; height: .34rem; @include bgPara(); display: inline-block;}
+        .chg .ico{ background-image: url("#{$imgUrl}/ico-bj.png");}
+        .del .ico{ background-image: url("#{$imgUrl}/ico-del.png");}
+        .time{ height: .34rem;@extend %ovrd; color: #999; font-size: .24rem;
+          >*{ float: left;}
+          .ico{ width: .34rem; height: .34rem; background-image: url("#{$imgUrl}/ico-bf.png");}
+          .num{ line-height: .31rem; border: 1px solid $gray;  border-left: none; padding: 0 .05rem; margin-left: -1px; background-color: #f7f7f7; box-sizing: border-box;}
+        }
+      }
+    }
+  }
+  .txtArea{ padding: .4rem 0;@extend %ovrd;border-bottom: 1px solid $gray; display: none;
+    .area{ height: 1.7rem; width: 100%; padding: .1rem; box-sizing: border-box; border: 1px solid $gray; font-size: .24rem; color: #999;}
+    .btns{ float: right; margin-top: .2rem;
+      .btn{ width: .8rem; height: .4rem; line-height: .4rem; background-color: $main-color; text-align: center; color: #fff; font-size: .24rem; border-radius:2px; margin-left: .2rem; display: inline-block;}
+    }
+  }
+}
+
+//myQuestion.html
+.myQuestion{ @extend %ovrd;
+  .tab{ height: 1rem; @extend %fixedTop;
+    ol{
+      li{ line-height: 1rem;
+        &.cur{ border-bottom-color:$blue;
+          a{ color: #333;}
+        }
+      }
+    }
+  }
+}
+
+//shopCarFix.scss
+.shopCarFix{ position: fixed; right: .4rem; bottom: 1rem; z-index: 9999;
+  .item{ width: .8rem; height: .8rem; text-align: center; display: inline-block; /*@include box-shadow(0 0 .1rem #ffbdbd);*/
+    /*background-color:#ff7575;*/ position: relative;
+    .num{ width: .4rem; height: .4rem; line-height:.4rem; background-color: #ff7575; text-align: center; color: #fff; @extend %borRadio50;
+      position: absolute; right: 0;top: 0; z-index: 88;}
+    .ico{ width: .8rem; height: .8rem; background-image: url("#{$imgUrl}/carIco.png"); @include bgPara();display: inline-block;}
+  }
+}
+
+//loginReg.html
+.loginReg{ @extend %ovrd; padding-bottom: .2rem;
+  .logoCom{ width: 100%; height: 3.6rem; background-color: #fcf6f6; position: relative;
+    .backIco{ width: 1rem; height: 1rem; background-image: url("#{$imgUrl}/backIco.png"); @include bgPara(); position: absolute; left: 0; top: 0;}
+    .logo{ width: 3.82rem; @extend %translateXY;}
+  }
+  .tab{ height: 1.2rem;
+    ol{
+      li{ line-height:1.2rem;  }
+      a{ font-size: .48rem; color: #666;}
+    }
+  }
+}
+.logRegList{ @extend %ovrd; padding:.5rem .2rem 0;
+  ul{ @extend %ovrd; color: #999;font-size: .28rem;}
+  .links{ padding:.5rem .7rem .15rem .7rem;@extend %ovrd;
+    .aLink{ color: #999; font-size: .28rem; text-decoration: underline; display: inline-block;
+      &:first-of-type{ padding-left: .2rem;}
+    }
+  }
+  .isRead{ @extend %ovrd; font-size: .28rem; padding-left: .5rem; line-height: .4rem; margin-top: .2rem;
+    >*{ vertical-align: middle; display: inline-block;}
+    .aProtocol{ font-size: .28rem; color: #76bdff;}
+  }
+  .myBtn{ margin-top: .7rem;}
+}
+
+//che.scss
+.setChe,.setDefChe{ @include bgPara(); margin-right: .1rem;-webkit-appearance: none; -moz-appearance: none;display: inline-block;  }
+.setChe{ width: .3rem; height: .3rem; background-image: url("#{$imgUrl}/logIco.png");
+  &:checked,&.hover{ background-image: url("#{$imgUrl}/logIcoHover.png");}
+}
+.setDefChe{ width: .4rem; height: .4rem; background-color: #fff; border: 1px solid #e5e5e5; box-sizing:border-box; background-image: url("#{$imgUrl}/defChe.png");
+  &:checked,&.hover{ background-image: url("#{$imgUrl}/defCheHover.png")}
+}
+
+.logInpCom{ @extend %ovrd; width: 100%;
+  .inp{ width: 100%; height: 1.2rem; line-height: 1.2rem; @include borderB-line(1px solid $gray); box-sizing: border-box; position: relative;@extend %ovrd;
+    >*{ box-sizing: border-box;}
+    input{ line-height: 1.1rem;  font-size: .36rem; width: 100%; padding:.08rem .2rem 0 1.1rem; box-sizing: border-box;}
+  }
+  .phoneInp {
+    >*{ float: left}
+    input{ width: 70%;}
+    .getCode{ width: 30%; height:1.18rem; font-size: .3rem; color: #666; background-color: #fff; border-left:1px solid $gray;
+      &.sended{ background-color: #d6d6d6; color: #fff; cursor: no-drop;}
+    }
+  }
+  .ico{ width: 1.1rem; height: 1.1rem; background-image: url("#{$imgUrl}/logRegIco.png"); @include bgPara(); position: absolute; left: 0; bottom: 0;}
+  .userInp .ico{ background-position: left top; }
+  .pwdInp .ico{ background-position: left -1.1*3rem;}
+  .phoneInp .ico{ background-position: left -1.1rem;}
+  .yzmInp .ico{ background-position: left -1.1*2rem;}
+  .mesInp .ico{ background-position: left bottom}
+}
+
+//findPwd01.html,findPwd02.html,findPwd03.html
+.findPwd{ @extend %ovrd;
+  .pwdInpCom{ @extend %ovrd;
+    .logInpCom{ background-color: $white;  box-sizing: border-box;}
+    .withRate .txt{ color: #ccc; height: .6rem;}
+    .hd{ padding: 0 .2rem; background-color: $white; height: 1.2rem; line-height: 1.2rem; text-align: center; font-size: .32rem; color: #999;@include borderB-line(1px solid $gray);
+      .tit:before{ @extend %pseudo; width: .4rem; height: .4rem; background-image: url("#{$imgUrl}/tipIco.png"); @include bgPara();
+        vertical-align: text-bottom;  margin-right: .1rem;}
+    }
+    .yzmInp{
+      >*{ float: left;}
+      input{ width: 75%;}
+      .yzm{ width: 25%; height: 1.2rem; line-height: 1.2rem; text-align: center; font-weight: 700; font-size: .32rem; border-left: 1px solid $gray;float: right;}
+    }
+  }
+  .myBtn{ margin-top: .7rem;}
+  .botLink{ color: #999; font-size: .28rem; text-align: center; margin-top: 1.5rem;
+    .link{ color: $main-color; font-size: .28rem; text-decoration: underline; display: inline-block;}
+  }
+  .botLink02{ margin-top: 1.2rem; text-align: left; padding-left: .6rem;
+    p{ margin-bottom: .12rem;}
+  }
+  .sucTip{ margin: .6rem 0 auto; text-align: center;
+    .tp{ width: 1.3rem; height: 1.3rem; @extend %ovrd; display: inline-block;
+      img{ width: 100%;}
+    }
+    .ti{ font-size: .4rem; margin-top: .3rem;}
+  }
+}
+
+//protocol.html
+.protocol{ @extend %ovrd; padding: .4rem; color: rgb(1, 1, 1);
+  $headings: (h1: .4rem, h2: .32rem, h3: .3rem);
+  @each $header,$size in $headings{
+    #{$header}{
+      font-size:$size;
+    }
+  }
+  h1,h2,h3{ font-weight: 700; color: rgb(1, 1, 1);}
+  h1{ text-align: center; padding-bottom: .3rem;}
+  h2,h3{ padding-bottom: .1rem;}
+  h2~p{ text-indent: 2em;}
+  p{  font-size: .26rem; line-height: 1.4; color:rgb(78, 78, 78);}
+  ul{ margin-top: .3rem;
+    li{ margin-bottom: .3rem;
+      span{ font-weight: 700;}
+    }
+  }
+}
+
+//trouble.html
+.trouble{ padding-top:4rem; text-align:center; font-size: .4rem; font-weight: 700;}
+
+/************ This scss created by author xiexkang 2017-06  end************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

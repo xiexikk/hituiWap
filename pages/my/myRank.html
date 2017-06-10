@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="browsermode" content="application">
+    <meta name="x5-page-mode" content="app">
+    <title>嗨推学院-知名网络推广实战培训平台</title>
+    <link rel="stylesheet" href="../../public/css/base.css">
+    <link rel="stylesheet" href="../../public/css/common.css">
+    <link rel="stylesheet" href="../../public/css/style.css">
+</head>
+<body style="background-color: #fff; padding-bottom: .2rem;">
+
+<!--myRank-->
+<section class="myRank">
+    <div class="in">
+        <div class="round">
+            <div class="roundA"></div>
+            <div class="roundB"></div>
+            <div class="roundC"></div>
+            <div class="roundD">
+                <span class="ti">当前积分</span>
+                <span class="num">10000</span>
+            </div>
+        </div>
+        <div class="rankSel">
+            <div class="hdTit">
+                <i class="i01"></i>
+                <i class="i02"></i>
+                <h3 class="ti">您可以通过以下方式获得积分</h3>
+            </div>
+            <div class="bdTab">
+                <ul>
+                    <li>
+                        <a href="javascript:;" class="item">
+                            <img src="../../public/images/rankTp01.png" alt="">
+                            <span class="ti">邀请注册</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="item">
+                            <img src="../../public/images/rankTp02.png" alt="">
+                            <span class="ti">发表提问</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="item">
+                            <img src="../../public/images/rankTp03.png" alt="">
+                            <span class="ti">回复问题</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="item">
+                            <img src="../../public/images/rankTp04.png" alt="">
+                            <span class="ti">记录笔记</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--chartIntegral-->
+<div id="chartIntegral" style="width: 86%; height:4rem; margin: .2rem auto 0; border-radius: .1rem; padding-top: .3rem;">
+    <div id="chart-panel" _echarts_instance_="ec_1496480445477" style="">
+        <div id="div" style="">
+            <canvas id="chart-canvas" width="" height="" data-zr-dom-id="zr_0" style=""></canvas>
+        </div>
+    </div>
+</div>
+
+<script src="../../public/js/zepto_plus.js"></script>
+<script src="../../public/js/base.js"></script>
+<script src="../../public/js/style.js"></script>
+<script src="../../public/js/echarts.min.js"></script>
+<!--chartIntegral.js-->
+<script>
+    // 基于准备好的dom，初始化echarts实例
+    function chartFn() {
+        var myChart = echarts.init(document.getElementById('chartIntegral'));
+        var data_val=[2000, 1682, 2091, 2800,3000],             //顶部数据
+            xAxis_val=['6.1', '6.2', '6.3', '6.4','6.5'];    //底部时间
+        var data_val1=[0,0,0,0,0,0,0];
+        var option = {
+            backgroundColor:'#5482c7',
+            grid:{
+                left:0,
+                top:'18%',
+                bottom:20,
+                right:40,
+                containLabel:true
+            },
+            tooltip:{
+                show:true,
+                backgroundColor:'#5482c7',
+                borderColor:'#fff',
+                borderWidth:1,
+                formatter:'{b}:{c}',
+                extraCssText:'box-shadow: 0 0 5px rgba(0, 0, 0, 1)'
+            },
+            legend:{
+                right:0,
+                top:0,
+                data:[''],
+                textStyle:{
+                    color :'#fff'
+                }
+            },
+            title: {
+                text: '',
+                x:'4.5%',
+                top: '1%',
+                textStyle:{
+                    color :'#fff'
+                }
+            },
+            xAxis: {
+                data: xAxis_val,
+                boundaryGap:false,
+                axisLine:{
+                    show:false
+                },
+                axisLabel: {
+                    textStyle: {
+                        color: '#fff'
+                    }
+                },
+                axisTick:{
+                    show:false
+                }
+            },
+            yAxis: {
+                ayisLine:{
+                    show:false
+                },
+                axisLabel: {
+                    textStyle: {
+                        color: '#5482c7'
+                    }
+                },
+                splitLine:{
+                    show:true,
+                    lineStyle:{
+                        color:'#5482c7'
+                    }
+                },
+                axisLine: {
+                    lineStyle: {
+                        color: '#5482c7'
+                    }
+                }
+            },
+
+            series: [
+                {
+                    type: 'bar',
+                    name:'linedemo',
+
+
+                    tooltip:{
+                        show:false
+                    },
+                    animation:false,
+                    barWidth:1.4,
+                    hoverAnimation:false,
+                    data:data_val,
+                    itemStyle:{
+                        normal:{
+                            color:'#fff',
+                            opacity:0.6,
+                            label:{
+                                show:false
+                            }
+                        }
+                    }
+                },
+                {
+                    type: 'line',
+                    name:'距离',
+
+                    animation:false,
+                    symbol:'circle',
+
+                    hoverAnimation:false,
+                    data:data_val1,
+                    itemStyle:{
+                        normal:{
+                            color:'#fff',
+                            opacity:0,
+                        }
+                    },
+                    lineStyle:{
+                        normal:{
+                            width:1,
+                            color:'#fff',
+                            opacity:1
+                        }
+                    }
+                },
+                {
+                    type: 'line',
+                    name:'linedemo',
+                    smooth:true,
+                    symbolSize:10,
+                    animation:false,
+                    lineWidth:1.2,
+                    hoverAnimation:false,
+                    data:data_val,
+                    symbol:'circle',
+                    itemStyle:{
+                        normal:{
+                            color:'#fff',
+                            shadowBlur: 40,
+                            label:{
+                                show:true,
+                                position:'top',
+                                textStyle:{
+                                    color:'#fff',
+
+                                }
+                            }
+                        }
+                    },
+                    areaStyle:{
+                        normal:{
+                            color:'#fff',
+                            opacity:0.08
+                        }
+                    }
+
+                }
+            ]
+        };
+        myChart.setOption(option);
+    }
+    chartFn();
+</script>
+
+</body>
+</html>
