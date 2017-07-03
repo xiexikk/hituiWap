@@ -1,181 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b299fc1e-ec77-46c0-889c-d90ebdc883b4" name="Default" comment="页面增加">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/aff01.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/aff02.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/aff03.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/aud-ico01.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/aud-ico02.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/aut-more.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/banTp.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/banner01.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/banner02.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/banner03.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/banner04.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/bfIco.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/bookIco.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/collectIcoX.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/courTp01.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/ewpTp.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/false-tp.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/ico-down.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/ico-up.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icon-00.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icon-01.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icon-02.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icon-03.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icon-04.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icon-play.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iico01.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/iico02.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/ix-01.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/ix-02.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/ix-03.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/ix-04.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/ix-05.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/ix-06.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/ix-07.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/ix-08.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/ix-09.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/ix-10.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/ix-11.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/ix-12.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/ix-13.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/ix-14.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/ix-15.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/kfTp01.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/lab01.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/lab02.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/loadingIco.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/mIco01.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/mIco02.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/mIco03.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/mIco04.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/mIco05.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/mIco06.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/mIco07.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/mIco08.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/mIco09.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/myLogo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/nav01-hover.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/nav01.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/nav02-hover.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/nav02.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/nav03-hover.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/nav03.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/nav04-hover.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/nav04.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/notIco.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/notMesIco.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/notTp01.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/qieIco01.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/qieIco02.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/serIco.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/serNone.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/setIco1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/setIco2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/setIco3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/setIco4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/setIco5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/setIco6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/stuTp01.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/thgIcoX.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/trLeftIco.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/videoImg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wenIco.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/xinIco-no.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/index/audition.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/index/buyFalse.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/index/courseIntr.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/index/courses.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/index/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/index/notice.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/index/noticeDet.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/index/student.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/index/video.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/my/myContactUs.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/my/myRecharge02-2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/TouchSlide.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/menuSilder.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/theMenu.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/courses/buyVideo.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/courses/learn.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/courses/listenCourse.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/courses/operation.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/courses/playVideo.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/courses/video.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/courses/videoNull.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/LOGO.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/labBg01.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/labBg02.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/switchIco.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/swipe.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/touch.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/carIco.png" afterPath="$PROJECT_DIR$/public/images/carIco.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/closeIco.png" afterPath="$PROJECT_DIR$/public/images/closeIco.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/ico-xiala.png" afterPath="$PROJECT_DIR$/public/images/ico-xiala.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/logIco.png" afterPath="$PROJECT_DIR$/public/images/logIco.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/logIcoHover.png" afterPath="$PROJECT_DIR$/public/images/logIcoHover.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/logoTp.png" afterPath="$PROJECT_DIR$/public/images/logoTp.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/myIco.png" afterPath="$PROJECT_DIR$/public/images/myIco.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/radIco.png" afterPath="$PROJECT_DIR$/public/images/radIco.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/radIcoHover.png" afterPath="$PROJECT_DIR$/public/images/radIcoHover.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/radio.png" afterPath="$PROJECT_DIR$/public/images/radio.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/radioHover.png" afterPath="$PROJECT_DIR$/public/images/radioHover.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/tipIco.png" afterPath="$PROJECT_DIR$/public/images/tipIco.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/xinIco.png" afterPath="$PROJECT_DIR$/public/images/xinIco.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/loginReg/findPwd01.html" afterPath="$PROJECT_DIR$/pages/loginReg/findPwd01.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/loginReg/findPwd02.html" afterPath="$PROJECT_DIR$/pages/loginReg/findPwd02.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/loginReg/findPwd03.html" afterPath="$PROJECT_DIR$/pages/loginReg/findPwd03.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/loginReg/loginReg.html" afterPath="$PROJECT_DIR$/pages/loginReg/loginReg.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/loginReg/protocol.html" afterPath="$PROJECT_DIR$/pages/loginReg/protocol.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/loginReg/trouble.html" afterPath="$PROJECT_DIR$/pages/loginReg/trouble.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/my/my.html" afterPath="$PROJECT_DIR$/pages/my/my.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/my/myAccount.html" afterPath="$PROJECT_DIR$/pages/my/myAccount.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/my/myAddress.html" afterPath="$PROJECT_DIR$/pages/my/myAddress.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/my/myAddressEdit.html" afterPath="$PROJECT_DIR$/pages/my/myAddressEdit.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/my/myBank.html" afterPath="$PROJECT_DIR$/pages/my/myBank.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/my/myBankEdit.html" afterPath="$PROJECT_DIR$/pages/my/myBankEdit.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/my/myBasicInf.html" afterPath="$PROJECT_DIR$/pages/my/myBasicInf.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/my/myBrokerage.html" afterPath="$PROJECT_DIR$/pages/my/myBrokerage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/my/myCollect.html" afterPath="$PROJECT_DIR$/pages/my/myCollect.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/my/myEmailBind.html" afterPath="$PROJECT_DIR$/pages/my/myEmailBind.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/my/myEnterCourses01.html" afterPath="$PROJECT_DIR$/pages/my/myEnterCourses01.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/my/myEnterCourses02.html" afterPath="$PROJECT_DIR$/pages/my/myEnterCourses02.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/my/myEnterCourses03.html" afterPath="$PROJECT_DIR$/pages/my/myEnterCourses03.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/my/myGrade.html" afterPath="$PROJECT_DIR$/pages/my/myGrade.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/my/myInfor.html" afterPath="$PROJECT_DIR$/pages/my/myInfor.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/my/myJoinVideo01.html" afterPath="$PROJECT_DIR$/pages/my/myJoinVideo01.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/my/myJoinVideo02.html" afterPath="$PROJECT_DIR$/pages/my/myJoinVideo02.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/my/myJoinVideo03.html" afterPath="$PROJECT_DIR$/pages/my/myJoinVideo03.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/my/myNotes.html" afterPath="$PROJECT_DIR$/pages/my/myNotes.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/my/myPassword.html" afterPath="$PROJECT_DIR$/pages/my/myPassword.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/my/myPhoneBind.html" afterPath="$PROJECT_DIR$/pages/my/myPhoneBind.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/my/myPortrait.html" afterPath="$PROJECT_DIR$/pages/my/myPortrait.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/my/myQuestion.html" afterPath="$PROJECT_DIR$/pages/my/myQuestion.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/my/myRank.html" afterPath="$PROJECT_DIR$/pages/my/myRank.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/my/myRecharge01.html" afterPath="$PROJECT_DIR$/pages/my/myRecharge01.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/my/myRecharge02.html" afterPath="$PROJECT_DIR$/pages/my/myRecharge02.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/my/myRecharge03.html" afterPath="$PROJECT_DIR$/pages/my/myRecharge03.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/my/mySetting.html" afterPath="$PROJECT_DIR$/pages/my/mySetting.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/my/myTradeDet.html" afterPath="$PROJECT_DIR$/pages/my/myTradeDet.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/my/myWithdrawBind.html" afterPath="$PROJECT_DIR$/pages/my/myWithdrawBind.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/my/myWithdrawDet.html" afterPath="$PROJECT_DIR$/pages/my/myWithdrawDet.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/my/myWxBind.html" afterPath="$PROJECT_DIR$/pages/my/myWxBind.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/base.css" afterPath="$PROJECT_DIR$/public/css/base.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/style.css" afterPath="$PROJECT_DIR$/public/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/style.css.map" afterPath="$PROJECT_DIR$/public/css/style.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/style.scss" afterPath="$PROJECT_DIR$/public/css/style.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/base.js" afterPath="$PROJECT_DIR$/public/js/base.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/style.js" afterPath="$PROJECT_DIR$/public/js/style.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/zepto_plus.js" afterPath="$PROJECT_DIR$/public/js/zepto_plus.js" />
+    <list default="true" id="b299fc1e-ec77-46c0-889c-d90ebdc883b4" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/main.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/main.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/curriculum-banner-01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/curriculum-icon-back.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/curriculum-icon-false.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/curriculum-icon-more.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/curriculum-message.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/home-QR-Code.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/home-icon-About-us.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/home-icon-Course-synopsis.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/home-icon-Course-video.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/home-icon-Elite-student.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/home-icon-Official-information.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/home-icon-Video-recommendation.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/home-icon-common-problem.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/home-icon-contact-us.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/home-icon-courses.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/home-icon-customer-service-center.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/home-icon-number-of-trainees.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/home-icon-time.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -505,7 +353,47 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hituiWap-phone" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hituiWap-phone" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hituiWap-phone" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hituiWap-phone" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -520,10 +408,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -743,12 +627,20 @@
       <workItem from="1498811558510" duration="815000" />
       <workItem from="1499060354502" duration="1736000" />
       <workItem from="1499071794584" duration="603000" />
-      <workItem from="1499075149932" duration="534000" />
+      <workItem from="1499075149932" duration="1071000" />
     </task>
+    <task id="LOCAL-00001" summary="页面增加">
+      <created>1499075711717</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1499075711717</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="508328000" />
+    <option name="totallyTimeSpent" value="508865000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -762,12 +654,13 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24050634" sideWeight="0.49565217" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24050634" sideWeight="0.49565217" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996207" sideWeight="0.49778762" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32824427" sideWeight="0.48945147" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32824427" sideWeight="0.51054853" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32824427" sideWeight="0.48945147" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32824427" sideWeight="0.5063291" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32497275" sideWeight="0.49367088" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24209379" sideWeight="0.49156117" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32824427" sideWeight="0.49156117" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32824427" sideWeight="0.48734176" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996207" sideWeight="0.49778762" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39978212" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -777,7 +670,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32497275" sideWeight="0.4957806" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
