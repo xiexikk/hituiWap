@@ -26,3 +26,5 @@ if (!window.console) {
     })();
 }
 
+//去除input框默认背景色（淡黄色）
+$("input[type='text'],input[type='password']").prop('autocomplete','off');

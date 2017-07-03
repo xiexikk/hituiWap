@@ -6,169 +6,168 @@ var Zepto=function(){function L(t){return null==t?String(t):j[S.call(t)]||"objec
 //     (c) 2010-2015 Thomas Fuchs
 //     Zepto.js may be freely distributed under the MIT license.
 
-/*
- ;(function($){
- var touch = {},
- touchTimeout, tapTimeout, swipeTimeout, longTapTimeout,
- longTapDelay = 750,
- gesture
+;(function($){
+    var touch = {},
+        touchTimeout, tapTimeout, swipeTimeout, longTapTimeout,
+        longTapDelay = 750,
+        gesture
 
- function swipeDirection(x1, x2, y1, y2) {
- return Math.abs(x1 - x2) >=
- Math.abs(y1 - y2) ? (x1 - x2 > 0 ? 'Left' : 'Right') : (y1 - y2 > 0 ? 'Up' : 'Down')
- }
+    function swipeDirection(x1, x2, y1, y2) {
+        return Math.abs(x1 - x2) >=
+        Math.abs(y1 - y2) ? (x1 - x2 > 0 ? 'Left' : 'Right') : (y1 - y2 > 0 ? 'Up' : 'Down')
+    }
 
- function longTap() {
- longTapTimeout = null
- if (touch.last) {
- touch.el.trigger('longTap')
- touch = {}
- }
- }
+    function longTap() {
+        longTapTimeout = null
+        if (touch.last) {
+            touch.el.trigger('longTap')
+            touch = {}
+        }
+    }
 
- function cancelLongTap() {
- if (longTapTimeout) clearTimeout(longTapTimeout)
- longTapTimeout = null
- }
+    function cancelLongTap() {
+        if (longTapTimeout) clearTimeout(longTapTimeout)
+        longTapTimeout = null
+    }
 
- function cancelAll() {
- if (touchTimeout) clearTimeout(touchTimeout)
- if (tapTimeout) clearTimeout(tapTimeout)
- if (swipeTimeout) clearTimeout(swipeTimeout)
- if (longTapTimeout) clearTimeout(longTapTimeout)
- touchTimeout = tapTimeout = swipeTimeout = longTapTimeout = null
- touch = {}
- }
+    function cancelAll() {
+        if (touchTimeout) clearTimeout(touchTimeout)
+        if (tapTimeout) clearTimeout(tapTimeout)
+        if (swipeTimeout) clearTimeout(swipeTimeout)
+        if (longTapTimeout) clearTimeout(longTapTimeout)
+        touchTimeout = tapTimeout = swipeTimeout = longTapTimeout = null
+        touch = {}
+    }
 
- function isPrimaryTouch(event){
- return (event.pointerType == 'touch' ||
- event.pointerType == event.MSPOINTER_TYPE_TOUCH)
- && event.isPrimary
- }
+    function isPrimaryTouch(event){
+        return (event.pointerType == 'touch' ||
+            event.pointerType == event.MSPOINTER_TYPE_TOUCH)
+            && event.isPrimary
+    }
 
- function isPointerEventType(e, type){
- return (e.type == 'pointer'+type ||
- e.type.toLowerCase() == 'mspointer'+type)
- }
+    function isPointerEventType(e, type){
+        return (e.type == 'pointer'+type ||
+        e.type.toLowerCase() == 'mspointer'+type)
+    }
 
- $(document).ready(function(){
- var now, delta, deltaX = 0, deltaY = 0, firstTouch, _isPointerType
+    $(document).ready(function(){
+        var now, delta, deltaX = 0, deltaY = 0, firstTouch, _isPointerType
 
- if ('MSGesture' in window) {
- gesture = new MSGesture()
- gesture.target = document.body
- }
+        if ('MSGesture' in window) {
+            gesture = new MSGesture()
+            gesture.target = document.body
+        }
 
- $(document)
- .bind('MSGestureEnd', function(e){
- var swipeDirectionFromVelocity =
- e.velocityX > 1 ? 'Right' : e.velocityX < -1 ? 'Left' : e.velocityY > 1 ? 'Down' : e.velocityY < -1 ? 'Up' : null;
- if (swipeDirectionFromVelocity) {
- touch.el.trigger('swipe')
- touch.el.trigger('swipe'+ swipeDirectionFromVelocity)
- }
- })
- .on('touchstart MSPointerDown pointerdown', function(e){
- if((_isPointerType = isPointerEventType(e, 'down')) &&
- !isPrimaryTouch(e)) return
- firstTouch = _isPointerType ? e : e.touches[0]
- if (e.touches && e.touches.length === 1 && touch.x2) {
- // Clear out touch movement data if we have it sticking around
- // This can occur if touchcancel doesn't fire due to preventDefault, etc.
- touch.x2 = undefined
- touch.y2 = undefined
- }
- now = Date.now()
- delta = now - (touch.last || now)
- touch.el = $('tagName' in firstTouch.target ?
- firstTouch.target : firstTouch.target.parentNode)
- touchTimeout && clearTimeout(touchTimeout)
- touch.x1 = firstTouch.pageX
- touch.y1 = firstTouch.pageY
- if (delta > 0 && delta <= 250) touch.isDoubleTap = true
- touch.last = now
- longTapTimeout = setTimeout(longTap, longTapDelay)
- // adds the current touch contact for IE gesture recognition
- if (gesture && _isPointerType) gesture.addPointer(e.pointerId);
- })
- .on('touchmove MSPointerMove pointermove', function(e){
- if((_isPointerType = isPointerEventType(e, 'move')) &&
- !isPrimaryTouch(e)) return
- firstTouch = _isPointerType ? e : e.touches[0]
- cancelLongTap()
- touch.x2 = firstTouch.pageX
- touch.y2 = firstTouch.pageY
+        $(document)
+            .bind('MSGestureEnd', function(e){
+                var swipeDirectionFromVelocity =
+                    e.velocityX > 1 ? 'Right' : e.velocityX < -1 ? 'Left' : e.velocityY > 1 ? 'Down' : e.velocityY < -1 ? 'Up' : null;
+                if (swipeDirectionFromVelocity) {
+                    touch.el.trigger('swipe')
+                    touch.el.trigger('swipe'+ swipeDirectionFromVelocity)
+                }
+            })
+            .on('touchstart MSPointerDown pointerdown', function(e){
+                if((_isPointerType = isPointerEventType(e, 'down')) &&
+                    !isPrimaryTouch(e)) return
+                firstTouch = _isPointerType ? e : e.touches[0]
+                if (e.touches && e.touches.length === 1 && touch.x2) {
+                    // Clear out touch movement data if we have it sticking around
+                    // This can occur if touchcancel doesn't fire due to preventDefault, etc.
+                    touch.x2 = undefined
+                    touch.y2 = undefined
+                }
+                now = Date.now()
+                delta = now - (touch.last || now)
+                touch.el = $('tagName' in firstTouch.target ?
+                    firstTouch.target : firstTouch.target.parentNode)
+                touchTimeout && clearTimeout(touchTimeout)
+                touch.x1 = firstTouch.pageX
+                touch.y1 = firstTouch.pageY
+                if (delta > 0 && delta <= 250) touch.isDoubleTap = true
+                touch.last = now
+                longTapTimeout = setTimeout(longTap, longTapDelay)
+                // adds the current touch contact for IE gesture recognition
+                if (gesture && _isPointerType) gesture.addPointer(e.pointerId);
+            })
+            .on('touchmove MSPointerMove pointermove', function(e){
+                if((_isPointerType = isPointerEventType(e, 'move')) &&
+                    !isPrimaryTouch(e)) return
+                firstTouch = _isPointerType ? e : e.touches[0]
+                cancelLongTap()
+                touch.x2 = firstTouch.pageX
+                touch.y2 = firstTouch.pageY
 
- deltaX += Math.abs(touch.x1 - touch.x2)
- deltaY += Math.abs(touch.y1 - touch.y2)
- })
- .on('touchend MSPointerUp pointerup', function(e){
- if((_isPointerType = isPointerEventType(e, 'up')) &&
- !isPrimaryTouch(e)) return
- cancelLongTap()
+                deltaX += Math.abs(touch.x1 - touch.x2)
+                deltaY += Math.abs(touch.y1 - touch.y2)
+            })
+            .on('touchend MSPointerUp pointerup', function(e){
+                if((_isPointerType = isPointerEventType(e, 'up')) &&
+                    !isPrimaryTouch(e)) return
+                cancelLongTap()
 
- // swipe
- if ((touch.x2 && Math.abs(touch.x1 - touch.x2) > 30) ||
- (touch.y2 && Math.abs(touch.y1 - touch.y2) > 30))
+                // swipe
+                if ((touch.x2 && Math.abs(touch.x1 - touch.x2) > 10) ||
+                    (touch.y2 && Math.abs(touch.y1 - touch.y2) > 10))
 
- swipeTimeout = setTimeout(function() {
- touch.el.trigger('swipe')
- touch.el.trigger('swipe' + (swipeDirection(touch.x1, touch.x2, touch.y1, touch.y2)))
- touch = {}
- }, 0)
+                    swipeTimeout = setTimeout(function() {
+                        touch.el.trigger('swipe')
+                        touch.el.trigger('swipe' + (swipeDirection(touch.x1, touch.x2, touch.y1, touch.y2)))
+                        touch = {}
+                    }, 0)
 
- // normal tap
- else if ('last' in touch)
- // don't fire tap when delta position changed by more than 30 pixels,
- // for instance when moving to a point and back to origin
- if (deltaX < 30 && deltaY < 30) {
- // delay by one tick so we can cancel the 'tap' event if 'scroll' fires
- // ('tap' fires before 'scroll')
- tapTimeout = setTimeout(function() {
+                // normal tap
+                else if ('last' in touch)
+                // don't fire tap when delta position changed by more than 30 pixels,
+                // for instance when moving to a point and back to origin
+                    if (deltaX < 30 && deltaY < 30) {
+                        // delay by one tick so we can cancel the 'tap' event if 'scroll' fires
+                        // ('tap' fires before 'scroll')
+                        tapTimeout = setTimeout(function() {
 
- // trigger universal 'tap' with the option to cancelTouch()
- // (cancelTouch cancels processing of single vs double taps for faster 'tap' response)
- var event = $.Event('tap')
- event.cancelTouch = cancelAll
- touch.el.trigger(event)
+                            // trigger universal 'tap' with the option to cancelTouch()
+                            // (cancelTouch cancels processing of single vs double taps for faster 'tap' response)
+                            var event = $.Event('tap')
+                            event.cancelTouch = cancelAll
+                            touch.el.trigger(event)
 
- // trigger double tap immediately
- if (touch.isDoubleTap) {
- if (touch.el) touch.el.trigger('doubleTap')
- touch = {}
- }
+                            // trigger double tap immediately
+                            if (touch.isDoubleTap) {
+                                if (touch.el) touch.el.trigger('doubleTap')
+                                touch = {}
+                            }
 
- // trigger single tap after 250ms of inactivity
- else {
- touchTimeout = setTimeout(function(){
- touchTimeout = null
- if (touch.el) touch.el.trigger('singleTap')
- touch = {}
- }, 250)
- }
- }, 0)
- } else {
- touch = {}
- }
- deltaX = deltaY = 0
+                            // trigger single tap after 250ms of inactivity
+                            else {
+                                touchTimeout = setTimeout(function(){
+                                    touchTimeout = null
+                                    if (touch.el) touch.el.trigger('singleTap')
+                                    touch = {}
+                                }, 250)
+                            }
+                        }, 0)
+                    } else {
+                        touch = {}
+                    }
+                deltaX = deltaY = 0
 
- })
- // when the browser window loses focus,
- // for example when a modal dialog is shown,
- // cancel all ongoing events
- .on('touchcancel MSPointerCancel pointercancel', cancelAll)
+            })
+            // when the browser window loses focus,
+            // for example when a modal dialog is shown,
+            // cancel all ongoing events
+            .on('touchcancel MSPointerCancel pointercancel', cancelAll)
 
- // scrolling the window indicates intention of the user
- // to scroll, not tap or swipe, so cancel all ongoing events
- $(window).on('scroll', cancelAll)
- })
+        // scrolling the window indicates intention of the user
+        // to scroll, not tap or swipe, so cancel all ongoing events
+        $(window).on('scroll', cancelAll)
+    })
 
- ;['swipe', 'swipeLeft', 'swipeRight', 'swipeUp', 'swipeDown',
- 'doubleTap', 'tap', 'singleTap', 'longTap'].forEach(function(eventName){
- $.fn[eventName] = function(callback){ return this.on(eventName, callback) }
- })
- })(Zepto)
- */
+    ;['swipe', 'swipeLeft', 'swipeRight', 'swipeUp', 'swipeDown',
+        'doubleTap', 'tap', 'singleTap', 'longTap'].forEach(function(eventName){
+        $.fn[eventName] = function(callback){ return this.on(eventName, callback) }
+    })
+
+})(Zepto)
 
 //     Zepto.js
 //     (c) 2010-2016 Thomas Fuchs
@@ -365,422 +364,8 @@ var Zepto=function(){function L(t){return null==t?String(t):j[S.call(t)]||"objec
         })
     }
 
-})(Zepto);
-
-
-//     Zepto.js
-//     (c) 2010-2016 Thomas Fuchs
-//     Zepto.js may be freely distributed under the MIT license.
-
-;(function($, undefined){
-    var prefix = '', eventPrefix,
-        vendors = { Webkit: 'webkit', Moz: '', O: 'o' },
-        testEl = document.createElement('div'),
-        supportedTransforms = /^((translate|rotate|scale)(X|Y|Z|3d)?|matrix(3d)?|perspective|skew(X|Y)?)$/i,
-        transform,
-        transitionProperty, transitionDuration, transitionTiming, transitionDelay,
-        animationName, animationDuration, animationTiming, animationDelay,
-        cssReset = {}
-
-    function dasherize(str) { return str.replace(/([A-Z])/g, '-$1').toLowerCase() }
-    function normalizeEvent(name) { return eventPrefix ? eventPrefix + name : name.toLowerCase() }
-
-    if (testEl.style.transform === undefined) $.each(vendors, function(vendor, event){
-        if (testEl.style[vendor + 'TransitionProperty'] !== undefined) {
-            prefix = '-' + vendor.toLowerCase() + '-'
-            eventPrefix = event
-            return false
-        }
-    })
-
-    transform = prefix + 'transform'
-    cssReset[transitionProperty = prefix + 'transition-property'] =
-        cssReset[transitionDuration = prefix + 'transition-duration'] =
-            cssReset[transitionDelay    = prefix + 'transition-delay'] =
-                cssReset[transitionTiming   = prefix + 'transition-timing-function'] =
-                    cssReset[animationName      = prefix + 'animation-name'] =
-                        cssReset[animationDuration  = prefix + 'animation-duration'] =
-                            cssReset[animationDelay     = prefix + 'animation-delay'] =
-                                cssReset[animationTiming    = prefix + 'animation-timing-function'] = ''
-
-    $.fx = {
-        off: (eventPrefix === undefined && testEl.style.transitionProperty === undefined),
-        speeds: { _default: 400, fast: 200, slow: 600 },
-        cssPrefix: prefix,
-        transitionEnd: normalizeEvent('TransitionEnd'),
-        animationEnd: normalizeEvent('AnimationEnd')
-    }
-
-    $.fn.animate = function(properties, duration, ease, callback, delay){
-        if ($.isFunction(duration))
-            callback = duration, ease = undefined, duration = undefined
-        if ($.isFunction(ease))
-            callback = ease, ease = undefined
-        if ($.isPlainObject(duration))
-            ease = duration.easing, callback = duration.complete, delay = duration.delay, duration = duration.duration
-        if (duration) duration = (typeof duration == 'number' ? duration :
-                ($.fx.speeds[duration] || $.fx.speeds._default)) / 1000
-        if (delay) delay = parseFloat(delay) / 1000
-        return this.anim(properties, duration, ease, callback, delay)
-    }
-
-    $.fn.anim = function(properties, duration, ease, callback, delay){
-        var key, cssValues = {}, cssProperties, transforms = '',
-            that = this, wrappedCallback, endEvent = $.fx.transitionEnd,
-            fired = false
-
-        if (duration === undefined) duration = $.fx.speeds._default / 1000
-        if (delay === undefined) delay = 0
-        if ($.fx.off) duration = 0
-
-        if (typeof properties == 'string') {
-            // keyframe animation
-            cssValues[animationName] = properties
-            cssValues[animationDuration] = duration + 's'
-            cssValues[animationDelay] = delay + 's'
-            cssValues[animationTiming] = (ease || 'linear')
-            endEvent = $.fx.animationEnd
-        } else {
-            cssProperties = []
-            // CSS transitions
-            for (key in properties)
-                if (supportedTransforms.test(key)) transforms += key + '(' + properties[key] + ') '
-                else cssValues[key] = properties[key], cssProperties.push(dasherize(key))
-
-            if (transforms) cssValues[transform] = transforms, cssProperties.push(transform)
-            if (duration > 0 && typeof properties === 'object') {
-                cssValues[transitionProperty] = cssProperties.join(', ')
-                cssValues[transitionDuration] = duration + 's'
-                cssValues[transitionDelay] = delay + 's'
-                cssValues[transitionTiming] = (ease || 'linear')
-            }
-        }
-
-        wrappedCallback = function(event){
-            if (typeof event !== 'undefined') {
-                if (event.target !== event.currentTarget) return // makes sure the event didn't bubble from "below"
-                $(event.target).unbind(endEvent, wrappedCallback)
-            } else
-                $(this).unbind(endEvent, wrappedCallback) // triggered by setTimeout
-
-            fired = true
-            $(this).css(cssReset)
-            callback && callback.call(this)
-        }
-        if (duration > 0){
-            this.bind(endEvent, wrappedCallback)
-            // transitionEnd is not always firing on older Android phones
-            // so make sure it gets fired
-            setTimeout(function(){
-                if (fired) return
-                wrappedCallback.call(that)
-            }, ((duration + delay) * 1000) + 25)
-        }
-
-        // trigger page reflow so new elements can animate
-        this.size() && this.get(0).clientLeft
-
-        this.css(cssValues)
-
-        if (duration <= 0) setTimeout(function() {
-            that.each(function(){ wrappedCallback.call(this) })
-        }, 0)
-
-        return this
-    }
-
-    testEl = null
-})(Zepto);
+})(Zepto)
 
 
 
 
-/**
- * Zepto.fx.js
- *
- * 这个功能是Zepto封装的插件animate动画包
- *  1、 根据浏览器属性获取前缀，并设置cssReset的属性名称前加入前缀，
- *  2、$.fn.animate 的主要功能其实是判断并修正参数，最后调用的$.fn.anim才是操作动画的核心方法。
- * (c) 2010-2015 Thomas Fuchs
- * Zepto.js may be freely distributed under the MIT license.
- * @param {Object} $
- * @param {Object} undefined
- */
-;(function($, undefined) {
-    var prefix = '',
-        eventPrefix, // prefix浏览器前缀 -webkit等，eventPrefix事件前缀
-        vendors = {
-            Webkit: 'webkit',
-            Moz: '',
-            O: 'o'
-        }, //前缀数据源 不包含IE
-        testEl = document.createElement('div'), //临时DIV容器
-        supportedTransforms = /^((translate|rotate|scale)(X|Y|Z|3d)?|matrix(3d)?|perspective|skew(X|Y)?)$/i, //变形检测
-        transform, //变形
-        transitionProperty, transitionDuration, transitionTiming, transitionDelay, //过渡
-        animationName, animationDuration, animationTiming, animationDelay, //动画
-        cssReset = {}
-
-    //将驼峰字符串转成css属性，如aB-->a-b
-    function dasherize(str) {
-        return str.replace(/([a-z])([A-Z])/, '$1-$2').toLowerCase()
-    }
-
-    //修正事件名
-    function normalizeEvent(name) {
-        return eventPrefix ? eventPrefix + name : name.toLowerCase()
-    }
-
-    /**
-     * 根据浏览器内核，设置CSS前缀，事件前缀
-     * 如-webkit， css：-webkit-  event:webkit
-     * 这里会在vendors存储webkit，moz，o三种前缀
-     */
-    $.each(vendors, function(vendor, event) {
-        if(testEl.style[vendor + 'TransitionProperty'] !== undefined) {
-            prefix = '-' + vendor.toLowerCase() + '-'
-            eventPrefix = event
-            return false
-        }
-    })
-
-    transform = prefix + 'transform' //变形
-
-    //过渡,对于css属性重新设置前缀
-    cssReset[transitionProperty = prefix + 'transition-property'] =
-        cssReset[transitionDuration = prefix + 'transition-duration'] =
-            cssReset[transitionDelay = prefix + 'transition-delay'] =
-                cssReset[transitionTiming = prefix + 'transition-timing-function'] =
-                    cssReset[animationName = prefix + 'animation-name'] =
-                        cssReset[animationDuration = prefix + 'animation-duration'] =
-                            cssReset[animationDelay = prefix + 'animation-delay'] =
-                                cssReset[animationTiming = prefix + 'animation-timing-function'] = ''
-
-    /**
-     * 动画常量数据源，默认设置
-     * @type {{off: boolean, speeds: {_default: number, fast: number, slow: number}, cssPrefix: string, transitionEnd: *, animationEnd: *}}
-     */
-    $.fx = {
-        off: (eventPrefix === undefined && testEl.style.transitionProperty === undefined), //能力检测是否支持动画，具体检测是否支持过渡，支持过渡事件
-        speeds: {
-            _default: 400,
-            fast: 200,
-            slow: 600
-        },
-        cssPrefix: prefix, //css 前缀  如-webkit-
-        transitionEnd: normalizeEvent('TransitionEnd'), //过渡结束事件
-        animationEnd: normalizeEvent('AnimationEnd') //动画播放结束事件
-    }
-
-    /**
-     * 创建自定义动画
-     * @param properties  样式集
-     * @param duration 持续事件
-     * @param ease    速率
-     * @param callback  完成时的回调
-     * @param delay     动画延迟
-     * @returns {*}
-     */
-    // 这里是对参数的修正和处理，真正操作的是anim方法
-    $.fn.animate = function(properties, duration, ease, callback, delay) {
-        //参数修正，传参为function(properties,callback)
-        if($.isFunction(duration))
-            callback = duration, ease = undefined, duration = undefined
-        if($.isFunction(ease)) //传参为function(properties,duration，callback)
-            callback = ease, ease = undefined
-        if($.isPlainObject(duration)) //传参为function(properties,｛｝)
-            ease = duration.easing, callback = duration.complete, delay = duration.delay, duration = duration.duration
-        // duration 数字：持续时间  字符串：取speeds: { _default: 400, fast: 200, slow: 600 }对应数字
-        if(duration) duration = (typeof duration == 'number' ? duration :
-                ($.fx.speeds[duration] || $.fx.speeds._default)) / 1000 //动画持续时间默认值
-        if(delay) delay = parseFloat(delay) / 1000 //延迟时间，除以1000转换成s
-        return this.anim(properties, duration, ease, callback, delay)
-    }
-
-    /**
-     * 动画核心方法
-     * @param properties  样式集
-     * @param duration 持续事件
-     * @param ease    速率
-     * @param callback  完成时的回调
-     * @param delay     动画延迟
-     * @returns {*}
-     */
-    $.fn.anim = function(properties, duration, ease, callback, delay) {
-        var key, cssValues = {},
-            cssProperties, transforms = '', // transforms 变形   cssValues设置给DOM的样式
-            that = this,
-            wrappedCallback, endEvent = $.fx.transitionEnd,
-            fired = false
-
-        //修正持续时间
-        if(duration === undefined) duration = $.fx.speeds._default / 1000
-        if(delay === undefined) delay = 0
-
-        //如果浏览器不支持动画，持续时间设为0，直接跳动画结束
-        if($.fx.off) duration = 0
-
-        // properties是动画名
-        if(typeof properties == 'string') {
-            // keyframe [animationName] = properties
-            cssValues[animationName] = properties
-            cssValues[animationDuration] = duration + 's'
-            cssValues[animationDelay] = delay + 's'
-            cssValues[animationTiming] = (ease || 'linear')
-            endEvent = $.fx.animationEnd //动画结束事件
-        } else { //properties 是样式集
-            cssProperties = []
-            // CSS transitionsanimation
-            cssValues
-            for(key in properties)
-                // supportedTransforms.test(key) 正则检测是否为变形
-                // key + '(' + properties[key] + ') '拼凑成变形方法
-                if(supportedTransforms.test(key)) transforms += key + '(' + properties[key] + ') '
-                else cssValues[key] = properties[key], cssProperties.push(dasherize(key))
-
-            // 变形统一存入  cssValues   cssProperties
-            if(transforms) cssValues[transform] = transforms, cssProperties.push(transform)
-
-            // duration > 0可以播放动画，且properties是对象，表明为过渡，上面有字符串，则为animate
-            if(duration > 0 && typeof properties === 'object') {
-                cssValues[transitionProperty] = cssProperties.join(', ')
-                cssValues[transitionDuration] = duration + 's'
-                cssValues[transitionDelay] = delay + 's'
-                cssValues[transitionTiming] = (ease || 'linear') //默认线性速率
-            }
-        }
-
-        //动画完成后的响应函数
-        wrappedCallback = function(event) {
-            if(typeof event !== 'undefined') {
-                if(event.target !== event.currentTarget) return // makes sure the event didn't bubble from "below"
-                $(event.target).unbind(endEvent, wrappedCallback)
-            } else
-                $(this).unbind(endEvent, wrappedCallback) // triggered by setTimeout
-
-            fired = true
-            // TODO 既然已经执行完了，为什么这里要重复css一下，不太理解
-            $(this).css(cssReset)
-            callback && callback.call(this)
-        }
-
-        //处理动画结束事件
-        if(duration > 0) {
-            //绑定动画结束事件
-            this.bind(endEvent, wrappedCallback)
-            // transitionEnd is not always firing on older Android phones
-            // so make sure it gets fired
-
-            //延时ms后执行动画，注意这里加了25ms，保持endEvent，动画先执行完。
-            //绑定过事件还做延时处理，是transitionEnd在older Android phones不一定触发
-            setTimeout(function() {
-                //如果触发过，就不处理
-                if(fired) return
-                wrappedCallback.call(that)
-            }, ((duration + delay) * 1000) + 25)
-        }
-
-        // trigger page reflow so new elements can animate
-        //主动触发页面回流，刷新DOM，让接下来设置的动画可以正确播放
-        //更改 offsetTop、offsetLeft、 offsetWidth、offsetHeight；scrollTop、scrollLeft、scrollWidth、scrollHeight；clientTop、clientLeft、clientWidth、clientHeight；getComputedStyle() 、currentStyle（）。这些都会触发回流。回流导致DOM重新渲染，平时要尽可能避免，但这里，为了动画即时生效播放，则主动触发回流，刷新DOM。
-        // 与.length属性一致
-        this.size() && this.get(0).clientLeft
-
-        //设置样式，启动动画
-        this.css(cssValues)
-
-        // duration为0，即浏览器不支持动画的情况，直接执行动画结束，执行回调。
-        if(duration <= 0) setTimeout(function() {
-            that.each(function() {
-                wrappedCallback.call(this)
-            })
-        }, 0)
-
-        return this;
-    }
-
-    testEl = null //去掉不必要的数据存储，便于垃圾回收
-})(Zepto);
-
-
-
-/**
- * 使用show()、hide()、fadeIn()、fadeOut()等
- * Zepto.js
- * (c) 2010-2016 Thomas Fuchs
- * Zepto.js may be freely distributed under the MIT license.
- * @param {Object} $
- * @param {Object} undefined
- */
-;(function($, undefined) {
-    var document = window.document,
-        docElem = document.documentElement,
-        origShow = $.fn.show,
-        origHide = $.fn.hide,
-        origToggle = $.fn.toggle
-
-    function anim(el, speed, opacity, scale, callback) {
-        if(typeof speed == 'function' && !callback) callback = speed, speed = undefined
-        var props = {
-            opacity: opacity
-        }
-        if(scale) {
-            props.scale = scale
-            el.css($.fx.cssPrefix + 'transform-origin', '0 0')
-        }
-        return el.animate(props, speed, null, callback)
-    }
-
-    function hide(el, speed, scale, callback) {
-        return anim(el, speed, 0, scale, function() {
-            origHide.call($(this))
-            callback && callback.call(this)
-        })
-    }
-
-    $.fn.show = function(speed, callback) {
-        origShow.call(this)
-        if(speed === undefined) speed = 0
-        else this.css('opacity', 0)
-        return anim(this, speed, 1, '1,1', callback)
-    }
-
-    $.fn.hide = function(speed, callback) {
-        if(speed === undefined) return origHide.call(this)
-        else return hide(this, speed, '0,0', callback)
-    }
-
-    $.fn.toggle = function(speed, callback) {
-        if(speed === undefined || typeof speed == 'boolean')
-            return origToggle.call(this, speed)
-        else return this.each(function() {
-            var el = $(this)
-            el[el.css('display') == 'none' ? 'show' : 'hide'](speed, callback)
-        })
-    }
-
-    $.fn.fadeTo = function(speed, opacity, callback) {
-        return anim(this, speed, opacity, null, callback)
-    }
-
-    $.fn.fadeIn = function(speed, callback) {
-        var target = this.css('opacity')
-        if(target > 0) this.css('opacity', 0)
-        else target = 1
-        return origShow.call(this).fadeTo(speed, target, callback)
-    }
-
-    $.fn.fadeOut = function(speed, callback) {
-        return hide(this, speed, null, callback)
-    }
-
-    $.fn.fadeToggle = function(speed, callback) {
-        return this.each(function() {
-            var el = $(this)
-            el[
-                (el.css('opacity') == 0 || el.css('display') == 'none') ? 'fadeIn' : 'fadeOut'
-                ](speed, callback)
-        })
-    }
-
-})(Zepto);

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="format-detection" content="telephone=no">
     <meta name="screen-orientation" content="portrait">
     <meta name="x5-orientation" content="portrait">
     <meta name="full-screen" content="yes">
@@ -12,7 +13,6 @@
     <meta name="x5-page-mode" content="app">
     <title>嗨推学院-知名网络推广实战培训平台</title>
     <link rel="stylesheet" href="../../public/css/base.css">
-    <link rel="stylesheet" href="../../public/css/common.css">
     <link rel="stylesheet" href="../../public/css/style.css">
 </head>
 <body style="background-color: #fff;">
@@ -33,7 +33,7 @@
                 <div class="inp">
                     <span class="ti">银行类型<em>*</em></span>
                     <div class="cardSel">
-                        <select>
+                        <select class="select">
                             <option>请选择银行卡类型</option>
                         </select>
                     </div>
@@ -59,7 +59,7 @@
                 <div class="inp yzmInp">
                     <span class="ti">验证码<em>*</em></span>
                     <input type="text" placeholder="请填写短信验证码">
-                    <button type="button" class="getCode">获取验证码</button>
+                    <button type="button" class="getCode" data-html="重新获取">获取验证码</button>
                 </div>
                 <p class="showTip">已经发送验证码到您的<span>123334566799</span></p>
             </form>

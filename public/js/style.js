@@ -42,6 +42,207 @@ $('#expRell').clearNoNum();
 // 充值金额
 $('#recMoney').clearNoNum();
 
+//lazyImgLoad.js
++function(){
+    //src:先加载gif图片, data-src:真正图片地址
+    var lazyload = {
+        init : function(opt){
+            var that = this,
+                op = {
+                    anim: true,
+                    extend_height:0,
+                    selectorName:"img",
+                    realSrcAtr:"data-src"
+                };
+            // 合并对象，已有的{anim:true}+用户自定义对象。也就是op = op + opt
+            $.extend(op,opt);
+            // 调用lazyload.img.init(op)函数
+            that.img.init(op);
+        },
+
+        img : {
+            init : function(n){
+
+                var that = this,
+                    selectorName = n.selectorName,
+                    realSrcAtr = n.realSrcAtr,
+                    anim = n.anim;
+                // console.log(n);
+
+                // 要加载的图片是不是在指定窗口内
+                function inViewport( el ) {
+                    // 当前窗口的顶部
+                    var top = window.pageYOffset,
+                    // 当前窗口的底部
+                        btm = window.pageYOffset + window.innerHeight,
+                    // 元素所在整体页面内的y轴位置
+                        elTop = $(el).offset().top;
+                    // 判断元素，是否在当前窗口，或者当前窗口延伸400像素内
+                    return elTop >= top && elTop - n.extend_height <= btm;
+                }
+
+                // 滚动事件里判断，加载图片
+                $(window).on('scroll', function() {
+                    $(selectorName).each(function(index,node) {
+                        var $this = $(this);
+
+                        if(!$this.attr(realSrcAtr) || !inViewport(this)){
+                            return;
+                        }
+
+                        act($this);
+
+                    })
+                }).trigger('scroll');
+
+                // 展示图片
+                function act(_self){
+                    // 已经加载过了，则中断后续代码
+                    if (_self.attr('lazyImgLoaded')) return;
+                    var img = new Image(),
+                        original = _self.attr('data-src');
+                    // 图片请求完成后的事件，把data-src指定的图片，放到src里面，浏览器显示
+                    img.onload = function() {
+                        _self.attr('src', original);
+                        anim && _self.css({ opacity: .2 }).animate({ opacity: 1 }, 280);
+                    };
+                    // 当你设置img.src的时候，浏览器就在发送图片请求了
+                    original && (img.src = original);
+                    _self.attr('lazyImgLoaded', true);
+                }
+            }
+        }
+    };
+    // * selectorName，要懒加载的选择器名称
+    // * extend_height  扩展高度
+    // * anim  是否开启动画
+    // * realSrcAtr  图片真正地址
+    lazyload.init({
+        anim:false,
+        selectorName:".lazy"
+    });
+}();
+
+// footer导航
+function footNav(parm){
+    for(var i = 0; i < $(parm).size(); i++){
+        if($(parm).eq(i).hasClass('cur')){
+            var img01 =  $(parm).eq(i).find('img').attr('src');
+            var img02 =  $(parm).eq(i).find('img').attr('rel');
+            var temp = '';
+            temp = img01;
+            img01 = img02;
+            img02 = temp;
+            $(parm).eq(i).find('img').attr('src', img01);
+            $(parm).eq(i).find('img').attr('rel', img02);
+        }
+    }
+}
+footNav('.footNav .nav li');
+
+// textScroll公告文字
+function timer(opj){
+    var notLiHig =  $('.gfNot li').height();
+    $(opj).find('ul').animate({
+        marginTop :notLiHig
+    },500,function(){
+        $(this).css({marginTop : "0"}).find("li:first").appendTo(this);
+    })
+}
+$(function(){
+    var $gfNot = $('.gfNot'),
+        num = $gfNot .find('li').length,
+        speed = 3500;
+    if(num > 1){
+        var time=setInterval('timer(".gfNot")',speed);
+        $gfNot.mousemove(function(){
+            clearInterval(time);
+        }).mouseout(function(){
+            time = setInterval('timer(".gfNot")',speed);
+        });
+    }
+});
+
+// markFix悬浮菜单栏
++function () {
+    $('.btn_mark .ico').empty();
+    $(".btn_home").click(function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        $(this).parent().toggleClass("active");
+        $(".btn_qq_box").toggle();
+    });
+    $(".btn_mark").click(function(e){
+        $(this).toggleClass("active");
+        $(".btn_qq_box").toggle();
+    });
+}();
+
+// other
+!function () {
+    //a标签中嵌套button去除跳转
+    $('.accChg .btn').on('click',function (e) {
+        return false;
+    });
+    //控制显示样式
+    function controlStyle() {
+        //courses.html
+        var h1 = $('.theMenu').height(),
+            h2 = $('.theSearch').height(),
+            h3 = $('.findSel .tabHd').height();
+        $('.listBd').css("top",(h1+h2+h3)+'px');
+        $('.listBd').height($(window).height()-h1-h2);
+        var  couLi = '.courList li',
+        couLiWid = ($('body').width()-parseFloat($('.courList').css('padding-left'))*2)*0.47,
+        couLiMr = ($('body').width()-couLiWid*2)/2;
+        $(couLi).css("marginBottom",couLiMr);
+        $(couLi+':nth-of-type(odd)').css("marginRight",couLiMr);
+        $(couLi).width(couLiWid);
+        var couLiHig = couLiWid*1.09;
+        $(couLi).height(couLiHig);
+        var couTpWid = couLiWid*.95;
+        $(couLi+' .tp').width(couTpWid);
+        $(couLi+' .tp').height(couTpWid/1.6);
+
+        // index.html
+        var $myCouList = $("#myCourList"),
+            $myCouListUl =  $("#myCourList ul"),
+            $myCouListLi = $("#myCourList li"),
+            couLiNum = $myCouListLi.length;
+        $myCouListLi.css({"marginRight":couLiMr,"marginBottom":couLiMr});
+        $("#myCourList li:last-of-type").css({"marginRight":0});
+        $myCouListUl.width((couLiWid+couLiMr)*couLiNum);
+        $myCouListUl.height(couLiHig);
+
+        //student.html
+        var stLi =  '.stuCom .list01 li';
+        var stPdwid =  parseFloat($('.stuCom').css('padding-left'));
+        $(stLi).css({'margin-bottom':stPdwid*2,'margin-left':stPdwid,'margin-right':stPdwid});
+        $(stLi+':nth-of-type(2n)').css('margin-right',0);
+        var stliWid = (($('body').width()-stPdwid*6)/2);
+        var stLiHig =  stliWid*1.32;
+        $(stLi).width(stliWid);
+        $(stLi).height(stLiHig);
+        var stTpWid = stliWid*.92;
+        var stTpHig = stTpWid*.93;
+        $(stLi+' .tp').width(stTpWid);
+        $(stLi+' .tp').height(stTpHig);
+        var stTpPt = (stliWid-stTpWid)/2;
+        $(stLi+' .tp').css('padding-top',stTpPt);
+       // $(stLi+' .txt').height(stLiHig-stTpPt-stTpHig);
+       // $(stLi+' .txt').css('top',stTpPt+stTpHig);
+
+        //video.html
+        var videoInf = '.videoInf';
+        var vidTxtbd = $(window).height()-$('.videoPlay object').height()-$(videoInf+' .txt').height();
+        $('.js-txtBd .wrap').height(vidTxtbd);
+    }
+
+    $(window).on('resize', function () {
+        controlStyle();
+    }).trigger('resize');
+}();
+
 // tab栏操作Fn
 +function () {
     function tabChg(parm1, parm2) {
@@ -65,6 +266,14 @@ $('#recMoney').clearNoNum();
     tabChg('.myQuestion .tab li','.myQuestion .askList ul');
     //loginReg.html
     tabChg('.loginReg .tab li','.logRegList ul li');
+    //notice.html
+    tabChg('.notice .tab li','.notice .module');
+    // student.html
+    tabChg('.student .tab li','.student .stuCom .list');
+    //audition.html
+    tabChg('.audition .tab li','.audition .audList ul');
+    //myNotes.html
+    tabChg('.video .tab li','.video .videoList .list');
 }();
 
 //选择项操作Fn
@@ -91,17 +300,42 @@ $('#recMoney').clearNoNum();
     mSelC.fn();
 }();
 
-// other
-!function () {
-    //a标签中嵌套button去除跳转
-    $('.accChg .btn').on('click',function (e) {
-        return false;
+
+//index.html 热门视频
++function () {
+    var $bd      = $('#myCourList'),                                   //主区域
+        $ulBox  = $bd.find('ul'),                                        //ul区
+        $lis    = $ulBox.find('li'),                                     //每个li区
+        len      = $lis.length,                                          //li个数
+        liWidth = $lis.eq(len - 1).width(),                             //li的宽
+        ml       = parseFloat($lis.css('margin-right')),             //li的ml
+        w        = (liWidth+ ml) * len,                             //计算ul的总宽度
+        i        = 0;
+    $ulBox.css({width: w});
+
+    $bd.on("swipeRight", function () {
+        swipeFn('prev');
     });
+    $bd.on("swipeLeft", function () {
+        swipeFn('next');
+    });
+    //滑动执行方法
+    function swipeFn(dir) {
+        switch (dir) {
+            case 'prev':
+                i = i - 1 < 0 ? 0 : i - 1;
+                break;
+            case 'next':
+                i = i + 1 > len - 2 ? len - 2 : i + 1;
+                break;
+        }
+        $ulBox.stop().animate({"margin-left": -(liWidth + ml) * i}, 0.25e3);
+    }
 }();
 
 // myBasicInf.html
 ~function () {
-    //关闭提示
+    //关闭提示control
     $('.js-shut').bind('click',function () {
        $(this).parents('.remTip').remove();
     });
@@ -129,8 +363,10 @@ $('#recMoney').clearNoNum();
 
 // myCollect.html
 ~function () {
-    // 回复框操作    主人T：一级留言 , 客人B：二级留言
-    var mesIcoT = ".mesIcoT", mesIcoB = ".mesIcoB", anAreaT = ".anAreaT", anAreaB = ".anAreaB", itemX  = ".itemX", anArea =".anArea";
+    // 回复框操作    *主人T：一级留言 , *客人B：二级留言
+    var mesIcoT = ".mesIcoT", mesIcoB = ".mesIcoB",
+        anAreaT = ".anAreaT", anAreaB = ".anAreaB",
+        itemX  = ".itemX", anArea =".anArea";
     $(mesIcoT).on("click",function (e) {
         var $e = $(this);
         $e.parents("li").find(anAreaT).toggle();
@@ -184,7 +420,7 @@ $('#recMoney').clearNoNum();
 ~function () {
     //笔记编辑
     var chgs = '.js-chg',
-        wzs = '.js-wz',
+        wzs = '.js-note',
         txtAreas = '.js-txtArea',
         areas ='.js-area',
         subBtns = '.js-subBtn',
@@ -258,6 +494,140 @@ $('#recMoney').clearNoNum();
     }
     cheFn('.js-mesChe','.js-allMesChe');
     cheFn('.js-che','.js-allChe');
+}();
+
+//myContactUs.html
+~function () {
+    var tabLi = '.myContactUs .tab li',
+        s='cur';
+    $(tabLi).on('click',function () {
+        var $e = $(this),
+            index = $e.index();
+        $(this).addClass(s).siblings().removeClass(s);
+        $('.module').eq(index).show().siblings().hide();
+        $('body').removeClass('bgWhite');
+    });
+    $(tabLi+'.li01'+','+tabLi+'.li02').on('click',function () {
+        $('body').addClass('bgWhite');
+    });
+    if($(tabLi+'.li01'+','+tabLi+'.li02').hasClass(s)){
+        $('body').addClass('bgWhite');
+    }
+    for(var i = 0; i<=tabLi.length;i++){
+        if($(tabLi).eq(i).hasClass(s)){
+            $('.module').eq(i).show().siblings().hide();
+        }
+    }
+}();
+
+// courses.html
+~function () {
+    var olLi= '.js-li', ul ='.js-ul', bd = '.listBd', s='cur',speed = 300;
+    for(var i = 0; i<$(olLi).size() ;i++){
+        (function () {
+            $(olLi)[i].onclick = function (e) {
+                $('body').css({'overflow':'hidden','height':'100%'});
+                var $e = $(this),
+                    index = $e.index();
+                $e.toggleClass(s);
+                if($e.hasClass(s)){
+                    $e.siblings().removeClass(s);
+                    $(bd).fadeIn(speed);
+                    $(ul).eq(index).show().siblings(ul).hide();
+                }else{
+                    $(bd).hide();
+                }
+            }
+        })(i);
+    }
+    $(ul+' li').bind('click',function () {
+       var $e = $(this),
+           index = $e.index();
+       $e.addClass(s).siblings().removeClass(s);
+    });
+    $(bd+' .wrap').on('click',function () {
+        $(bd).hide();
+        $(olLi).removeClass(s);
+        $('body').css({'overflow':'visible','height':'auto'});
+    });
+}();
+
+// student.html
+~function () {
+    var stCom = '.stuCom',
+         pdH ='pbAdd'; //stuCom list 底部占位
+    // 学员介绍 字符显示省略
+    function simpleText($e) {
+        $e.text($e.data('simple'));
+    }
+    function showText($e) {
+        $e.text($e.data('text'));
+    }
+    $.extend($.fn, {
+        simpleText: function () {
+            return simpleText($(this));
+        },
+        showText  : function () {
+            return showText($(this));
+        }
+    });
+    // 挂载到属性上
+    $('.js-wz').each(function (i, e) {
+        var $e         = $(e),
+            text       = $e.text(),
+            simpleText = text.slice(0, 18) + '...';
+        $e.attr({'data-simple': simpleText, 'data-text': text}).text(simpleText);   // 初始化
+    });
+    $('.js-text').on('click', function () {
+        var $li = $(this);
+        var $wz = $(this).find('.js-wz');
+        $li.toggleClass('hover');
+        $li.hasClass('hover') ? showText($wz) : simpleText($wz);
+        $li.hasClass('hover') ?  $(stCom+ ' .list01').addClass(pdH) : $(stCom+ ' .list01').removeClass(pdH);
+        $li.siblings().removeClass('hover').find('.js-wz').each(function () {
+            $(this).simpleText();
+        });
+    });
+    // 学员视频
+    var moreBtn = ".js-thgMore",
+        o = 'open';
+    $(moreBtn).on('click',function () {
+        var $e = $(this);
+        $e.parents('li').toggleClass(o);
+        if($e.parents('li').hasClass(o)){
+            $e.parents('li').siblings('li').removeClass(o);
+            $(stCom+ ' .list02').addClass(pdH);
+        }else{
+            $(stCom+ ' .list02').removeClass(pdH);
+        }
+    });
+}();
+
+//video.html
+~function () {
+    var $infBtn = $('.js-infBtn'),
+        $txtBd  = $('.js-txtBd'),
+        $bdWrap = $('.js-txtBd .wrap'),
+        fadeSpeed = 200,
+        h = 'hover';
+    $.extend($.fn,{
+        hideWrap : function () {
+            $infBtn .removeClass(h);
+            $txtBd.fadeOut(fadeSpeed);
+            $('body').removeClass('bodyOf');
+        },
+        toggleWrap :function ($e) {
+            $e.toggleClass(h);
+            $txtBd.fadeToggle(fadeSpeed);
+            $('body').toggleClass('bodyOf');
+        }
+    });
+    $infBtn.on('click',function () {
+        $(this).toggleWrap($infBtn);
+    });
+    $bdWrap.on('click',function () {
+        $(this).hideWrap();
+    });
 }();
 
 /************ This javascript created by author xiexkang 2017-06  end************/

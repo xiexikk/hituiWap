@@ -1,53 +1,61 @@
 /************ This scss created by author xiexkang 2017-06  Start************/
-.myHead .in .head .tp, .myWxBind .wxBindYes .tp, .myPortrait .faceList li .tp, .myRank .round, .myRank .round > *, .myRank .rankSel .hdTit > i, .shopCarFix .item .num {
+body, a, input, textarea, button, select {
+  font-size: 0.3rem;
+  color: #333; }
+
+input, textarea {
+  border-radius: 0; }
+
+.btn_mark, .btn_mark .btn_mark_bg, .btn_mark .btn_menu, .btn_mark .btn_home, .myHead .in .head .tp, .askList ul .item .tp, .collList ul .item .tp, .askList ul .itemX .tp, .collList ul .itemX .tp, .myWxBind .wxBindYes .tp, .myPortrait .faceList li .tp, .myRank .round, .myRank .round > *, .myRank .rankSel .hdTit > i, .shopCarFix .item .num, .banner .slideBox .hd li {
   border-radius: 50%; }
 
-.myHead .in .head .txt .lab, .myBtn, .myAccount .accHd .bot a, .myWithdraw .draw .drawInpCom .inp input, .myWithdraw .draw .drawInpCom .inp .selBank, .myBankEdit .addInpCom .inp input, .myBankEdit .addInpCom .inp select, .myBankEdit .addInpCom .inp.yzmInp .getCode, .myInfor .han .del, .proList .tp {
+.myBtn, .myHead .in .head .txt .lab, .myAccount .accHd .bot a, .myWithdraw .draw .drawInpCom .inp input, .myWithdraw .draw .drawInpCom .inp .selBank, .myBankEdit .addInpCom .inp input, .myBankEdit .addInpCom .inp select, .myBankEdit .addInpCom .inp.yzmInp .getCode, .myInfor .han .del, .proList .tp, .theSearch .inp, .courList li, .videoList .list01 li {
   border-radius: .06rem; }
 
-.myHead .in .head .tp {
-  float: left; }
-
-.myHead .in, .myHead .in .head, .myHead .in .head .tp, .myHead .in .list, .myHead .in .list ul, .myList, .myList .in, .myList .in .listUl, .myBasic, .myInpCom, .myInpCom .inp, .myGrade, .myGrade .itemCom, .myGrade .itemCom ul, .myGrade .itemCom ul li, .tab, .myAccount, .myAccount .accHd, .myAccount .accHd .bot, .myAccount .accChg, .myAccount .accChg .list, .myTradeDet, .reList, .myWithdraw, .myWithdraw .draw .drawInpCom, .myWithdraw .draw .drawInpCom .inp, .withRate, .myWithDet, .myBank, .myBank .list, .myBank .list ul, .myAddress, .myAddress .addressList, .myAddress .addressList ul, .myAddress .addressList li, .myAddress .addressList .hd, .myAddress .addressList .th, .myAddEdit, .myBankEdit, .myAddEdit .addInpCom, .myBankEdit .addInpCom, .myAddEdit .addInpCom .inp, .myBankEdit .addInpCom .inp, .myAddEdit .addInpCom .han, .myBankEdit .addInpCom .han, .myCollect, .askList, .collList, .askList ul, .collList ul, .askList ul li, .collList ul li, .askList ul .item .txt .hand, .collList ul .item .txt .hand, .collList .ul02 .tx, .collList .ul02 .bot, .mySetting, .mySetting .setList ul, .mySetting .setList ul li, .myWxBind, .myWxBind .in, .myWxBind .tp, .myPhoneBind, .myEmailBind, .myPhoneBind .in > *, .myEmailBind .in > *, .myInps, .myInps .inp, .myPortrait, .myPortrait .faceList, .myPortrait .faceList li .tp, .myInfor, .myInfor .inList, .myInfor .inList ul, .myInfor .inList li .ico, .myRecharge, .myRecharge .money > *, .myRecharge .paySel, .myRecharge .recStyle, .myRecharge .recStyle ul, .myRecharge .recStyle ul li .tp, .myRecharge .reSuc, .selList, .selList ul, .recDet, .txtExp, .myEnterCourses .courSel, .recSettle, .recSettle .curMoney, .countBot, .countBot .in, .myJoinVideo, .proList, .proList ul, .proList .tp, .proHandle, .addList, .addList ul, .addList ul .item, .addList ul .item .txH, .vidInf, .vidInf .bd, .vidInf .bd ul, .vidInf .bd ul li, .vidInf .bd ul li a, .myRank, .myRank .rankSel .bdTab, .myRank .rankSel .bdTab ul, .myNotes, .myNotes .item, .myNotes .item > *, .myNotes .item .bot .han, .myNotes .item .bot .han .time, .myNotes .txtArea, .myQuestion, .loginReg, .logRegList, .logRegList ul, .logRegList .links, .logRegList .isRead, .logInpCom, .logInpCom .inp, .findPwd, .findPwd .pwdInpCom, .findPwd .sucTip .tp, .protocol {
+.bodyOf, .myHead .in, .myHead .in .head, .myHead .in .head .tp, .myHead .in .list, .myHead .in .list ul, .myList, .myList .in, .myList .in .listUl, .myBasic, .myInpCom, .myInpCom .inp, .myGrade, .myGrade .itemCom, .myGrade .itemCom ul, .myGrade .itemCom ul li, .tab, .myAccount, .myAccount .accHd, .myAccount .accHd .bot, .myAccount .accChg, .myAccount .accChg .list, .myTradeDet, .reList, .reList li, .myWithdraw, .myWithdraw .draw .drawInpCom, .myWithdraw .draw .drawInpCom .inp, .withRate, .myWithDet, .myBank, .myBank .list, .myBank .list ul, .myAddress, .myAddress .addressList, .myAddress .addressList ul, .myAddress .addressList li, .myAddress .addressList .hd, .myAddress .addressList .th, .myAddEdit, .myBankEdit, .myAddEdit .addInpCom, .myBankEdit .addInpCom, .myAddEdit .addInpCom .inp, .myBankEdit .addInpCom .inp, .myAddEdit .addInpCom .han, .myBankEdit .addInpCom .han, .myCollect, .askList, .collList, .askList ul, .collList ul, .askList ul li, .collList ul li, .askList ul .item .txt .hand, .collList ul .item .txt .hand, .collList .ul02 .tx, .collList .ul02 .bot, .mySetting, .mySetting .setList ul, .mySetting .setList ul li, .myWxBind, .myWxBind .in, .myWxBind .tp, .myPhoneBind, .myEmailBind, .myPhoneBind .in > *, .myEmailBind .in > *, .myInps, .myInps .inp, .myPassword, .myPortrait, .myPortrait .faceList, .myPortrait .faceList li .tp, .myInfor, .myInfor .inList, .myInfor .inList ul, .myInfor .inList li .ico, .myRecharge, .myRecharge .money > *, .myRecharge .paySel, .myRecharge .recStyle, .myRecharge .recStyle ul, .myRecharge .recStyle ul li .tp, .myRecharge .reSuc, .selList, .selList ul, .recDet, .txtExp, .myEnterCourses .courSel, .recSettle, .recSettle .curMoney, .countBot, .countBot .in, .myJoinVideo, .proList, .proList ul, .proList .tp, .proHandle, .addList, .addList ul, .addList ul .item, .addList ul .item .txH, .vidInf, .vidInf .bd, .vidInf .bd ul, .vidInf .bd ul li, .vidInf .bd ul li a, .myRank, .myRank .rankSel .bdTab, .myRank .rankSel .bdTab ul, .myNotes, .myNotes .item, .myNotes .item > *, .myNotes .item .bot .han, .myNotes .item .bot .han .time, .myNotes .txtArea, .myQuestion, .myContactUs, .notice, .myContactUs .item, .notice .item, .myContactUs .dzDet, .notice .dzDet, .myContactUs .dzDet li, .notice .dzDet li, .myContactUs .msnInp, .notice .msnInp, .myContactUs .msnInp .inp, .notice .msnInp .inp, .myContactUs #myMap, .notice #myMap, .myContactUs .moduleCom, .notice .moduleCom, .myContactUs .moduleCom .module, .notice .moduleCom .module, .loginReg, .logRegList, .logRegList ul, .logRegList .links, .logInpCom, .logInpCom .inp, .findPwd, .findPwd .pwdInpCom, .findPwd .sucTip .tp, .protocol, .theSearch, .courses, .courses .findSel, .courses .findSel ol, .courses .findSel .listBd, .courses .searchNo, .courses .searchNo .tp, .courList ul, .courList .tp, .footNav .nav, .header .logo a, .banner .slideBox .hd li, .mainCom, .mainCom .gfNot, .mainCom .affList, .mainCom .affList ul li .tp, .mainCom .column, .mainCom .column ol, .mainCom .content, .mainCom .content .kcIn, .mainCom .content .kcIn .kcR, .mainCom .content .kcIn .kcR .kcList, .mainCom .content .kcIn .kcR .kcList ul, .mainCom .content .notBanCom, .mainCom .content .notBanCom .notBan, .mainCom .content .ewmCom, .mainCom .content .ewmCom .ewmList, .mainCom .content .ewmCom .ewmList .item .pic, .noticeDet, .notice .moduleComs ul, .student, .student .stuCom, .student .stuCom .list, .student .stuCom .list01 li .tp, .student .stuCom .list01 li .txt, .audition, .audition .audList, .audition .audList ul, .audition .audList li .txt .rateMax, .video, .videoList, .videoList .list01 li .tp, .videoList .sendArea, .buyFalse, .buyFalse .backLink {
   overflow: hidden; }
 
-.withRate .tp, .myRank .rankSel .bdTab {
+.withRate .tp, .myRank .rankSel .bdTab, .courList .item, .buyFalse .in {
   margin: 0 auto; }
 
-.myBasic .remTip, .myInpCom .inp, .myGrade .itemCom .item, .myAccount .accChg .list ul .tit, .myAccount .accChg .list ul .item, .myTradeDet, .myWithdraw .in, .myWithDet, .myAddEdit .addInpCom .inp, .myBankEdit .addInpCom .inp, .mySetting .setList ul li, .myPortrait .faceList, .myInfor .inList li, .myInfor .han, .myRecharge .recStyle, .recSettle, .vidInf, .myRank {
+.myBasic .remTip, .myInpCom .inp, .myGrade .itemCom .item, .myAccount .accChg .list ul .tit, .myAccount .accChg .list ul .item, .reList, .myWithdraw .in, .myAddEdit .addInpCom .inp, .myBankEdit .addInpCom .inp, .mySetting .setList ul li, .myPortrait .faceList, .myInfor .inList li, .myInfor .han, .myRecharge .recStyle, .recSettle, .vidInf, .myRank {
   padding: 0 .4rem; }
 
-.myAccount .accChg .list ul .ti0, .myBank .ti01, .myBank .ti02, .myBank .ti03, .myBank .ti04, .myAddEdit .addInpCom .inp > *, .myBankEdit .addInpCom .inp > *, .myInfor .inList li .tx {
+.myHead .in .head .tp img, .mySetting .setList ul li > a, .myRecharge .recStyle ul li .tp, .courList .tp a, .courList .tp img, .mainCom .content .kcIn .kcL .link, .mainCom .content .notBanCom .banIn .tp, .mainCom .content .notBanCom .banIn .tp img, .mainCom .content .ewmCom .ewmList .item .pic img, .notice .moduleComs ul .tp img, .student .stuCom .list01 li .tp img, .student .stuCom .list02 li .tp img, .audition .audList li .item, .videoList .list01 li .tp img {
+  width: 100%;
+  height: 100%; }
+
+.myAccount .accChg .list ul .ti0, .myBank .ti01, .myBank .ti02, .myBank .ti03, .myBank .ti04, .select, .myAddEdit .addInpCom .inp > *, .myBankEdit .addInpCom .inp > *, .myInfor .inList li .tx, .courses .findSel .listBd ul li, .mainCom .gfNot ul li .ti, .mainCom .content .kcIn .kcR .kcList ul .item > *, .notice .moduleComs ul .txt .tName, .student .stuCom .list02 li .txt .ti, .audition .audList li .txt .tName, .videoInf .ti {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis; }
 
-.myHead .in .head .goJoin a:after, .myList .in .listUl li:after, .myBank .list li .han a:before, .myBankEdit .showTip:before, .myWxBind .wxBindYes .txt .tx p:before, .findPwd .pwdInpCom .hd .tit:before {
+.myHead .in .head .goJoin a:after, .myList .in .listUl li:after, .myBank .list li .han a:before, .myBankEdit .showTip:before, .myWxBind .wxBindYes .txt .tx p:before, .findPwd .pwdInpCom .hd .tit:before, .courses .findSel ol li a:after, .header .txt .loginLink:after {
   content: "";
   display: inline-block;
   vertical-align: middle; }
 
-.myCollect .tab, .myInfor .tab, .myQuestion .tab, .countBot .in, .myBtns a {
+.myCollect .tab, .myInfor .tab, .myQuestion .tab, .tabMenu, .header .in, .countBot .in, .footNav .in, .myBtns a, .theMenu, .videoInf .txtBd {
   max-width: 640px; }
 
-.myCollect .tab, .myInfor .tab, .myQuestion .tab {
+.myCollect .tab, .myInfor .tab, .myQuestion .tab, .tabMenu, .header .in {
   position: fixed;
   left: auto;
   top: 0;
   right: auto;
   bottom: auto;
-  z-index: 999; }
+  z-index: 88; }
 
-.countBot .in {
+.countBot .in, .footNav .in {
   position: fixed;
   left: auto;
   bottom: 0;
   right: auto;
   top: auto;
-  z-index: 999;
+  z-index: 88;
   width: 100%; }
 
-.loginReg .logoCom .logo {
+.btn_mark .ico, .myContactUs .hdTit .tit, .notice .hdTit .tit, .loginReg .logoCom .logo, .mainCom .content .hdTit .tit, .student .stuCom .list02 li .tp .ico-play {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -57,7 +65,17 @@
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%); }
 
-.myHead .in .head .goJoin, .myList .in .listUl li:after, .myList .in .listUl li em, .myList .in .listUl li i, .myAddress .addressList .radIco, .mySetting .setList ul li .ico, .mySetting .setList ul .arr, .myInfor .inList li .setChe, .myInfor .inList li .ico, .selList li .radIco, .oChe, .addList ul .arr, .myRank .rankSel .hdTit > i {
+.myContactUs .hdTit .line, .notice .hdTit .line, .banner .slideBox .hd, .mainCom .content .hdTit .line {
+  position: absolute;
+  left: 50%;
+  top: auto;
+  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0); }
+
+.myHead .in .head .goJoin, .myList .in .listUl li:after, .myList .in .listUl li em, .myList .in .listUl li i, .mySetting .setList ul li .ico, .mySetting .setList ul .arr, .myInfor .inList li .setChe, .myInfor .inList li .ico, .selList li .radIco, .oChe, .addList ul .arr, .myRank .rankSel .hdTit > i, .student .stuCom .list02 li .txt .more, .audition .audList li .tp, .audition .audList li .ico {
   position: absolute;
   left: auto;
   top: 50%;
@@ -66,6 +84,155 @@
   -moz-transform: translate(0, -50%);
   -ms-transform: translate(0, -50%);
   -o-transform: translate(0, -50%); }
+
+.myBtn {
+  width: 3.6rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  text-align: center;
+  border: 1px solid #ff6100;
+  margin: .4rem auto 0;
+  box-sizing: border-box; }
+
+.myBtn a {
+  color: #ff6100;
+  font-size: .4rem;
+  display: block; }
+
+.myBtns {
+  width: 100%;
+  height: 1.2rem;
+  position: relative; }
+
+.myBtns a {
+  width: 100%;
+  height: 1rem;
+  line-height: 1rem;
+  text-align: center;
+  background-color: #ff6100;
+  color: #fff;
+  font-size: .36rem;
+  position: fixed;
+  bottom: 0;
+  z-index: 88; }
+
+.btn_mark {
+  width: 1rem;
+  height: 1rem;
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  bottom: 1.8rem;
+  right: .3rem;
+  z-index: 99999; }
+  .btn_mark .btn_mark_bg {
+    width: 1rem;
+    height: 1rem;
+    position: fixed;
+    bottom: 1.8rem;
+    right: .3rem;
+    z-index: 99999;
+    background: rgba(0, 0, 0, 0.4);
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s; }
+  .btn_mark .btn_menu {
+    width: 1rem;
+    height: 1rem;
+    position: fixed;
+    bottom: 1.8rem;
+    right: .3rem;
+    z-index: 9999999;
+    opacity: 0;
+    transition: all 0.3s 0.3s;
+    -webkit-transition: all 0.3s 0.3s;
+    -moz-transition: all 0.3s 0.3s;
+    -ms-transition: all 0.3s 0.3s;
+    -o-transition: all 0.3s 0.3s; }
+  .btn_mark .ico {
+    width: .5rem;
+    height: .5rem;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .btn_mark .ico00 {
+    background-image: url("../../public/images/icon-00.png");
+    opacity: .8; }
+  .btn_mark .ico01 {
+    background-image: url("../../public/images/icon-01.png"); }
+  .btn_mark .ico02 {
+    background-image: url("../../public/images/icon-02.png"); }
+  .btn_mark .ico03 {
+    background-image: url("../../public/images/icon-03.png"); }
+  .btn_mark .ico04 {
+    background-image: url("../../public/images/icon-04.png"); }
+  .btn_mark .btn_menu.btn_my {
+    background: #23abf1; }
+  .btn_mark .btn_menu.btn_index {
+    background: #ed6f71; }
+  .btn_mark .btn_menu.btn_course {
+    background: #25c981; }
+  .btn_mark .btn_menu.btn_video {
+    background: #f8ba44; }
+  .btn_mark .btn_home {
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    width: 1rem;
+    height: 1rem;
+    position: fixed;
+    bottom: 1.8rem;
+    right: .3rem;
+    z-index: 999999; }
+  .btn_mark.active .btn_mark_bg {
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+    border-radius: 0; }
+  .btn_mark.active .btn_home {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg); }
+  .btn_mark.active .btn_menu {
+    opacity: 1; }
+  .btn_mark.active .btn_menu.btn_my {
+    transform: translate3d(0, 1.6rem, 0);
+    -webkit-transform: translate3d(0, 1.6rem, 0);
+    -moz-transform: translate3d(0, 1.6rem, 0);
+    -ms-transform: translate3d(0, 1.6rem, 0);
+    -o-transform: translate3d(0, 1.6rem, 0); }
+  .btn_mark.active .btn_menu.btn_index {
+    transform: translate3d(0, -1.6rem, 0);
+    -webkit-transform: translate3d(0, -1.6rem, 0);
+    -moz-transform: translate3d(0, -1.6rem, 0);
+    -ms-transform: translate3d(0, -1.6rem, 0);
+    -o-transform: translate3d(0, -1.6rem, 0); }
+  .btn_mark.active .btn_menu.btn_index {
+    transform: translate3d(0, -1.6rem, 0);
+    -webkit-transform: translate3d(0, -1.6rem, 0);
+    -moz-transform: translate3d(0, -1.6rem, 0);
+    -ms-transform: translate3d(0, -1.6rem, 0);
+    -o-transform: translate3d(0, -1.6rem, 0); }
+  .btn_mark.active .btn_menu.btn_course {
+    transform: translate3d(-1.4rem, 0.8rem, 0);
+    -webkit-transform: translate3d(-1.4rem, 0.8rem, 0);
+    -moz-transform: translate3d(-1.4rem, 0.8rem, 0);
+    -ms-transform: translate3d(-1.4rem, 0.8rem, 0);
+    -o-transform: translate3d(-1.4rem, 0.8rem, 0); }
+  .btn_mark.active .btn_menu.btn_video {
+    transform: translate3d(-1.4rem, -0.8rem, 0);
+    -webkit-transform: translate3d(-1.4rem, -0.8rem, 0);
+    -moz-transform: translate3d(-1.4rem, -0.8rem, 0);
+    -ms-transform: translate3d(-1.4rem, -0.8rem, 0);
+    -o-transform: translate3d(-1.4rem, -0.8rem, 0); }
+
+.bodyOf {
+  height: 100%; }
 
 .myHead .in {
   background-color: #fff; }
@@ -78,16 +245,14 @@
       height: 1.3rem;
       border: 1px solid #ff741e;
       box-sizing: border-box;
-      -webkit-box-shadow: 0 0 0.2rem #e55700;
-      -moz-box-shadow: 0 0 0.2rem #e55700;
-      box-shadow: 0 0 0.2rem #e55700; }
+      -webkit-box-shadow: 0 0 0.2rem #e65700;
+      -moz-box-shadow: 0 0 0.2rem #e65700;
+      box-shadow: 0 0 0.2rem #e65700;
+      float: left; }
       .myHead .in .head .tp img {
-        width: 100%;
-        height: 100%;
         display: block; }
     .myHead .in .head .txt {
-      margin-left: 1.5rem;
-      font-size: .28rem; }
+      margin-left: 1.5rem; }
       .myHead .in .head .txt > * {
         margin-top: .1rem; }
       .myHead .in .head .txt .name {
@@ -96,17 +261,15 @@
       .myHead .in .head .txt .lab {
         color: #fff;
         background-color: #ff6100;
-        padding: .05rem .1rem;
+        padding: .08rem .1rem;
         display: inline-block; }
       .myHead .in .head .txt .money .goRecharge {
         color: #ff6100;
-        font-size: .28rem;
         margin-left: .15rem;
         text-decoration: underline; }
     .myHead .in .head .goJoin {
       right: .4rem; }
       .myHead .in .head .goJoin a {
-        font-size: .28rem;
         color: #666;
         vertical-align: top; }
         .myHead .in .head .goJoin a:after {
@@ -115,7 +278,8 @@
           background-image: url("../../public/images/arrIco01.png");
           background-repeat: no-repeat;
           background-size: cover;
-          margin-left: .1rem; }
+          margin-left: .1rem;
+          vertical-align: top; }
   .myHead .in .list {
     padding: .5rem 0 .35rem; }
     .myHead .in .list ul {
@@ -134,7 +298,6 @@
           height: .9rem;
           display: inline-block; }
         .myHead .in .list ul li span {
-          font-size: .3rem;
           padding: .15rem 0 .05rem;
           display: block; }
 
@@ -144,8 +307,8 @@
     width: 100%;
     margin-bottom: .3rem; }
     .myList .in .listUl li {
-      height: .96rem;
-      line-height: .96rem;
+      height: 0.96rem;
+      line-height: 0.96rem;
       padding: 0 .4rem;
       border-bottom: 1px solid #f2f2f2;
       box-sizing: border-box;
@@ -167,7 +330,6 @@
         right: .4rem; }
       .myList .in .listUl li em {
         right: .7rem;
-        font-size: .28rem;
         color: #999; }
       .myList .in .listUl li .ico {
         width: .54rem;
@@ -202,15 +364,14 @@
   padding-bottom: .2rem; }
   .myBasic .remTip {
     width: 100%;
-    height: .8rem;
-    line-height: .8rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
     box-sizing: border-box;
     background-color: #fff;
     margin: .2rem 0;
     position: relative; }
     .myBasic .remTip .tx {
-      color: #ff741e;
-      font-size: .28rem; }
+      color: #ff741e; }
     .myBasic .remTip .close {
       width: .4rem;
       height: .8rem;
@@ -232,30 +393,19 @@
     font-size: .32rem;
     margin-bottom: .1rem; }
     .myInpCom .inp .ti {
-      width: 33%;
+      width: 33.33333%;
+      height: 100%;
       float: left; }
     .myInpCom .inp input {
-      width: 66%;
-      font-size: .3rem;
-      height: 1rem;
-      line-height: 1rem;
-      background-color: #fff; }
+      width: 66.66667%;
+      line-height: .4rem;
+      padding-top: .3rem;
+      box-sizing: border-box;
+      background-color: #fff;
+      float: left; }
     .myInpCom .inp em {
       color: #f00;
       vertical-align: middle; }
-
-.myBtn {
-  width: 3.6rem;
-  height: .8rem;
-  line-height: .8rem;
-  text-align: center;
-  border: 1px solid #ff6100;
-  margin: .4rem auto 0;
-  box-sizing: border-box; }
-  .myBtn a {
-    color: #ff6100;
-    font-size: .4rem;
-    display: block; }
 
 .myGrade {
   width: 100%;
@@ -279,7 +429,7 @@
         width: .5rem;
         height: 1rem;
         background-image: url("../../public/images/arrChg.png");
-        background-position: right top;
+        background-position: left top;
         background-repeat: no-repeat;
         background-size: cover;
         position: absolute;
@@ -289,16 +439,15 @@
       margin: 0 .4rem;
       display: none; }
       .myGrade .itemCom ul li {
-        height: .9rem;
-        line-height: .9rem;
+        height: 1rem;
+        line-height: 1rem;
         border-bottom: 1px solid #e0e0e0; }
         .myGrade .itemCom ul li a {
-          color: #666;
-          font-size: .3rem; }
+          color: #666; }
         .myGrade .itemCom ul li:last-of-type {
           border-bottom: none; }
     .myGrade .itemCom.open .arr {
-      background-position: left top; }
+      background-position: right top; }
     .myGrade .itemCom.open ul {
       display: block; }
 
@@ -328,7 +477,7 @@
           color: #ff6100; }
     .tab ol a {
       display: block;
-      font-size: .3rem;
+      font-size: .36rem;
       color: #999; }
 
 .myAccount {
@@ -340,7 +489,6 @@
     .myAccount .accHd .tit {
       font-size: .4rem; }
     .myAccount .accHd .mm {
-      font-size: .28rem;
       padding-top: .4rem; }
       .myAccount .accHd .mm .ico {
         width: .52rem;
@@ -358,8 +506,8 @@
       padding-top: .5rem; }
       .myAccount .accHd .bot a {
         width: 2rem;
-        height: .8rem;
-        line-height: .8rem;
+        height: 0.8rem;
+        line-height: 0.8rem;
         text-align: center;
         color: #fff;
         font-size: .4rem;
@@ -376,11 +524,17 @@
       .myAccount .accChg .tab ol li {
         line-height: 1rem; }
   .myAccount .accChg .list ul .tit, .myAccount .accChg .list ul .item {
-    height: .8rem;
-    line-height: .8rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
     text-align: center;
     box-sizing: border-box;
-    border-bottom: 1px solid #e5e5e5; }
+    border-bottom: 1px solid #e5e5e5;
+    padding: 0 .1rem;
+    padding-right: 0; }
+  .myAccount .accChg .list ul .tit .ti0 {
+    font-size: .32rem; }
+  .myAccount .accChg .list ul .item a {
+    display: block; }
   .myAccount .accChg .list ul .ti0 {
     float: left; }
   .myAccount .accChg .list ul .ti01 {
@@ -392,11 +546,11 @@
   .myAccount .accChg .list ul .ti04 {
     width: 28%; }
   .myAccount .accChg .list ul .btn {
-    font-size: .28rem;
     display: inline-block;
     margin-right: .1rem;
     text-decoration: underline;
-    background-color: transparent; }
+    background-color: transparent;
+    font-size: .32rem; }
     .myAccount .accChg .list ul .btn.pay {
       color: #ff6100; }
     .myAccount .accChg .list ul .btn.cancle {
@@ -411,27 +565,24 @@
       width: 35%; }
 
 .myTradeDet .reHd {
-  padding-top: 2rem;
-  padding-bottom: .6rem;
+  padding: 2rem .4rem .6rem;
   text-align: center; }
   .myTradeDet .reHd .tit em {
     font-size: .6rem; }
   .myTradeDet .reHd p {
-    font-size: .28rem;
     color: #999;
     margin-top: .2rem; }
 
 .reList li {
-  height: .8rem;
+  min-height: .8rem;
   padding-top: .25rem;
-  box-sizing: border-box;
-  font-size: .28rem;
-  color: #666; }
+  color: #666;
+  box-sizing: border-box; }
   .reList li .tl {
-    width: 38%;
+    width: 35%;
     float: left; }
   .reList li .tr {
-    width: 62%;
+    width: 65%;
     float: right;
     text-align: right; }
 
@@ -445,7 +596,7 @@
   width: 25%; }
 
 .myWithdraw {
-  padding-top: .2rem; }
+  padding-top: .4rem; }
   .myWithdraw .draw {
     font-size: .32rem;
     padding-top: .2rem; }
@@ -455,25 +606,27 @@
     .myWithdraw .draw .hd .money {
       color: #ff6100; }
     .myWithdraw .draw .drawInpCom .inp {
-      height: .6rem;
-      line-height: .6rem;
+      height: 0.8rem;
+      line-height: 0.8rem;
       margin-top: .4rem; }
       .myWithdraw .draw .drawInpCom .inp input, .myWithdraw .draw .drawInpCom .inp .selBank {
         width: 50%;
-        height: .6rem;
-        line-height: .6rem;
+        height: 0.8rem;
+        line-height: 0.8rem;
         border: 1px solid #f3f3f3;
         box-sizing: border-box;
         padding: 0 .1rem;
-        font-size: .3rem;
         float: left; }
     .myWithdraw .draw .drawInpCom .bindCard {
+      width: 20%;
       color: #76bdff;
-      font-size: .3rem; }
+      text-align: center;
+      height: 0.8rem;
+      line-height: 0.8rem;
+      float: left; }
 
 .withRate {
-  padding-top: .45rem;
-  padding-bottom: .2rem; }
+  padding: .45rem .1rem .25rem; }
   .withRate .tp {
     width: 86%;
     height: .46rem; }
@@ -481,10 +634,10 @@
     position: relative;
     height: .8rem;
     padding-top: .15rem;
-    color: #e5e5e5; }
+    color: #999; }
     .withRate .txt > * {
       position: absolute;
-      width: 1.5rem; }
+      width: 1.6rem; }
     .withRate .txt .cur {
       color: #76bdff; }
     .withRate .txt span {
@@ -506,9 +659,11 @@
         left: 42%; }
       .withRate .txt .tx03 {
         left: 82%; } }
+    @media only screen and (min-width: 375px) {
+      .withRate .txt {
+        font-size: .28rem; } }
 
 .myWithDet .withHd {
-  font-size: .28rem;
   text-align: center;
   padding-top: 1.15rem; }
   .myWithDet .withHd .tit .money {
@@ -521,121 +676,114 @@
 
 .myBank {
   padding-top: .2rem; }
-  .myBank .addHd {
-    height: 1rem;
-    line-height: 1rem;
-    font-size: .28rem;
-    width: 100%;
-    box-sizing: border-box;
-    border-bottom: 1px solid #e5e5e5; }
-  .myBank .ti01, .myBank .ti02, .myBank .ti03, .myBank .ti04 {
-    float: left;
-    text-align: center;
-    box-sizing: border-box;
-    display: inline-block; }
   .myBank .ti01 {
     width: 20%; }
   .myBank .ti02 {
-    width: 52%; }
-  .myBank .ti03 {
     width: 28%; }
+  .myBank .ti03 {
+    width: 32%; }
+  .myBank .ti04 {
+    width: 20%; }
+  .myBank .ti01, .myBank .ti02, .myBank .ti03, .myBank .ti04 {
+    text-align: center;
+    box-sizing: border-box;
+    display: inline-block;
+    float: left; }
+  .myBank .addHd {
+    height: 1rem;
+    line-height: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: .32rem; }
   .myBank .list {
     background-color: #fff; }
     .myBank .list li {
-      height: .8rem;
-      line-height: .8rem;
+      height: 0.8rem;
+      line-height: 0.8rem;
       border-bottom: 1px solid #e5e5e5; }
-      .myBank .list li .han a {
-        font-size: .24rem; }
-        .myBank .list li .han a:before {
-          width: .24rem;
-          height: .24rem;
-          background-repeat: no-repeat;
-          background-size: cover;
-          vertical-align: inherit;
-          margin-right: .05rem; }
-        .myBank .list li .han a.del:before {
-          background-image: url("../../public/images/delIco.png"); }
-        .myBank .list li .han a.chg:before {
-          background-image: url("../../public/images/chgIco.png"); }
+      .myBank .list li .han a:before {
+        width: .3rem;
+        height: .3rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+        vertical-align: inherit;
+        margin-right: .05rem;
+        margin-top: .07rem; }
+      .myBank .list li .han a.del:before {
+        background-image: url("../../public/images/ico-del.png"); }
+      .myBank .list li .han a.chg:before {
+        background-image: url("../../public/images/chgIco.png"); }
   .myBank .myBtn {
     margin-top: .8rem; }
 
-.myBank .ti01 {
-  width: 20%; }
-.myBank .ti02 {
-  width: 28%; }
-.myBank .ti03 {
-  width: 32%; }
-.myBank .ti04 {
-  width: 20%; }
-
 .myAddress .addressList li {
   background-color: #fff;
-  font-size: .28rem;
-  margin-bottom: .2rem; }
+  margin-bottom: .2rem;
+  font-size: .32rem; }
 .myAddress .addressList .hd {
-  padding: .3rem 0.3rem .3rem .7rem;
+  padding: .3rem 0.3rem .3rem .75rem;
   position: relative; }
 .myAddress .addressList .tPhone {
   margin-right: .1rem; }
 .myAddress .addressList .radIco {
-  width: .28rem;
-  height: .28rem;
+  width: .38rem;
+  height: .38rem;
   background-image: url("../../public/images/radio.png");
   background-repeat: no-repeat;
   background-size: cover;
-  left: .2rem; }
+  background-size: contain;
+  position: absolute;
+  left: .2rem;
+  top: .3rem;
+  background-size: contain; }
   .myAddress .addressList .radIco.hover {
     background-image: url("../../public/images/radioHover.png"); }
 .myAddress .addressList .dz {
-  font-size: .24rem;
   margin-top: .2rem;
   line-height: 1.2; }
 .myAddress .addressList .han {
-  height: .6rem;
-  line-height: .6rem;
-  border-top: 1px dashed #e9e9e9;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  border-top: 1px dashed #eaeaea;
   padding: 0 .2rem; }
   .myAddress .addressList .han .setDef > * {
     vertical-align: middle; }
   .myAddress .addressList .han .setDef .ti {
     display: inline-block; }
   .myAddress .addressList .han .setDef .setDefChe {
-    width: .3rem;
-    height: .3rem; }
+    width: .36rem;
+    height: .36rem;
+    margin-top: -.025rem; }
   .myAddress .addressList .han .btnCom .btn {
-    width: 1rem;
-    height: .4rem;
-    line-height: .4rem;
+    width: 1.2rem;
+    height: 0.6rem;
+    line-height: 0.6rem;
     text-align: center;
-    border: 1px solid #e0e0e0;
-    font-size: .28rem;
+    font-size: .32rem;
     color: #666;
-    margin-left: .1rem;
     display: inline-block;
     border-radius: 2px; }
-
-.myBtns {
-  width: 100%;
-  height: 1rem;
-  position: relative; }
-  .myBtns a {
-    width: 100%;
-    height: .8rem;
-    line-height: .8rem;
-    text-align: center;
-    background-color: #ff6100;
-    color: #fff;
-    font-size: .3rem;
-    position: fixed;
-    bottom: 0;
-    z-index: 88; }
+    .myAddress .addressList .han .btnCom .btn + .btn {
+      margin-left: .2rem; }
+    .myAddress .addressList .han .btnCom .btn .ico {
+      width: .34rem;
+      height: .34rem;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: .1rem;
+      margin-top: -.05rem; }
+    .myAddress .addressList .han .btnCom .btn.ediBtn .ico {
+      background-image: url("../../public/images/ico-bj.png"); }
+    .myAddress .addressList .han .btnCom .btn.delBtn .ico {
+      background-image: url("../../public/images/ico-del.png"); }
 
 .select {
-  appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
+  padding-right: .3rem;
   background: url("../../public/images/ico-xiala.png") no-repeat scroll right center transparent; }
 
 .myAddEdit, .myBankEdit {
@@ -649,6 +797,7 @@
       border-bottom: 1px solid #e5e5e5; }
       .myAddEdit .addInpCom .inp .ti, .myBankEdit .addInpCom .inp .ti {
         width: 23%;
+        height: 100%;
         float: left; }
       .myAddEdit .addInpCom .inp em, .myBankEdit .addInpCom .inp em {
         color: #f00;
@@ -656,28 +805,29 @@
         vertical-align: middle; }
       .myAddEdit .addInpCom .inp input, .myBankEdit .addInpCom .inp input {
         padding: 0 .1rem;
+        height: 1rem;
+        line-height: 1rem;
         box-sizing: border-box; }
       .myAddEdit .addInpCom .inp input, .myAddEdit .addInpCom .inp .addSel, .myAddEdit .addInpCom .inp .cardSel, .myBankEdit .addInpCom .inp input, .myBankEdit .addInpCom .inp .addSel, .myBankEdit .addInpCom .inp .cardSel {
         width: 77%;
         height: 1rem;
-        line-height: 1rem;
         float: left;
-        font-size: .3rem; }
+        padding-left: .1rem;
+        box-sizing: border-box; }
       .myAddEdit .addInpCom .inp .addSel select, .myBankEdit .addInpCom .inp .addSel select {
         width: 30%;
         height: 1rem;
         line-height: 1rem;
         float: left;
         margin-right: 5%;
-        font-size: .32rem;
         box-sizing: border-box; }
         .myAddEdit .addInpCom .inp .addSel select:last-of-type, .myBankEdit .addInpCom .inp .addSel select:last-of-type {
           margin-right: 0; }
     .myAddEdit .addInpCom .han, .myBankEdit .addInpCom .han {
       font-size: .32rem;
       margin-left: .4rem;
-      line-height: .4rem;
-      margin-top: .1rem; }
+      line-height: .5rem;
+      margin-top: .2rem; }
       .myAddEdit .addInpCom .han .setChe, .myBankEdit .addInpCom .han .setChe {
         width: 0.32rem;
         height: .32rem; }
@@ -687,53 +837,53 @@
 
 .myBankEdit .addInpCom .inp {
   background-color: transparent;
-  height: .8rem;
-  line-height: .8rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
   margin-bottom: .2rem; }
   .myBankEdit .addInpCom .inp .ti {
     width: 30%; }
   .myBankEdit .addInpCom .inp input {
-    width: 54%; }
-  .myBankEdit .addInpCom .inp input, .myBankEdit .addInpCom .inp .addSel, .myBankEdit .addInpCom .inp .cardSel {
+    width: 54%;
     height: .8rem;
-    line-height: .8rem;
+    line-height: .4rem; }
+  .myBankEdit .addInpCom .inp input, .myBankEdit .addInpCom .inp .addSel, .myBankEdit .addInpCom .inp .cardSel {
     background-color: transparent;
     float: left; }
     .myBankEdit .addInpCom .inp input select, .myBankEdit .addInpCom .inp .addSel select, .myBankEdit .addInpCom .inp .cardSel select {
-      height: .8rem;
-      line-height: .8rem;
+      height: 0.8rem;
+      line-height: 0.8rem;
       background-color: transparent;
-      font-size: .3rem;
       box-sizing: border-box; }
   .myBankEdit .addInpCom .inp .addSel {
     width: 68%; }
   .myBankEdit .addInpCom .inp .cardSel {
     width: 54%; }
+    .myBankEdit .addInpCom .inp .cardSel select {
+      padding-right: .5rem; }
   .myBankEdit .addInpCom .inp.yzmInp input {
     width: 40%; }
   .myBankEdit .addInpCom .inp.yzmInp .getCode {
-    width: 28%;
-    height: .7rem;
-    line-height: .7rem;
+    width: 30%;
+    height: 0.7rem;
+    line-height: 0.7rem;
     background-color: #ff6100;
     color: #fff;
-    font-size: .26rem;
     float: right; }
     .myBankEdit .addInpCom .inp.yzmInp .getCode.sended {
       background-color: #d6d6d6;
       cursor: no-drop; }
 .myBankEdit .showTip {
-  font-size: .24rem;
   color: #999;
   margin-top: .3rem;
-  padding-left: 28%; }
+  text-align: center; }
   .myBankEdit .showTip:before {
-    width: .22rem;
-    height: .22rem;
+    width: .3rem;
+    height: .3rem;
     background-image: url("../../public/images/tipIco.png");
     background-repeat: no-repeat;
     background-size: cover;
-    margin-right: .1rem; }
+    margin-right: .1rem;
+    background-size: contain; }
 
 .myCollect .tab {
   height: 1rem; }
@@ -749,10 +899,11 @@
   .askList ul, .collList ul {
     margin-top: .4rem;
     padding: 0 .3rem; }
+    .askList ul li, .collList ul li {
+      margin-bottom: .2rem; }
     .askList ul .item .tp, .collList ul .item .tp {
       width: .84rem;
       height: .84rem;
-      border-radius: .26rem;
       overflow: hidden;
       border: 1px solid #e5e5e5;
       float: left; }
@@ -762,12 +913,21 @@
       margin-left: 1.2rem; }
       .askList ul .item .txt .txIn, .collList ul .item .txt .txIn {
         padding-top: .05rem; }
+        .askList ul .item .txt .txIn .tHd, .collList ul .item .txt .txIn .tHd {
+          line-height: .4rem; }
+          .askList ul .item .txt .txIn .tHd img, .collList ul .item .txt .txIn .tHd img {
+            width: .32rem; }
+        .askList ul .item .txt .txIn .name, .collList ul .item .txt .txIn .name {
+          vertical-align: middle;
+          font-size: .32rem; }
         .askList ul .item .txt .txIn > *, .collList ul .item .txt .txIn > * {
-          margin-bottom: .15rem; }
+          margin-bottom: .18rem; }
+        .askList ul .item .txt .txIn.txInB i, .collList ul .item .txt .txIn.txInB i {
+          font-size: .26rem; }
       .askList ul .item .txt .tHd i, .collList ul .item .txt .tHd i {
         width: .4rem;
-        height: .4rem;
-        line-height: .4rem;
+        height: 0.4rem;
+        line-height: 0.4rem;
         text-align: center;
         border: 1px solid transparent;
         vertical-align: middle;
@@ -775,22 +935,22 @@
         display: inline-block;
         color: #fff;
         border-radius: 2px; }
-      .askList ul .item .txt .tHd .name, .collList ul .item .txt .tHd .name {
-        font-size: .25rem; }
       .askList ul .item .txt .wz, .collList ul .item .txt .wz {
-        color: #666; }
+        color: #666;
+        line-height: 1.2; }
       .askList ul .item .txt .origin em, .collList ul .item .txt .origin em {
         color: #999; }
       .askList ul .item .txt .origin a, .collList ul .item .txt .origin a {
         color: #ffa166; }
       .askList ul .item .txt .hand, .collList ul .item .txt .hand {
-        color: #999; }
+        color: #999;
+        height: .4rem; }
         .askList ul .item .txt .hand .time, .collList ul .item .txt .hand .time {
           float: left; }
         .askList ul .item .txt .hand .mesIco, .collList ul .item .txt .hand .mesIco {
           float: right;
           color: #999;
-          margin-left: .2rem; }
+          margin-left: .3rem; }
         .askList ul .item .txt .hand i, .collList ul .item .txt .hand i {
           width: .34rem;
           height: .32rem;
@@ -809,36 +969,35 @@
         border: 1px solid #e5e5e5;
         padding: .1rem;
         box-sizing: border-box;
-        color: #666;
-        font-size: .28rem; }
+        color: #666; }
       .askList ul .item .anArea .bot, .collList ul .item .anArea .bot {
-        float: right;
-        margin-top: .1rem; }
+        width: 100%;
+        text-align: right;
+        margin-top: .15rem; }
         .askList ul .item .anArea .bot .btn, .collList ul .item .anArea .bot .btn {
-          width: 1rem;
-          height: .5rem;
-          line-height: .5rem;
+          width: 1.2rem;
+          height: 0.6rem;
+          line-height: 0.6rem;
           text-align: center;
           background-color: #6cabf7;
           color: #fff;
-          margin-left: .1rem;
+          margin-left: .2rem;
           display: inline-block;
           border-radius: 2px; }
           .askList ul .item .anArea .bot .btn.cancleBtn, .collList ul .item .anArea .bot .btn.cancleBtn {
             background-color: #ccc; }
     .askList ul .itemX, .collList ul .itemX {
       margin-left: 1.2rem;
-      margin-top: .1rem; }
+      margin-top: .2rem; }
       .askList ul .itemX .tp, .collList ul .itemX .tp {
         width: .62rem;
-        height: .62rem;
-        border-radius: .2rem; }
+        height: .62rem; }
       .askList ul .itemX .txt, .collList ul .itemX .txt {
         margin-left: .9rem; }
         .askList ul .itemX .txt .tHd i, .collList ul .itemX .txt .tHd i {
           width: .3rem;
-          height: .3rem;
-          line-height: .3rem; }
+          height: 0.3rem;
+          line-height: 0.3rem; }
         .askList ul .itemX .txt .ask, .collList ul .itemX .txt .ask {
           color: #666; }
     .askList ul .collectIco, .collList ul .collectIco {
@@ -846,12 +1005,15 @@
       .askList ul .collectIco s, .collList ul .collectIco s {
         width: .32rem;
         height: .32rem;
-        background-image: url("../../public/images/xinIco.png");
         background-repeat: no-repeat;
         background-size: cover;
         display: inline-block;
         vertical-align: middle;
         margin-right: .05rem; }
+      .askList ul .collectIco.yes s, .collList ul .collectIco.yes s {
+        background-image: url("../../public/images/xinIco.png"); }
+      .askList ul .collectIco.no s, .collList ul .collectIco.no s {
+        background-image: url("../../public/images/xinIco-no.png"); }
 
 .collList .ul02 {
   display: none;
@@ -870,11 +1032,10 @@
     background-size: cover;
     position: absolute;
     left: .4rem;
-    top: .2rem; }
+    top: .25rem; }
   .collList .ul02 .tx {
     display: inline-block;
     color: #666;
-    font-size: .28rem;
     margin-left: .7rem;
     line-height: 1.3; }
   .collList .ul02 .bot {
@@ -899,28 +1060,26 @@
       margin-bottom: .1rem;
       position: relative; }
       .mySetting .setList ul li > a {
-        width: 100%;
-        height: 100%;
         display: block; }
       .mySetting .setList ul li .ico {
         width: .4rem;
         height: .4rem;
-        background-image: url("../../public/images/setIco.png");
         background-repeat: no-repeat;
         background-size: cover;
+        background-size: contain;
         left: .4rem; }
       .mySetting .setList ul li:nth-of-type(1) .ico {
-        background-position: 0 0rem; }
+        background-image: url("../../public/images/setIco1.png"); }
       .mySetting .setList ul li:nth-of-type(2) .ico {
-        background-position: 0 -0.4rem; }
+        background-image: url("../../public/images/setIco2.png"); }
       .mySetting .setList ul li:nth-of-type(3) .ico {
-        background-position: 0 -0.8rem; }
+        background-image: url("../../public/images/setIco3.png"); }
       .mySetting .setList ul li:nth-of-type(4) .ico {
-        background-position: 0 -1.2rem; }
+        background-image: url("../../public/images/setIco4.png"); }
       .mySetting .setList ul li:nth-of-type(5) .ico {
-        background-position: 0 -1.6rem; }
+        background-image: url("../../public/images/setIco5.png"); }
       .mySetting .setList ul li:nth-of-type(6) .ico {
-        background-position: 0 -2rem; }
+        background-image: url("../../public/images/setIco6.png"); }
     .mySetting .setList ul .tl {
       float: left; }
     .mySetting .setList ul .ti {
@@ -958,9 +1117,9 @@
     width: 1.3rem;
     height: 1.3rem;
     border: 1px solid #ff6100;
-    -webkit-box-shadow: 0 0 0.2rem #e55700;
-    -moz-box-shadow: 0 0 0.2rem #e55700;
-    box-shadow: 0 0 0.2rem #e55700; }
+    -webkit-box-shadow: 0 0 0.2rem #e65700;
+    -moz-box-shadow: 0 0 0.2rem #e65700;
+    box-shadow: 0 0 0.2rem #e65700; }
   .myWxBind .wxBindYes .txt {
     margin-top: .2rem; }
     .myWxBind .wxBindYes .txt .name {
@@ -980,7 +1139,6 @@
           margin-right: .15rem; }
       .myWxBind .wxBindYes .txt .tx .unbind {
         color: #56aae5;
-        font-size: .3rem;
         display: inline-block;
         margin-top: .15rem;
         text-decoration: underline; }
@@ -998,15 +1156,14 @@
       .myPhoneBind .pBindYes .tp img, .myEmailBind .pBindYes .tp img {
         width: 100%; }
     .myPhoneBind .pBindYes .txt, .myEmailBind .pBindYes .txt {
-      margin-top: .3rem;
+      margin-top: .4rem;
       font-size: .32rem; }
       .myPhoneBind .pBindYes .txt p, .myEmailBind .pBindYes .txt p {
-        line-height: 1.1; }
+        line-height: 1.2; }
       .myPhoneBind .pBindYes .txt .chg, .myEmailBind .pBindYes .txt .chg {
-        font-size: .3rem;
         color: #56aae5;
         display: inline-block;
-        margin-top: .15rem;
+        margin-top: .2rem;
         text-decoration: underline; }
 
 .myInps .inp {
@@ -1017,7 +1174,6 @@
   border-bottom: 1px solid #e5e5e5; }
   .myInps .inp > * {
     height: 1rem;
-    line-height: 1rem;
     float: left;
     font-size: .32rem;
     box-sizing: border-box; }
@@ -1033,8 +1189,7 @@
     width: 34%;
     border-left: 1px solid #e5e5e5;
     color: #fe7d2e;
-    background-color: #fff;
-    font-size: .3rem; }
+    background-color: #fff; }
     .myInps .inp.yzmInp .getCode.sended {
       background-color: #d6d6d6;
       color: #fff;
@@ -1048,15 +1203,15 @@
   margin-top: .8rem; }
 
 .myPortrait {
-  padding-top: .2rem; }
+  padding-top: .5rem; }
   .myPortrait .faceList li {
     float: left;
     width: 25%;
-    margin-bottom: .2rem;
+    margin-bottom: .4rem;
     text-align: center; }
     .myPortrait .faceList li .tp {
-      width: .94rem;
-      height: .94rem;
+      width: 1.2rem;
+      height: 1.2rem;
       border: 1px solid #f0f2ef;
       display: inline-block; }
       .myPortrait .faceList li .tp img {
@@ -1065,11 +1220,15 @@
     .myPortrait .faceList li.cur .tp {
       border-color: #ff6100; }
 
+.myInfor .tab {
+  height: 1rem; }
+  .myInfor .tab li {
+    line-height: 1rem; }
 .myInfor .inList {
-  padding-top: .8rem; }
+  padding-top: 1rem; }
   .myInfor .inList li {
-    height: .8rem;
-    line-height: .8rem;
+    height: 1rem;
+    line-height: 1rem;
     border-bottom: 1px solid #e5e5e5;
     position: relative; }
     .myInfor .inList li .ico {
@@ -1088,25 +1247,26 @@
       box-sizing: border-box; }
 .myInfor .han {
   margin-top: .3rem;
-  height: .4rem;
+  height: .6rem;
   width: 100%;
   box-sizing: border-box;
   position: relative; }
   .myInfor .han > * {
     vertical-align: middle;
     display: inline-block; }
+  .myInfor .han .setChe {
+    background-size: contain; }
   .myInfor .han .del {
-    width: .8rem;
-    height: .4rem;
-    line-height: .4rem;
+    width: 1.1rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
     background-color: #fff;
     border: 1px solid #ff6100;
     color: #ff6100;
     text-align: center;
     display: inline-block;
     box-sizing: border-box;
-    margin-left: .15rem;
-    font-size: .24rem; }
+    margin-left: .15rem; }
   .myInfor .han .ti {
     padding-left: .1rem;
     color: #666; }
@@ -1119,8 +1279,6 @@
     text-align: center;
     padding-bottom: .4rem;
     border-bottom: 1px solid #e5e5e5; }
-    .myRecharge .money > * {
-      font-size: .28rem; }
     .myRecharge .money .mm {
       margin-bottom: .4rem; }
       .myRecharge .money .mm .ico {
@@ -1136,14 +1294,12 @@
         font-size: .48rem;
         font-weight: 700; }
     .myRecharge .money .bb {
-      height: .66rem;
-      line-height: .66rem; }
+      height: 0.7rem;
+      line-height: 0.7rem; }
       .myRecharge .money .bb input {
         width: 2.8rem;
-        height: .65rem;
-        line-height: .66rem;
-        padding: 0 .1rem;
-        font-size: .28rem;
+        height: .66rem;
+        padding: .1rem;
         border: 1px solid #e5e5e5;
         box-sizing: border-box;
         vertical-align: bottom;
@@ -1152,29 +1308,25 @@
     padding: 0 .3rem; }
     .myRecharge .paySel .payTip {
       height: 1rem;
-      line-height: 1rem;
-      font-size: .28rem; }
+      line-height: 1rem; }
       .myRecharge .paySel .payTip span {
         color: #ff6100; }
   .myRecharge .recStyle .tit {
     height: 1.1rem;
     line-height: 1.1rem;
-    font-size: .28rem; }
+    font-size: .32rem; }
   .myRecharge .recStyle ul li {
     width: 2.6rem;
     height: .88rem;
     float: left;
     position: relative;
     margin-right: .4rem;
-    border: 1px solid #e9e9e9;
+    border: 1px solid #eaeaea;
     box-sizing: border-box; }
     .myRecharge .recStyle ul li:last-of-type {
       margin-right: 0; }
-    .myRecharge .recStyle ul li .tp {
-      width: 100%;
-      height: 100%; }
-      .myRecharge .recStyle ul li .tp img {
-        width: 100%; }
+    .myRecharge .recStyle ul li .tp img {
+      width: 100%; }
     .myRecharge .recStyle ul li .ico {
       width: .44rem;
       height: .44rem;
@@ -1187,6 +1339,8 @@
       border-color: #76bdff; }
     .myRecharge .recStyle ul li.cur .ico {
       background-image: url("../../public/images/recCheIco.png"); }
+  .myRecharge .myBtn {
+    margin-top: .6rem; }
   .myRecharge .reSuc {
     margin: 0 .4rem;
     padding: .4rem 0;
@@ -1206,11 +1360,10 @@
 .selList ul {
   border-top: 1px solid #e5e5e5; }
 .selList li {
-  height: .8rem;
-  line-height: .8rem;
+  height: 0.9rem;
+  line-height: 0.9rem;
   padding: 0 .4rem 0 .6rem;
   border-bottom: 1px solid #e5e5e5;
-  font-size: .28rem;
   position: relative; }
   .selList li .tl {
     float: left; }
@@ -1218,17 +1371,17 @@
     float: right;
     color: #ff6100; }
   .selList li .radIco {
-    width: .2rem;
-    height: .2rem;
+    width: .32rem;
+    height: .32rem;
     background-image: url("../../public/images/radIco.png");
     background-repeat: no-repeat;
     background-size: cover;
-    left: .1rem; }
+    left: .1rem;
+    background-size: contain; }
   .selList li.cur .radIco {
     background-image: url("../../public/images/radIcoHover.png"); }
 
 .recDet {
-  font-size: .28rem;
   padding: .4rem 0;
   margin: 0 .3rem;
   border-top: 1px solid #e5e5e5;
@@ -1252,18 +1405,17 @@
   line-height: 1.1; }
 
 .txtExp {
-  padding: .4rem .4rem .2rem;
-  font-size: .2rem;
-  color: #666; }
+  padding: .4rem .4rem .2rem; }
   .txtExp .tit {
-    font-size: .28rem;
-    color: #333; }
+    font-size: .3rem; }
   .txtExp p {
     margin-top: .2rem;
-    line-height: 1.3; }
+    line-height: 1.3;
+    color: #666;
+    font-size: .28rem; }
   .txtExp .goLink {
-    font-size: .2rem;
-    color: #ff6100; }
+    color: #ff6100;
+    font-size: .28rem; }
 
 .myEnterCourses .courSel {
   padding: 0 .3rem; }
@@ -1275,70 +1427,72 @@
   margin-top: .3rem;
   text-align: center; }
   .myEnterCourses .link a {
-    text-decoration: underline;
-    font-size: .24rem; }
+    text-decoration: underline; }
 .myEnterCourses .myBtn {
   margin-top: .6rem; }
 
-.recSettle {
-  font-size: .28rem; }
-  .recSettle .con {
-    padding: .4rem 0;
-    background-color: #fff;
-    border-top: 1px solid #e5e5e5; }
-  .recSettle .cheap .it {
-    height: .4rem;
-    line-height: .4rem;
-    margin-bottom: .2rem; }
-    .recSettle .cheap .it .yy > * {
-      float: left;
-      vertical-align: middle;
-      line-height: .38rem; }
-    .recSettle .cheap .it .yy i {
-      width: .72rem;
-      height: .38rem;
-      background-image: url("../../public/images/switchIco.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-      margin-right: .1rem; }
-    .recSettle .cheap .it .yy span {
-      width: 1.5rem; }
-    .recSettle .cheap .it .pp {
-      display: none; }
-      .recSettle .cheap .it .pp input {
-        width: 1.5rem;
-        height: .38rem;
-        line-height: .38rem;
-        padding: 0 .1rem;
-        border: 1px solid #e5e5e5;
-        box-sizing: border-box;
-        vertical-align: text-bottom;
-        font-size: .24rem;
-        margin-left: .1rem; }
-    .recSettle .cheap .it .rr {
-      display: none; }
-    .recSettle .cheap .it.cur .pp, .recSettle .cheap .it.cur .rr {
-      display: block; }
-    .recSettle .cheap .it.cur i {
-      background-position: left bottom; }
-  .recSettle .curMoney {
-    margin-top: .2rem; }
-    .recSettle .curMoney .num {
-      color: #ff6100; }
-    .recSettle .curMoney .aRec {
-      color: #57ade9;
-      font-size: .28rem; }
+.recSettle .con {
+  padding: .4rem 0;
+  background-color: #fff;
+  border-top: 1px solid #e5e5e5; }
+.recSettle .cheap .it {
+  height: 0.6rem;
+  line-height: 0.6rem;
+  margin-bottom: .2rem; }
+  .recSettle .cheap .it .yy > * {
+    float: left;
+    vertical-align: middle;
+    line-height: .6rem; }
+  .recSettle .cheap .it .yy i {
+    width: .72rem;
+    height: .38rem;
+    background-image: url("../../public/images/qieIco01.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: .1rem;
+    margin-top: .12rem;
+    background-size: contain; }
+  .recSettle .cheap .it .pp {
+    display: none; }
+    .recSettle .cheap .it .pp input {
+      width: 2rem;
+      height: 0.6rem;
+      line-height: 0.6rem;
+      padding: 0 .1rem;
+      border: 1px solid #e5e5e5;
+      box-sizing: border-box;
+      vertical-align: text-bottom;
+      margin-left: .1rem; }
+  .recSettle .cheap .it .rr {
+    display: none; }
+  .recSettle .cheap .it.cur .pp, .recSettle .cheap .it.cur .rr {
+    display: block; }
+  .recSettle .cheap .it.cur i {
+    background-image: url("../../public/images/qieIco02.png"); }
+.recSettle .curMoney {
+  margin-top: .2rem; }
+  .recSettle .curMoney .num {
+    color: #ff6100; }
+  .recSettle .curMoney .aRec {
+    color: #58adea; }
 
 .countBot {
   position: relative;
   height: 1.2rem;
   width: 100%; }
+  @media only screen and (max-width: 320px) {
+    .countBot {
+      height: 1.4rem; } }
   .countBot .in {
     height: 1rem;
     line-height: 1rem;
     border-top: 1px solid #e5e5e5;
     background-color: #fff;
     box-sizing: border-box; }
+    @media only screen and (max-width: 320px) {
+      .countBot .in {
+        height: 1.2rem;
+        line-height: 1.2rem; } }
   .countBot .cou {
     width: 70%;
     float: left;
@@ -1352,14 +1506,20 @@
   .countBot .btn {
     width: 30%;
     float: right;
-    height: 1rem;
+    height: 100%;
     line-height: 1rem;
     text-align: center;
     background-color: #ff6100; }
+    @media only screen and (max-width: 320px) {
+      .countBot .btn {
+        line-height: 1.2rem; } }
     .countBot .btn > a {
       color: #fff;
       font-size: .32rem;
       display: block; }
+      @media only screen and (max-width: 320px) {
+        .countBot .btn > a {
+          font-size: .34rem; } }
 
 .oChe, .oAllChe {
   width: .3rem;
@@ -1384,12 +1544,12 @@
   margin-top: .2rem; }
 
 .proList ul {
-  border-top: 1px solid #e9e9e9; }
+  border-top: 1px solid #eaeaea; }
 .proList li {
   height: 2.3rem;
   max-height: 2.3rem;
   position: relative;
-  border-bottom: 1px solid #e9e9e9; }
+  border-bottom: 1px solid #eaeaea; }
   .proList li .item {
     height: 2rem;
     padding: .15rem; }
@@ -1418,8 +1578,7 @@
     left: 0;
     width: .9rem;
     height: .96rem;
-    color: #fff;
-    font-size: .24rem; }
+    color: #fff; }
     .proList .tp .lab em {
       position: absolute;
       left: .05rem;
@@ -1433,11 +1592,10 @@
   margin-left: 3.6rem;
   margin-right: .3rem;
   height: 100%;
-  font-size: .24rem;
   color: #999;
   position: relative; }
   .proList .txt .tName {
-    font-size: .28rem;
+    font-size: .32rem;
     color: #666; }
   .proList .txt .st {
     margin-top: .3rem; }
@@ -1472,13 +1630,13 @@
 
 .proHandle {
   padding: 0 .2rem;
-  height: .4rem;
-  line-height: .4rem;
+  height: 0.4rem;
+  line-height: 0.4rem;
   margin-top: .4rem; }
   .proHandle > * {
     float: left;
     margin-right: .4rem;
-    font-size: .28rem;
+    font-size: .32rem;
     color: #666;
     line-height: .4rem; }
   .proHandle .botChe > *, .proHandle .botDel > * {
@@ -1503,7 +1661,7 @@
   padding: 0 .3rem;
   position: relative; }
   .addList ul {
-    border-top: 1px solid #e9e9e9; }
+    border-top: 1px solid #eaeaea; }
     .addList ul li {
       position: relative;
       padding: .5rem 0; }
@@ -1515,7 +1673,7 @@
       background-size: cover;
       right: 0; }
     .addList ul .item {
-      font-size: .28rem;
+      font-size: .32rem;
       position: relative;
       padding-right: .5rem;
       display: block; }
@@ -1524,22 +1682,23 @@
         line-height: 1.3; }
 
 .vidInf {
-  padding-bottom: .4rem;
-  font-size: .28rem; }
+  padding-bottom: .4rem; }
   .vidInf .hd {
-    height: .9rem;
-    line-height: .9rem;
+    height: 0.9rem;
+    line-height: 0.9rem;
     border-top: 1px solid #e5e5e5;
     border-bottom: 1px solid #e5e5e5;
     box-sizing: border-box;
-    text-align: center; }
+    text-align: center;
+    font-size: .32rem; }
   .vidInf .ti0 {
     display: inline-block; }
   .vidInf .ti01 {
-    width: 70%;
-    float: left; }
+    width: 65%;
+    float: left;
+    text-align: left; }
   .vidInf .ti02 {
-    width: 24%;
+    width: 35%;
     float: right; }
   .vidInf .bd {
     width: 100%;
@@ -1549,7 +1708,6 @@
       .vidInf .bd ul li {
         margin-bottom: .4rem; }
         .vidInf .bd ul li a {
-          font-size: .28rem;
           display: block; }
         .vidInf .bd ul li .ti01 {
           line-height: 1.2; }
@@ -1576,28 +1734,28 @@
     top: 0;
     left: 0;
     background-color: #9ed0ff;
-    -webkit-box-shadow: 0 0 0.2rem #9fd2ff;
-    -moz-box-shadow: 0 0 0.2rem #9fd2ff;
-    box-shadow: 0 0 0.2rem #9fd2ff;
+    -webkit-box-shadow: 0 0 0.2rem #a0d2ff;
+    -moz-box-shadow: 0 0 0.2rem #a0d2ff;
+    box-shadow: 0 0 0.2rem #a0d2ff;
     animation: myChg 3s infinite 0.2s;
     -webkit-animation: myChg 3s infinite 0.2s;
     -moz-animation: myChg 3s infinite 0.2s;
     -ms-animation: myChg 3s infinite 0.2s;
-    -o-transform: myChg 3s infinite 0.2s; }
+    -o-animation: myChg 3s infinite 0.2s; }
   .myRank .round .roundB {
     width: 3.1rem;
     height: 3.1rem;
     top: .15rem;
     left: .15rem;
     background-color: #76bdff;
-    -webkit-box-shadow: 0 0 0.1rem #77beff;
-    -moz-box-shadow: 0 0 0.1rem #77beff;
-    box-shadow: 0 0 0.1rem #77beff;
+    -webkit-box-shadow: 0 0 0.1rem #77bfff;
+    -moz-box-shadow: 0 0 0.1rem #77bfff;
+    box-shadow: 0 0 0.1rem #77bfff;
     animation: myChg 3s infinite 0.2s;
     -webkit-animation: myChg 3s infinite 0.2s;
     -moz-animation: myChg 3s infinite 0.2s;
     -ms-animation: myChg 3s infinite 0.2s;
-    -o-transform: myChg 3s infinite 0.2s; }
+    -o-animation: myChg 3s infinite 0.2s; }
   .myRank .round .roundC {
     width: 2.8rem;
     height: 2.8rem;
@@ -1624,8 +1782,8 @@
   padding-top: .4rem; }
   .myRank .rankSel .hdTit {
     width: 100%;
-    height: .8rem;
-    line-height: .8rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
     background-color: #76bdff;
     border-radius: .1rem;
     position: relative; }
@@ -1657,7 +1815,6 @@
       text-align: center;
       float: left; }
       .myRank .rankSel .bdTab li .item {
-        font-size: .3rem;
         color: #666;
         display: block; }
         .myRank .rankSel .bdTab li .item > * {
@@ -1713,14 +1870,14 @@
 .myNotes .in {
   padding: 0 .2rem; }
 .myNotes .notes {
-  font-size: .22rem;
   color: #999; }
 .myNotes .item {
   padding: .4rem 0;
   border-bottom: 1px solid #e5e5e5; }
   .myNotes .item .tit {
     line-height: 1.3;
-    font-size: .26rem; }
+    font-size: .32rem;
+    color: #666; }
   .myNotes .item .originate {
     margin-top: .2rem;
     color: #ffa166; }
@@ -1730,71 +1887,65 @@
       color: #999; }
     .myNotes .item .originate .link {
       color: #ffa166;
-      font-size: .24rem;
       display: inline-block; }
   .myNotes .item .bot {
     margin-top: .2rem;
-    height: .34rem;
-    line-height: .34rem; }
-    .myNotes .item .bot .han {
-      font-size: .28rem; }
-      .myNotes .item .bot .han > * {
-        margin-left: .15rem;
+    height: 0.34rem;
+    line-height: 0.34rem; }
+    .myNotes .item .bot .han > * {
+      margin-left: .15rem;
+      float: left; }
+    .myNotes .item .bot .han .ti {
+      vertical-align: top;
+      margin-left: .1rem; }
+    .myNotes .item .bot .han .ico {
+      width: .34rem;
+      height: .34rem;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: inline-block; }
+    .myNotes .item .bot .han .chg .ico {
+      background-image: url("../../public/images/ico-bj.png"); }
+    .myNotes .item .bot .han .del .ico {
+      background-image: url("../../public/images/ico-del.png"); }
+    .myNotes .item .bot .han .time {
+      height: .34rem;
+      color: #999; }
+      .myNotes .item .bot .han .time > * {
         float: left; }
-      .myNotes .item .bot .han .ti {
-        vertical-align: top;
-        margin-left: .1rem; }
-      .myNotes .item .bot .han .ico {
+      .myNotes .item .bot .han .time .ico {
         width: .34rem;
         height: .34rem;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: inline-block; }
-      .myNotes .item .bot .han .chg .ico {
-        background-image: url("../../public/images/ico-bj.png"); }
-      .myNotes .item .bot .han .del .ico {
-        background-image: url("../../public/images/ico-del.png"); }
-      .myNotes .item .bot .han .time {
-        height: .34rem;
-        color: #999;
-        font-size: .24rem; }
-        .myNotes .item .bot .han .time > * {
-          float: left; }
-        .myNotes .item .bot .han .time .ico {
-          width: .34rem;
-          height: .34rem;
-          background-image: url("../../public/images/ico-bf.png"); }
-        .myNotes .item .bot .han .time .num {
-          line-height: .31rem;
-          border: 1px solid #e5e5e5;
-          border-left: none;
-          padding: 0 .05rem;
-          margin-left: -1px;
-          background-color: #f7f7f7;
-          box-sizing: border-box; }
+        background-image: url("../../public/images/ico-bf.png"); }
+      .myNotes .item .bot .han .time .num {
+        line-height: .31rem;
+        border: 1px solid #e5e5e5;
+        border-left: none;
+        padding: 0 .05rem;
+        margin-left: -1px;
+        background-color: #f7f7f7;
+        box-sizing: border-box; }
 .myNotes .txtArea {
   padding: .4rem 0;
   border-bottom: 1px solid #e5e5e5;
   display: none; }
   .myNotes .txtArea .area {
-    height: 1.7rem;
+    height: 2rem;
     width: 100%;
     padding: .1rem;
     box-sizing: border-box;
     border: 1px solid #e5e5e5;
-    font-size: .24rem;
     color: #999; }
   .myNotes .txtArea .btns {
     float: right;
     margin-top: .2rem; }
     .myNotes .txtArea .btns .btn {
-      width: .8rem;
-      height: .4rem;
-      line-height: .4rem;
+      width: 1.2rem;
+      height: 0.6rem;
+      line-height: 0.6rem;
       background-color: #ff6100;
       text-align: center;
       color: #fff;
-      font-size: .24rem;
       border-radius: 2px;
       margin-left: .2rem;
       display: inline-block; }
@@ -1818,13 +1969,11 @@
     height: .8rem;
     text-align: center;
     display: inline-block;
-    /*@include box-shadow(0 0 .1rem #ffbdbd);*/
-    /*background-color:#ff7575;*/
     position: relative; }
     .shopCarFix .item .num {
       width: .4rem;
-      height: .4rem;
-      line-height: .4rem;
+      height: 0.4rem;
+      line-height: 0.4rem;
       background-color: #ff7575;
       text-align: center;
       color: #fff;
@@ -1839,6 +1988,129 @@
       background-repeat: no-repeat;
       background-size: cover;
       display: inline-block; }
+
+.myBan, .myContactUs .ban, .notice .ban {
+  width: 100%; }
+  .myBan .tp, .myContactUs .ban .tp, .notice .ban .tp {
+    display: block;
+    width: 100%;
+    height: 100%; }
+    .myBan .tp img, .myContactUs .ban .tp img, .notice .ban .tp img {
+      width: 100%;
+      height: 100%; }
+
+.myContactUs .tab, .notice .tab {
+  height: .9rem; }
+  .myContactUs .tab ol, .notice .tab ol {
+    border-bottom: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5; }
+    .myContactUs .tab ol li, .notice .tab ol li {
+      line-height: .9rem; }
+      .myContactUs .tab ol li a, .notice .tab ol li a {
+        color: #999;
+        font-size: .34rem; }
+      .myContactUs .tab ol li.cur, .notice .tab ol li.cur {
+        border-bottom-color: #56aae5; }
+        .myContactUs .tab ol li.cur a, .notice .tab ol li.cur a {
+          color: #333; }
+.myContactUs .item, .notice .item {
+  background-color: #fff;
+  padding: 0 .2rem;
+  margin-top: .4rem; }
+.myContactUs .hdTit, .notice .hdTit {
+  width: 100%;
+  height: 1rem;
+  position: relative; }
+  .myContactUs .hdTit .tit, .notice .hdTit .tit {
+    font-size: .36rem;
+    color: #5a99e5;
+    width: 32%;
+    text-align: center;
+    background-color: #fff;
+    z-index: 1; }
+  .myContactUs .hdTit .line, .notice .hdTit .line {
+    width: 50%;
+    height: 1px;
+    background-color: #5a99e5;
+    top: 50%; }
+.myContactUs .dzDet li, .notice .dzDet li {
+  padding-bottom: .25rem; }
+  .myContactUs .dzDet li p, .notice .dzDet li p {
+    line-height: 1.2;
+    color: #666; }
+  .myContactUs .dzDet li span, .notice .dzDet li span {
+    margin-left: .3rem;
+    color: #666; }
+.myContactUs .msnInp .inp, .notice .msnInp .inp {
+  width: 100%;
+  height: .7rem;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+  box-sizing: border-box;
+  margin-bottom: .2rem; }
+  .myContactUs .msnInp .inp > *, .notice .msnInp .inp > * {
+    float: left;
+    box-sizing: border-box; }
+  .myContactUs .msnInp .inp .ti, .notice .msnInp .inp .ti {
+    height: 0.7rem;
+    line-height: 0.7rem;
+    width: 14%;
+    padding-left: .1rem;
+    color: #999;
+    display: inline-block; }
+  .myContactUs .msnInp .inp input, .notice .msnInp .inp input {
+    width: 86%;
+    padding-right: .2rem;
+    line-height: .4rem;
+    padding-top: .15rem; }
+  .myContactUs .msnInp .inp.mesTxt, .notice .msnInp .inp.mesTxt {
+    height: 2rem; }
+    .myContactUs .msnInp .inp.mesTxt .ti, .notice .msnInp .inp.mesTxt .ti {
+      width: 20%; }
+    .myContactUs .msnInp .inp.mesTxt textarea, .notice .msnInp .inp.mesTxt textarea {
+      width: 100%;
+      height: 1.3rem;
+      padding: 0 .1rem;
+      margin-top: -.1rem; }
+.myContactUs .myBtn, .notice .myBtn {
+  width: 1.6rem;
+  height: 0.7rem;
+  line-height: 0.7rem;
+  margin-top: .2rem; }
+  .myContactUs .myBtn a, .notice .myBtn a {
+    font-size: .32rem; }
+.myContactUs .itemMes, .notice .itemMes {
+  padding-bottom: .4rem; }
+.myContactUs .addMap, .notice .addMap {
+  width: 100%;
+  height: 8rem;
+  position: relative; }
+.myContactUs .addName, .notice .addName {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 1rem;
+  line-height: 1rem;
+  text-align: center;
+  background-color: #f9f9f9;
+  font-size: .32rem; }
+  @media only screen and (min-width: 375px) {
+    .myContactUs .addName, .notice .addName {
+      border-bottom: 1px solid #ccc; } }
+.myContactUs #myMap, .notice #myMap {
+  width: 100%;
+  height: 8rem; }
+.myContactUs .moduleCom .module, .notice .moduleCom .module {
+  display: none; }
+  .myContactUs .moduleCom .module .txtPage, .notice .moduleCom .module .txtPage {
+    padding: .4rem .2rem; }
+    .myContactUs .moduleCom .module .txtPage p, .notice .moduleCom .module .txtPage p {
+      line-height: 1.5;
+      text-indent: 2em; }
+
+.bgWhite {
+  background-color: #fff; }
 
 .loginReg {
   padding-bottom: .2rem; }
@@ -1867,29 +2139,26 @@
       color: #666; }
 
 .logRegList {
-  padding: .5rem .2rem 0; }
+  padding: 0 .2rem 0; }
   .logRegList ul {
-    color: #999;
-    font-size: .28rem; }
+    color: #999; }
   .logRegList .links {
     padding: .5rem .7rem .15rem .7rem; }
     .logRegList .links .aLink {
       color: #999;
-      font-size: .28rem;
       text-decoration: underline;
       display: inline-block; }
       .logRegList .links .aLink:first-of-type {
         padding-left: .2rem; }
   .logRegList .isRead {
-    font-size: .28rem;
-    padding-left: .5rem;
-    line-height: .4rem;
+    padding-left: .4rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
     margin-top: .2rem; }
     .logRegList .isRead > * {
       vertical-align: middle;
       display: inline-block; }
     .logRegList .isRead .aProtocol {
-      font-size: .28rem;
       color: #76bdff; }
   .logRegList .myBtn {
     margin-top: .7rem; }
@@ -1900,11 +2169,14 @@
   margin-right: .1rem;
   -webkit-appearance: none;
   -moz-appearance: none;
-  display: inline-block; }
+  display: inline-block;
+  background-color: transparent;
+  border-radius: 0;
+  background-size: contain; }
 
 .setChe {
-  width: .3rem;
-  height: .3rem;
+  width: .36rem;
+  height: .36rem;
   background-image: url("../../public/images/logIco.png"); }
   .setChe:checked, .setChe.hover {
     background-image: url("../../public/images/logIcoHover.png"); }
@@ -1913,7 +2185,6 @@
   width: .4rem;
   height: .4rem;
   background-color: #fff;
-  border: 1px solid #e5e5e5;
   box-sizing: border-box;
   background-image: url("../../public/images/defChe.png"); }
   .setDefChe:checked, .setDefChe.hover {
@@ -1923,30 +2194,30 @@
   width: 100%; }
   .logInpCom .inp {
     width: 100%;
-    height: 1.2rem;
-    line-height: 1.2rem;
+    height: 1.1rem;
+    line-height: 1.1rem;
     border-bottom: 1px solid #e5e5e5;
     box-sizing: border-box;
     position: relative; }
     .logInpCom .inp > * {
       box-sizing: border-box; }
     .logInpCom .inp input {
-      line-height: 1.1rem;
-      font-size: .36rem;
       width: 100%;
-      padding: .08rem .2rem 0 1.1rem;
-      box-sizing: border-box; }
-  .logInpCom .phoneInp > * {
-    float: left; }
+      padding: .12rem .2rem 0 1.1rem;
+      box-sizing: border-box;
+      font-size: .36rem; }
   .logInpCom .phoneInp input {
-    width: 70%; }
+    padding-right: 33%; }
   .logInpCom .phoneInp .getCode {
     width: 30%;
-    height: 1.18rem;
-    font-size: .3rem;
+    height: 1.1rem;
     color: #666;
     background-color: #fff;
-    border-left: 1px solid #e5e5e5; }
+    border-left: 1px solid #e5e5e5;
+    box-sizing: border-box;
+    position: absolute;
+    right: 0;
+    top: 0; }
     .logInpCom .phoneInp .getCode.sended {
       background-color: #d6d6d6;
       color: #fff;
@@ -1994,14 +2265,12 @@
     background-size: cover;
     vertical-align: text-bottom;
     margin-right: .1rem; }
-.findPwd .pwdInpCom .yzmInp > * {
-  float: left; }
 .findPwd .pwdInpCom .yzmInp input {
   width: 75%; }
 .findPwd .pwdInpCom .yzmInp .yzm {
   width: 25%;
-  height: 1.2rem;
-  line-height: 1.2rem;
+  height: 1.1rem;
+  line-height: 1.1rem;
   text-align: center;
   font-weight: 700;
   font-size: .32rem;
@@ -2011,20 +2280,18 @@
   margin-top: .7rem; }
 .findPwd .botLink {
   color: #999;
-  font-size: .28rem;
   text-align: center;
   margin-top: 1.5rem; }
   .findPwd .botLink .link {
     color: #ff6100;
-    font-size: .28rem;
     text-decoration: underline;
     display: inline-block; }
 .findPwd .botLink02 {
   margin-top: 1.2rem;
   text-align: left;
-  padding-left: .6rem; }
+  padding-left: .4rem; }
   .findPwd .botLink02 p {
-    margin-bottom: .12rem; }
+    margin-bottom: .18rem; }
 .findPwd .sucTip {
   margin: .6rem 0 auto;
   text-align: center; }
@@ -2044,9 +2311,9 @@
   .protocol h1 {
     font-size: 0.4rem; }
   .protocol h2 {
-    font-size: 0.32rem; }
+    font-size: 0.35rem; }
   .protocol h3 {
-    font-size: 0.3rem; }
+    font-size: 0.32rem; }
   .protocol h1, .protocol h2, .protocol h3 {
     font-weight: 700;
     color: #010101; }
@@ -2058,7 +2325,6 @@
   .protocol h2 ~ p {
     text-indent: 2em; }
   .protocol p {
-    font-size: .26rem;
     line-height: 1.4;
     color: #4e4e4e; }
   .protocol ul {
@@ -2073,6 +2339,1027 @@
   text-align: center;
   font-size: .4rem;
   font-weight: 700; }
+
+.theMenu {
+  width: 100%;
+  height: 1rem;
+  position: relative; }
+
+.tabMenu {
+  width: 100%;
+  height: 1rem;
+  background-color: #fff;
+  border-bottom: 1px solid #e5e5e5;
+  display: -moz-box;
+  display: -webkit-box; }
+
+.tabMenu_left {
+  height: 1rem;
+  overflow: hidden;
+  position: relative;
+  -moz-box-flex: 1;
+  -webkit-box-flex: 1;
+  box-flex: 1; }
+
+.tabMenu_list {
+  position: absolute;
+  left: 0; }
+  .tabMenu_list ul {
+    position: relative;
+    white-space: nowrap;
+    font-size: 0; }
+    .tabMenu_list ul li {
+      display: inline-block;
+      padding: 0;
+      margin: 0 .2rem; }
+      .tabMenu_list ul li a {
+        display: block;
+        width: 100%;
+        height: 1rem;
+        line-height: 1rem;
+        font-size: .36rem;
+        text-align: center;
+        color: #999; }
+      .tabMenu_list ul li.cur a {
+        color: #ff6100; }
+
+.theSearch {
+  height: 1.3rem; }
+  .theSearch .inp {
+    width: 90%;
+    height: .9rem;
+    margin: .2rem auto;
+    position: relative;
+    background-color: #fff; }
+    .theSearch .inp input {
+      width: 100%;
+      line-height: .4rem;
+      padding-top: .25rem;
+      padding-right: .9rem;
+      padding-left: .2rem;
+      box-sizing: border-box; }
+    .theSearch .inp .btn {
+      width: .9rem;
+      height: .9rem;
+      background-color: #00ace9;
+      background-image: url("../../public/images/serIco.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      right: 0;
+      top: 0; }
+
+.courses .findSel .tabHd {
+  width: 100%;
+  height: .8rem;
+  background-color: #fff;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  box-sizing: border-box; }
+.courses .findSel ol {
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  height: 100%;
+  box-sizing: border-box; }
+  .courses .findSel ol li {
+    flex: 1;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    height: 100%;
+    line-height: .8rem; }
+    .courses .findSel ol li a {
+      display: block;
+      height: .4rem;
+      line-height: .4rem;
+      padding: .2rem 0;
+      position: relative; }
+      .courses .findSel ol li a:after {
+        width: 1px;
+        height: .4rem;
+        background-color: #e5e5e5;
+        position: absolute;
+        right: 0; }
+      .courses .findSel ol li a .ti {
+        padding-left: .45rem; }
+    .courses .findSel ol li:last-of-type a:after {
+      width: 0; }
+    .courses .findSel ol li .ico {
+      width: .4rem;
+      height: .4rem;
+      background-image: url("../../public/images/ico-down.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-size: contain;
+      position: absolute;
+      right: .4rem; }
+    .courses .findSel ol li.cur a {
+      color: #56aae5; }
+    .courses .findSel ol li.cur .ico {
+      background-image: url("../../public/images/ico-up.png"); }
+.courses .findSel .listBd {
+  width: 100%;
+  height: auto;
+  border-top: 1px solid #e5e5e5;
+  position: absolute;
+  bottom: 0;
+  z-index: 999999;
+  display: none; }
+  .courses .findSel .listBd > * {
+    position: absolute;
+    left: 0;
+    top: 0; }
+  .courses .findSel .listBd .wrap {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); }
+  .courses .findSel .listBd ul {
+    width: 100%;
+    max-height: 90%;
+    overflow-y: auto;
+    padding: .2rem .4rem;
+    background-color: #fff;
+    box-sizing: border-box;
+    z-index: 1;
+    display: none; }
+    .courses .findSel .listBd ul li {
+      height: 0.8rem;
+      line-height: 0.8rem; }
+      .courses .findSel .listBd ul li a {
+        color: #666; }
+      .courses .findSel .listBd ul li.cur a {
+        color: #56aae5; }
+.courses .searchNo {
+  text-align: center;
+  margin-top: .9rem; }
+  .courses .searchNo .tp {
+    width: 48.8%;
+    display: inline-block; }
+  .courses .searchNo .tx {
+    font-size: .36rem;
+    line-height: 1.2;
+    margin-top: .4rem; }
+
+.courList {
+  padding: .2rem; }
+  .courList li {
+    width: 48%;
+    height: 3.66rem;
+    background-color: #fff;
+    float: left;
+    margin-bottom: .4rem;
+    position: relative; }
+    .courList li:nth-of-type(odd) {
+      margin-right: 4%; }
+  .courList .item {
+    padding: .15rem 0;
+    width: 95%; }
+  .courList .tp {
+    width: 100%;
+    height: 2rem;
+    border-radius: 2px;
+    position: relative; }
+    .courList .tp a {
+      display: block; }
+    .courList .tp .ico, .courList .tp .lab {
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .courList .tp .ico {
+      width: .8rem;
+      height: .7rem;
+      background-image: url("../../public/images/collectIcoX.png");
+      right: 0;
+      top: 0;
+      z-index: 1; }
+    .courList .tp .icoLove {
+      background-position: left top; }
+    .courList .tp .icoLove-hover {
+      background-position: right top; }
+    .courList .tp .lab {
+      width: .94rem;
+      height: .94rem;
+      left: 0;
+      top: 0;
+      background-size: contain; }
+    .courList .tp .labNew {
+      background-image: url("../../public/images/lab01.png"); }
+    .courList .tp .labTj {
+      background-image: url("../../public/images/lab02.png"); }
+  .courList .txt {
+    padding-top: .2rem; }
+    .courList .txt .tiName {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical; }
+      .courList .txt .tiName a {
+        color: #666;
+        line-height: 1.2; }
+    .courList .txt .bot {
+      position: absolute;
+      bottom: .1rem;
+      left: 2.5%;
+      width: 95%;
+      height: 0.4rem;
+      line-height: 0.4rem;
+      box-sizing: border-box;
+      color: #999; }
+      .courList .txt .bot .moneyNo {
+        text-decoration: line-through; }
+        .courList .txt .bot .moneyNo .num {
+          color: #999; }
+      .courList .txt .bot .num {
+        color: #ff6e6e; }
+    .courList .txt .handle a {
+      color: #999; }
+    .courList .txt .ico {
+      width: .3rem;
+      height: .4rem;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-size: contain;
+      vertical-align: sub;
+      display: inline-block; }
+    .courList .txt .icoBuy {
+      background-image: url("../../public/images/iico01.png"); }
+    .courList .txt .icoPlay {
+      background-image: url("../../public/images/iico02.png"); }
+
+.footNav {
+  width: 100%;
+  height: 1.2rem;
+  position: relative; }
+  .footNav .in {
+    width: 100%;
+    height: 1rem;
+    background-color: #fff;
+    border-top: 1px solid #e5e5e5; }
+  .footNav .nav {
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    height: 100%; }
+    .footNav .nav li {
+      flex: 1;
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      text-align: center;
+      height: 100%; }
+      .footNav .nav li .item {
+        display: block;
+        height: 100%;
+        padding-top: .1rem;
+        box-sizing: border-box; }
+        .footNav .nav li .item img {
+          width: .5rem;
+          height: .5rem;
+          display: inline-block; }
+        .footNav .nav li .item .ti {
+          display: block;
+          line-height: 1.2; }
+      .footNav .nav li.cur .item {
+        color: #ff6100; }
+
+.header {
+  width: 100%;
+  height: 1rem;
+  position: relative; }
+  .header .in {
+    width: 100%;
+    height: 1rem;
+    background-color: #fff;
+    border-bottom: 1px solid #e5e5e5; }
+  .header .com {
+    padding: 0 .3rem; }
+  .header .logo {
+    width: 2.5rem;
+    height: 1rem;
+    background-image: url("../../public/images/myLogo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left; }
+    .header .logo a {
+      display: block;
+      height: 0;
+      padding-top: 1rem; }
+  .header .txt {
+    float: right;
+    height: 1rem;
+    line-height: 1rem;
+    margin-right: .1rem; }
+    .header .txt .ti {
+      font-size: .32rem;
+      color: #ff6100;
+      display: inline-block; }
+    .header .txt .loginLink:after {
+      width: 1px;
+      height: .26rem;
+      background-color: #ff6100;
+      margin: -2px .2rem 0 .25rem; }
+
+.banner .slideBox {
+  position: relative; }
+  .banner .slideBox .hd {
+    bottom: .1rem;
+    z-index: 2; }
+    .banner .slideBox .hd li {
+      width: .2rem;
+      height: .2rem;
+      background-color: #ebebeb;
+      text-indent: -99999px;
+      margin: 0 .1rem;
+      display: inline-block; }
+      .banner .slideBox .hd li.on {
+        background-color: #ff6100; }
+  .banner .slideBox .bd {
+    position: relative;
+    z-index: 0; }
+    .banner .slideBox .bd li {
+      position: relative;
+      text-align: center; }
+      .banner .slideBox .bd li img {
+        width: 100%; }
+
+.mainCom .gfNot {
+  padding-left: .2rem;
+  height: .8rem;
+  background-color: #f5f5f5;
+  position: relative; }
+  .mainCom .gfNot .tit {
+    height: 0.8rem;
+    line-height: 0.8rem;
+    float: left; }
+    .mainCom .gfNot .tit h6 {
+      height: 0.8rem;
+      line-height: 0.8rem;
+      font-size: .3rem;
+      display: inline-block;
+      vertical-align: top;
+      padding-left: .35rem; }
+    .mainCom .gfNot .tit i {
+      width: .3rem;
+      height: .6rem;
+      background-image: url("../../public/images/notIco.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-size: contain;
+      display: inline-block;
+      position: absolute;
+      left: .2rem;
+      top: .1rem; }
+  .mainCom .gfNot ul {
+    margin-left: 1.3rem;
+    margin-right: .6rem; }
+    .mainCom .gfNot ul li {
+      height: 0.8rem;
+      line-height: 0.8rem;
+      position: relative; }
+      .mainCom .gfNot ul li a {
+        color: #999;
+        display: block; }
+      .mainCom .gfNot ul li .ti {
+        width: 70%; }
+      .mainCom .gfNot ul li .date {
+        position: absolute;
+        right: 0;
+        top: 0; }
+  .mainCom .gfNot .more {
+    width: .6rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    text-align: center;
+    color: #999;
+    position: absolute;
+    top: 0;
+    right: 0; }
+.mainCom .affList {
+  height: 1.4rem;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5; }
+  .mainCom .affList ul {
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    height: 100%; }
+    .mainCom .affList ul li {
+      flex: 1;
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      height: 100%;
+      padding-top: .4rem;
+      box-sizing: border-box;
+      position: relative; }
+      .mainCom .affList ul li .tp {
+        width: .6rem;
+        height: .4rem;
+        position: absolute;
+        top: .52rem;
+        left: .25rem; }
+        .mainCom .affList ul li .tp img {
+          width: 100%;
+          height: 100%;
+          display: inline-block; }
+      .mainCom .affList ul li .txt {
+        padding-left: 1rem; }
+        .mainCom .affList ul li .txt .p1 .num {
+          font-size: .36rem; }
+        .mainCom .affList ul li .txt .p2 {
+          color: #999;
+          padding-top: .05rem;
+          font-size: .28rem; }
+.mainCom .column {
+  padding-bottom: .2rem; }
+  .mainCom .column ol {
+    width: 100%;
+    padding: .1rem 0; }
+    .mainCom .column ol li {
+      width: 33.33333%;
+      height: 1.55rem;
+      float: left;
+      text-align: center; }
+      .mainCom .column ol li .item {
+        display: block;
+        height: 100%; }
+      .mainCom .column ol li .tp {
+        width: .6rem;
+        display: inline-block;
+        margin-top: .3rem; }
+        .mainCom .column ol li .tp img {
+          width: 100%; }
+      .mainCom .column ol li .txt {
+        padding-top: .2rem; }
+.mainCom .content .hdTit {
+  width: 100%;
+  height: 1rem;
+  position: relative;
+  border-top: 1px solid #e5e5e5; }
+  .mainCom .content .hdTit .tit {
+    font-size: .36rem;
+    width: 32%;
+    text-align: center;
+    background-color: #fff;
+    z-index: 1; }
+  .mainCom .content .hdTit .line {
+    width: 77%;
+    height: 1px;
+    background-color: #333;
+    top: 50%; }
+.mainCom .content .kcIn {
+  height: 3.8rem;
+  border-top: 1px solid #e5e5e5;
+  padding: 0 .2rem; }
+  .mainCom .content .kcIn > * {
+    height: 100%; }
+  .mainCom .content .kcIn .kcL {
+    width: 35%;
+    float: left;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center; }
+    .mainCom .content .kcIn .kcL .link {
+      display: block;
+      color: #fff;
+      font-size: .24rem; }
+    .mainCom .content .kcIn .kcL .tx {
+      padding-top: .4rem; }
+    .mainCom .content .kcIn .kcL .linkDet {
+      width: 58%;
+      height: 0.4rem;
+      line-height: 0.4rem;
+      border: 1px solid #fff;
+      border-radius: 2px;
+      margin-top: .25rem;
+      display: inline-block; }
+  .mainCom .content .kcIn .kcR {
+    margin-left: 35%; }
+    .mainCom .content .kcIn .kcR .kcList {
+      height: 100%; }
+      .mainCom .content .kcIn .kcR .kcList ul {
+        height: 100%; }
+        .mainCom .content .kcIn .kcR .kcList ul li {
+          height: 25%;
+          border-bottom: 1px solid #e5e5e5;
+          box-sizing: border-box; }
+          .mainCom .content .kcIn .kcR .kcList ul li:last-of-type {
+            border-bottom: none; }
+        .mainCom .content .kcIn .kcR .kcList ul .item {
+          display: block;
+          width: 100%;
+          height: 100%; }
+          .mainCom .content .kcIn .kcR .kcList ul .item > * {
+            float: left;
+            box-sizing: border-box;
+            height: 100%; }
+        .mainCom .content .kcIn .kcR .kcList ul .cName {
+          width: 45%;
+          padding-left: .15rem;
+          padding-top: .32rem; }
+        .mainCom .content .kcIn .kcR .kcList ul .cTime, .mainCom .content .kcIn .kcR .kcList ul .cGold {
+          width: 27.5%;
+          text-align: center;
+          padding-top: .15rem; }
+          .mainCom .content .kcIn .kcR .kcList ul .cTime > *, .mainCom .content .kcIn .kcR .kcList ul .cGold > * {
+            display: block; }
+          .mainCom .content .kcIn .kcR .kcList ul .cTime .sp2, .mainCom .content .kcIn .kcR .kcList ul .cGold .sp2 {
+            color: #999;
+            padding-top: .05rem;
+            font-size: .26rem; }
+          .mainCom .content .kcIn .kcR .kcList ul .cTime .num, .mainCom .content .kcIn .kcR .kcList ul .cGold .num {
+            color: #ff6100; }
+.mainCom .content .courLists {
+  border-top: 1px solid #e5e5e5; }
+.mainCom .content .askList {
+  padding-top: 0;
+  border-top: 1px solid #e5e5e5; }
+.mainCom .content .notBanCom .banIn {
+  width: 100%;
+  height: 3rem; }
+  .mainCom .content .notBanCom .banIn .tp {
+    display: block; }
+.mainCom .content .ewmCom {
+  padding-bottom: .2rem; }
+  .mainCom .content .ewmCom .ewmList {
+    width: 90%;
+    padding: .5rem 5% .35rem; }
+    .mainCom .content .ewmCom .ewmList li {
+      width: 50%;
+      float: left;
+      text-align: center; }
+    .mainCom .content .ewmCom .ewmList .item {
+      width: 100%;
+      display: block; }
+      .mainCom .content .ewmCom .ewmList .item .pic {
+        width: 2.2rem;
+        height: 2.2rem;
+        display: inline-block;
+        border: 1px solid #e0e0e0; }
+      .mainCom .content .ewmCom .ewmList .item .ti {
+        display: block;
+        color: #666;
+        font-size: .28rem;
+        padding-top: .15rem; }
+  .mainCom .content .ewmCom .copyright {
+    color: #999;
+    font-size: .26rem;
+    text-align: center; }
+    @media only screen and (max-width: 320px) {
+      .mainCom .content .ewmCom .copyright {
+        font-size: .2rem; } }
+
+.noticeDet {
+  padding: 0 .2rem; }
+  .noticeDet .pageHd {
+    padding: .5rem 0 .4rem;
+    border-bottom: 1px solid #e5e5e5;
+    text-align: center; }
+    .noticeDet .pageHd .tit {
+      font-size: .36rem;
+      color: #56aae5; }
+    .noticeDet .pageHd .date {
+      color: #666;
+      padding-top: .1rem; }
+  .noticeDet .pageBd {
+    padding: .4rem 0;
+    color: #666; }
+    .noticeDet .pageBd > * {
+      line-height: 1.8;
+      text-indent: 2em; }
+    .noticeDet .pageBd .p1 {
+      text-indent: 0; }
+
+.notice .moduleComs ul li {
+  height: 2.2rem;
+  padding: .4rem .2rem;
+  border-bottom: 1px solid #e5e5e5;
+  box-sizing: border-box;
+  position: relative; }
+  .notice .moduleComs ul li a {
+    display: block; }
+.notice .moduleComs ul .tp {
+  width: .36rem;
+  height: .36rem;
+  overflow: hidden;
+  border-radius: 2px;
+  float: left; }
+.notice .moduleComs ul .txt {
+  margin-left: .5rem;
+  color: #999; }
+  .notice .moduleComs ul .txt .tName {
+    font-size: .32rem;
+    color: #666;
+    margin-bottom: .05rem; }
+  .notice .moduleComs ul .txt .tWz {
+    line-height: 1.4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; }
+  .notice .moduleComs ul .txt .date {
+    position: absolute;
+    right: .2rem;
+    bottom: .2rem; }
+
+.courseInter .in .moduleComs .module {
+  display: block;
+  border-top: 1px solid #e5e5e5; }
+  .courseInter .in .moduleComs .module ul li {
+    height: 2rem; }
+  .courseInter .in .moduleComs .module ul .tp {
+    width: .4rem;
+    height: .4rem; }
+  .courseInter .in .moduleComs .module ul .txt {
+    margin-left: .55rem;
+    line-height: 1.2; }
+
+.student .tab {
+  border-top: 1px solid #e5e5e5; }
+  .student .tab ol li a {
+    color: #666; }
+  .student .tab ol li.cur {
+    border-bottom-color: #56aae5; }
+    .student .tab ol li.cur a {
+      color: #333; }
+.student .stuCom {
+  padding: .4rem .2rem .2rem; }
+  .student .stuCom .list01.pbAdd {
+    padding-bottom: 2.9rem; }
+  .student .stuCom .list01 li {
+    width: 44%;
+    height: 4.5rem;
+    float: left;
+    margin: 0 .2rem .2rem;
+    position: relative; }
+    .student .stuCom .list01 li:nth-of-type(2n) {
+      margin-right: 0; }
+    .student .stuCom .list01 li .item {
+      width: 100%;
+      /*height: 100%;*/
+      box-sizing: border-box;
+      border: 1px solid #e5e5e5;
+      border-bottom: none; }
+    .student .stuCom .list01 li .tp {
+      width: 100%;
+      height: 2.66rem;
+      margin: 0 auto;
+      box-sizing: border-box; }
+    .student .stuCom .list01 li .txt {
+      width: 100%;
+      height: 1.44rem;
+      padding-bottom: .1rem;
+      box-sizing: border-box;
+      border: 1px solid #e5e5e5;
+      border-top: none;
+      background-color: #fff;
+      position: absolute;
+      left: 0;
+      z-index: 99; }
+      .student .stuCom .list01 li .txt .tName {
+        font-size: .32rem;
+        text-align: center;
+        padding-top: .15rem; }
+      .student .stuCom .list01 li .txt .wz {
+        color: #666;
+        line-height: 1.2;
+        padding-top: .12rem;
+        margin: 0 .1rem; }
+    .student .stuCom .list01 li.hover .txt {
+      height: 4.55rem; }
+  .student .stuCom .list02 {
+    overflow: visible; }
+    .student .stuCom .list02.pbAdd {
+      padding-bottom: 2.4rem; }
+    .student .stuCom .list02 li {
+      width: 100%;
+      height: 4.7rem;
+      color: #999;
+      box-sizing: border-box;
+      position: relative;
+      margin-bottom: .2rem; }
+      .student .stuCom .list02 li .item {
+        padding: .2rem;
+        padding-bottom: 0;
+        border: 1px solid #e5e5e5; }
+      .student .stuCom .list02 li .tp {
+        width: 100%;
+        height: 3.7rem;
+        position: relative; }
+        .student .stuCom .list02 li .tp .ico-play {
+          width: .96rem;
+          height: .96rem;
+          background-image: url("../../public/images/icon-play.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-size: contain; }
+      .student .stuCom .list02 li .txt {
+        width: 100%;
+        height: .8rem;
+        line-height: .8rem;
+        position: relative; }
+        .student .stuCom .list02 li .txt .ti {
+          width: 80%; }
+        .student .stuCom .list02 li .txt .more {
+          right: 0; }
+          .student .stuCom .list02 li .txt .more .ico {
+            width: .4rem;
+            height: .3rem;
+            background-image: url("../../public/images/thgIcoX.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: right top;
+            display: inline-block;
+            vertical-align: middle; }
+      .student .stuCom .list02 li .txBd {
+        width: 100%;
+        height: 2.6rem;
+        background-color: #fff;
+        padding: .2rem;
+        box-sizing: border-box;
+        border: 1px solid #f7f7f7;
+        position: absolute;
+        top: 4.7rem;
+        z-index: 2;
+        display: none; }
+        .student .stuCom .list02 li .txBd .ti {
+          line-height: 1.2; }
+      .student .stuCom .list02 li.open .txt .more .ico {
+        background-position: left top; }
+      .student .stuCom .list02 li.open .txBd {
+        display: block; }
+
+.audition .tab {
+  border-top: 1px solid #e5e5e5;
+  height: 1rem; }
+  .audition .tab ol li {
+    height: 1rem; }
+    .audition .tab ol li a {
+      color: #666; }
+    .audition .tab ol li.cur {
+      border-bottom-color: #56aae5; }
+      .audition .tab ol li.cur a {
+        color: #333; }
+.audition .audList li {
+  padding: 0 .2rem;
+  height: 1.2rem;
+  position: relative;
+  border-bottom: 1px solid #e5e5e5;
+  box-sizing: border-box; }
+  .audition .audList li .item {
+    display: block; }
+  .audition .audList li .tp {
+    width: .5rem;
+    left: .54rem; }
+  .audition .audList li .txt {
+    margin-left: 1.3rem;
+    color: #666;
+    padding-top: .2rem; }
+    .audition .audList li .txt .tName {
+      padding-left: .1rem;
+      width: 80%; }
+    .audition .audList li .txt .rateMax, .audition .audList li .txt .rateNum {
+      margin-top: .14rem; }
+    .audition .audList li .txt .rateMax {
+      width: 60%;
+      height: .3rem;
+      border: 1px solid #e5e5e5;
+      border-radius: .2rem;
+      box-sizing: border-box;
+      display: inline-block;
+      margin-right: .1rem;
+      position: relative; }
+      .audition .audList li .txt .rateMax .rateCur {
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: #5a99e5;
+        border-radius: .2rem 0 0 .2rem; }
+    .audition .audList li .txt .rateNum {
+      color: #5a99e5; }
+  .audition .audList li .ico {
+    width: .32rem;
+    height: .26rem;
+    background-image: url("../../public/images/aut-more.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    right: .5rem; }
+  .audition .audList li.do-not .txt .rateMax .rateCur {
+    background-color: transparent; }
+  .audition .audList li.do-not .txt .rateNum {
+    color: #666; }
+
+.videoPlay {
+  width: 100%;
+  height: 3rem;
+  background-color: #000; }
+
+.videoInf {
+  height: 0.8rem;
+  line-height: 0.8rem;
+  color: #666;
+  border-top: 1px solid #e5e5e5;
+  position: relative; }
+  .videoInf .txt {
+    padding: 0 .2rem;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative; }
+  .videoInf .ti {
+    width: 75%; }
+  .videoInf .infBtn {
+    position: absolute;
+    right: .2rem;
+    top: 0; }
+    .videoInf .infBtn .ico {
+      width: .4rem;
+      height: .3rem;
+      background-image: url("../../public/images/thgIcoX.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: right top;
+      display: inline-block;
+      vertical-align: middle; }
+    .videoInf .infBtn.hover .ico {
+      background-position: left top; }
+  .videoInf .txtBd {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: .8rem;
+    border-top: 1px solid #e5e5e5;
+    z-index: 999999;
+    display: none; }
+    .videoInf .txtBd .wrap {
+      background-color: rgba(0, 0, 0, 0.45);
+      width: 100%;
+      position: absolute;
+      left: 0;
+      top: 0; }
+    .videoInf .txtBd .wz {
+      width: 100%;
+      min-height: 2.4rem;
+      background-color: #fff;
+      box-sizing: border-box;
+      position: absolute;
+      z-index: 2; }
+      .videoInf .txtBd .wz p {
+        line-height: 1.2;
+        padding: .2rem;
+        color: #666; }
+
+.video .tab {
+  border-top: 1px solid #e5e5e5; }
+  .video .tab ol li a {
+    color: #666; }
+  .video .tab ol li.cur {
+    border-bottom-color: #56aae5; }
+    .video .tab ol li.cur a {
+      color: #333; }
+
+.videoList {
+  padding: 0 .2rem;
+  background-color: #fff; }
+  .videoList .list {
+    padding: .2rem 0; }
+  .videoList .list01 li {
+    height: 2.3rem;
+    padding: .15rem .1rem;
+    box-sizing: border-box;
+    position: relative;
+    margin-bottom: .1rem; }
+    .videoList .list01 li .tp {
+      float: left;
+      width: 3.2rem;
+      height: 2rem;
+      border-radius: .04rem;
+      position: relative; }
+      .videoList .list01 li .tp img {
+        display: block; }
+      .videoList .list01 li .tp .ico, .videoList .list01 li .tp .lab {
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: cover; }
+      .videoList .list01 li .tp .ico {
+        width: .8rem;
+        height: .7rem;
+        background-image: url("../../public/images/collectIcoX.png");
+        right: 0;
+        top: 0;
+        z-index: 1; }
+      .videoList .list01 li .tp .icoLove {
+        background-position: left top; }
+      .videoList .list01 li .tp .icoLove-hover {
+        background-position: right top; }
+      .videoList .list01 li .tp .lab {
+        width: .94rem;
+        height: .94rem;
+        left: 0;
+        top: 0;
+        background-size: contain; }
+      .videoList .list01 li .tp .labNew {
+        background-image: url("../../public/images/lab01.png"); }
+      .videoList .list01 li .tp .labTj {
+        background-image: url("../../public/images/lab02.png"); }
+    .videoList .list01 li .txt {
+      margin-left: 3.5rem;
+      height: 2rem;
+      position: relative; }
+      .videoList .list01 li .txt .tiName {
+        color: #666;
+        line-height: 1.2;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical; }
+      .videoList .list01 li .txt .quiz {
+        margin-top: .2rem;
+        color: #999; }
+      .videoList .list01 li .txt .bot {
+        position: absolute;
+        bottom: .1rem;
+        width: 100%;
+        height: 0.4rem;
+        line-height: 0.4rem;
+        box-sizing: border-box;
+        color: #999; }
+        .videoList .list01 li .txt .bot .moneyNo {
+          text-decoration: line-through; }
+          .videoList .list01 li .txt .bot .moneyNo .num {
+            color: #999; }
+        .videoList .list01 li .txt .bot .num {
+          color: #ff6e6e; }
+      .videoList .list01 li .txt .handle a {
+        color: #999; }
+      .videoList .list01 li .txt .ico {
+        width: .3rem;
+        height: .4rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-size: contain;
+        vertical-align: sub;
+        display: inline-block; }
+      .videoList .list01 li .txt .icoBuy {
+        background-image: url("../../public/images/iico01.png"); }
+      .videoList .list01 li .txt .icoPlay {
+        background-image: url("../../public/images/iico02.png"); }
+    .videoList .list01 li.cur {
+      -webkit-box-shadow: 0 0 0.12rem #7ec1ff;
+      -moz-box-shadow: 0 0 0.12rem #7ec1ff;
+      box-shadow: 0 0 0.12rem #7ec1ff; }
+  .videoList .sendArea textarea {
+    width: 100%;
+    height: 2rem;
+    padding: .1rem;
+    border: 1px solid #e5e5e5;
+    box-sizing: border-box; }
+  .videoList .sendArea .sendBtn {
+    width: 1.6rem;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    background-color: #ff6100;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    float: right;
+    margin-top: .1rem; }
+  .videoList .askList {
+    padding-top: 0; }
+  .videoList .myNotes {
+    padding-top: .1rem; }
+    .videoList .myNotes .item {
+      padding: .2rem 0; }
+
+.buyFalse .in {
+  width: 80%;
+  padding-top: 1.6rem;
+  text-align: center; }
+.buyFalse .falseIco {
+  width: .9rem;
+  display: inline-block; }
+  .buyFalse .falseIco img {
+    width: 100%;
+    display: block; }
+.buyFalse .tipTxt {
+  margin-top: .3rem;
+  font-size: .36rem; }
+  .buyFalse .tipTxt p {
+    line-height: 1.2; }
+.buyFalse .line {
+  width: 80%;
+  height: 1px;
+  background-color: #f1f1f1;
+  margin: .2rem auto; }
+.buyFalse .backLink {
+  color: #666;
+  line-height: .34rem; }
+  .buyFalse .backLink .ti span {
+    color: #ff6e6e; }
+  .buyFalse .backLink .ti a {
+    color: #56aae5; }
 
 /************ This scss created by author xiexkang 2017-06  end************/
 

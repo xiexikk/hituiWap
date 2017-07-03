@@ -19,8 +19,8 @@ strong { font-weight: normal; }
 
 ul, ol, li { list-style: none; }
 
-textarea{ outline:none;resize:none;}
-
+textarea{ outline:none;resize:none; -webkit-appearance: none; -moz-appearance: none;}
+input,button,textarea{ font-size: 0.24rem; font-family: "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, sans-serif; background-color: transparent; }
 /* 去除iPhone中默认的input样式 */
 input { resize: none; }
 input[type="text"], input[type="submit"], input[type="reset"], input[type="button"] { -webkit-appearance: none; }
