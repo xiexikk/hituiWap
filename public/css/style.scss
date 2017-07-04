@@ -117,21 +117,19 @@ $baseFontSize: 100px !default;
 //**------------------------------------------------------------------------------------------------------------------------------------------------------------**
 //markFix.scss
 .btn_mark {
-  width: 1rem; height: 1rem;background: rgba(0, 0, 0, 0.4); position: fixed;  bottom: 1.8rem;  right: .3rem;  @extend %borRadio50; z-index: 99999;
+  width: 1rem; height: 1rem;position: fixed;  bottom: 1.8rem;  right: .3rem;  @extend %borRadio50; z-index: 99999;
   .btn_mark_bg {  width: 1rem; height: 1rem; position: fixed;  bottom: 1.8rem;  right: .3rem; @extend %borRadio50;
-    z-index: 99999;  background: rgba(0, 0, 0, 0.4);
-    @include transition(all .5s);
+    z-index: 99999;  background: rgba(0, 0, 0, 0.4);  @include transition(all .5s);
   }
   .btn_menu {
     width: 1rem; height: 1rem; position: fixed;  bottom: 1.8rem;  right: .3rem; @extend %borRadio50;  z-index: 9999999;
     opacity: 0;  @include transition(all .3s .3s);
   }
   .ico{ width: .5rem; height: .5rem; @include bgPara(); @extend %translateXY;  }
-  .ico00{  background-image: url("#{$imgUrl}/icon-00.png"); opacity: .8;}
-  .ico01{  background-image: url("#{$imgUrl}/icon-01.png");}
-  .ico02{  background-image: url("#{$imgUrl}/icon-02.png");}
-  .ico03{  background-image: url("#{$imgUrl}/icon-03.png");}
-  .ico04{  background-image: url("#{$imgUrl}/icon-04.png");}
+  .ico00{ opacity: .8;}
+  @for $i from 0 through 4 {
+    .ico0#{$i}{ background-image: url("#{$imgUrl}/icon-0#{$i}.png");}
+  }
   .btn_menu.btn_my {
     background: #23abf1;
   }
@@ -144,8 +142,8 @@ $baseFontSize: 100px !default;
   .btn_menu.btn_video {
     background: #f8ba44;
   }
-  .btn_home { @include transition(all .5s);width: 1rem; height: 1rem; position: fixed; bottom: 1.8rem;  right: .3rem;
-    @extend %borRadio50;  z-index: 999999; }
+  .btn_home { width: 1rem; height: 1rem; @extend %borRadio50; background: rgba(0, 0, 0, .4); position: fixed; bottom: 1.8rem;  right: .3rem;
+    @include transition(all .5s);   z-index: 999999999999; }
   &.active{
     .btn_mark_bg { width: 100%;  height: 100%;  bottom: 0;  right: 0;  border-radius: 0; }
     .btn_home { @include transform(rotate(45deg)); }
@@ -157,6 +155,7 @@ $baseFontSize: 100px !default;
     .btn_menu.btn_video { @include transform(translate3d(-1.4rem, -.8rem, 0)); }
   }
 }
+
 //bodyOf.scss
 .bodyOf{ @extend %ovrd; height:100%;}
 
