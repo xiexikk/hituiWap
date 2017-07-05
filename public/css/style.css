@@ -2871,7 +2871,9 @@ input, textarea {
           .mainCom .content .kcIn .kcR .kcList ul .cTime .num, .mainCom .content .kcIn .kcR .kcList ul .cGold .num {
             color: #ff6100; }
 .mainCom .content .courLists {
-  border-top: 1px solid #e5e5e5; }
+  border-top: 1px solid #e5e5e5;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; }
 .mainCom .content .askList {
   padding-top: 0;
   border-top: 1px solid #e5e5e5; }

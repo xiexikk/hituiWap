@@ -302,7 +302,7 @@ $(function(){
 
 
 //index.html 热门视频
-+function () {
+/*+function () {
     var $bd      = $('#myCourList'),                                   //主区域
         $ulBox  = $bd.find('ul'),                                        //ul区
         $lis    = $ulBox.find('li'),                                     //每个li区
@@ -331,7 +331,7 @@ $(function(){
         }
         $ulBox.stop().animate({"margin-left": -(liWidth + ml) * i}, 0.25e3);
     }
-}();
+}();*/
 
 // myBasicInf.html
 ~function () {

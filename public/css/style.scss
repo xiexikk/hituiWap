@@ -1414,7 +1414,7 @@ $baseFontSize: 100px !default;
         }
       }
     }
-    .courLists{ border-top: 1px solid $gray;}
+    .courLists{ border-top: 1px solid $gray;overflow-x: auto;  -webkit-overflow-scrolling: touch; }
     .askList{ padding-top: 0;border-top: 1px solid $gray; }
     .notBanCom{ @extend %ovrd;
       .notBan{ @extend %ovrd; }
