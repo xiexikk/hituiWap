@@ -12,16 +12,16 @@ input, textarea {
 .myBtn, .myHead .in .head .txt .lab, .myAccount .accHd .bot a, .myWithdraw .draw .drawInpCom .inp input, .myWithdraw .draw .drawInpCom .inp .selBank, .myBankEdit .addInpCom .inp input, .myBankEdit .addInpCom .inp select, .myBankEdit .addInpCom .inp.yzmInp .getCode, .myInfor .han .del, .proList .tp, .theSearch .inp, .courList li, .videoList .list01 li {
   border-radius: .06rem; }
 
-.bodyOf, .myHead .in, .myHead .in .head, .myHead .in .head .tp, .myHead .in .list, .myHead .in .list ul, .myList, .myList .in, .myList .in .listUl, .myBasic, .myInpCom, .myInpCom .inp, .myGrade, .myGrade .itemCom, .myGrade .itemCom ul, .myGrade .itemCom ul li, .tab, .myAccount, .myAccount .accHd, .myAccount .accHd .bot, .myAccount .accChg, .myAccount .accChg .list, .myTradeDet, .reList, .reList li, .myWithdraw, .myWithdraw .draw .drawInpCom, .myWithdraw .draw .drawInpCom .inp, .withRate, .myWithDet, .myBank, .myBank .list, .myBank .list ul, .myAddress, .myAddress .addressList, .myAddress .addressList ul, .myAddress .addressList li, .myAddress .addressList .hd, .myAddress .addressList .th, .myAddEdit, .myBankEdit, .myAddEdit .addInpCom, .myBankEdit .addInpCom, .myAddEdit .addInpCom .inp, .myBankEdit .addInpCom .inp, .myAddEdit .addInpCom .han, .myBankEdit .addInpCom .han, .myCollect, .askList, .collList, .askList ul, .collList ul, .askList ul li, .collList ul li, .askList ul .item .txt .hand, .collList ul .item .txt .hand, .collList .ul02 .tx, .collList .ul02 .bot, .mySetting, .mySetting .setList ul, .mySetting .setList ul li, .myWxBind, .myWxBind .in, .myWxBind .tp, .myPhoneBind, .myEmailBind, .myPhoneBind .in > *, .myEmailBind .in > *, .myInps, .myInps .inp, .myPassword, .myPortrait, .myPortrait .faceList, .myPortrait .faceList li .tp, .myInfor, .myInfor .inList, .myInfor .inList ul, .myInfor .inList li .ico, .myRecharge, .myRecharge .money > *, .myRecharge .paySel, .myRecharge .recStyle, .myRecharge .recStyle ul, .myRecharge .recStyle ul li .tp, .myRecharge .reSuc, .selList, .selList ul, .recDet, .txtExp, .myEnterCourses .courSel, .recSettle, .recSettle .curMoney, .countBot, .countBot .in, .myJoinVideo, .proList, .proList ul, .proList .tp, .proHandle, .addList, .addList ul, .addList ul .item, .addList ul .item .txH, .vidInf, .vidInf .bd, .vidInf .bd ul, .vidInf .bd ul li, .vidInf .bd ul li a, .myRank, .myRank .rankSel .bdTab, .myRank .rankSel .bdTab ul, .myNotes, .myNotes .item, .myNotes .item > *, .myNotes .item .bot .han, .myNotes .item .bot .han .time, .myNotes .txtArea, .myQuestion, .myContactUs, .notice, .myContactUs .item, .notice .item, .myContactUs .dzDet, .notice .dzDet, .myContactUs .dzDet li, .notice .dzDet li, .myContactUs .msnInp, .notice .msnInp, .myContactUs .msnInp .inp, .notice .msnInp .inp, .myContactUs #myMap, .notice #myMap, .myContactUs .moduleCom, .notice .moduleCom, .myContactUs .moduleCom .module, .notice .moduleCom .module, .loginReg, .logRegList, .logRegList ul, .logRegList .links, .logInpCom, .logInpCom .inp, .findPwd, .findPwd .pwdInpCom, .findPwd .sucTip .tp, .protocol, .theSearch, .courses, .courses .findSel, .courses .findSel ol, .courses .findSel .listBd, .courses .searchNo, .courses .searchNo .tp, .courList ul, .courList .tp, .footNav .nav, .header .logo a, .banner .slideBox .hd li, .mainCom, .mainCom .gfNot, .mainCom .affList, .mainCom .affList ul li .tp, .mainCom .column, .mainCom .column ol, .mainCom .content, .mainCom .content .kcIn, .mainCom .content .kcIn .kcR, .mainCom .content .kcIn .kcR .kcList, .mainCom .content .kcIn .kcR .kcList ul, .mainCom .content .notBanCom, .mainCom .content .notBanCom .notBan, .mainCom .content .ewmCom, .mainCom .content .ewmCom .ewmList, .mainCom .content .ewmCom .ewmList .item .pic, .noticeDet, .notice .moduleComs ul, .student, .student .stuCom, .student .stuCom .list, .student .stuCom .list01 li .tp, .student .stuCom .list01 li .txt, .audition, .audition .audList, .audition .audList ul, .audition .audList li .txt .rateMax, .video, .videoList, .videoList .list01 li .tp, .videoList .sendArea, .buyFalse, .buyFalse .backLink {
+.bodyOf, .myHead .in, .myHead .in .head, .myHead .in .head .tp, .myHead .in .list, .myHead .in .list ul, .myList, .myList .in, .myList .in .listUl, .myBasic, .myInpCom, .myInpCom .inp, .myGrade, .myGrade .itemCom, .myGrade .itemCom ul, .myGrade .itemCom ul li, .tab, .myAccount, .myAccount .accHd, .myAccount .accHd .bot, .myAccount .accChg, .myAccount .accChg .list, .myTradeDet, .reList, .reList li, .myWithdraw, .myWithdraw .draw .drawInpCom, .myWithdraw .draw .drawInpCom .inp, .withRate, .myWithDet, .myBank, .myBank .list, .myBank .list ul, .myAddress, .myAddress .addressList, .myAddress .addressList ul, .myAddress .addressList li, .myAddress .addressList .hd, .myAddress .addressList .th, .myAddEdit, .myBankEdit, .myAddEdit .addInpCom, .myBankEdit .addInpCom, .myAddEdit .addInpCom .inp, .myBankEdit .addInpCom .inp, .myAddEdit .addInpCom .han, .myBankEdit .addInpCom .han, .myCollect, .askList, .collList, .askList ul, .collList ul, .askList ul li, .collList ul li, .askList ul .item .txt .hand, .collList ul .item .txt .hand, .collList .ul02 .tx, .collList .ul02 .bot, .mySetting, .mySetting .setList ul, .mySetting .setList ul li, .myWxBind, .myWxBind .in, .myWxBind .tp, .myPhoneBind, .myEmailBind, .myPhoneBind .in > *, .myEmailBind .in > *, .myInps, .myInps .inp, .myPassword, .myPortrait, .myPortrait .faceList, .myPortrait .faceList li .tp, .myInfor, .myInfor .inList, .myInfor .inList ul, .myInfor .inList li .ico, .myRecharge, .myRecharge .money > *, .myRecharge .paySel, .myRecharge .recStyle, .myRecharge .recStyle ul, .myRecharge .recStyle ul li .tp, .myRecharge .reSuc, .selList, .selList ul, .recDet, .txtExp, .myEnterCourses .courSel, .recSettle, .recSettle .curMoney, .countBot, .countBot .in, .myJoinVideo, .proList, .proList ul, .proList .tp, .proHandle, .addList, .addList ul, .addList ul .item, .addList ul .item .txH, .vidInf, .vidInf .bd, .vidInf .bd ul, .vidInf .bd ul li, .vidInf .bd ul li a, .myRank, .myRank .rankSel .bdTab, .myRank .rankSel .bdTab ul, .myNotes, .myNotes .item, .myNotes .item > *, .myNotes .item .bot .han, .myNotes .item .bot .han .time, .myNotes .txtArea, .myQuestion, .myContactUs, .notice, .myContactUs .item, .notice .item, .myContactUs .dzDet, .notice .dzDet, .myContactUs .dzDet li, .notice .dzDet li, .myContactUs .msnInp, .notice .msnInp, .myContactUs .msnInp .inp, .notice .msnInp .inp, .myContactUs #myMap, .notice #myMap, .myContactUs .moduleCom, .notice .moduleCom, .myContactUs .moduleCom .module, .notice .moduleCom .module, .loginReg, .logRegList, .logRegList ul, .logRegList .links, .logInpCom, .logInpCom .inp, .findPwd, .findPwd .pwdInpCom, .findPwd .sucTip .tp, .protocol, .theSearch, .courses, .courses .findSel, .courses .findSel ol, .courses .findSel .listBd, .courses .searchNo, .courses .searchNo .tp, .courList ul, .courList .tp, .footNav .nav, .header .logo a, .banner .slideBox .hd li, .mainCom, .mainCom .gfNot, .mainCom .affList, .mainCom .affList ul li .tp, .mainCom .column, .mainCom .column ol, .mainCom .content, .mainCom .content .kcIn, .mainCom .content .kcIn .kcR, .mainCom .content .kcIn .kcR .kcList, .mainCom .content .kcIn .kcR .kcList ul, .mainCom .content .notBanCom, .mainCom .content .notBanCom .notBan, .mainCom .content .ewmCom, .mainCom .content .ewmCom .ewmList, .mainCom .content .ewmCom .ewmList .item .pic, .noticeDet, .notice .moduleComs ul, .student, .student .stuCom, .student .stuCom .list, .student .stuCom .list01 li .tp, .student .stuCom .list01 li .txt, .audition, .audition .audList, .audition .audList ul, .audition .audList li .txt .rateMax, .video, .videoList, .videoList .list01 li .tp, .videoList .sendArea, .buyFalse, .buyFalse .backLink, .downLoad, .downLoad .btnCom, .downLoad .btnCom ul, .downLoad .module, .downLoad .module .pic, .downLoad .module .txtIn {
   overflow: hidden; }
 
-.withRate .tp, .myRank .rankSel .bdTab, .courList .item, .buyFalse .in {
+.withRate .tp, .myRank .rankSel .bdTab, .courList .item, .buyFalse .in, .downLoad .dl-con .tp, .downLoad .btnCom li {
   margin: 0 auto; }
 
 .myBasic .remTip, .myInpCom .inp, .myGrade .itemCom .item, .myAccount .accChg .list ul .tit, .myAccount .accChg .list ul .item, .reList, .myWithdraw .in, .myAddEdit .addInpCom .inp, .myBankEdit .addInpCom .inp, .mySetting .setList ul li, .myPortrait .faceList, .myInfor .inList li, .myInfor .han, .myRecharge .recStyle, .recSettle, .vidInf, .myRank {
   padding: 0 .4rem; }
 
-.myHead .in .head .tp img, .mySetting .setList ul li > a, .myRecharge .recStyle ul li .tp, .courList .tp a, .courList .tp img, .mainCom .content .kcIn .kcL .link, .mainCom .content .notBanCom .banIn .tp, .mainCom .content .notBanCom .banIn .tp img, .mainCom .content .ewmCom .ewmList .item .pic img, .notice .moduleComs ul .tp img, .student .stuCom .list01 li .tp img, .student .stuCom .list02 li .tp img, .audition .audList li .item, .videoList .list01 li .tp img {
+.myHead .in .head .tp img, .mySetting .setList ul li > a, .myRecharge .recStyle ul li .tp, .courList .tp a, .courList .tp img, .mainCom .content .kcIn .kcL .link, .mainCom .content .notBanCom .banIn .tp, .mainCom .content .notBanCom .banIn .tp img, .mainCom .content .ewmCom .ewmList .item .pic img, .notice .moduleComs ul .tp img, .student .stuCom .list01 li .tp img, .student .stuCom .list02 li .tp img, .audition .audList li .item, .videoList .list01 li .tp img, .downLoad .dl-con .tp img {
   width: 100%;
   height: 100%; }
 
@@ -3363,6 +3363,75 @@ input, textarea {
     color: #ff6e6e; }
   .buyFalse .backLink .ti a {
     color: #56aae5; }
+
+.downLoad {
+  width: 100%;
+  color: #fff; }
+  .downLoad .dl-con {
+    padding-top: .5rem;
+    text-align: center; }
+    .downLoad .dl-con.dl-con2 {
+      padding-top: 1.2rem; }
+    .downLoad .dl-con .tp {
+      width: 36.4%;
+      height: auto; }
+    .downLoad .dl-con .txt {
+      margin-top: .45rem; }
+      .downLoad .dl-con .txt .th {
+        font-size: .56rem; }
+      .downLoad .dl-con .txt .p1 {
+        font-size: .3rem;
+        margin-top: .25rem; }
+        .downLoad .dl-con .txt .p1 > * {
+          margin-right: .1rem; }
+      .downLoad .dl-con .txt .p2 {
+        font-size: .28rem; }
+      .downLoad .dl-con .txt .line {
+        width: 61%;
+        height: 1px;
+        background-color: #fff;
+        display: inline-block;
+        margin: .25rem 0; }
+  .downLoad .btnCom {
+    margin-top: .8rem; }
+    .downLoad .btnCom li {
+      width: 48.3%;
+      height: auto;
+      margin-bottom: .15rem; }
+      .downLoad .btnCom li a {
+        display: block; }
+  .downLoad .module {
+    width: 100%;
+    color: #333;
+    margin-top: 2.1rem; }
+    .downLoad .module.mod-01 {
+      margin-top: .2rem; }
+    .downLoad .module.mod-02 {
+      margin-top: 1.3rem; }
+      .downLoad .module.mod-02 .txtIn {
+        padding-left: 2.55rem; }
+    .downLoad .module.mod-03 .txtIn {
+      padding-left: 2.3rem; }
+    .downLoad .module.mod-04 {
+      margin-top: 2.1rem; }
+      .downLoad .module.mod-04 .txtIn {
+        padding-left: 2rem; }
+    .downLoad .module.mod-05 {
+      margin-top: 1.9rem; }
+      .downLoad .module.mod-05 .txtIn {
+        padding-left: 2.1rem; }
+    .downLoad .module .pic {
+      width: 100%;
+      margin-top: .2rem; }
+      .downLoad .module .pic img {
+        width: 100%;
+        height: auto; }
+    .downLoad .module .txtIn .tit {
+      font-size: .4rem;
+      margin-bottom: .4rem; }
+    .downLoad .module .txtIn .pp {
+      color: #666;
+      margin-bottom: .15rem; }
 
 /************ This scss created by author xiexkang 2017-06  end************/
 

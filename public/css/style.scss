@@ -1677,6 +1677,51 @@ $baseFontSize: 100px !default;
   }
 }
 
+//downLoad.html
+.downLoad{ width: 100%; @extend %ovrd; color: $white;
+  .dl-con{ padding-top: .5rem; text-align: center;
+    &.dl-con2{ padding-top:1.2rem;}
+    .tp{ width: 36.4%; height: auto; @extend %m0a;
+      img{ @extend %widHig; }
+    }
+    .txt{ margin-top: .45rem;
+      .th{ font-size: .56rem;}
+      .p1{ font-size: .3rem; margin-top: .25rem;
+        >*{ margin-right: .1rem;}
+      }
+      .p2{ font-size: .28rem;}
+      .line{ width: 61%; height: 1px; background-color: $white; display: inline-block; margin: .25rem 0;}
+    }
+  }
+  .btnCom{ margin-top: .8rem;@extend %ovrd;
+    ul{ @extend %ovrd;}
+    li{ width: 48.3%; height: auto; @extend %m0a; margin-bottom: .15rem;
+      a{ display: block;}
+    }
+  }
+  .module{ width: 100%;  @extend %ovrd; color: $base-color; margin-top:2.1rem;
+    &.mod-01{ margin-top: .2rem;}
+    &.mod-02{ margin-top: 1.3rem;
+      .txtIn{ padding-left: 2.55rem;}
+    }
+    &.mod-03{
+      .txtIn{ padding-left: 2.3rem;}
+    }
+    &.mod-04{ margin-top:2.1rem;
+      .txtIn{ padding-left: 2rem;}
+    }
+    &.mod-05{ margin-top: 1.9rem;
+      .txtIn{ padding-left: 2.1rem;}
+    }
+    .pic{ width: 100%; margin-top: .2rem; @extend %ovrd;
+      img{ width: 100%; height: auto;}
+    }
+    .txtIn{ @extend %ovrd;
+      .tit{ font-size: .4rem; margin-bottom: .4rem; }
+      .pp{ color: #666; margin-bottom: .15rem;}
+    }
+  }
+}
 /************ This scss created by author xiexkang 2017-06  end************/
 
 
