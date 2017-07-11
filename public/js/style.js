@@ -205,14 +205,16 @@ $(function(){
         $(couLi+' .tp').height(couTpWid/1.6);
 
         // index.html
-        var $myCouList = $("#myCourList"),
+        $("#myCourList li").css('margin-bottom',0);
+        // index.html
+      /*  var $myCouList = $("#myCourList"),
             $myCouListUl =  $("#myCourList ul"),
             $myCouListLi = $("#myCourList li"),
             couLiNum = $myCouListLi.length;
         $myCouListLi.css({"marginRight":couLiMr,"marginBottom":couLiMr});
         $("#myCourList li:last-of-type").css({"marginRight":0});
         $myCouListUl.width((couLiWid+couLiMr)*couLiNum);
-        $myCouListUl.height(couLiHig);
+        $myCouListUl.height(couLiHig);*/
 
         //student.html
         var stLi =  '.stuCom .list01 li';
@@ -575,7 +577,7 @@ $(function(){
     $('.js-wz').each(function (i, e) {
         var $e         = $(e),
             text       = $e.text(),
-            simpleText = text.slice(0, 18) + '...';
+            simpleText = text.slice(0, 20) + '...';
         $e.attr({'data-simple': simpleText, 'data-text': text}).text(simpleText);   // 初始化
     });
     $('.js-text').on('click', function () {

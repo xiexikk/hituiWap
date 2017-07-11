@@ -1272,7 +1272,7 @@ $baseFontSize: 100px !default;
 }
 .courList{ padding: .2rem;
   ul{ @extend %ovrd;}
-  li{ width: 48%; height: 3.66rem; background-color:$white; @extend %borRadio6; float: $fl; margin-bottom: .4rem; position: relative;
+  li{ width: 48%; height: 3.66rem; background-color:$white; @extend %borRadio6; float: $fl; position: relative;
     &:nth-of-type(odd){ margin-right: 4%;}
   }
   .item{ padding:.15rem 0; width: 95%; @extend %m0a;}
@@ -1288,7 +1288,7 @@ $baseFontSize: 100px !default;
     .labTj{ background-image: url("#{$imgUrl}/lab02.png"); }
   }
   .txt{ padding-top: .2rem;
-    .tiName{ @include ellipsis(2);
+    .tiName{ @include ellipsis(2); text-align: left;
       a{ color: #666; line-height: $txt-lineHight; }
     }
     .bot{ position: absolute; bottom: .1rem; left:2.5%; width:95%; @include lineHig(.4rem); @include box-sizing(); color: #999;
@@ -1329,19 +1329,18 @@ $baseFontSize: 100px !default;
     .loginLink:after{ @extend %pseudo; width: 1px; height: .26rem; background-color: $main-color; margin: -2px .2rem 0 .25rem; }
   }
 }
-.banner .slideBox{ position:relative;
-  .hd{ bottom:.1rem; @extend %translateX;  z-index:2;
-    li{width:.2rem; height:.2rem; background-color: #ebebeb; @extend %borRadio50; text-indent:-99999px;
-      margin:0 .1rem; display:inline-block; @extend %ovrd;
-      &.on{ background-color:$main-color;}
-    }
-  }
-  .bd{ position:relative; z-index:0;
-    li{ position:relative; text-align:center;
-      img{ width:100%;}
-    }
-  }
+
+.banner{
+  .swiper-pagination{ bottom:.1rem !important;}
+  .swiper-pagination-bullet{ width:.2rem; height:.2rem; background-color: #ebebeb; margin:0 .1rem !important; opacity: 1;}
+  .swiper-pagination-bullet-active{ background-color:$main-color;}
 }
+.swiper-containers {
+  width: 100%;
+  height: 100%;
+ ul{ overflow: visible;}
+}
+
 .mainCom{ @extend %ovrd;
   .gfNot{ padding-left:.2rem; height: .8rem; @extend %ovrd; background-color: #f5f5f5; position: relative;
     .tit{ @include lineHig(.8rem); float: $fl;
@@ -1414,7 +1413,7 @@ $baseFontSize: 100px !default;
         }
       }
     }
-    .courLists{ border-top: 1px solid $gray;overflow-x: auto;  -webkit-overflow-scrolling: touch; }
+    .courLists{ border-top: 1px solid $gray; /*overflow-x: auto; */ -webkit-overflow-scrolling: touch; }
     .askList{ padding-top: 0;border-top: 1px solid $gray; }
     .notBanCom{ @extend %ovrd;
       .notBan{ @extend %ovrd; }
@@ -1511,7 +1510,7 @@ $baseFontSize: 100px !default;
         .txt{ @extend %ovrd; width: 100%; height:1.44rem; padding-bottom: .1rem;  @include box-sizing(); border: 1px solid $gray; border-top: none;
           background-color: $white; position: absolute; left: 0;z-index: 99;
           .tName{ font-size: .32rem; text-align: center; padding-top: .15rem;}
-          .wz{ color: #666; line-height:$txt-lineHight; padding-top: .12rem; margin: 0 .1rem;}
+          .wz{ color: #666;font-size: .26rem; line-height:$txt-lineHight; padding-top: .12rem; margin: 0 .1rem;}
         }
         &.hover{
           .txt{ height: 4.55rem;}
@@ -1685,7 +1684,7 @@ $baseFontSize: 100px !default;
       img{ @extend %widHig; }
     }
     .txt{ margin-top: .45rem;
-      .th{ font-size: .56rem;}
+      .th{ font-size: .56rem; }
       .p1{ font-size: .3rem; margin-top: .25rem;
         >*{ margin-right: .1rem;}
       }

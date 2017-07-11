@@ -14,6 +14,7 @@
     <title>嗨推学院-知名网络推广实战培训平台</title>
     <link rel="stylesheet" href="../../public/css/base.css">
     <link rel="stylesheet" href="../../public/css/style.css">
+    <link rel="stylesheet" href="../../public/css/swiper-3.4.2.min.css">
 </head>
 <body style="background-color: #fff;">
 
@@ -34,34 +35,25 @@
 
 <!--banner-->
 <section class="banner">
-    <div id="slideBox" class="slideBox">
-        <div class="bd">
-            <ul>
-                <li>
-                    <a href="javascript:;" class="pic" >
-                        <img src="../../public/images/banner01.jpg" alt="海报展示图">
-                    </a>
-                </li>
-                <li>
-                    <a href="javascript:;" class="pic" >
-                        <img src="../../public/images/banner02.jpg" alt="海报展示图">
-                    </a>
-                </li>
-                <li>
-                    <a href="javascript:;" class="pic" >
-                        <img src="../../public/images/banner03.jpg" alt="海报展示图">
-                    </a>
-                </li>
-                <li>
-                    <a href="javascript:;" class="pic" >
-                        <img src="../../public/images/banner04.jpg" alt="海报展示图">
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="hd hor_center">
-            <ul></ul>
-        </div>
+    <div class="swiper-container" id="swiper-banner">
+        <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+                <a href="javascript:;" class="pic" >
+                    <img src="../../public/images/banner01.jpg" alt="海报展示图">
+                </a>
+            </li>
+            <li class="swiper-slide">
+                <a href="javascript:;" class="pic" >
+                    <img src="../../public/images/banner02.jpg" alt="海报展示图">
+                </a>
+            </li>
+            <li class="swiper-slide">
+                <a href="javascript:;" class="pic" >
+                    <img src="../../public/images/banner03.jpg" alt="海报展示图">
+                </a>
+            </li>
+        </ul>
+        <div class="swiper-pagination"></div>
     </div>
 </section>
 
@@ -310,116 +302,91 @@
             <h4 class="tit">热门视频</h4>
         </div>
         <div class="courList courLists" id="myCourList">
-            <ul>
-                <li>
-                    <div class="item">
-                        <div class="tp">
-                            <a href="javascript:;">
-                                <img class="lazy" src="../../public/images/loading.gif" data-src="../../public/images/courTp01.png" alt="" title="">
-                            </a>
-                            <i data-id="" class="ico icoLove"></i>
-                            <span class="lab"></span>
-                        </div>
-                        <div class="txt">
-                            <p class="tiName">
-                                <a href="javascript:;">1.如何选择有效的百度贴吧进行营销如何选择</a>
-                            </p>
-                            <div class="bot">
-                                <div class="money fl ">
-                                    <em class="num">10.00</em>学习币
-                                </div>
-                                <div class="handle fr">
-                                    <a href="javascript:;">
-                                        <i class="ico icoBuy"></i>
-                                        <span class="ti00">购买</span>
-                                    </a>
+            <div class="swiper-container swiper-containers" id="swiper-courses">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                        <div class="item">
+                            <div class="tp">
+                                <a href="javascript:;">
+                                    <img class="lazy" src="../../public/images/loading.gif" data-src="../../public/images/courTp01.png" alt="" title="">
+                                </a>
+                                <i data-id="" class="ico icoLove"></i>
+                                <span class="lab"></span>
+                            </div>
+                            <div class="txt">
+                                <p class="tiName">
+                                    <a href="javascript:;">1.如何选择有效的百度贴吧进行营销如何选择</a>
+                                </p>
+                                <div class="bot">
+                                    <div class="money fl ">
+                                        <em class="num">10.00</em>学习币
+                                    </div>
+                                    <div class="handle fr">
+                                        <a href="javascript:;">
+                                            <i class="ico icoBuy"></i>
+                                            <span class="ti00">购买</span>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="item">
-                        <div class="tp">
-                            <a href="javascript:;">
-                                <img class="lazy" src="../../public/images/loading.gif" data-src="../../public/images/courTp01.png" alt="" title="">
-                            </a>
-                            <i data-id="" class="ico icoLove icoLove-hover"></i>
-                            <span class="lab"></span>
-                        </div>
-                        <div class="txt">
-                            <p class="tiName">
-                                <a href="javascript:;">2.如何选择有效的百度贴吧进行营销如何选择</a>
-                            </p>
-                            <div class="bot">
-                                <div class="money fl ">
-                                    <em class="num">10.00</em>学习币
-                                </div>
-                                <div class="handle fr">
-                                    <a href="javascript:;">
-                                        <i class="ico icoPlay"></i>
-                                        <span class="ti00">播放</span>
-                                    </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="item">
+                            <div class="tp">
+                                <a href="javascript:;">
+                                    <img class="lazy" src="../../public/images/loading.gif" data-src="../../public/images/courTp01.png" alt="" title="">
+                                </a>
+                                <i data-id="" class="ico icoLove"></i>
+                                <span class="lab"></span>
+                            </div>
+                            <div class="txt">
+                                <p class="tiName">
+                                    <a href="javascript:;">2.如何选择有效的百度贴吧进行营销如何选择</a>
+                                </p>
+                                <div class="bot">
+                                    <div class="money fl ">
+                                        <em class="num">10.00</em>学习币
+                                    </div>
+                                    <div class="handle fr">
+                                        <a href="javascript:;">
+                                            <i class="ico icoBuy"></i>
+                                            <span class="ti00">购买</span>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="item">
-                        <div class="tp">
-                            <a href="javascript:;">
-                                <img class="lazy" src="../../public/images/loading.gif" data-src="../../public/images/courTp01.png" alt="" title="">
-                            </a>
-                            <i data-id="" class="ico icoLove"></i>
-                            <span class="lab"></span>
-                        </div>
-                        <div class="txt">
-                            <p class="tiName">
-                                <a href="javascript:;">3.如何选择有效的百度贴吧进行营销如何选择</a>
-                            </p>
-                            <div class="bot">
-                                <div class="money fl ">
-                                    <em class="num">10.00</em>学习币
-                                </div>
-                                <div class="handle fr">
-                                    <a href="javascript:;">
-                                        <i class="ico icoBuy"></i>
-                                        <span class="ti00">购买</span>
-                                    </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="item">
+                            <div class="tp">
+                                <a href="javascript:;">
+                                    <img class="lazy" src="../../public/images/loading.gif" data-src="../../public/images/courTp01.png" alt="" title="">
+                                </a>
+                                <i data-id="" class="ico icoLove"></i>
+                                <span class="lab"></span>
+                            </div>
+                            <div class="txt">
+                                <p class="tiName">
+                                    <a href="javascript:;">3.如何选择有效的百度贴吧进行营销如何选择</a>
+                                </p>
+                                <div class="bot">
+                                    <div class="money fl ">
+                                        <em class="num">10.00</em>学习币
+                                    </div>
+                                    <div class="handle fr">
+                                        <a href="javascript:;">
+                                            <i class="ico icoBuy"></i>
+                                            <span class="ti00">购买</span>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="item">
-                        <div class="tp">
-                            <a href="javascript:;">
-                                <img class="lazy" src="../../public/images/loading.gif" data-src="../../public/images/courTp01.png" alt="" title="">
-                            </a>
-                            <i data-id="" class="ico icoLove icoLove-hover"></i>
-                            <span class="lab"></span>
-                        </div>
-                        <div class="txt">
-                            <p class="tiName">
-                                <a href="javascript:;">4.如何选择有效的百度贴吧进行营销如何选择</a>
-                            </p>
-                            <div class="bot">
-                                <div class="money fl ">
-                                    <em class="num">10.00</em>学习币
-                                </div>
-                                <div class="handle fr">
-                                    <a href="javascript:;">
-                                        <i class="ico icoPlay"></i>
-                                        <span class="ti00">播放</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="content">
@@ -672,20 +639,28 @@
 <script src="../../public/js/zepto_plus.js"></script>
 <script src="../../public/js/jquery-1.11.3.min.js"></script>
 <script src="../../public/js/base.js"></script>
+<script src="../../public/js/swiper-3.4.2.min.js"></script>
 <script src="../../public/js/style.js"></script>
-<script src="../../public/js/TouchSlide.js"></script>
-<script type="text/javascript">
-    TouchSlide({
-        slideCell:"#slideBox",
-        titCell:".hd ul",
-        mainCell:".bd ul",
-        effect:"leftLoop",
-        delayTime:400,
-        interTime:3000,
-        autoPage:true,
-        autoPlay:true
+<script>
+    var swiper = new Swiper('#swiper-banner', {
+        pagination: '.swiper-pagination',
+        slidesPerView: 1,
+        paginationClickable: true,
+        spaceBetween: 0,
+        loop: true,
+        autoplay : 3000,
+        autoplayDisableOnInteraction : false,
     });
 </script>
-
+<script>
+    var swiper = new Swiper('#swiper-courses', {
+        slidesPerView: 2,
+        paginationClickable: true,
+        spaceBetween: 20,
+        loop: true,
+        autoplay : 3000,
+        autoplayDisableOnInteraction : false,
+    });
+</script>
 </body>
 </html>
