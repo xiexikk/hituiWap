@@ -2,24 +2,81 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b299fc1e-ec77-46c0-889c-d90ebdc883b4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/swiper-3.4.2.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/swiper-3.4.2.min.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/TouchSlide.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/app-01.png" afterPath="$PROJECT_DIR$/public/images/app-01.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/app-02.png" afterPath="$PROJECT_DIR$/public/images/app-02.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/app-03.png" afterPath="$PROJECT_DIR$/public/images/app-03.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/app-04.png" afterPath="$PROJECT_DIR$/public/images/app-04.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/app-05.png" afterPath="$PROJECT_DIR$/public/images/app-05.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/app-btn01.png" afterPath="$PROJECT_DIR$/public/images/app-btn01.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/app-btn02.png" afterPath="$PROJECT_DIR$/public/images/app-btn02.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/app-btn03.png" afterPath="$PROJECT_DIR$/public/images/app-btn03.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/dl-bg.png" afterPath="$PROJECT_DIR$/public/images/dl-bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/bof-ico.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/bof-tp.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/boss-tp.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/bt-lab01.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/bt-lab02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/bt-lab03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/bt-lab04.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/cons1-bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/cons2-bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/cons3-bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/cons4-bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/cons5-bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/d-biaoti.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/d-biaoti02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/d-biaoti03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/d-biaoti04.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/d-biaoti05.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/d-wz.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/decorate-line.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/dou-ico.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/hhico01.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/hhico02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/hhico03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/intro-con22-bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/logo-pic.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/name-bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/obot-bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/obot-bg02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/obot-bg03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/obot-bg05.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/ot-ico.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/ot-vid-bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/oth-bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/oth-bg02-qiu.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/oth-bg02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/oth-bg03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/oth-bg04.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/oth-bg05.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/oth-ico01.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/oth-ico02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/oth-ico03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/oth-ico04.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/qiu-bg01.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/qiu-bg02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/sh-tp01.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/sh-tp02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/shuzi01.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/shuzi02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/shuzi03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/shuzi1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/shuzi2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/sy-tp01.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/sy-tp02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/th-ico.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/th-ico02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/th-ico03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/ws-tp01.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/ws-tp02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/ws-tp03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/ws-tp04.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/xue-tp01.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/xue-tp02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/xue-tp03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/xue-tp04.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/xue-tp05.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/other/intro-01.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/other/intro-02.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/other/intro-03.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/other/intro-04.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/other/intro-05.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/index/index.html" afterPath="$PROJECT_DIR$/pages/index/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/style.css" afterPath="$PROJECT_DIR$/public/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/style.css.map" afterPath="$PROJECT_DIR$/public/css/style.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/style.scss" afterPath="$PROJECT_DIR$/public/css/style.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/style.js" afterPath="$PROJECT_DIR$/public/js/style.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -43,17 +100,22 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/index/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" column="40" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="665" selection-end-column="7" />
+            <state relative-caret-position="426">
+              <caret line="563" column="39" lean-forward="false" selection-start-line="563" selection-start-column="39" selection-end-line="563" selection-end-column="39" />
               <folding>
                 <element signature="n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#1;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#2;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#3;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="e#7914#7918#0" expanded="true" />
+                <element signature="e#7918#7922#0" expanded="true" />
+                <element signature="e#11351#11355#0" expanded="true" />
+                <element signature="e#11355#11359#0" expanded="true" />
                 <element signature="n#div#1;n#div#4;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#li#0;n#ul#0;n#div#0;n#div#1;n#div#4;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#li#1;n#ul#0;n#div#0;n#div#1;n#div#4;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="e#16227#16231#0" expanded="true" />
+                <element signature="e#16231#16235#0" expanded="true" />
                 <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#script#5;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#script#6;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -62,21 +124,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/css/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="1512" column="45" lean-forward="false" selection-start-line="1512" selection-start-column="45" selection-end-line="1512" selection-end-column="45" />
+            <state relative-caret-position="772">
+              <caret line="2085" column="0" lean-forward="false" selection-start-line="2085" selection-start-column="0" selection-end-line="2085" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/style.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
+            <state relative-caret-position="12159">
               <caret line="579" column="41" lean-forward="false" selection-start-line="579" selection-start-column="41" selection-end-line="579" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="intro-01.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/other/intro-01.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -96,8 +168,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>transition</find>
-      <find>btn_spread</find>
       <find>for</find>
       <find>@for</find>
       <find>notice</find>
@@ -126,6 +196,8 @@
       <find>.courLists</find>
       <find>overflow-x</find>
       <find>banner</find>
+      <find>18</find>
+      <find>课程推荐</find>
     </findStrings>
     <replaceStrings>
       <replace>#{$imgUrl}</replace>
@@ -202,9 +274,9 @@
         <option value="$PROJECT_DIR$/pages/loginReg/loginReg.html" />
         <option value="$PROJECT_DIR$/pages/loginReg/protocol.html" />
         <option value="$PROJECT_DIR$/pages/loginReg/trouble.html" />
+        <option value="$PROJECT_DIR$/public/js/style.js" />
         <option value="$PROJECT_DIR$/pages/index/index.html" />
         <option value="$PROJECT_DIR$/public/css/style.scss" />
-        <option value="$PROJECT_DIR$/public/js/style.js" />
       </list>
     </option>
   </component>
@@ -215,8 +287,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="66" />
-    <option name="y" value="46" />
+    <option name="x" value="262" />
+    <option name="y" value="159" />
     <option name="width" value="1738" />
     <option name="height" value="1006" />
   </component>
@@ -270,24 +342,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hituiWap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hituiWap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -302,47 +356,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="style.scss" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NestingTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hituiWap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hituiWap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hituiWap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hituiWap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="index" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -361,15 +375,15 @@
     <property name="ChangesBrowser.SHOW_FLATTEN" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\wwwroot\kf.hitui\Html\wap\hituiWap\public\images" />
-      <recent name="D:\wwwroot\kf.hitui\Html\wap\hituiWap\pages\index" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\hituiWap\public\images" />
+      <recent name="D:\hituiWap\pages" />
       <recent name="D:\hituiWap\pages\index" />
       <recent name="D:\wwwroot\kf.hitui\Html\wap\hituiWap\public\images" />
       <recent name="D:\wwwroot\kf.hitui\Html\wap\hituiWap\pages\courses" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\wwwroot\kf.hitui\Html\wap\hituiWap\public\images" />
       <recent name="D:\wwwroot\kf.hitui\Html\wap\hituiWap\pages\index" />
     </key>
   </component>
@@ -552,7 +566,8 @@
       <workItem from="1499331694458" duration="663000" />
       <workItem from="1499737677570" duration="259000" />
       <workItem from="1499751250560" duration="8301000" />
-      <workItem from="1499760603764" duration="288000" />
+      <workItem from="1499760603764" duration="1277000" />
+      <workItem from="1500019367694" duration="138000" />
     </task>
     <task id="LOCAL-00001" summary="页面增加">
       <created>1499075711717</created>
@@ -596,11 +611,18 @@
       <option name="project" value="LOCAL" />
       <updated>1499332002152</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="2017.7.11-change">
+      <created>1499760938961</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1499760938961</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="525156000" />
+    <option name="totallyTimeSpent" value="526283000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -612,9 +634,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="66" y="46" width="1738" height="1006" extended-state="0" />
+    <frame x="262" y="159" width="1738" height="1006" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23616019" sideWeight="0.49565217" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23616019" sideWeight="0.49565217" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293348" sideWeight="0.4957806" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.07727797" sideWeight="0.51531214" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24106114" sideWeight="0.48468786" order="2" side_tool="false" content_ui="tabs" />
@@ -697,7 +719,8 @@
     <MESSAGE value="scss-change" />
     <MESSAGE value="2017.7.5-change" />
     <MESSAGE value="2017.7.6-add" />
-    <option name="LAST_COMMIT_MESSAGE" value="2017.7.6-add" />
+    <MESSAGE value="2017.7.11-change" />
+    <option name="LAST_COMMIT_MESSAGE" value="2017.7.11-change" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -712,13 +735,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pages/my/myAddressEdit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="14" column="60" lean-forward="false" selection-start-line="14" selection-start-column="60" selection-end-line="14" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/my/myBank.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
@@ -1046,24 +1062,37 @@
         <state relative-caret-position="-1517">
           <caret line="113" column="0" lean-forward="false" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/style.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12159">
+          <caret line="579" column="41" lean-forward="false" selection-start-line="579" selection-start-column="41" selection-end-line="579" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/index/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="40" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="665" selection-end-column="7" />
+        <state relative-caret-position="426">
+          <caret line="563" column="39" lean-forward="false" selection-start-line="563" selection-start-column="39" selection-end-line="563" selection-end-column="39" />
           <folding>
             <element signature="n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#2;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#7914#7918#0" expanded="true" />
+            <element signature="e#7918#7922#0" expanded="true" />
+            <element signature="e#11351#11355#0" expanded="true" />
+            <element signature="e#11355#11359#0" expanded="true" />
             <element signature="n#div#1;n#div#4;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#li#0;n#ul#0;n#div#0;n#div#1;n#div#4;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#li#1;n#ul#0;n#div#0;n#div#1;n#div#4;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#16227#16231#0" expanded="true" />
+            <element signature="e#16231#16235#0" expanded="true" />
             <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#script#5;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#script#6;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -1071,18 +1100,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/style.scss">
+    <entry file="file://$PROJECT_DIR$/pages/other/intro-01.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="1512" column="45" lean-forward="false" selection-start-line="1512" selection-start-column="45" selection-end-line="1512" selection-end-column="45" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/style.js">
+    <entry file="file://$PROJECT_DIR$/public/css/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="579" column="41" lean-forward="false" selection-start-line="579" selection-start-column="41" selection-end-line="579" selection-end-column="41" />
+        <state relative-caret-position="772">
+          <caret line="2085" column="0" lean-forward="false" selection-start-line="2085" selection-start-column="0" selection-end-line="2085" selection-end-column="0" />
           <folding />
         </state>
       </provider>

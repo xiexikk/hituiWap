@@ -1384,8 +1384,15 @@ $baseFontSize: 100px !default;
   }
   .content{ @extend %ovrd;
     .hdTit{ width: 100%; height: 1rem; position: relative; border-top: 1px solid $gray;
-      .tit{ font-size: .36rem; width:32%; text-align: center; background-color: $white;@extend %translateXY; z-index: 1;}
-      .line{ width: 77%; height: 1px; background-color:$base-color; top:50%; @extend %translateX; }
+      .tit{ font-size: .36rem; line-height: 1rem; padding-left: .6rem; display: inline-block;  text-align: left;
+        background-color: $white;}
+      .tit2{ width:32%; @extend %translateXY; z-index: 1;}
+      .line{ width: 77%; height: 1px; background-color:$base-color; top:50%; @extend %translateX;}
+      .more{ @extend %translateY; right: .2rem; font-size: .24rem; color: #999; height: 1rem; line-height: 1rem;}
+      .ico{ width: .32rem; height: .32rem;  @include bgPara(); background-size: contain; display: inline-block;  @extend %translateY; left: .2rem; }
+      .ico01{ background-image: url("#{$imgUrl}/hhico01.png"); }
+      .ico02{ background-image: url("#{$imgUrl}/hhico02.png"); }
+      .ico03{ background-image: url("#{$imgUrl}/hhico03.png"); }
     }
     .kcIn{ height: 3.8rem; @extend %ovrd; border-top: 1px solid $gray; padding:0 .2rem;
       >*{ height: 100%;}
@@ -1721,6 +1728,362 @@ $baseFontSize: 100px !default;
     }
   }
 }
+
+//intro-01.html
+.oth-txt{ width: 100%; text-align: center; color: $white;  @extend %translateX; bottom: .35rem;
+  p{ margin-bottom: .1rem;}
+  .num{ color: #fff151; font-weight: 700;}
+}
+.oth-btn-a,.oth-btn-b,.oth-btn-c,.oth-btn-d,.oth-btn-e,.oth-btn-f,.oth-btn-g,.oth-btn-i,.oth-btn-j{ width: 4.3rem; height: .8rem; background-color: #fff151; border-radius: .4rem;
+  margin: .33rem auto 0; @extend %ovrd;
+  .link{ @extend %widHig; height: 100%; line-height: .8rem; text-align: center; color: #5e84ed;
+    font-size: .36rem; display: block;
+  }
+}
+.oth-btn-b,.oth-btn-d,.oth-btn-f,.oth-btn-h,.oth-btn-j{ width: 5.2rem; height: .9rem; border-radius: .5rem;
+  .link{ line-height: .9rem;}
+}
+.oth-btn-c{ margin-top: .4rem;}
+.oth-btn-c,.oth-btn-d{ @include box-shadow(0 0 .1rem rgba(213,136,81,1));
+  .link{ color: #f35a6d;}
+}
+.oth-btn-e,.oth-btn-f{
+  .link{ color: #2c2d32;}
+}
+.oth-btn-g,.oth-btn-h{ background-color: #ff5485;
+  .link{ color: #fff;}
+}
+.oth-btn-i,.oth-btn-j{ background-color: #fed258;
+  .link{ color: #2c2d32;}
+}
+.oth-tit{ height: .58rem; text-align: center; @include bgPara(); display: inline-block;  margin-left: .3rem;
+  &.oth-tit01{ width: 2.48rem;  background-image: url("#{$imgUrl}/bt-lab01.png");}
+  &.oth-tit02{ width: 3.9rem;  background-image: url("#{$imgUrl}/bt-lab02.png");}
+  &.oth-tit03{ width: 2.96rem;  background-image: url("#{$imgUrl}/bt-lab03.png");}
+  &.oth-tit04{ width: 2.48rem;  background-image: url("#{$imgUrl}/bt-lab04.png");}
+  .th{ height: .58rem; line-height: .58rem; color: $white; font-size: .36rem;}
+}
+.oth-tit-a{ height: .4rem; position: relative; margin-top: .3rem; margin-left: .3rem;@include box-sizing();
+  .th{ padding-left: .5rem; display: inline-block; @include lineHig(.4rem); font-size: .36rem;}
+  img{ width: .4rem; @extend %translateY;}
+}
+.oth-tit-b,.oth-tit-c{ width: 100%; height: .38rem; text-align: left;
+  .th{ @include lineHig(.38rem); padding-left: .3rem; color:#07a8a3; display: inline-block;  position:relative;
+    &:before{ @extend %pseudo; width: .14rem; height: .38rem; background-color: #07a8a3;
+      position: absolute; left: 0; top: 0;
+    }
+  }
+}
+.oth-tit-c{
+  .th{ color: #333;
+    &:before{ background-color: #678be2;}
+  }
+}
+.oth-tit-s{ width: auto; height: .7rem; border: 1px solid #fed258;  @include box-sizing();
+  text-align: center; margin-top: .8rem;
+  .th{ width: 100%; color: #fed258;  @include lineHig(.7rem); }
+}
+.oth-tit-s1,.oth-tit-s4{ width: 2.64rem; }
+.oth-tit-s2{ width: 3.68rem; }
+.oth-tit-s3{ width: 3.2rem; }
+
+.a-list{ @extend %ovrd; margin-top: .25rem; padding: 0 .3rem;
+  li{ width: 100%; font-size: .29rem; padding-left: .4rem; @include box-sizing(); margin-bottom: .18rem;  position: relative;
+    &:before{ @extend %pseudo; width: .3rem; height: .3rem; background-image: url("#{$imgUrl}/ot-ico.png");
+      @include bgPara(); @extend %translateY; left: 0;
+    }
+  }
+}
+.b-list{ @extend %ovrd; padding: 0 .3rem;
+  li{ width: 100%; @include lineHig(.84rem); padding-left: .3rem; background-color: $white; border-radius: .1rem;
+    @include box-sizing(); position: relative; margin-top: .2rem; @include box-shadow(0 0 .1rem rgba(106,175,255,.14));
+    .ico{ width: .8rem; height: .84rem; position: absolute; bottom: 0; right: .3rem; @include bgPara(); }
+    @for $i from 1 through 3 {
+      &:nth-of-type(#{$i}) .ico{ background-image: url("#{$imgUrl}/shuzi0#{$i}.png"); }
+    }
+  }
+}
+.c-list{ @extend %ovrd; margin: .25rem .3rem 0; padding:0 .2rem .3rem; background-color: $white; border-radius: .04rem;
+  @include box-shadow(0 0 .2rem rgba(138,138,138,.16));
+  li{
+    .tit{ color: #333; font-size: .34rem; @include lineHig(.4rem); padding-left: .22rem; margin-top: .3rem; position: relative;
+      img{ width: .12rem;  @extend %translateY; left: 0; }
+    }
+    .tx{ padding: .1rem 0; font-size: .28rem;
+      p{ line-height: 1.8; text-indent: 2em; }
+    }
+  }
+}
+.d-list{ @extend %ovrd; padding:.3rem .2rem .3rem;
+  li{@extend %ovrd; height: .6rem; margin-bottom: .25rem;
+    &:last-of-type{ margin-bottom: 0;}
+    img{ width: .6rem; float: $fl;}
+    p{ margin-left: .8rem; font-size: .32rem; @include lineHig(.6rem);}
+  }
+}
+.e-list,.h-list{ margin: .3rem .3rem 0;  @extend %ovrd; padding-bottom: .2rem;
+  li{ padding:.3rem .3rem .1rem; background-color: $white; border-radius: .1rem; margin-bottom: .3rem; position: relative;
+    &:last-of-type{ margin-bottom: 0;}
+    @include box-shadow(0 0 .2rem rgba(146,146,146,.16));
+    background-repeat: no-repeat; background-size: .8rem .5rem; background-position: right bottom;
+    @for $i from 1 through 2 {
+      &:nth-of-type(#{$i}){ background-image: url("#{$imgUrl}/shuzi#{$i}.png"); }
+    }
+    .tit{ height: .54rem; position: relative;  margin-bottom: .2rem;
+      &:after{ @extend %pseudo; width: .4rem; height: .06rem; background-color: #ff9845;
+        position: absolute; bottom: 0; left: 0;
+      }
+    }
+    .wz{ line-height: 1.5; color: #666;
+      p{ text-indent: 2em;}
+    }
+  }
+}
+.f-list{ padding: .4rem .3rem 0; @extend %ovrd;
+  li{ @include lineHig(.6rem); @extend %ovrd; margin-bottom: .3rem;
+    img{ width: .6rem; float: $fl;}
+    .ti{ margin-left: .8rem;}
+  }
+}
+.h-list{ @include box-shadow(0 0 .2rem rgba(146,146,146,.16)); border-radius: .1rem;
+  li{ margin-bottom: 0; border-radius: 0; @include box-shadow(0 0 .2rem rgba(146,146,146,0)); background: $white !important;
+    .tit{ padding-left: .25rem; margin-bottom: 0; color: #333;
+      &:after{ position: absolute; top: .1rem; button:auto; width: .12rem; height: .12rem; background-color: #ff5485;
+        @extend %borRadio50;
+      }
+    }
+  }
+}
+.g-list{ @extend %ovrd; @include box-shadow(0 0 .2rem rgba(146,146,146,.16)); border-radius: .1rem;
+  margin: .3rem; padding: .3rem;
+  li{ @include lineHig(.42rem); margin-bottom: .2rem; @extend %ovrd;
+    &:last-of-type{ margin-bottom: 0; }
+    .num{ width: .42rem; @include lineHig(.42rem); text-align:center; color: $white; float: $fl;}
+    .ti{ margin-left: .6rem; color: #666;}
+    &:first-of-type .num{ background-color: #9d8ceb;}
+    &:nth-of-type(2) .num{ background-color: #ff928c;}
+    &:last-of-type .num{ background-color: #ff5485;}
+  }
+}
+.i-list{ padding: .4rem .3rem; color: $white;
+  li{ height: .5rem; @extend %ovrd; margin-bottom: .25rem; position: relative;
+    .num{ position: absolute; left:0; bottom:.17rem; width: .6rem; height: .5rem; display: inline-block; float: $fl;
+      em{ position: absolute; left: 0; bottom: .05rem; font-style: normal;}
+      &:after{ @extend %pseudo; width: 1px; height: .32rem; background-color: $white;
+        @include transform(rotate(45deg)); position: absolute; left: .2rem; bottom:-.05rem;
+      }
+    }
+    .ti{ position: absolute; left: .6rem;  top:0; }
+  }
+}
+
+.oth-vid{ padding: .3rem; @extend %ovrd; background-color: $white;margin-top: .3rem;
+  .pic{ width: 100%; height: 3.9rem; @extend %ovrd; border-radius: .04rem; display: block; position: relative;
+    @include box-shadow(0 0 .1rem rgba(138,138,138,.35));
+  }
+  img{ @extend %widHig;}
+  .bf-ico{ width: 1.1rem; height: 1.1rem; background-image:url("#{$imgUrl}/bof-ico.png");
+    @include bgPara(); @extend %translateXY;
+  }
+}
+.intro{ width: 100%; @extend %ovrd; @include bgPara(); background-position: center top; position: relative; text-align: center;
+  &.intro-01{ height: 8.54rem; background-color: $white; background-image: url("#{$imgUrl}/oth-bg.png");
+    .oth-txt{ bottom: .9rem;}
+  }
+  .in{ @extend %ovrd;
+    >*{ display: inline-block;}
+    img{ @extend %widHig; display: block; }
+    .logo{ width: 2.1rem; height: auto; margin: .4rem auto 0; display: block; text-align: center;}
+    .wz-tp{ width: 5.1rem; height: auto; margin-top: .5rem; }
+  }
+}
+.intro-con{ @extend %ovrd; background-color: #fafcff; color:#666; margin-top: .3rem;
+  .in{ padding-top: .1rem; }
+  &.intro-con01{ padding:.1rem 0 .3rem; background-color: $white; margin-top: 0; }
+  &.intro-con02{ }
+  &.intro-con03{ overflow: visible; }
+  &.intro-con04{
+    .txt{ padding: .2rem .4rem;
+      p{ line-height: 1.5;}
+    }
+  }
+}
+.intro-stu{ background-color: $white; @extend %ovrd;  margin-top: .3rem;
+  .hd-tit{ width: 100%; height: .45rem; position: relative; margin-top: .38rem;
+    >*{ @extend %translateX;}
+    .tit{ z-index: 1;}
+    .line{ width: 1.96rem; height: .16rem; background-color: #65b5ff; bottom: 0;}
+  }
+  .stu-con{ padding: .3rem .55rem .4rem; @extend %ovrd;
+    .pic{ height: 4.4rem;}
+  }
+}
+.intro-fot{ width: 100%; @extend %ovrd; @include bgPara(); position: relative;
+  .oth-txt{ bottom: .45rem; font-size: .36rem;
+    p{ margin-bottom: .15rem;}
+    .p2{ margin-bottom: .25rem; }
+  }
+}
+.intro-fot01{ height: 3.7rem; background-color: $white; background-image: url("#{$imgUrl}/obot-bg.png"); margin-top: .5rem;}
+
+//intro-02.html
+.intro-02{ height: 8.44rem; background-image: url("#{$imgUrl}/oth-bg02.png");
+  .wz-tp{ width: 5.2rem; }
+  .qiu-tp{ width: 1.26rem; height: 1.62rem; background-image: url("#{$imgUrl}/oth-bg02-qiu.png"); @include bgPara();
+    position: absolute; left: 0; top: 2.3rem;
+  }
+}
+
+.intro-con002{ background-color: $white;
+  .d-list{ margin-left: .5rem; }
+  .oth-vid{ background-color: #fafafa; margin-top: 0; }
+}
+.intro-con003{ background-color: $white;
+  .c-list{ @include box-shadow(0 0 .2rem rgba(138,138,138,0)); margin: 0; margin-top: .15rem; padding-left: .75rem; }
+}
+.intro-con004{ height: 2.05rem; background-color: $white;
+  .txt{ text-align: center; @include lineHig(1.35rem);  position: relative;
+    .ico{ width: .5rem; height: .5rem; background-image: url("#{$imgUrl}/dou-ico.png"); @include bgPara();
+      @extend %translateY;
+    }
+    .ico-1{ left: .5rem;}
+    .ico-2{ left:auto; right:.5rem; background-position: left bottom;}
+  }
+}
+.intro-fot02{ height: 4.44rem; background-image: url("#{$imgUrl}/obot-bg02.png"); }
+
+//intro-03.html
+.intro-03{ height: 4.57rem; background-image: url("#{$imgUrl}/oth-bg03.png");
+  .wz-tp{ width: 5.9rem;}
+  .oth-txt{ bottom: .4rem;}
+}
+.intro-con11{ background-color: $white; padding:.3rem 0 .3rem; margin-top: 0; }
+.intro-con22{
+  .says{ width: auto; height: 3.22rem; background-image: url("#{$imgUrl}/intro-con22-bg.png"); @include bgPara();
+    @extend %ovrd; margin: .3rem;
+    .tp{ width: 1.94rem; height: 100%; @extend %ovrd; float: $fl;
+      img{ @extend %widHig;}
+    }
+    .txt{ margin-left: 2.2rem; margin-right: .35rem; height: 100%;
+      .name{ width: 1.7rem; @include lineHig(.5rem); background-image: url("#{$imgUrl}/name-bg.png");
+        @include bgPara(); text-align: center;color: $white; font-weight: 700; margin-top: .5rem;
+      }
+      .wz{ margin-top: .2rem; padding-left: .1rem; font-size: .28rem; line-height: 1.4; color: #666;}
+    }
+  }
+  .income{ text-align: center; padding-top: .5rem; padding-bottom: .4rem; @extend %ovrd; background-color: $white;
+    .tit{ font-size: .32rem; color: #ff9845;}
+    .pic{ margin: .4rem auto 0; width: 73.333%;
+      img{ width: 100%; display: block;}
+    }
+  }
+}
+.intro-con44{
+  .e-list{
+    li{ background: $white;
+      .wz{
+        p{ text-indent: 0;}
+      }
+    }
+  }
+}
+.intro-fot03{ height: 3.8rem; background-image: url("#{$imgUrl}/obot-bg03.png"); margin-top: .4rem; }
+
+//intro-04.html
+.intro-04{ height: 9.52rem; background-color: $white; background-image: url("#{$imgUrl}/oth-bg04.png");
+  .in{
+    .wz-tp{ width: 6.16rem;}
+    .oth-txt{ bottom: .88rem;
+      .num{ color: #ff5485;}
+    }
+  }
+}
+.intro-conA{ background-color: $white; padding-bottom: .3rem;}
+.intro-conB{ margin-top: 0; padding-top: .3rem;}
+.intro-conC{ position: relative; margin-top: 0;background-color: $white; padding: .6rem 0 .4rem;
+  &:before,&:after{  @extend %pseudo; @include bgPara();  position: absolute; }
+  &:before{ width: .33rem; height: 2rem; background-image:url("#{$imgUrl}/qiu-bg01.png");
+    left: 0; top: 2rem;
+  }
+  &:after{
+    width: .27rem; height: 2.1rem; background-image:url("#{$imgUrl}/qiu-bg02.png");
+    right: 0; bottom: .8rem;
+  }
+}
+.intro-conD{ margin-top: 0; padding-top: .2rem; padding-bottom: .1rem; background-color: $white; }
+.intro-fot04{ background: #fafcff; height: 3rem;
+  .oth-txt{ color: #333;
+    .num{ color: #ff5485;}
+  }
+}
+
+//intro-05
+.intro-05{ height: 9.6rem; background-image:url("#{$imgUrl}/oth-bg05.png");
+  .in{
+    .wz-tp{ width: 5.17rem;}
+    .oth-txt{ bottom: 1rem;
+      .num{ color: #eac254;}
+    }
+  }
+}
+.intro-fot05{ height: 3.9rem; background-image:url("#{$imgUrl}/obot-bg05.png");
+  .in{
+    .oth-txt{
+      .num{ color: #eac254;}
+    }
+  }
+}
+
+.intro-conS1,.intro-conS2,.intro-conS3{ background-color: transparent; }
+.intro-conS1{ margin-top: -.8rem; position: relative;
+  height: 8.46rem; background-image:url("#{$imgUrl}/cons1-bg.png"); @include bgPara();
+  .dec-bg{
+    width: 5.68rem; height: 6.92rem; background-image:url("#{$imgUrl}/decorate-line.png"); @include bgPara();
+    @extend %translateX; top: .7rem;
+    ul{ @extend %ovrd;}
+    li{ position: absolute; color: $white; text-align: center;
+      p{ margin-bottom: .15rem;}
+      &:first-of-type{ left: 1.3rem; top:.55rem;}
+      &:nth-of-type(2){ right: .3rem; top:2.5rem;}
+      &:nth-of-type(3){ left: .2rem;  top:4.3rem;}
+      &:nth-of-type(4){ right: .2rem;  bottom:.1rem;}
+    }
+  }
+}
+.intro-conS2{ margin-top: -.6rem; color: $white;
+  height: 7.9rem;  background-image: url("#{$imgUrl}/cons2-bg.png");  @include bgPara();
+  .a-list{ margin-top: .4rem;}
+}
+.intro-conS3{ margin-top: -1rem;
+  .in{
+    height: 6.67rem; background-image: url("#{$imgUrl}/cons3-bg.png"); @include bgPara();
+  }
+  .oth-vid{
+    margin-top: -.5rem; background-image: url("#{$imgUrl}/ot-vid-bg.png"); @include bgPara();
+  }
+}
+.intro-conS4{ margin-top:0; background-image: url("#{$imgUrl}/cons4-bg.png"); @include bgPara();
+  background-color:#2c2d32; background-size: 100% 9.11rem;  background-position: 0 4.8rem;
+  .oth-tit-s3{ margin-top: .5rem;}
+  .c-list{ @include box-shadow(0 0 .2rem rgba(138,138,138,0)); background-color: #27292e;
+    li{ color: #b8b8b8;
+      .tit{ color: $white;}
+    }
+  }
+}
+.intro-conS5{ height: 2.94rem; border-top: 2px solid #f5ca56; background-image: url("#{$imgUrl}/cons5-bg.png");
+  .oth-tit-s4{ margin-top: .5rem;}
+  @include bgPara(); margin-bottom: -1px; margin-top: 0;
+  .txt{ @include lineHig(.8rem); background-color: #3b3c42; border: 1px dashed #636262; text-align: center;
+    color: $white;  margin: .3rem;
+  }
+}
+.intro-stu2{ background-color: transparent; margin-top: 0; padding-bottom: .2rem;
+  .hd-tit{ margin-top: .4rem;
+    .tit{ color: #d5b150;}
+  }
+}
+
 /************ This scss created by author xiexkang 2017-06  end************/
 
 

@@ -55,7 +55,7 @@ input, textarea {
   z-index: 88;
   width: 100%; }
 
-.btn_mark .ico, .myContactUs .hdTit .tit, .notice .hdTit .tit, .loginReg .logoCom .logo, .mainCom .content .hdTit .tit, .student .stuCom .list02 li .tp .ico-play {
+.btn_mark .ico, .myContactUs .hdTit .tit, .notice .hdTit .tit, .loginReg .logoCom .logo, .mainCom .content .hdTit .tit2, .student .stuCom .list02 li .tp .ico-play {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -75,7 +75,7 @@ input, textarea {
   -ms-transform: translate(-50%, 0);
   -o-transform: translate(-50%, 0); }
 
-.myHead .in .head .goJoin, .myList .in .listUl li:after, .myList .in .listUl li em, .myList .in .listUl li i, .mySetting .setList ul li .ico, .mySetting .setList ul .arr, .myInfor .inList li .setChe, .myInfor .inList li .ico, .selList li .radIco, .oChe, .addList ul .arr, .myRank .rankSel .hdTit > i, .student .stuCom .list02 li .txt .more, .audition .audList li .tp, .audition .audList li .ico {
+.myHead .in .head .goJoin, .myList .in .listUl li:after, .myList .in .listUl li em, .myList .in .listUl li i, .mySetting .setList ul li .ico, .mySetting .setList ul .arr, .myInfor .inList li .setChe, .myInfor .inList li .ico, .selList li .radIco, .oChe, .addList ul .arr, .myRank .rankSel .hdTit > i, .mainCom .content .hdTit .more, .mainCom .content .hdTit .ico, .student .stuCom .list02 li .txt .more, .audition .audList li .tp, .audition .audList li .ico {
   position: absolute;
   left: auto;
   top: 50%;
@@ -2792,15 +2792,39 @@ input, textarea {
   border-top: 1px solid #e5e5e5; }
   .mainCom .content .hdTit .tit {
     font-size: .36rem;
+    line-height: 1rem;
+    padding-left: .6rem;
+    display: inline-block;
+    text-align: left;
+    background-color: #fff; }
+  .mainCom .content .hdTit .tit2 {
     width: 32%;
-    text-align: center;
-    background-color: #fff;
     z-index: 1; }
   .mainCom .content .hdTit .line {
     width: 77%;
     height: 1px;
     background-color: #333;
     top: 50%; }
+  .mainCom .content .hdTit .more {
+    right: .2rem;
+    font-size: .24rem;
+    color: #999;
+    height: 1rem;
+    line-height: 1rem; }
+  .mainCom .content .hdTit .ico {
+    width: .32rem;
+    height: .32rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: contain;
+    display: inline-block;
+    left: .2rem; }
+  .mainCom .content .hdTit .ico01 {
+    background-image: url("../../public/images/hhico01.png"); }
+  .mainCom .content .hdTit .ico02 {
+    background-image: url("../../public/images/hhico02.png"); }
+  .mainCom .content .hdTit .ico03 {
+    background-image: url("../../public/images/hhico03.png"); }
 .mainCom .content .kcIn {
   height: 3.8rem;
   border-top: 1px solid #e5e5e5;
