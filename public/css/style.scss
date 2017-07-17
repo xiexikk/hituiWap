@@ -117,9 +117,10 @@ $baseFontSize: 100px !default;
 //**------------------------------------------------------------------------------------------------------------------------------------------------------------**
 //markFix.scss
 .btn_mark {
-  width: 1rem; height: 1rem;position: fixed;  bottom: 1.8rem;  right: .3rem;  @extend %borRadio50; z-index: 99999;
+  width: 1rem; height: 1rem;background: rgba(0, 0, 0, 0.4); position: fixed;  bottom: 1.8rem;  right: .3rem;  @extend %borRadio50; z-index: 99999;
   .btn_mark_bg {  width: 1rem; height: 1rem; position: fixed;  bottom: 1.8rem;  right: .3rem; @extend %borRadio50;
-    z-index: 99999;  background: rgba(0, 0, 0, 0.4);  @include transition(all .5s);
+    z-index: 99999;  background: rgba(0, 0, 0, 0.4);
+    @include transition(all .5s);
   }
   .btn_menu {
     width: 1rem; height: 1rem; position: fixed;  bottom: 1.8rem;  right: .3rem; @extend %borRadio50;  z-index: 9999999;
@@ -142,8 +143,8 @@ $baseFontSize: 100px !default;
   .btn_menu.btn_video {
     background: #f8ba44;
   }
-  .btn_home { width: 1rem; height: 1rem; @extend %borRadio50; background: rgba(0, 0, 0, .4); position: fixed; bottom: 1.8rem;  right: .3rem;
-    @include transition(all .5s);   z-index: 999999999999; }
+  .btn_home { @include transition(all .5s);width: 1rem; height: 1rem; position: fixed; bottom: 1.8rem;  right: .3rem;
+    @extend %borRadio50;  z-index: 999999; }
   &.active{
     .btn_mark_bg { width: 100%;  height: 100%;  bottom: 0;  right: 0;  border-radius: 0; }
     .btn_home { @include transform(rotate(45deg)); }
@@ -155,7 +156,6 @@ $baseFontSize: 100px !default;
     .btn_menu.btn_video { @include transform(translate3d(-1.4rem, -.8rem, 0)); }
   }
 }
-
 //bodyOf.scss
 .bodyOf{ @extend %ovrd; height:100%;}
 
@@ -1288,7 +1288,7 @@ $baseFontSize: 100px !default;
     .labTj{ background-image: url("#{$imgUrl}/lab02.png"); }
   }
   .txt{ padding-top: .2rem;
-    .tiName{ @include ellipsis(2); text-align: left;
+    .tiName{ @include ellipsis(2);
       a{ color: #666; line-height: $txt-lineHight; }
     }
     .bot{ position: absolute; bottom: .1rem; left:2.5%; width:95%; @include lineHig(.4rem); @include box-sizing(); color: #999;
@@ -1302,6 +1302,9 @@ $baseFontSize: 100px !default;
     .icoBuy{ background-image: url("#{$imgUrl}/iico01.png");}
     .icoPlay{ background-image: url("#{$imgUrl}/iico02.png"); }
   }
+}
+.lovePop{ @extend %translateXY; z-index: 100; position: fixed;  color: $white; font-size: .3rem;
+  width: 1.8rem; @include lineHig(.54rem); text-align: center; background-color: rgba(0,0,0,.9); border-radius: 2px;
 }
 
 //footNav.scss
@@ -1338,7 +1341,7 @@ $baseFontSize: 100px !default;
 .swiper-containers {
   width: 100%;
   height: 100%;
- ul{ overflow: visible;}
+  ul{ overflow: visible;}
 }
 
 .mainCom{ @extend %ovrd;
@@ -1383,18 +1386,19 @@ $baseFontSize: 100px !default;
     }
   }
   .content{ @extend %ovrd;
-    .hdTit{ width: 100%; height: 1rem; position: relative; border-top: 1px solid $gray;
-      .tit{ font-size: .36rem; line-height: 1rem; padding-left: .6rem; display: inline-block;  text-align: left;
+    .hdTit{ width: 100%; height: 1rem; position: relative; border-top: 1px solid $gray; border-bottom: 1px solid $gray;
+      .tit{ font-size: .36rem; line-height: 1rem; padding-left: .65rem; display: inline-block;  text-align: left;
         background-color: $white;}
       .tit2{ width:32%; @extend %translateXY; z-index: 1;}
       .line{ width: 77%; height: 1px; background-color:$base-color; top:50%; @extend %translateX;}
       .more{ @extend %translateY; right: .2rem; font-size: .24rem; color: #999; height: 1rem; line-height: 1rem;}
-      .ico{ width: .32rem; height: .32rem;  @include bgPara(); background-size: contain; display: inline-block;  @extend %translateY; left: .2rem; }
-      .ico01{ background-image: url("#{$imgUrl}/hhico01.png"); }
-      .ico02{ background-image: url("#{$imgUrl}/hhico02.png"); }
-      .ico03{ background-image: url("#{$imgUrl}/hhico03.png"); }
+      .ico{ width: .4rem; height: .4rem;  @include bgPara(); background-size: contain; display: inline-block;
+        @extend %translateY; left: .2rem; }
+      @for $i from 1 through 5 {
+        .ico0#{$i}{ background-image: url("#{$imgUrl}/hhico0#{$i}.png"); }
+      }
     }
-    .kcIn{ height: 3.8rem; @extend %ovrd; border-top: 1px solid $gray; padding:0 .2rem;
+    .kcIn{ height: 3.8rem; @extend %ovrd;  padding:0 .2rem;
       >*{ height: 100%;}
       .kcL{ width: 35%; float: left; position: relative; @include bgPara(); text-align: center;
         .link{ @extend %widHig; display: block; color: #fff; font-size: .24rem;}
@@ -1420,8 +1424,8 @@ $baseFontSize: 100px !default;
         }
       }
     }
-    .courLists{ border-top: 1px solid $gray; /*overflow-x: auto; */ -webkit-overflow-scrolling: touch; }
-    .askList{ padding-top: 0;border-top: 1px solid $gray; }
+    .courLists{ /*overflow-x: auto; */ -webkit-overflow-scrolling: touch;}
+    .askList{ padding-top: 0; }
     .notBanCom{ @extend %ovrd;
       .notBan{ @extend %ovrd; }
       .banIn{ width: 100%; height: 3rem;
@@ -1445,6 +1449,31 @@ $baseFontSize: 100px !default;
           &{ font-size: .2rem;}
         }
       }
+    }
+    .enlist{ height: 3.2rem; /*margin:.4rem .2rem .25rem .3rem; */ margin-left: .3rem; @extend %ovrd; @include box-sizing();
+      li{ @extend %ovrd; height: .54rem; color: #999;
+        .name{ color: #76bdff;}
+        .en-coures{ color: $main-color;}
+      }
+    }
+    .gg-pic{ margin: .3rem .2rem 0 .2rem; padding-bottom: .2rem; border-bottom: 1px solid $gray;
+      .pic{ margin-bottom: .2rem; width: 100%; height: 3.1rem;
+        &:last-of-type{ margin-bottom: 0;}
+        img{ width: 100%; @extend %widHig;}
+      }
+      .pic2{ height: 2.76rem; }
+    }
+    .kc-con{ padding: .3rem .2rem; width: 100%; @include box-sizing();
+      .txt{ padding: .3rem; color: $white; background-color: #6d91cd; line-height: 1.4; }
+      ol{ @extend %ovrd; @include displayFlex(); margin-top: .2rem;
+        padding-bottom: .3rem; border-bottom: 1px solid $gray;
+        li{ @include flex(); border: 1px solid #e6e6e6; margin-right:.04rem;
+          &:last-of-type{ margin-right: 0;}
+        }
+      }
+    }
+    .kc-pic{ padding:0 .2rem;  width: 100%; height: 2.82rem;  @include box-sizing();
+      img{ @extend %widHig;}
     }
   }
 }
@@ -1517,7 +1546,7 @@ $baseFontSize: 100px !default;
         .txt{ @extend %ovrd; width: 100%; height:1.44rem; padding-bottom: .1rem;  @include box-sizing(); border: 1px solid $gray; border-top: none;
           background-color: $white; position: absolute; left: 0;z-index: 99;
           .tName{ font-size: .32rem; text-align: center; padding-top: .15rem;}
-          .wz{ color: #666;font-size: .26rem; line-height:$txt-lineHight; padding-top: .12rem; margin: 0 .1rem;}
+          .wz{ color: #666; font-size: .26rem; line-height:$txt-lineHight; padding-top: .12rem; margin: 0 .1rem;}
         }
         &.hover{
           .txt{ height: 4.55rem;}
@@ -1657,7 +1686,7 @@ $baseFontSize: 100px !default;
   .sendArea{ @extend %ovrd;
     textarea{ width: 100%; height: 2rem; padding:.1rem; border: 1px solid $gray;  @include box-sizing(); }
     .sendBtn{ width: 1.6rem; @include lineHig(.6rem); background-color: $main-color;
-     color: $white; text-align: center; border-radius: 2px; float: $fr; margin-top: .1rem; }
+      color: $white; text-align: center; border-radius: 2px; float: $fr; margin-top: .1rem; }
   }
   .askList{ padding-top:0;}
   .myNotes{ padding-top: .1rem;
@@ -1691,7 +1720,7 @@ $baseFontSize: 100px !default;
       img{ @extend %widHig; }
     }
     .txt{ margin-top: .45rem;
-      .th{ font-size: .56rem; }
+      .th{ font-size: .56rem;}
       .p1{ font-size: .3rem; margin-top: .25rem;
         >*{ margin-right: .1rem;}
       }
@@ -1914,8 +1943,11 @@ $baseFontSize: 100px !default;
     .tit{ z-index: 1;}
     .line{ width: 1.96rem; height: .16rem; background-color: #65b5ff; bottom: 0;}
   }
-  .stu-con{ padding: .3rem .55rem .4rem; @extend %ovrd;
-    .pic{ height: 4.4rem;}
+  .stu-con{ padding: .3rem .54rem .4rem; @extend %ovrd;
+    li{ width: 1.5rem; height: 4.4rem; @include box-sizing(); border: 1px solid #d5d5d5; @extend %ovrd; }
+    .pic{ width: 100%;  display: block;
+      img{@extend %widHig; }
+    }
   }
 }
 .intro-fot{ width: 100%; @extend %ovrd; @include bgPara(); position: relative;
@@ -2084,6 +2116,6 @@ $baseFontSize: 100px !default;
   }
 }
 
-/************ This scss created by author xiexkang 2017-06  end************/
+/************ This scss created by author xiexkang 2017-07  end************/
 
 

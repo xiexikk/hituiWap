@@ -6,13 +6,13 @@ body, a, input, textarea, button, select {
 input, textarea {
   border-radius: 0; }
 
-.btn_mark, .btn_mark .btn_mark_bg, .btn_mark .btn_menu, .btn_mark .btn_home, .myHead .in .head .tp, .askList ul .item .tp, .collList ul .item .tp, .askList ul .itemX .tp, .collList ul .itemX .tp, .myWxBind .wxBindYes .tp, .myPortrait .faceList li .tp, .myRank .round, .myRank .round > *, .myRank .rankSel .hdTit > i, .shopCarFix .item .num {
+.btn_mark, .btn_mark .btn_mark_bg, .btn_mark .btn_menu, .btn_mark .btn_home, .myHead .in .head .tp, .askList ul .item .tp, .collList ul .item .tp, .askList ul .itemX .tp, .collList ul .itemX .tp, .myWxBind .wxBindYes .tp, .myPortrait .faceList li .tp, .myRank .round, .myRank .round > *, .myRank .rankSel .hdTit > i, .shopCarFix .item .num, .h-list li .tit:after {
   border-radius: 50%; }
 
 .myBtn, .myHead .in .head .txt .lab, .myAccount .accHd .bot a, .myWithdraw .draw .drawInpCom .inp input, .myWithdraw .draw .drawInpCom .inp .selBank, .myBankEdit .addInpCom .inp input, .myBankEdit .addInpCom .inp select, .myBankEdit .addInpCom .inp.yzmInp .getCode, .myInfor .han .del, .proList .tp, .theSearch .inp, .courList li, .videoList .list01 li {
   border-radius: .06rem; }
 
-.bodyOf, .myHead .in, .myHead .in .head, .myHead .in .head .tp, .myHead .in .list, .myHead .in .list ul, .myList, .myList .in, .myList .in .listUl, .myBasic, .myInpCom, .myInpCom .inp, .myGrade, .myGrade .itemCom, .myGrade .itemCom ul, .myGrade .itemCom ul li, .tab, .myAccount, .myAccount .accHd, .myAccount .accHd .bot, .myAccount .accChg, .myAccount .accChg .list, .myTradeDet, .reList, .reList li, .myWithdraw, .myWithdraw .draw .drawInpCom, .myWithdraw .draw .drawInpCom .inp, .withRate, .myWithDet, .myBank, .myBank .list, .myBank .list ul, .myAddress, .myAddress .addressList, .myAddress .addressList ul, .myAddress .addressList li, .myAddress .addressList .hd, .myAddress .addressList .th, .myAddEdit, .myBankEdit, .myAddEdit .addInpCom, .myBankEdit .addInpCom, .myAddEdit .addInpCom .inp, .myBankEdit .addInpCom .inp, .myAddEdit .addInpCom .han, .myBankEdit .addInpCom .han, .myCollect, .askList, .collList, .askList ul, .collList ul, .askList ul li, .collList ul li, .askList ul .item .txt .hand, .collList ul .item .txt .hand, .collList .ul02 .tx, .collList .ul02 .bot, .mySetting, .mySetting .setList ul, .mySetting .setList ul li, .myWxBind, .myWxBind .in, .myWxBind .tp, .myPhoneBind, .myEmailBind, .myPhoneBind .in > *, .myEmailBind .in > *, .myInps, .myInps .inp, .myPassword, .myPortrait, .myPortrait .faceList, .myPortrait .faceList li .tp, .myInfor, .myInfor .inList, .myInfor .inList ul, .myInfor .inList li .ico, .myRecharge, .myRecharge .money > *, .myRecharge .paySel, .myRecharge .recStyle, .myRecharge .recStyle ul, .myRecharge .recStyle ul li .tp, .myRecharge .reSuc, .selList, .selList ul, .recDet, .txtExp, .myEnterCourses .courSel, .recSettle, .recSettle .curMoney, .countBot, .countBot .in, .myJoinVideo, .proList, .proList ul, .proList .tp, .proHandle, .addList, .addList ul, .addList ul .item, .addList ul .item .txH, .vidInf, .vidInf .bd, .vidInf .bd ul, .vidInf .bd ul li, .vidInf .bd ul li a, .myRank, .myRank .rankSel .bdTab, .myRank .rankSel .bdTab ul, .myNotes, .myNotes .item, .myNotes .item > *, .myNotes .item .bot .han, .myNotes .item .bot .han .time, .myNotes .txtArea, .myQuestion, .myContactUs, .notice, .myContactUs .item, .notice .item, .myContactUs .dzDet, .notice .dzDet, .myContactUs .dzDet li, .notice .dzDet li, .myContactUs .msnInp, .notice .msnInp, .myContactUs .msnInp .inp, .notice .msnInp .inp, .myContactUs #myMap, .notice #myMap, .myContactUs .moduleCom, .notice .moduleCom, .myContactUs .moduleCom .module, .notice .moduleCom .module, .loginReg, .logRegList, .logRegList ul, .logRegList .links, .logInpCom, .logInpCom .inp, .findPwd, .findPwd .pwdInpCom, .findPwd .sucTip .tp, .protocol, .theSearch, .courses, .courses .findSel, .courses .findSel ol, .courses .findSel .listBd, .courses .searchNo, .courses .searchNo .tp, .courList ul, .courList .tp, .footNav .nav, .header .logo a, .mainCom, .mainCom .gfNot, .mainCom .affList, .mainCom .affList ul li .tp, .mainCom .column, .mainCom .column ol, .mainCom .content, .mainCom .content .kcIn, .mainCom .content .kcIn .kcR, .mainCom .content .kcIn .kcR .kcList, .mainCom .content .kcIn .kcR .kcList ul, .mainCom .content .notBanCom, .mainCom .content .notBanCom .notBan, .mainCom .content .ewmCom, .mainCom .content .ewmCom .ewmList, .mainCom .content .ewmCom .ewmList .item .pic, .noticeDet, .notice .moduleComs ul, .student, .student .stuCom, .student .stuCom .list, .student .stuCom .list01 li .tp, .student .stuCom .list01 li .txt, .audition, .audition .audList, .audition .audList ul, .audition .audList li .txt .rateMax, .video, .videoList, .videoList .list01 li .tp, .videoList .sendArea, .buyFalse, .buyFalse .backLink, .downLoad, .downLoad .btnCom, .downLoad .btnCom ul, .downLoad .module, .downLoad .module .pic, .downLoad .module .txtIn {
+.bodyOf, .myHead .in, .myHead .in .head, .myHead .in .head .tp, .myHead .in .list, .myHead .in .list ul, .myList, .myList .in, .myList .in .listUl, .myBasic, .myInpCom, .myInpCom .inp, .myGrade, .myGrade .itemCom, .myGrade .itemCom ul, .myGrade .itemCom ul li, .tab, .myAccount, .myAccount .accHd, .myAccount .accHd .bot, .myAccount .accChg, .myAccount .accChg .list, .myTradeDet, .reList, .reList li, .myWithdraw, .myWithdraw .draw .drawInpCom, .myWithdraw .draw .drawInpCom .inp, .withRate, .myWithDet, .myBank, .myBank .list, .myBank .list ul, .myAddress, .myAddress .addressList, .myAddress .addressList ul, .myAddress .addressList li, .myAddress .addressList .hd, .myAddress .addressList .th, .myAddEdit, .myBankEdit, .myAddEdit .addInpCom, .myBankEdit .addInpCom, .myAddEdit .addInpCom .inp, .myBankEdit .addInpCom .inp, .myAddEdit .addInpCom .han, .myBankEdit .addInpCom .han, .myCollect, .askList, .collList, .askList ul, .collList ul, .askList ul li, .collList ul li, .askList ul .item .txt .hand, .collList ul .item .txt .hand, .collList .ul02 .tx, .collList .ul02 .bot, .mySetting, .mySetting .setList ul, .mySetting .setList ul li, .myWxBind, .myWxBind .in, .myWxBind .tp, .myPhoneBind, .myEmailBind, .myPhoneBind .in > *, .myEmailBind .in > *, .myInps, .myInps .inp, .myPassword, .myPortrait, .myPortrait .faceList, .myPortrait .faceList li .tp, .myInfor, .myInfor .inList, .myInfor .inList ul, .myInfor .inList li .ico, .myRecharge, .myRecharge .money > *, .myRecharge .paySel, .myRecharge .recStyle, .myRecharge .recStyle ul, .myRecharge .recStyle ul li .tp, .myRecharge .reSuc, .selList, .selList ul, .recDet, .txtExp, .myEnterCourses .courSel, .recSettle, .recSettle .curMoney, .countBot, .countBot .in, .myJoinVideo, .proList, .proList ul, .proList .tp, .proHandle, .addList, .addList ul, .addList ul .item, .addList ul .item .txH, .vidInf, .vidInf .bd, .vidInf .bd ul, .vidInf .bd ul li, .vidInf .bd ul li a, .myRank, .myRank .rankSel .bdTab, .myRank .rankSel .bdTab ul, .myNotes, .myNotes .item, .myNotes .item > *, .myNotes .item .bot .han, .myNotes .item .bot .han .time, .myNotes .txtArea, .myQuestion, .myContactUs, .notice, .myContactUs .item, .notice .item, .myContactUs .dzDet, .notice .dzDet, .myContactUs .dzDet li, .notice .dzDet li, .myContactUs .msnInp, .notice .msnInp, .myContactUs .msnInp .inp, .notice .msnInp .inp, .myContactUs #myMap, .notice #myMap, .myContactUs .moduleCom, .notice .moduleCom, .myContactUs .moduleCom .module, .notice .moduleCom .module, .loginReg, .logRegList, .logRegList ul, .logRegList .links, .logInpCom, .logInpCom .inp, .findPwd, .findPwd .pwdInpCom, .findPwd .sucTip .tp, .protocol, .theSearch, .courses, .courses .findSel, .courses .findSel ol, .courses .findSel .listBd, .courses .searchNo, .courses .searchNo .tp, .courList ul, .courList .tp, .footNav .nav, .header .logo a, .mainCom, .mainCom .gfNot, .mainCom .affList, .mainCom .affList ul li .tp, .mainCom .column, .mainCom .column ol, .mainCom .content, .mainCom .content .kcIn, .mainCom .content .kcIn .kcR, .mainCom .content .kcIn .kcR .kcList, .mainCom .content .kcIn .kcR .kcList ul, .mainCom .content .notBanCom, .mainCom .content .notBanCom .notBan, .mainCom .content .ewmCom, .mainCom .content .ewmCom .ewmList, .mainCom .content .ewmCom .ewmList .item .pic, .mainCom .content .enlist, .mainCom .content .enlist li, .mainCom .content .kc-con ol, .noticeDet, .notice .moduleComs ul, .student, .student .stuCom, .student .stuCom .list, .student .stuCom .list01 li .tp, .student .stuCom .list01 li .txt, .audition, .audition .audList, .audition .audList ul, .audition .audList li .txt .rateMax, .video, .videoList, .videoList .list01 li .tp, .videoList .sendArea, .buyFalse, .buyFalse .backLink, .downLoad, .downLoad .btnCom, .downLoad .btnCom ul, .downLoad .module, .downLoad .module .pic, .downLoad .module .txtIn, .oth-btn-a, .oth-btn-b, .oth-btn-c, .oth-btn-d, .oth-btn-e, .oth-btn-f, .oth-btn-g, .oth-btn-i, .oth-btn-j, .a-list, .b-list, .c-list, .d-list, .d-list li, .e-list, .h-list, .f-list, .f-list li, .g-list, .g-list li, .i-list li, .oth-vid, .oth-vid .pic, .intro, .intro .in, .intro-con, .intro-stu, .intro-stu .stu-con, .intro-stu .stu-con li, .intro-fot, .intro-con22 .says, .intro-con22 .says .tp, .intro-con22 .income, .intro-conS1 .dec-bg ul {
   overflow: hidden; }
 
 .withRate .tp, .myRank .rankSel .bdTab, .courList .item, .buyFalse .in, .downLoad .dl-con .tp, .downLoad .btnCom li {
@@ -21,7 +21,7 @@ input, textarea {
 .myBasic .remTip, .myInpCom .inp, .myGrade .itemCom .item, .myAccount .accChg .list ul .tit, .myAccount .accChg .list ul .item, .reList, .myWithdraw .in, .myAddEdit .addInpCom .inp, .myBankEdit .addInpCom .inp, .mySetting .setList ul li, .myPortrait .faceList, .myInfor .inList li, .myInfor .han, .myRecharge .recStyle, .recSettle, .vidInf, .myRank {
   padding: 0 .4rem; }
 
-.myHead .in .head .tp img, .mySetting .setList ul li > a, .myRecharge .recStyle ul li .tp, .courList .tp a, .courList .tp img, .mainCom .content .kcIn .kcL .link, .mainCom .content .notBanCom .banIn .tp, .mainCom .content .notBanCom .banIn .tp img, .mainCom .content .ewmCom .ewmList .item .pic img, .notice .moduleComs ul .tp img, .student .stuCom .list01 li .tp img, .student .stuCom .list02 li .tp img, .audition .audList li .item, .videoList .list01 li .tp img, .downLoad .dl-con .tp img {
+.myHead .in .head .tp img, .mySetting .setList ul li > a, .myRecharge .recStyle ul li .tp, .courList .tp a, .courList .tp img, .mainCom .content .kcIn .kcL .link, .mainCom .content .notBanCom .banIn .tp, .mainCom .content .notBanCom .banIn .tp img, .mainCom .content .ewmCom .ewmList .item .pic img, .mainCom .content .gg-pic .pic img, .mainCom .content .kc-pic img, .notice .moduleComs ul .tp img, .student .stuCom .list01 li .tp img, .student .stuCom .list02 li .tp img, .audition .audList li .item, .videoList .list01 li .tp img, .downLoad .dl-con .tp img, .oth-btn-a .link, .oth-btn-b .link, .oth-btn-c .link, .oth-btn-d .link, .oth-btn-e .link, .oth-btn-f .link, .oth-btn-g .link, .oth-btn-i .link, .oth-btn-j .link, .oth-vid img, .intro .in img, .intro-stu .stu-con .pic img, .intro-con22 .says .tp img {
   width: 100%;
   height: 100%; }
 
@@ -30,7 +30,7 @@ input, textarea {
   white-space: nowrap;
   text-overflow: ellipsis; }
 
-.myHead .in .head .goJoin a:after, .myList .in .listUl li:after, .myBank .list li .han a:before, .myBankEdit .showTip:before, .myWxBind .wxBindYes .txt .tx p:before, .findPwd .pwdInpCom .hd .tit:before, .courses .findSel ol li a:after, .header .txt .loginLink:after {
+.myHead .in .head .goJoin a:after, .myList .in .listUl li:after, .myBank .list li .han a:before, .myBankEdit .showTip:before, .myWxBind .wxBindYes .txt .tx p:before, .findPwd .pwdInpCom .hd .tit:before, .courses .findSel ol li a:after, .header .txt .loginLink:after, .oth-tit-b .th:before, .oth-tit-c .th:before, .a-list li:before, .e-list li .tit:after, .h-list li .tit:after, .i-list li .num:after, .intro-conC:before, .intro-conC:after {
   content: "";
   display: inline-block;
   vertical-align: middle; }
@@ -55,7 +55,7 @@ input, textarea {
   z-index: 88;
   width: 100%; }
 
-.btn_mark .ico, .myContactUs .hdTit .tit, .notice .hdTit .tit, .loginReg .logoCom .logo, .mainCom .content .hdTit .tit2, .student .stuCom .list02 li .tp .ico-play {
+.btn_mark .ico, .myContactUs .hdTit .tit, .notice .hdTit .tit, .loginReg .logoCom .logo, .lovePop, .mainCom .content .hdTit .tit2, .student .stuCom .list02 li .tp .ico-play, .oth-vid .bf-ico {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -65,7 +65,7 @@ input, textarea {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%); }
 
-.myContactUs .hdTit .line, .notice .hdTit .line, .mainCom .content .hdTit .line {
+.myContactUs .hdTit .line, .notice .hdTit .line, .mainCom .content .hdTit .line, .oth-txt, .intro-stu .hd-tit > *, .intro-conS1 .dec-bg {
   position: absolute;
   left: 50%;
   top: auto;
@@ -75,7 +75,7 @@ input, textarea {
   -ms-transform: translate(-50%, 0);
   -o-transform: translate(-50%, 0); }
 
-.myHead .in .head .goJoin, .myList .in .listUl li:after, .myList .in .listUl li em, .myList .in .listUl li i, .mySetting .setList ul li .ico, .mySetting .setList ul .arr, .myInfor .inList li .setChe, .myInfor .inList li .ico, .selList li .radIco, .oChe, .addList ul .arr, .myRank .rankSel .hdTit > i, .mainCom .content .hdTit .more, .mainCom .content .hdTit .ico, .student .stuCom .list02 li .txt .more, .audition .audList li .tp, .audition .audList li .ico {
+.myHead .in .head .goJoin, .myList .in .listUl li:after, .myList .in .listUl li em, .myList .in .listUl li i, .mySetting .setList ul li .ico, .mySetting .setList ul .arr, .myInfor .inList li .setChe, .myInfor .inList li .ico, .selList li .radIco, .oChe, .addList ul .arr, .myRank .rankSel .hdTit > i, .mainCom .content .hdTit .more, .mainCom .content .hdTit .ico, .student .stuCom .list02 li .txt .more, .audition .audList li .tp, .audition .audList li .ico, .oth-tit-a img, .a-list li:before, .c-list li .tit img, .intro-con004 .txt .ico {
   position: absolute;
   left: auto;
   top: 50%;
@@ -119,6 +119,7 @@ input, textarea {
 .btn_mark {
   width: 1rem;
   height: 1rem;
+  background: rgba(0, 0, 0, 0.4);
   position: fixed;
   bottom: 1.8rem;
   right: .3rem;
@@ -175,18 +176,17 @@ input, textarea {
   .btn_mark .btn_menu.btn_video {
     background: #f8ba44; }
   .btn_mark .btn_home {
-    width: 1rem;
-    height: 1rem;
-    background: rgba(0, 0, 0, 0.4);
-    position: fixed;
-    bottom: 1.8rem;
-    right: .3rem;
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -ms-transition: all 0.5s;
     -o-transition: all 0.5s;
-    z-index: 999999999999; }
+    width: 1rem;
+    height: 1rem;
+    position: fixed;
+    bottom: 1.8rem;
+    right: .3rem;
+    z-index: 999999; }
   .btn_mark.active .btn_mark_bg {
     width: 100%;
     height: 100%;
@@ -2553,8 +2553,7 @@ input, textarea {
       text-overflow: ellipsis;
       display: -webkit-box;
       -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      text-align: left; }
+      -webkit-box-orient: vertical; }
       .courList .txt .tiName a {
         color: #666;
         line-height: 1.2; }
@@ -2587,6 +2586,18 @@ input, textarea {
       background-image: url("../../public/images/iico01.png"); }
     .courList .txt .icoPlay {
       background-image: url("../../public/images/iico02.png"); }
+
+.lovePop {
+  z-index: 100;
+  position: fixed;
+  color: #fff;
+  font-size: .3rem;
+  width: 1.8rem;
+  height: 0.54rem;
+  line-height: 0.54rem;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 2px; }
 
 .footNav {
   width: 100%;
@@ -2789,11 +2800,12 @@ input, textarea {
   width: 100%;
   height: 1rem;
   position: relative;
-  border-top: 1px solid #e5e5e5; }
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5; }
   .mainCom .content .hdTit .tit {
     font-size: .36rem;
     line-height: 1rem;
-    padding-left: .6rem;
+    padding-left: .65rem;
     display: inline-block;
     text-align: left;
     background-color: #fff; }
@@ -2812,8 +2824,8 @@ input, textarea {
     height: 1rem;
     line-height: 1rem; }
   .mainCom .content .hdTit .ico {
-    width: .32rem;
-    height: .32rem;
+    width: .4rem;
+    height: .4rem;
     background-repeat: no-repeat;
     background-size: cover;
     background-size: contain;
@@ -2825,9 +2837,12 @@ input, textarea {
     background-image: url("../../public/images/hhico02.png"); }
   .mainCom .content .hdTit .ico03 {
     background-image: url("../../public/images/hhico03.png"); }
+  .mainCom .content .hdTit .ico04 {
+    background-image: url("../../public/images/hhico04.png"); }
+  .mainCom .content .hdTit .ico05 {
+    background-image: url("../../public/images/hhico05.png"); }
 .mainCom .content .kcIn {
   height: 3.8rem;
-  border-top: 1px solid #e5e5e5;
   padding: 0 .2rem; }
   .mainCom .content .kcIn > * {
     height: 100%; }
@@ -2889,12 +2904,10 @@ input, textarea {
           .mainCom .content .kcIn .kcR .kcList ul .cTime .num, .mainCom .content .kcIn .kcR .kcList ul .cGold .num {
             color: #ff6100; }
 .mainCom .content .courLists {
-  border-top: 1px solid #e5e5e5;
   /*overflow-x: auto; */
   -webkit-overflow-scrolling: touch; }
 .mainCom .content .askList {
-  padding-top: 0;
-  border-top: 1px solid #e5e5e5; }
+  padding-top: 0; }
 .mainCom .content .notBanCom .banIn {
   width: 100%;
   height: 3rem; }
@@ -2929,6 +2942,61 @@ input, textarea {
     @media only screen and (max-width: 320px) {
       .mainCom .content .ewmCom .copyright {
         font-size: .2rem; } }
+.mainCom .content .enlist {
+  height: 3.2rem;
+  /*margin:.4rem .2rem .25rem .3rem; */
+  margin-left: .3rem;
+  box-sizing: border-box; }
+  .mainCom .content .enlist li {
+    height: .54rem;
+    color: #999; }
+    .mainCom .content .enlist li .name {
+      color: #76bdff; }
+    .mainCom .content .enlist li .en-coures {
+      color: #ff6100; }
+.mainCom .content .gg-pic {
+  margin: .3rem .2rem 0 .2rem;
+  padding-bottom: .2rem;
+  border-bottom: 1px solid #e5e5e5; }
+  .mainCom .content .gg-pic .pic {
+    margin-bottom: .2rem;
+    width: 100%;
+    height: 3.1rem; }
+    .mainCom .content .gg-pic .pic:last-of-type {
+      margin-bottom: 0; }
+    .mainCom .content .gg-pic .pic img {
+      width: 100%; }
+  .mainCom .content .gg-pic .pic2 {
+    height: 2.76rem; }
+.mainCom .content .kc-con {
+  padding: .3rem .2rem;
+  width: 100%;
+  box-sizing: border-box; }
+  .mainCom .content .kc-con .txt {
+    padding: .3rem;
+    color: #fff;
+    background-color: #6d91cd;
+    line-height: 1.4; }
+  .mainCom .content .kc-con ol {
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    margin-top: .2rem;
+    padding-bottom: .3rem;
+    border-bottom: 1px solid #e5e5e5; }
+    .mainCom .content .kc-con ol li {
+      flex: 1;
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      border: 1px solid #e6e6e6;
+      margin-right: .04rem; }
+      .mainCom .content .kc-con ol li:last-of-type {
+        margin-right: 0; }
+.mainCom .content .kc-pic {
+  padding: 0 .2rem;
+  width: 100%;
+  height: 2.82rem;
+  box-sizing: border-box; }
 
 .noticeDet {
   padding: 0 .2rem; }
@@ -3452,6 +3520,794 @@ input, textarea {
       color: #666;
       margin-bottom: .15rem; }
 
-/************ This scss created by author xiexkang 2017-06  end************/
+.oth-txt {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  bottom: .35rem; }
+  .oth-txt p {
+    margin-bottom: .1rem; }
+  .oth-txt .num {
+    color: #fff151;
+    font-weight: 700; }
+
+.oth-btn-a, .oth-btn-b, .oth-btn-c, .oth-btn-d, .oth-btn-e, .oth-btn-f, .oth-btn-g, .oth-btn-i, .oth-btn-j {
+  width: 4.3rem;
+  height: .8rem;
+  background-color: #fff151;
+  border-radius: .4rem;
+  margin: .33rem auto 0; }
+  .oth-btn-a .link, .oth-btn-b .link, .oth-btn-c .link, .oth-btn-d .link, .oth-btn-e .link, .oth-btn-f .link, .oth-btn-g .link, .oth-btn-i .link, .oth-btn-j .link {
+    height: 100%;
+    line-height: .8rem;
+    text-align: center;
+    color: #5e84ed;
+    font-size: .36rem;
+    display: block; }
+
+.oth-btn-b, .oth-btn-d, .oth-btn-f, .oth-btn-h, .oth-btn-j {
+  width: 5.2rem;
+  height: .9rem;
+  border-radius: .5rem; }
+  .oth-btn-b .link, .oth-btn-d .link, .oth-btn-f .link, .oth-btn-h .link, .oth-btn-j .link {
+    line-height: .9rem; }
+
+.oth-btn-c {
+  margin-top: .4rem; }
+
+.oth-btn-c, .oth-btn-d {
+  -webkit-box-shadow: 0 0 0.1rem #d58851;
+  -moz-box-shadow: 0 0 0.1rem #d58851;
+  box-shadow: 0 0 0.1rem #d58851; }
+  .oth-btn-c .link, .oth-btn-d .link {
+    color: #f35a6d; }
+
+.oth-btn-e .link, .oth-btn-f .link {
+  color: #2c2d32; }
+
+.oth-btn-g, .oth-btn-h {
+  background-color: #ff5485; }
+  .oth-btn-g .link, .oth-btn-h .link {
+    color: #fff; }
+
+.oth-btn-i, .oth-btn-j {
+  background-color: #fed258; }
+  .oth-btn-i .link, .oth-btn-j .link {
+    color: #2c2d32; }
+
+.oth-tit {
+  height: .58rem;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  margin-left: .3rem; }
+  .oth-tit.oth-tit01 {
+    width: 2.48rem;
+    background-image: url("../../public/images/bt-lab01.png"); }
+  .oth-tit.oth-tit02 {
+    width: 3.9rem;
+    background-image: url("../../public/images/bt-lab02.png"); }
+  .oth-tit.oth-tit03 {
+    width: 2.96rem;
+    background-image: url("../../public/images/bt-lab03.png"); }
+  .oth-tit.oth-tit04 {
+    width: 2.48rem;
+    background-image: url("../../public/images/bt-lab04.png"); }
+  .oth-tit .th {
+    height: .58rem;
+    line-height: .58rem;
+    color: #fff;
+    font-size: .36rem; }
+
+.oth-tit-a {
+  height: .4rem;
+  position: relative;
+  margin-top: .3rem;
+  margin-left: .3rem;
+  box-sizing: border-box; }
+  .oth-tit-a .th {
+    padding-left: .5rem;
+    display: inline-block;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    font-size: .36rem; }
+  .oth-tit-a img {
+    width: .4rem; }
+
+.oth-tit-b, .oth-tit-c {
+  width: 100%;
+  height: .38rem;
+  text-align: left; }
+  .oth-tit-b .th, .oth-tit-c .th {
+    height: 0.38rem;
+    line-height: 0.38rem;
+    padding-left: .3rem;
+    color: #07a8a3;
+    display: inline-block;
+    position: relative; }
+    .oth-tit-b .th:before, .oth-tit-c .th:before {
+      width: .14rem;
+      height: .38rem;
+      background-color: #07a8a3;
+      position: absolute;
+      left: 0;
+      top: 0; }
+
+.oth-tit-c .th {
+  color: #333; }
+  .oth-tit-c .th:before {
+    background-color: #678be2; }
+
+.oth-tit-s {
+  width: auto;
+  height: .7rem;
+  border: 1px solid #fed258;
+  box-sizing: border-box;
+  text-align: center;
+  margin-top: .8rem; }
+  .oth-tit-s .th {
+    width: 100%;
+    color: #fed258;
+    height: 0.7rem;
+    line-height: 0.7rem; }
+
+.oth-tit-s1, .oth-tit-s4 {
+  width: 2.64rem; }
+
+.oth-tit-s2 {
+  width: 3.68rem; }
+
+.oth-tit-s3 {
+  width: 3.2rem; }
+
+.a-list {
+  margin-top: .25rem;
+  padding: 0 .3rem; }
+  .a-list li {
+    width: 100%;
+    font-size: .29rem;
+    padding-left: .4rem;
+    box-sizing: border-box;
+    margin-bottom: .18rem;
+    position: relative; }
+    .a-list li:before {
+      width: .3rem;
+      height: .3rem;
+      background-image: url("../../public/images/ot-ico.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      left: 0; }
+
+.b-list {
+  padding: 0 .3rem; }
+  .b-list li {
+    width: 100%;
+    height: 0.84rem;
+    line-height: 0.84rem;
+    padding-left: .3rem;
+    background-color: #fff;
+    border-radius: .1rem;
+    box-sizing: border-box;
+    position: relative;
+    margin-top: .2rem;
+    -webkit-box-shadow: 0 0 0.1rem rgba(106, 175, 255, 0.14);
+    -moz-box-shadow: 0 0 0.1rem rgba(106, 175, 255, 0.14);
+    box-shadow: 0 0 0.1rem rgba(106, 175, 255, 0.14); }
+    .b-list li .ico {
+      width: .8rem;
+      height: .84rem;
+      position: absolute;
+      bottom: 0;
+      right: .3rem;
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .b-list li:nth-of-type(1) .ico {
+      background-image: url("../../public/images/shuzi01.png"); }
+    .b-list li:nth-of-type(2) .ico {
+      background-image: url("../../public/images/shuzi02.png"); }
+    .b-list li:nth-of-type(3) .ico {
+      background-image: url("../../public/images/shuzi03.png"); }
+
+.c-list {
+  margin: .25rem .3rem 0;
+  padding: 0 .2rem .3rem;
+  background-color: #fff;
+  border-radius: .04rem;
+  -webkit-box-shadow: 0 0 0.2rem rgba(138, 138, 138, 0.16);
+  -moz-box-shadow: 0 0 0.2rem rgba(138, 138, 138, 0.16);
+  box-shadow: 0 0 0.2rem rgba(138, 138, 138, 0.16); }
+  .c-list li .tit {
+    color: #333;
+    font-size: .34rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    padding-left: .22rem;
+    margin-top: .3rem;
+    position: relative; }
+    .c-list li .tit img {
+      width: .12rem;
+      left: 0; }
+  .c-list li .tx {
+    padding: .1rem 0;
+    font-size: .28rem; }
+    .c-list li .tx p {
+      line-height: 1.8;
+      text-indent: 2em; }
+
+.d-list {
+  padding: .3rem .2rem .3rem; }
+  .d-list li {
+    height: .6rem;
+    margin-bottom: .25rem; }
+    .d-list li:last-of-type {
+      margin-bottom: 0; }
+    .d-list li img {
+      width: .6rem;
+      float: left; }
+    .d-list li p {
+      margin-left: .8rem;
+      font-size: .32rem;
+      height: 0.6rem;
+      line-height: 0.6rem; }
+
+.e-list, .h-list {
+  margin: .3rem .3rem 0;
+  padding-bottom: .2rem; }
+  .e-list li, .h-list li {
+    padding: .3rem .3rem .1rem;
+    background-color: #fff;
+    border-radius: .1rem;
+    margin-bottom: .3rem;
+    position: relative;
+    -webkit-box-shadow: 0 0 0.2rem rgba(146, 146, 146, 0.16);
+    -moz-box-shadow: 0 0 0.2rem rgba(146, 146, 146, 0.16);
+    box-shadow: 0 0 0.2rem rgba(146, 146, 146, 0.16);
+    background-repeat: no-repeat;
+    background-size: .8rem .5rem;
+    background-position: right bottom; }
+    .e-list li:last-of-type, .h-list li:last-of-type {
+      margin-bottom: 0; }
+    .e-list li:nth-of-type(1), .h-list li:nth-of-type(1) {
+      background-image: url("../../public/images/shuzi1.png"); }
+    .e-list li:nth-of-type(2), .h-list li:nth-of-type(2) {
+      background-image: url("../../public/images/shuzi2.png"); }
+    .e-list li .tit, .h-list li .tit {
+      height: .54rem;
+      position: relative;
+      margin-bottom: .2rem; }
+      .e-list li .tit:after, .h-list li .tit:after {
+        width: .4rem;
+        height: .06rem;
+        background-color: #ff9845;
+        position: absolute;
+        bottom: 0;
+        left: 0; }
+    .e-list li .wz, .h-list li .wz {
+      line-height: 1.5;
+      color: #666; }
+      .e-list li .wz p, .h-list li .wz p {
+        text-indent: 2em; }
+
+.f-list {
+  padding: .4rem .3rem 0; }
+  .f-list li {
+    height: 0.6rem;
+    line-height: 0.6rem;
+    margin-bottom: .3rem; }
+    .f-list li img {
+      width: .6rem;
+      float: left; }
+    .f-list li .ti {
+      margin-left: .8rem; }
+
+.h-list {
+  -webkit-box-shadow: 0 0 0.2rem rgba(146, 146, 146, 0.16);
+  -moz-box-shadow: 0 0 0.2rem rgba(146, 146, 146, 0.16);
+  box-shadow: 0 0 0.2rem rgba(146, 146, 146, 0.16);
+  border-radius: .1rem; }
+  .h-list li {
+    margin-bottom: 0;
+    border-radius: 0;
+    -webkit-box-shadow: 0 0 0.2rem rgba(146, 146, 146, 0);
+    -moz-box-shadow: 0 0 0.2rem rgba(146, 146, 146, 0);
+    box-shadow: 0 0 0.2rem rgba(146, 146, 146, 0);
+    background: #fff !important; }
+    .h-list li .tit {
+      padding-left: .25rem;
+      margin-bottom: 0;
+      color: #333; }
+      .h-list li .tit:after {
+        position: absolute;
+        top: .1rem;
+        button: auto;
+        width: .12rem;
+        height: .12rem;
+        background-color: #ff5485; }
+
+.g-list {
+  -webkit-box-shadow: 0 0 0.2rem rgba(146, 146, 146, 0.16);
+  -moz-box-shadow: 0 0 0.2rem rgba(146, 146, 146, 0.16);
+  box-shadow: 0 0 0.2rem rgba(146, 146, 146, 0.16);
+  border-radius: .1rem;
+  margin: .3rem;
+  padding: .3rem; }
+  .g-list li {
+    height: 0.42rem;
+    line-height: 0.42rem;
+    margin-bottom: .2rem; }
+    .g-list li:last-of-type {
+      margin-bottom: 0; }
+    .g-list li .num {
+      width: .42rem;
+      height: 0.42rem;
+      line-height: 0.42rem;
+      text-align: center;
+      color: #fff;
+      float: left; }
+    .g-list li .ti {
+      margin-left: .6rem;
+      color: #666; }
+    .g-list li:first-of-type .num {
+      background-color: #9d8ceb; }
+    .g-list li:nth-of-type(2) .num {
+      background-color: #ff928c; }
+    .g-list li:last-of-type .num {
+      background-color: #ff5485; }
+
+.i-list {
+  padding: .4rem .3rem;
+  color: #fff; }
+  .i-list li {
+    height: .5rem;
+    margin-bottom: .25rem;
+    position: relative; }
+    .i-list li .num {
+      position: absolute;
+      left: 0;
+      bottom: .17rem;
+      width: .6rem;
+      height: .5rem;
+      display: inline-block;
+      float: left; }
+      .i-list li .num em {
+        position: absolute;
+        left: 0;
+        bottom: .05rem;
+        font-style: normal; }
+      .i-list li .num:after {
+        width: 1px;
+        height: .32rem;
+        background-color: #fff;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        position: absolute;
+        left: .2rem;
+        bottom: -.05rem; }
+    .i-list li .ti {
+      position: absolute;
+      left: .6rem;
+      top: 0; }
+
+.oth-vid {
+  padding: .3rem;
+  background-color: #fff;
+  margin-top: .3rem; }
+  .oth-vid .pic {
+    width: 100%;
+    height: 3.9rem;
+    border-radius: .04rem;
+    display: block;
+    position: relative;
+    -webkit-box-shadow: 0 0 0.1rem rgba(138, 138, 138, 0.35);
+    -moz-box-shadow: 0 0 0.1rem rgba(138, 138, 138, 0.35);
+    box-shadow: 0 0 0.1rem rgba(138, 138, 138, 0.35); }
+  .oth-vid .bf-ico {
+    width: 1.1rem;
+    height: 1.1rem;
+    background-image: url("../../public/images/bof-ico.png");
+    background-repeat: no-repeat;
+    background-size: cover; }
+
+.intro {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  position: relative;
+  text-align: center; }
+  .intro.intro-01 {
+    height: 8.54rem;
+    background-color: #fff;
+    background-image: url("../../public/images/oth-bg.png"); }
+    .intro.intro-01 .oth-txt {
+      bottom: .9rem; }
+  .intro .in > * {
+    display: inline-block; }
+  .intro .in img {
+    display: block; }
+  .intro .in .logo {
+    width: 2.1rem;
+    height: auto;
+    margin: .4rem auto 0;
+    display: block;
+    text-align: center; }
+  .intro .in .wz-tp {
+    width: 5.1rem;
+    height: auto;
+    margin-top: .5rem; }
+
+.intro-con {
+  background-color: #fafcff;
+  color: #666;
+  margin-top: .3rem; }
+  .intro-con .in {
+    padding-top: .1rem; }
+  .intro-con.intro-con01 {
+    padding: .1rem 0 .3rem;
+    background-color: #fff;
+    margin-top: 0; }
+  .intro-con.intro-con03 {
+    overflow: visible; }
+  .intro-con.intro-con04 .txt {
+    padding: .2rem .4rem; }
+    .intro-con.intro-con04 .txt p {
+      line-height: 1.5; }
+
+.intro-stu {
+  background-color: #fff;
+  margin-top: .3rem; }
+  .intro-stu .hd-tit {
+    width: 100%;
+    height: .45rem;
+    position: relative;
+    margin-top: .38rem; }
+    .intro-stu .hd-tit .tit {
+      z-index: 1; }
+    .intro-stu .hd-tit .line {
+      width: 1.96rem;
+      height: .16rem;
+      background-color: #65b5ff;
+      bottom: 0; }
+  .intro-stu .stu-con {
+    padding: .3rem .54rem .4rem; }
+    .intro-stu .stu-con li {
+      width: 1.5rem;
+      height: 4.4rem;
+      box-sizing: border-box;
+      border: 1px solid #d5d5d5; }
+    .intro-stu .stu-con .pic {
+      width: 100%;
+      display: block; }
+
+.intro-fot {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; }
+  .intro-fot .oth-txt {
+    bottom: .45rem;
+    font-size: .36rem; }
+    .intro-fot .oth-txt p {
+      margin-bottom: .15rem; }
+    .intro-fot .oth-txt .p2 {
+      margin-bottom: .25rem; }
+
+.intro-fot01 {
+  height: 3.7rem;
+  background-color: #fff;
+  background-image: url("../../public/images/obot-bg.png");
+  margin-top: .5rem; }
+
+.intro-02 {
+  height: 8.44rem;
+  background-image: url("../../public/images/oth-bg02.png"); }
+  .intro-02 .wz-tp {
+    width: 5.2rem; }
+  .intro-02 .qiu-tp {
+    width: 1.26rem;
+    height: 1.62rem;
+    background-image: url("../../public/images/oth-bg02-qiu.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 2.3rem; }
+
+.intro-con002 {
+  background-color: #fff; }
+  .intro-con002 .d-list {
+    margin-left: .5rem; }
+  .intro-con002 .oth-vid {
+    background-color: #fafafa;
+    margin-top: 0; }
+
+.intro-con003 {
+  background-color: #fff; }
+  .intro-con003 .c-list {
+    -webkit-box-shadow: 0 0 0.2rem rgba(138, 138, 138, 0);
+    -moz-box-shadow: 0 0 0.2rem rgba(138, 138, 138, 0);
+    box-shadow: 0 0 0.2rem rgba(138, 138, 138, 0);
+    margin: 0;
+    margin-top: .15rem;
+    padding-left: .75rem; }
+
+.intro-con004 {
+  height: 2.05rem;
+  background-color: #fff; }
+  .intro-con004 .txt {
+    text-align: center;
+    height: 1.35rem;
+    line-height: 1.35rem;
+    position: relative; }
+    .intro-con004 .txt .ico {
+      width: .5rem;
+      height: .5rem;
+      background-image: url("../../public/images/dou-ico.png");
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .intro-con004 .txt .ico-1 {
+      left: .5rem; }
+    .intro-con004 .txt .ico-2 {
+      left: auto;
+      right: .5rem;
+      background-position: left bottom; }
+
+.intro-fot02 {
+  height: 4.44rem;
+  background-image: url("../../public/images/obot-bg02.png"); }
+
+.intro-03 {
+  height: 4.57rem;
+  background-image: url("../../public/images/oth-bg03.png"); }
+  .intro-03 .wz-tp {
+    width: 5.9rem; }
+  .intro-03 .oth-txt {
+    bottom: .4rem; }
+
+.intro-con11 {
+  background-color: #fff;
+  padding: .3rem 0 .3rem;
+  margin-top: 0; }
+
+.intro-con22 .says {
+  width: auto;
+  height: 3.22rem;
+  background-image: url("../../public/images/intro-con22-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: .3rem; }
+  .intro-con22 .says .tp {
+    width: 1.94rem;
+    height: 100%;
+    float: left; }
+  .intro-con22 .says .txt {
+    margin-left: 2.2rem;
+    margin-right: .35rem;
+    height: 100%; }
+    .intro-con22 .says .txt .name {
+      width: 1.7rem;
+      height: 0.5rem;
+      line-height: 0.5rem;
+      background-image: url("../../public/images/name-bg.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      text-align: center;
+      color: #fff;
+      font-weight: 700;
+      margin-top: .5rem; }
+    .intro-con22 .says .txt .wz {
+      margin-top: .2rem;
+      padding-left: .1rem;
+      font-size: .28rem;
+      line-height: 1.4;
+      color: #666; }
+.intro-con22 .income {
+  text-align: center;
+  padding-top: .5rem;
+  padding-bottom: .4rem;
+  background-color: #fff; }
+  .intro-con22 .income .tit {
+    font-size: .32rem;
+    color: #ff9845; }
+  .intro-con22 .income .pic {
+    margin: .4rem auto 0;
+    width: 73.333%; }
+    .intro-con22 .income .pic img {
+      width: 100%;
+      display: block; }
+
+.intro-con44 .e-list li {
+  background: #fff; }
+  .intro-con44 .e-list li .wz p {
+    text-indent: 0; }
+
+.intro-fot03 {
+  height: 3.8rem;
+  background-image: url("../../public/images/obot-bg03.png");
+  margin-top: .4rem; }
+
+.intro-04 {
+  height: 9.52rem;
+  background-color: #fff;
+  background-image: url("../../public/images/oth-bg04.png"); }
+  .intro-04 .in .wz-tp {
+    width: 6.16rem; }
+  .intro-04 .in .oth-txt {
+    bottom: .88rem; }
+    .intro-04 .in .oth-txt .num {
+      color: #ff5485; }
+
+.intro-conA {
+  background-color: #fff;
+  padding-bottom: .3rem; }
+
+.intro-conB {
+  margin-top: 0;
+  padding-top: .3rem; }
+
+.intro-conC {
+  position: relative;
+  margin-top: 0;
+  background-color: #fff;
+  padding: .6rem 0 .4rem; }
+  .intro-conC:before, .intro-conC:after {
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute; }
+  .intro-conC:before {
+    width: .33rem;
+    height: 2rem;
+    background-image: url("../../public/images/qiu-bg01.png");
+    left: 0;
+    top: 2rem; }
+  .intro-conC:after {
+    width: .27rem;
+    height: 2.1rem;
+    background-image: url("../../public/images/qiu-bg02.png");
+    right: 0;
+    bottom: .8rem; }
+
+.intro-conD {
+  margin-top: 0;
+  padding-top: .2rem;
+  padding-bottom: .1rem;
+  background-color: #fff; }
+
+.intro-fot04 {
+  background: #fafcff;
+  height: 3rem; }
+  .intro-fot04 .oth-txt {
+    color: #333; }
+    .intro-fot04 .oth-txt .num {
+      color: #ff5485; }
+
+.intro-05 {
+  height: 9.6rem;
+  background-image: url("../../public/images/oth-bg05.png"); }
+  .intro-05 .in .wz-tp {
+    width: 5.17rem; }
+  .intro-05 .in .oth-txt {
+    bottom: 1rem; }
+    .intro-05 .in .oth-txt .num {
+      color: #eac254; }
+
+.intro-fot05 {
+  height: 3.9rem;
+  background-image: url("../../public/images/obot-bg05.png"); }
+  .intro-fot05 .in .oth-txt .num {
+    color: #eac254; }
+
+.intro-conS1, .intro-conS2, .intro-conS3 {
+  background-color: transparent; }
+
+.intro-conS1 {
+  margin-top: -.8rem;
+  position: relative;
+  height: 8.46rem;
+  background-image: url("../../public/images/cons1-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .intro-conS1 .dec-bg {
+    width: 5.68rem;
+    height: 6.92rem;
+    background-image: url("../../public/images/decorate-line.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: .7rem; }
+    .intro-conS1 .dec-bg li {
+      position: absolute;
+      color: #fff;
+      text-align: center; }
+      .intro-conS1 .dec-bg li p {
+        margin-bottom: .15rem; }
+      .intro-conS1 .dec-bg li:first-of-type {
+        left: 1.3rem;
+        top: .55rem; }
+      .intro-conS1 .dec-bg li:nth-of-type(2) {
+        right: .3rem;
+        top: 2.5rem; }
+      .intro-conS1 .dec-bg li:nth-of-type(3) {
+        left: .2rem;
+        top: 4.3rem; }
+      .intro-conS1 .dec-bg li:nth-of-type(4) {
+        right: .2rem;
+        bottom: .1rem; }
+
+.intro-conS2 {
+  margin-top: -.6rem;
+  color: #fff;
+  height: 7.9rem;
+  background-image: url("../../public/images/cons2-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .intro-conS2 .a-list {
+    margin-top: .4rem; }
+
+.intro-conS3 {
+  margin-top: -1rem; }
+  .intro-conS3 .in {
+    height: 6.67rem;
+    background-image: url("../../public/images/cons3-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .intro-conS3 .oth-vid {
+    margin-top: -.5rem;
+    background-image: url("../../public/images/ot-vid-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover; }
+
+.intro-conS4 {
+  margin-top: 0;
+  background-image: url("../../public/images/cons4-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #2c2d32;
+  background-size: 100% 9.11rem;
+  background-position: 0 4.8rem; }
+  .intro-conS4 .oth-tit-s3 {
+    margin-top: .5rem; }
+  .intro-conS4 .c-list {
+    -webkit-box-shadow: 0 0 0.2rem rgba(138, 138, 138, 0);
+    -moz-box-shadow: 0 0 0.2rem rgba(138, 138, 138, 0);
+    box-shadow: 0 0 0.2rem rgba(138, 138, 138, 0);
+    background-color: #27292e; }
+    .intro-conS4 .c-list li {
+      color: #b8b8b8; }
+      .intro-conS4 .c-list li .tit {
+        color: #fff; }
+
+.intro-conS5 {
+  height: 2.94rem;
+  border-top: 2px solid #f5ca56;
+  background-image: url("../../public/images/cons5-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: -1px;
+  margin-top: 0; }
+  .intro-conS5 .oth-tit-s4 {
+    margin-top: .5rem; }
+  .intro-conS5 .txt {
+    height: 0.8rem;
+    line-height: 0.8rem;
+    background-color: #3b3c42;
+    border: 1px dashed #636262;
+    text-align: center;
+    color: #fff;
+    margin: .3rem; }
+
+.intro-stu2 {
+  background-color: transparent;
+  margin-top: 0;
+  padding-bottom: .2rem; }
+  .intro-stu2 .hd-tit {
+    margin-top: .4rem; }
+    .intro-stu2 .hd-tit .tit {
+      color: #d5b150; }
+
+/************ This scss created by author xiexkang 2017-07  end************/
 
 /*# sourceMappingURL=style.css.map */

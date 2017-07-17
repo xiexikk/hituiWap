@@ -1,12 +1,25 @@
 /************ This javascript created by author xiexkang 2017-06  Start************/
 var Api  = {
+    success    :    1,        //返回成功标识
     timeCount  :   60
 },
 Regs  = {
-    integer     :   /^[0-9]*[1-9][0-9]*$/,    //正整数
-    intFloat    :   /^[1-9]\d*\.\d*|0\.\d*[1-9]\d*$/,     //正浮点数
+    mobile      :   /^1(3[0-9]|4[57]|5[0-35-9]|7[0135678]|8[0-9])\d{8}$/,             //手机号
+    email       :   /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/,          //邮箱
+    integer     :   /^[0-9]*[1-9][0-9]*$/,                                          //正整数
+    intFloat    :   /^[1-9]\d*\.\d*|0\.\d*[1-9]\d*$/                           //正浮点数
 },
-sended = 'sended';
+sended = 'sended';           //验证码已发送状态
+
+// 文字提示
+function fadeTip(o) {
+    var speed =2e3;
+    o.tipBox.html(o.tipText).fadeIn(speed, function () {
+        o.tipBox.fadeOut(speed, function () {
+            o.tipBox.remove();
+        });
+    });
+}
 
 //验证码倒计时
 function countTime($e,time) {
@@ -129,16 +142,54 @@ function footNav(parm){
         if($(parm).eq(i).hasClass('cur')){
             var img01 =  $(parm).eq(i).find('img').attr('src');
             var img02 =  $(parm).eq(i).find('img').attr('rel');
-            var temp = '';
+         /*   var temp = '';
             temp = img01;
             img01 = img02;
-            img02 = temp;
+            img02 = temp;*/
+
+            //es6:解构赋值
+            [img01,img02] = [img02,img01];
+
             $(parm).eq(i).find('img').attr('src', img01);
             $(parm).eq(i).find('img').attr('rel', img02);
         }
     }
 }
 footNav('.footNav .nav li');
+
+
+// 收藏与否
++function () {
+    $.extend($.fn,{
+        //收藏成功提示：
+        loveYesHtml : function () {
+            var popHtml='';
+            popHtml ='<div class="lovePop">' + '</div>';
+            $(popHtml).insertAfter($("body"));
+            fadeTip({tipBox:$('.lovePop'),tipText:"收藏成功!"});
+        },
+        //取消收藏提示：
+        loveNoHtml : function () {
+            var popHtml='';
+            popHtml ='<div class="lovePop">' + '</div>';
+            $(popHtml).insertAfter($("body"));
+            fadeTip({tipBox:$('.lovePop'),tipText:"取消收藏!"});
+        }
+    });
+    var $love = $('.js-love'),
+        h = 'icoLove-hover';
+    $love.each(function (i,e) {
+        $love.eq(i).on('click',{x:i},function (event) {
+            var $this = $(this);
+            $this.toggleClass(h);
+            if($this.hasClass(h)){
+                $(this).loveYesHtml();
+            }else{
+                $(this).loveNoHtml();
+            }
+        });
+    });
+}();
 
 // textScroll公告文字
 function timer(opj){
@@ -528,7 +579,7 @@ $(function(){
     for(var i = 0; i<$(olLi).size() ;i++){
         (function () {
             $(olLi)[i].onclick = function (e) {
-                $('body').css({'overflow':'hidden','height':'100%'});
+                 $('body').addClass('bodyOf');
                 var $e = $(this),
                     index = $e.index();
                 $e.toggleClass(s);
@@ -538,6 +589,7 @@ $(function(){
                     $(ul).eq(index).show().siblings(ul).hide();
                 }else{
                     $(bd).hide();
+                    $('body').removeClass('bodyOf');
                 }
             }
         })(i);
@@ -550,7 +602,7 @@ $(function(){
     $(bd+' .wrap').on('click',function () {
         $(bd).hide();
         $(olLi).removeClass(s);
-        $('body').css({'overflow':'visible','height':'auto'});
+        $('body').removeClass('bodyOf');
     });
 }();
 
@@ -630,6 +682,75 @@ $(function(){
     $bdWrap.on('click',function () {
         $(this).hideWrap();
     });
+        //当前播放视频显示在可视范围scrollTop
+    $(window).on('resize', function () {
+        var $vidUl = $('.videoList .list01 ul'),
+            $vidLi = $('.videoList .list01 li'),
+            s = 'cur',
+            vidLiH  = $vidLi.height(),
+            eH = parseFloat($vidUl.css('padding-top'))+parseFloat($vidLi.css('margin-bottom'))+parseFloat($vidLi.css('padding-bottom'));
+        $vidLi.each(function (i,e) {
+            if($(e).hasClass(s)) {
+                var scrHig = vidLiH * i + eH*i-parseFloat($(e).css('margin-bottom'));
+                $vidUl.scrollTop(scrHig);
+                $(e).addClass(s).siblings('li').removeClass(s);
+            }
+        });
+    }).trigger('resize');
+}();
+
+//index.html 2017.7.17-add
+// 学员动态
+(function($){
+    $.fn.myScroll = function(options){
+        //默认配置
+        var defaults = {
+            speed:36,  //滚动速度,值越大速度越慢
+            rowHeight:27 //每行的高度
+        };
+        var opts = $.extend({}, defaults, options),intId = [];
+        function marquee(obj, step){
+            obj.find("ul").animate({
+                marginTop: '-=1'
+            },0,function(){
+                var s = Math.abs(parseInt($(this).css("margin-top")));
+                if(s >= step){
+                    $(this).find("li").slice(0, 1).appendTo($(this));
+                    $(this).css("margin-top", 0);
+                }
+            });
+        }
+        this.each(function(i){
+            var sh = opts["rowHeight"],speed = opts["speed"],_this = $(this);
+            intId[i] = setInterval(function(){
+                if(_this.find("ul").height()<=_this.height()){
+                    clearInterval(intId[i]);
+                }else{
+                    marquee(_this, sh);
+                }
+            }, speed);
+            _this.hover(function(){
+                clearInterval(intId[i]);
+            },function(){
+                intId[i] = setInterval(function(){
+                    if(_this.find("ul").height()<=_this.height()){
+                        clearInterval(intId[i]);
+                    }else{
+                        marquee(_this, sh);
+                    }
+                }, speed);
+            });
+        });
+    }
+})(jQuery);
+~function () {
+    $(window).on('resize', function () {
+        var enLiHig = parseFloat($("#enlist li").height());
+        $("#enlist").myScroll({
+            speed:36,                   //数值越大，速度越慢
+            rowHeight:enLiHig            //li的高度
+        });
+    }).trigger('resize');
 }();
 
 /************ This javascript created by author xiexkang 2017-06  end************/
